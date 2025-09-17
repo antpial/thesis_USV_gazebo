@@ -1,0 +1,2 @@
+[console_scripts]
+rotate = propeller_controller.rotate:main

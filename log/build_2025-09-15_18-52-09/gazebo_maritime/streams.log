@@ -1,0 +1,32 @@
+[0.006s] Invoking command in '/home/antoni/gazebo_maritime_ws/build/gazebo_maritime': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/antoni/gazebo_maritime_ws/src/gazebo_maritime -DCMAKE_INSTALL_PREFIX=/home/antoni/gazebo_maritime_ws/install
+[0.074s] -- The C compiler identification is GNU 13.3.0
+[0.147s] -- The CXX compiler identification is GNU 13.3.0
+[0.167s] -- Detecting C compiler ABI info
+[0.271s] -- Detecting C compiler ABI info - done
+[0.284s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.285s] -- Detecting C compile features
+[0.285s] -- Detecting C compile features - done
+[0.297s] -- Detecting CXX compiler ABI info
+[0.425s] -- Detecting CXX compiler ABI info - done
+[0.435s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.436s] -- Detecting CXX compile features
+[0.436s] -- Detecting CXX compile features - done
+[0.444s] -- Configuring incomplete, errors occurred!
+[0.444s] [31mCMake Error at CMakeLists.txt:5 (find_package):
+[0.444s]   By not providing "Findgz-sim8.cmake" in CMAKE_MODULE_PATH this project has
+[0.444s]   asked CMake to find a package configuration file provided by "gz-sim8", but
+[0.444s]   CMake did not find one.
+[0.444s] 
+[0.444s]   Could not find a package configuration file provided by "gz-sim8" with any
+[0.444s]   of the following names:
+[0.444s] 
+[0.444s]     gz-sim8Config.cmake
+[0.444s]     gz-sim8-config.cmake
+[0.444s] 
+[0.445s]   Add the installation prefix of "gz-sim8" to CMAKE_PREFIX_PATH or set
+[0.445s]   "gz-sim8_DIR" to a directory containing one of the above files.  If
+[0.445s]   "gz-sim8" provides a separate development package or SDK, be sure it has
+[0.445s]   been installed.
+[0.445s] 
+[0.445s] [0m
+[0.447s] Invoked command in '/home/antoni/gazebo_maritime_ws/build/gazebo_maritime' returned '1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/antoni/gazebo_maritime_ws/src/gazebo_maritime -DCMAKE_INSTALL_PREFIX=/home/antoni/gazebo_maritime_ws/install

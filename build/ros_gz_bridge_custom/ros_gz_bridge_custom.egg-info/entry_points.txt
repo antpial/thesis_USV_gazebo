@@ -1,0 +1,2 @@
+[console_scripts]
+bridge_node = ros_gz_bridge_custom.bridge_node:main

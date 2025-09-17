@@ -1,0 +1,17 @@
+package.xml
+setup.cfg
+setup.py
+../../build/ros_gz_bridge_custom/ros_gz_bridge_custom.egg-info/PKG-INFO
+../../build/ros_gz_bridge_custom/ros_gz_bridge_custom.egg-info/SOURCES.txt
+../../build/ros_gz_bridge_custom/ros_gz_bridge_custom.egg-info/dependency_links.txt
+../../build/ros_gz_bridge_custom/ros_gz_bridge_custom.egg-info/entry_points.txt
+../../build/ros_gz_bridge_custom/ros_gz_bridge_custom.egg-info/requires.txt
+../../build/ros_gz_bridge_custom/ros_gz_bridge_custom.egg-info/top_level.txt
+../../build/ros_gz_bridge_custom/ros_gz_bridge_custom.egg-info/zip-safe
+resource/ros_gz_bridge_custom
+ros_gz_bridge_custom/__init__.py
+ros_gz_bridge_custom/bridge_node.py
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py
+test/test_xmllint.py

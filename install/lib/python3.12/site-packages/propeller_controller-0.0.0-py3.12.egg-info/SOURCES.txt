@@ -1,0 +1,17 @@
+package.xml
+setup.cfg
+setup.py
+../../build/propeller_controller/propeller_controller.egg-info/PKG-INFO
+../../build/propeller_controller/propeller_controller.egg-info/SOURCES.txt
+../../build/propeller_controller/propeller_controller.egg-info/dependency_links.txt
+../../build/propeller_controller/propeller_controller.egg-info/entry_points.txt
+../../build/propeller_controller/propeller_controller.egg-info/requires.txt
+../../build/propeller_controller/propeller_controller.egg-info/top_level.txt
+../../build/propeller_controller/propeller_controller.egg-info/zip-safe
+propeller_controller/__init__.py
+propeller_controller/rotate.py
+resource/propeller_controller
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py
+test/test_xmllint.py

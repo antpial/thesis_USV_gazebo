@@ -1,0 +1,32 @@
+running egg_info
+creating ../../build/ros_gz_bridge_custom/ros_gz_bridge_custom.egg-info
+writing ../../build/ros_gz_bridge_custom/ros_gz_bridge_custom.egg-info/PKG-INFO
+writing dependency_links to ../../build/ros_gz_bridge_custom/ros_gz_bridge_custom.egg-info/dependency_links.txt
+writing entry points to ../../build/ros_gz_bridge_custom/ros_gz_bridge_custom.egg-info/entry_points.txt
+writing requirements to ../../build/ros_gz_bridge_custom/ros_gz_bridge_custom.egg-info/requires.txt
+writing top-level names to ../../build/ros_gz_bridge_custom/ros_gz_bridge_custom.egg-info/top_level.txt
+writing manifest file '../../build/ros_gz_bridge_custom/ros_gz_bridge_custom.egg-info/SOURCES.txt'
+reading manifest file '../../build/ros_gz_bridge_custom/ros_gz_bridge_custom.egg-info/SOURCES.txt'
+writing manifest file '../../build/ros_gz_bridge_custom/ros_gz_bridge_custom.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/antoni/gazebo_maritime_ws/build/ros_gz_bridge_custom/build
+creating /home/antoni/gazebo_maritime_ws/build/ros_gz_bridge_custom/build/lib
+creating /home/antoni/gazebo_maritime_ws/build/ros_gz_bridge_custom/build/lib/ros_gz_bridge_custom
+copying ros_gz_bridge_custom/bridge_node.py -> /home/antoni/gazebo_maritime_ws/build/ros_gz_bridge_custom/build/lib/ros_gz_bridge_custom
+copying ros_gz_bridge_custom/__init__.py -> /home/antoni/gazebo_maritime_ws/build/ros_gz_bridge_custom/build/lib/ros_gz_bridge_custom
+running install
+running install_lib
+creating /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/ros_gz_bridge_custom
+copying /home/antoni/gazebo_maritime_ws/build/ros_gz_bridge_custom/build/lib/ros_gz_bridge_custom/bridge_node.py -> /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/ros_gz_bridge_custom
+copying /home/antoni/gazebo_maritime_ws/build/ros_gz_bridge_custom/build/lib/ros_gz_bridge_custom/__init__.py -> /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/ros_gz_bridge_custom
+byte-compiling /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/ros_gz_bridge_custom/bridge_node.py to bridge_node.cpython-312.pyc
+byte-compiling /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/ros_gz_bridge_custom/__init__.py to __init__.cpython-312.pyc
+running install_data
+copying resource/ros_gz_bridge_custom -> /home/antoni/gazebo_maritime_ws/install/share/ament_index/resource_index/packages
+copying package.xml -> /home/antoni/gazebo_maritime_ws/install/share/ros_gz_bridge_custom
+running install_egg_info
+Copying ../../build/ros_gz_bridge_custom/ros_gz_bridge_custom.egg-info to /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/ros_gz_bridge_custom-0.0.0-py3.12.egg-info
+running install_scripts
+Installing bridge_node script to /home/antoni/gazebo_maritime_ws/install/lib/ros_gz_bridge_custom
+writing list of installed files to '/home/antoni/gazebo_maritime_ws/build/ros_gz_bridge_custom/install.log'

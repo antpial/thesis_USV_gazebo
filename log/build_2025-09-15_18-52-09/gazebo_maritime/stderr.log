@@ -1,0 +1,17 @@
+[31mCMake Error at CMakeLists.txt:5 (find_package):
+  By not providing "Findgz-sim8.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "gz-sim8", but
+  CMake did not find one.
+
+  Could not find a package configuration file provided by "gz-sim8" with any
+  of the following names:
+
+    gz-sim8Config.cmake
+    gz-sim8-config.cmake
+
+  Add the installation prefix of "gz-sim8" to CMAKE_PREFIX_PATH or set
+  "gz-sim8_DIR" to a directory containing one of the above files.  If
+  "gz-sim8" provides a separate development package or SDK, be sure it has
+  been installed.
+
+[0m

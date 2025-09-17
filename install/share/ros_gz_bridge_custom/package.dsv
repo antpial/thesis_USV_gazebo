@@ -1,0 +1,9 @@
+source;share/ros_gz_bridge_custom/hook/ld_library_path_lib.ps1
+source;share/ros_gz_bridge_custom/hook/ld_library_path_lib.dsv
+source;share/ros_gz_bridge_custom/hook/ld_library_path_lib.sh
+source;share/ros_gz_bridge_custom/hook/pythonpath.ps1
+source;share/ros_gz_bridge_custom/hook/pythonpath.dsv
+source;share/ros_gz_bridge_custom/hook/pythonpath.sh
+source;share/ros_gz_bridge_custom/hook/ament_prefix_path.ps1
+source;share/ros_gz_bridge_custom/hook/ament_prefix_path.dsv
+source;share/ros_gz_bridge_custom/hook/ament_prefix_path.sh

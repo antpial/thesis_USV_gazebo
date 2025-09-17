@@ -1,0 +1,2 @@
+Invoking command in '/home/antoni/gazebo_maritime_ws/build/gazebo_maritime': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/antoni/gazebo_maritime_ws/src/gazebo_maritime -DCMAKE_INSTALL_PREFIX=/home/antoni/gazebo_maritime_ws/install
+Invoked command in '/home/antoni/gazebo_maritime_ws/build/gazebo_maritime' returned '1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/antoni/gazebo_maritime_ws/src/gazebo_maritime -DCMAKE_INSTALL_PREFIX=/home/antoni/gazebo_maritime_ws/install

@@ -1,0 +1,6 @@
+source;share/gazebo_maritime/hook/ld_library_path_lib.ps1
+source;share/gazebo_maritime/hook/ld_library_path_lib.dsv
+source;share/gazebo_maritime/hook/ld_library_path_lib.sh
+source;share/gazebo_maritime/hook/pythonpath.ps1
+source;share/gazebo_maritime/hook/pythonpath.dsv
+source;share/gazebo_maritime/hook/pythonpath.sh
