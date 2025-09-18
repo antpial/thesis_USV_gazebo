@@ -17,24 +17,42 @@ class RosGzBridge(Node):
         # --- ROS Subscriber (odbieramy thrust od użytkownika/ROS) ---
         self.subscription = self.create_subscription(
             Float64,
+            '/right_thrust',
+            self.right_thrust_callback,
+            10
+        )
+
+        self.subscription = self.create_subscription(
+            Float64,
             '/left_thrust',
-            self.ros_callback,
+            self.left_thrust_callback,
             10
         )
 
         # --- Gazebo Publisher ---
         self.gz_node = gz.Node()
-        self.gz_pub = self.gz_node.advertise(
+        self.gz_pub_right_thrust = self.gz_node.advertise(
+            '/model/wam-V/joint/right_engine_propeller_joint/cmd_thrust',
+            Double
+        )
+
+        self.gz_pub_left_thrust = self.gz_node.advertise(
             '/model/wam-V/joint/left_engine_propeller_joint/cmd_thrust',
             Double
         )
 
         self.get_logger().info("Mostek ROS ↔ Gazebo uruchomiony!")
 
-    def ros_callback(self, msg: Float64):
+    def right_thrust_callback(self, msg: Float64):
         gz_msg = Double()
-        gz_msg.data = msg.data
-        self.gz_pub.publish(gz_msg)
+        gz_msg.data = msg.data * 4.79 * 9.81 # F = (max thrust dla 18V na stronie prod.) * g
+        self.gz_pub_right_thrust.publish(gz_msg)
+        self.get_logger().info(f"Przekazuję {msg.data} z ROS → Gazebo")
+
+    def left_thrust_callback(self, msg: Float64):
+        gz_msg = Double()
+        gz_msg.data = msg.data * 4.79 * 9.81 # F = (max thrust dla 18V na stronie prod.) * g
+        self.gz_pub_left_thrust.publish(gz_msg)
         self.get_logger().info(f"Przekazuję {msg.data} z ROS → Gazebo")
 
 

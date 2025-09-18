@@ -1,0 +1,23 @@
+running egg_info
+writing ../../build/propeller_controller/propeller_controller.egg-info/PKG-INFO
+writing dependency_links to ../../build/propeller_controller/propeller_controller.egg-info/dependency_links.txt
+writing entry points to ../../build/propeller_controller/propeller_controller.egg-info/entry_points.txt
+writing requirements to ../../build/propeller_controller/propeller_controller.egg-info/requires.txt
+writing top-level names to ../../build/propeller_controller/propeller_controller.egg-info/top_level.txt
+reading manifest file '../../build/propeller_controller/propeller_controller.egg-info/SOURCES.txt'
+writing manifest file '../../build/propeller_controller/propeller_controller.egg-info/SOURCES.txt'
+running build
+running build_py
+copying propeller_controller/keyboard_controller.py -> /home/antoni/gazebo_maritime_ws/build/propeller_controller/build/lib/propeller_controller
+running install
+running install_lib
+copying /home/antoni/gazebo_maritime_ws/build/propeller_controller/build/lib/propeller_controller/keyboard_controller.py -> /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/propeller_controller
+byte-compiling /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/propeller_controller/keyboard_controller.py to keyboard_controller.cpython-312.pyc
+running install_data
+running install_egg_info
+removing '/home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/propeller_controller-0.0.0-py3.12.egg-info' (and everything under it)
+Copying ../../build/propeller_controller/propeller_controller.egg-info to /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/propeller_controller-0.0.0-py3.12.egg-info
+running install_scripts
+Installing keyboard_controller script to /home/antoni/gazebo_maritime_ws/install/lib/propeller_controller
+Installing rotate script to /home/antoni/gazebo_maritime_ws/install/lib/propeller_controller
+writing list of installed files to '/home/antoni/gazebo_maritime_ws/build/propeller_controller/install.log'

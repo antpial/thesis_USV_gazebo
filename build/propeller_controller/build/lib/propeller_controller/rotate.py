@@ -1,22 +1,31 @@
 #!/usr/bin/env python3
-import time
-import gz.transport13 as gz
-from gz.msgs10.double_pb2 import Double  # <-- tu używamy wersji 10
+import rclpy
+from rclpy.node import Node
+from std_msgs.msg import Float64
 
-def main():
-    node = gz.Node()
+class ThrustPublisher(Node):
+    def __init__(self):
+        super().__init__('right_thrust_pub')
+        self.publisher_ = self.create_publisher(Float64, '/right_thrust', 10)
+        self.timer = self.create_timer(0.1, self.timer_callback)  # 10 Hz
+        self.thrust_value = 1.0  # od 0 do 1
 
-    topic = "/model/wam-V/joint/right_engine_propeller_joint/cmd_thrust"
+    def timer_callback(self):
+        msg = Float64()
+        msg.data = self.thrust_value
+        self.publisher_.publish(msg)
+        self.get_logger().info(f'Publikuję thrust={msg.data} na /right_thrust')
 
-    pub = node.advertise(topic, Double)
+def main(args=None):
+    rclpy.init(args=args)
+    node = ThrustPublisher()
+    try:
+        rclpy.spin(node)
+    except KeyboardInterrupt:
+        pass
+    finally:
+        node.destroy_node()
+        rclpy.shutdown()
 
-    msg = Double()
-    msg.data = 10.0
-
-    print(f"Publikuję thrust={msg.data} na {topic}")
-    while True:
-        pub.publish(msg)
-        time.sleep(0.1)
-
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

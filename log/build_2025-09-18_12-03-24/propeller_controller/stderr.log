@@ -1,0 +1,5 @@
+  File "/home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/propeller_controller/keyboard_controller.py", line 68
+    self.d = += 0.1
+             ^^
+SyntaxError: invalid syntax
+

@@ -9,6 +9,7 @@ setup.py
 ../../build/propeller_controller/propeller_controller.egg-info/top_level.txt
 ../../build/propeller_controller/propeller_controller.egg-info/zip-safe
 propeller_controller/__init__.py
+propeller_controller/keyboard_controller.py
 propeller_controller/rotate.py
 resource/propeller_controller
 test/test_copyright.py

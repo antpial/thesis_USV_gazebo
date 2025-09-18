@@ -1,2 +1,3 @@
 [console_scripts]
+keyboard_controller = propeller_controller.keyboard_controller:main
 rotate = propeller_controller.rotate:main

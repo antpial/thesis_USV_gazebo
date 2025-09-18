@@ -25,6 +25,7 @@ setup(
     entry_points={
         'console_scripts': [
             'rotate = propeller_controller.rotate:main',
+            'keyboard_controller = propeller_controller.keyboard_controller:main',
         ],
     },
 )
