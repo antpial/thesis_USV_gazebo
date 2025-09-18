@@ -1,0 +1,5 @@
+  File "/home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/autopilot/azimuth.py", line 69
+    def publish_thrust(self)
+                            ^
+SyntaxError: expected ':'
+

@@ -101,7 +101,7 @@ class RosGzBridge(Node):
             
             # Publish ROS message
             self.ros_mag_pub.publish(ros_msg)
-            self.get_logger().info(f"Received magnetometer data: x={msg.field_tesla.x}, y={msg.field_tesla.y}, z={msg.field_tesla.z}")
+            # self.get_logger().info(f"Received magnetometer data: x={msg.field_tesla.x}, y={msg.field_tesla.y}, z={msg.field_tesla.z}")
 
 
 

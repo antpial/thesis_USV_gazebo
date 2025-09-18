@@ -1,0 +1,5 @@
+  File "/home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/autopilot/azimuth.py", line 37
+    self.mag_x = msg.magnetic_field.x:.6f
+                                       ^
+SyntaxError: invalid decimal literal
+

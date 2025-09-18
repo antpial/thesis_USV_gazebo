@@ -70,6 +70,8 @@ class RosGzBridge(Node):
         self.get_logger().info("Mostek ROS ↔ Gazebo uruchomiony!")
 
 
+    # All callbacks
+
     def right_thrust_callback(self, msg: Float64):
         gz_msg = Double()
         gz_msg.data = msg.data * 4.79 * 9.81 # F = (max thrust dla 18V na stronie prod.) * g
@@ -99,7 +101,7 @@ class RosGzBridge(Node):
             
             # Publish ROS message
             self.ros_mag_pub.publish(ros_msg)
-            self.get_logger().info(f"Received magnetometer data: x={msg.field_tesla.x}, y={msg.field_tesla.y}, z={msg.field_tesla.z}")
+            # self.get_logger().info(f"Received magnetometer data: x={msg.field_tesla.x}, y={msg.field_tesla.y}, z={msg.field_tesla.z}")
 
 
 
