@@ -341,6 +341,66 @@
     <nAbsR>0.0</nAbsR>
   </plugin>
 
+
+<!-- imu -->
+
+<link name="imu_link">
+  <pose>0 0 0.5 0 0 0</pose>
+  <inertial>
+    <mass>0.1</mass>
+    <inertia>
+      <ixx>0.001</ixx>
+      <iyy>0.001</iyy>
+      <izz>0.001</izz>
+      <ixy>0</ixy>
+      <ixz>0</ixz>
+      <iyz>0</iyz>
+    </inertia>
+  </inertial>
+
+  <sensor name="imu_sensor" type="imu">
+    <always_on>true</always_on>
+    <update_rate>50</update_rate>
+    <topic>/wamv/imu</topic>
+  </sensor>
+</link>
+
+<joint name="base_to_imu" type="fixed">
+  <parent>base_link</parent>
+  <child>imu_link</child>
+</joint>
+
+
+<!-- magnetometer -->
+<link name="magnetometer_link">
+  <pose>0 0 0.5 0 0 0</pose>
+  <inertial>
+    <mass>0.05</mass>
+    <inertia>
+      <ixx>0.0001</ixx>
+      <iyy>0.0001</iyy>
+      <izz>0.0001</izz>
+      <ixy>0</ixy>
+      <ixz>0</ixz>
+      <iyz>0</iyz>
+    </inertia>
+  </inertial>
+
+  <sensor name="magnetometer_sensor" type="magnetometer">
+    <always_on>true</always_on>
+    <update_rate>50</update_rate>
+    <topic>/wamv/magnetometer</topic>
+  </sensor>
+</link>
+
+<joint name="base_to_magnetometer" type="fixed">
+  <parent>base_link</parent>
+  <child>magnetometer_link</child>
+</joint>
+
+
+
+
 </model>
 
 </sdf>
