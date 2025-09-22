@@ -1,0 +1,17 @@
+running develop
+running egg_info
+writing ros_gz_bridge_custom.egg-info/PKG-INFO
+writing dependency_links to ros_gz_bridge_custom.egg-info/dependency_links.txt
+writing entry points to ros_gz_bridge_custom.egg-info/entry_points.txt
+writing requirements to ros_gz_bridge_custom.egg-info/requires.txt
+writing top-level names to ros_gz_bridge_custom.egg-info/top_level.txt
+reading manifest file 'ros_gz_bridge_custom.egg-info/SOURCES.txt'
+writing manifest file 'ros_gz_bridge_custom.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/ros-gz-bridge-custom.egg-link (link to .)
+Installing bridge_node script to /home/antoni/gazebo_maritime_ws/install/lib/ros_gz_bridge_custom
+
+Installed /home/antoni/gazebo_maritime_ws/build/ros_gz_bridge_custom
+running symlink_data
+symbolically linking /home/antoni/gazebo_maritime_ws/build/ros_gz_bridge_custom/resource/ros_gz_bridge_custom -> /home/antoni/gazebo_maritime_ws/install/share/ament_index/resource_index/packages
+symbolically linking /home/antoni/gazebo_maritime_ws/build/ros_gz_bridge_custom/package.xml -> /home/antoni/gazebo_maritime_ws/install/share/ros_gz_bridge_custom

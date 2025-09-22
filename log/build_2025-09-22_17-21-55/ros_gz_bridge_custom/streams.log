@@ -1,0 +1,31 @@
+[4.893s] Invoking command in '/home/antoni/gazebo_maritime_ws/build/ros_gz_bridge_custom': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/antoni/gazebo_maritime_ws/build/ros_gz_bridge_custom/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/antoni/gazebo_maritime_ws/build/ros_gz_bridge_custom/build
+[5.884s] running develop
+[6.512s] Removing /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/ros-gz-bridge-custom.egg-link (link to .)
+[6.682s] Invoked command in '/home/antoni/gazebo_maritime_ws/build/ros_gz_bridge_custom' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/antoni/gazebo_maritime_ws/build/ros_gz_bridge_custom/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/antoni/gazebo_maritime_ws/build/ros_gz_bridge_custom/build
+[6.688s] Invoking command in '/home/antoni/gazebo_maritime_ws/src/ros_gz_bridge_custom': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/antoni/gazebo_maritime_ws/build/ros_gz_bridge_custom/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ros_gz_bridge_custom build --build-base /home/antoni/gazebo_maritime_ws/build/ros_gz_bridge_custom/build install --record /home/antoni/gazebo_maritime_ws/build/ros_gz_bridge_custom/install.log --single-version-externally-managed install_data --force
+[7.476s] running egg_info
+[7.531s] writing ../../build/ros_gz_bridge_custom/ros_gz_bridge_custom.egg-info/PKG-INFO
+[7.532s] writing dependency_links to ../../build/ros_gz_bridge_custom/ros_gz_bridge_custom.egg-info/dependency_links.txt
+[7.533s] writing entry points to ../../build/ros_gz_bridge_custom/ros_gz_bridge_custom.egg-info/entry_points.txt
+[7.534s] writing requirements to ../../build/ros_gz_bridge_custom/ros_gz_bridge_custom.egg-info/requires.txt
+[7.534s] writing top-level names to ../../build/ros_gz_bridge_custom/ros_gz_bridge_custom.egg-info/top_level.txt
+[7.681s] reading manifest file '../../build/ros_gz_bridge_custom/ros_gz_bridge_custom.egg-info/SOURCES.txt'
+[7.684s] writing manifest file '../../build/ros_gz_bridge_custom/ros_gz_bridge_custom.egg-info/SOURCES.txt'
+[7.685s] running build
+[7.685s] running build_py
+[7.685s] running install
+[7.702s] running install_lib
+[7.759s] creating /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/ros_gz_bridge_custom
+[7.760s] copying /home/antoni/gazebo_maritime_ws/build/ros_gz_bridge_custom/build/lib/ros_gz_bridge_custom/bridge_node.py -> /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/ros_gz_bridge_custom
+[7.760s] copying /home/antoni/gazebo_maritime_ws/build/ros_gz_bridge_custom/build/lib/ros_gz_bridge_custom/__init__.py -> /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/ros_gz_bridge_custom
+[7.761s] byte-compiling /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/ros_gz_bridge_custom/bridge_node.py to bridge_node.cpython-312.pyc
+[7.764s] byte-compiling /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/ros_gz_bridge_custom/__init__.py to __init__.cpython-312.pyc
+[7.765s] running install_data
+[7.766s] copying resource/ros_gz_bridge_custom -> /home/antoni/gazebo_maritime_ws/install/share/ament_index/resource_index/packages
+[7.766s] copying package.xml -> /home/antoni/gazebo_maritime_ws/install/share/ros_gz_bridge_custom
+[7.766s] running install_egg_info
+[7.826s] Copying ../../build/ros_gz_bridge_custom/ros_gz_bridge_custom.egg-info to /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/ros_gz_bridge_custom-0.0.0-py3.12.egg-info
+[7.828s] running install_scripts
+[8.288s] Installing bridge_node script to /home/antoni/gazebo_maritime_ws/install/lib/ros_gz_bridge_custom
+[8.289s] writing list of installed files to '/home/antoni/gazebo_maritime_ws/build/ros_gz_bridge_custom/install.log'
+[8.486s] Invoked command in '/home/antoni/gazebo_maritime_ws/src/ros_gz_bridge_custom' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/antoni/gazebo_maritime_ws/build/ros_gz_bridge_custom/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ros_gz_bridge_custom build --build-base /home/antoni/gazebo_maritime_ws/build/ros_gz_bridge_custom/build install --record /home/antoni/gazebo_maritime_ws/build/ros_gz_bridge_custom/install.log --single-version-externally-managed install_data --force

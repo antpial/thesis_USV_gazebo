@@ -1,0 +1,21 @@
+running develop
+running egg_info
+writing propeller_controller.egg-info/PKG-INFO
+writing dependency_links to propeller_controller.egg-info/dependency_links.txt
+writing entry points to propeller_controller.egg-info/entry_points.txt
+writing requirements to propeller_controller.egg-info/requires.txt
+writing top-level names to propeller_controller.egg-info/top_level.txt
+reading manifest file 'propeller_controller.egg-info/SOURCES.txt'
+writing manifest file 'propeller_controller.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/propeller-controller.egg-link (link to .)
+Installing keyboard_controller script to /home/antoni/gazebo_maritime_ws/install/lib/propeller_controller
+Installing rotate script to /home/antoni/gazebo_maritime_ws/install/lib/propeller_controller
+
+Installed /home/antoni/gazebo_maritime_ws/build/propeller_controller
+running symlink_data
+creating /home/antoni/gazebo_maritime_ws/install/share/ament_index
+creating /home/antoni/gazebo_maritime_ws/install/share/ament_index/resource_index
+creating /home/antoni/gazebo_maritime_ws/install/share/ament_index/resource_index/packages
+symbolically linking /home/antoni/gazebo_maritime_ws/build/propeller_controller/resource/propeller_controller -> /home/antoni/gazebo_maritime_ws/install/share/ament_index/resource_index/packages
+symbolically linking /home/antoni/gazebo_maritime_ws/build/propeller_controller/package.xml -> /home/antoni/gazebo_maritime_ws/install/share/propeller_controller

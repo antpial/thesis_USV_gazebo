@@ -1,0 +1,35 @@
+[ 25%] Built target Waves
+[ 50%] Built target PublisherPlugin
+[ 75%] Built target Surface
+[100%] Built target WaveVisual
+-- Install configuration: ""
+-- Installing: /home/antoni/gazebo_maritime_ws/install/lib/libWaves.so
+-- Installing: /home/antoni/gazebo_maritime_ws/install/lib/libPublisherPlugin.so
+-- Set non-toolchain portion of runtime path of "/home/antoni/gazebo_maritime_ws/install/lib/libPublisherPlugin.so" to ""
+-- Installing: /home/antoni/gazebo_maritime_ws/install/lib/libSurface.so
+-- Set non-toolchain portion of runtime path of "/home/antoni/gazebo_maritime_ws/install/lib/libSurface.so" to ""
+-- Installing: /home/antoni/gazebo_maritime_ws/install/lib/libWaveVisual.so
+-- Set non-toolchain portion of runtime path of "/home/antoni/gazebo_maritime_ws/install/lib/libWaveVisual.so" to ""
+-- Installing: /home/antoni/gazebo_maritime_ws/install/share/gazebo_maritime/models
+-- Installing: /home/antoni/gazebo_maritime_ws/install/share/gazebo_maritime/models/coast_waves
+-- Installing: /home/antoni/gazebo_maritime_ws/install/share/gazebo_maritime/models/coast_waves/materials
+-- Installing: /home/antoni/gazebo_maritime_ws/install/share/gazebo_maritime/models/coast_waves/materials/programs
+-- Installing: /home/antoni/gazebo_maritime_ws/install/share/gazebo_maritime/models/coast_waves/materials/programs/GerstnerWaves_fs_330.glsl
+-- Installing: /home/antoni/gazebo_maritime_ws/install/share/gazebo_maritime/models/coast_waves/materials/programs/GerstnerWaves_vs_330.glsl
+-- Installing: /home/antoni/gazebo_maritime_ws/install/share/gazebo_maritime/models/coast_waves/materials/textures
+-- Installing: /home/antoni/gazebo_maritime_ws/install/share/gazebo_maritime/models/coast_waves/materials/textures/wave_normals.dds
+-- Installing: /home/antoni/gazebo_maritime_ws/install/share/gazebo_maritime/models/coast_waves/materials/textures/skybox_lowres.dds
+-- Installing: /home/antoni/gazebo_maritime_ws/install/share/gazebo_maritime/models/coast_waves/model.config
+-- Installing: /home/antoni/gazebo_maritime_ws/install/share/gazebo_maritime/models/coast_waves/model.sdf
+-- Installing: /home/antoni/gazebo_maritime_ws/install/share/gazebo_maritime/models/coast_waves/meshes
+-- Installing: /home/antoni/gazebo_maritime_ws/install/share/gazebo_maritime/models/coast_waves/meshes/waterlow.dae
+-- Installing: /home/antoni/gazebo_maritime_ws/install/share/gazebo_maritime/models/wam-v
+-- Installing: /home/antoni/gazebo_maritime_ws/install/share/gazebo_maritime/models/wam-v/model.config
+-- Installing: /home/antoni/gazebo_maritime_ws/install/share/gazebo_maritime/models/wam-v/model.sdf
+-- Installing: /home/antoni/gazebo_maritime_ws/install/share/gazebo_maritime/models/wam-v/meshes
+-- Installing: /home/antoni/gazebo_maritime_ws/install/share/gazebo_maritime/models/wam-v/meshes/WAM-V-Base.dae
+-- Installing: /home/antoni/gazebo_maritime_ws/install/share/gazebo_maritime/models/wam-v/meshes/engine.dae
+-- Installing: /home/antoni/gazebo_maritime_ws/install/share/gazebo_maritime/models/wam-v/meshes/propeller.dae
+-- Installing: /home/antoni/gazebo_maritime_ws/install/share/gazebo_maritime/models/wam-v/meshes/WamV.png
+-- Installing: /home/antoni/gazebo_maritime_ws/install/share/gazebo_maritime/worlds
+-- Installing: /home/antoni/gazebo_maritime_ws/install/share/gazebo_maritime/worlds/sydney_regatta.sdf

@@ -1,0 +1,28 @@
+running develop
+Removing /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/autopilot.egg-link (link to .)
+running egg_info
+writing ../../build/autopilot/autopilot.egg-info/PKG-INFO
+writing dependency_links to ../../build/autopilot/autopilot.egg-info/dependency_links.txt
+writing entry points to ../../build/autopilot/autopilot.egg-info/entry_points.txt
+writing requirements to ../../build/autopilot/autopilot.egg-info/requires.txt
+writing top-level names to ../../build/autopilot/autopilot.egg-info/top_level.txt
+reading manifest file '../../build/autopilot/autopilot.egg-info/SOURCES.txt'
+writing manifest file '../../build/autopilot/autopilot.egg-info/SOURCES.txt'
+running build
+running build_py
+copying autopilot/azimuth.py -> /home/antoni/gazebo_maritime_ws/build/autopilot/build/lib/autopilot
+running install
+running install_lib
+creating /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/autopilot
+copying /home/antoni/gazebo_maritime_ws/build/autopilot/build/lib/autopilot/__init__.py -> /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/autopilot
+copying /home/antoni/gazebo_maritime_ws/build/autopilot/build/lib/autopilot/azimuth.py -> /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/autopilot
+byte-compiling /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/autopilot/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/autopilot/azimuth.py to azimuth.cpython-312.pyc
+running install_data
+copying resource/autopilot -> /home/antoni/gazebo_maritime_ws/install/share/ament_index/resource_index/packages
+copying package.xml -> /home/antoni/gazebo_maritime_ws/install/share/autopilot
+running install_egg_info
+Copying ../../build/autopilot/autopilot.egg-info to /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/autopilot-0.0.0-py3.12.egg-info
+running install_scripts
+Installing azimuth script to /home/antoni/gazebo_maritime_ws/install/lib/autopilot
+writing list of installed files to '/home/antoni/gazebo_maritime_ws/build/autopilot/install.log'

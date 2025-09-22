@@ -11,8 +11,11 @@ import gz.transport13 as gz
 from gz.msgs10.double_pb2 import Double
 from gz.msgs10.magnetometer_pb2 import Magnetometer
 from gz.msgs10.vector3d_pb2 import Vector3d
+from gz.msgs10.navsat_pb2 import NavSat
 
 from sensor_msgs.msg import MagneticField
+from sensor_msgs.msg import NavSatFix
+from sensor_msgs.msg import NavSatStatus
 
 
 
@@ -44,6 +47,12 @@ class RosGzBridge(Node):
             10
         )
 
+        self.ros_gps_pub = self.create_publisher(
+            NavSatFix,
+            '/gps',
+            10
+        )
+
 
         self.gz_node = gz.Node()
 
@@ -53,7 +62,9 @@ class RosGzBridge(Node):
             self.get_logger().error("Can not subscribe /wamv/magnetometer!")
             return
 
-
+        if not self.gz_node.subscribe(NavSat, "/wamv/gps", self.gps_callback):
+            self.get_logger().error("Cannot subscribe /wamv/gps!")
+            return
 
 
         # --- Gazebo Publisher ---
@@ -87,24 +98,40 @@ class RosGzBridge(Node):
     
 
     def mag_callback(self, msg: Magnetometer):
-            # Convert Gazebo Magnetometer message to ROS MagneticField message
-            ros_msg = MagneticField()
-            
-            # Set header with current time
-            ros_msg.header.stamp = self.get_clock().now().to_msg()
-            ros_msg.header.frame_id = "magnetometer_frame"  # You can change this as needed
-            
-            # Convert magnetic field data
-            ros_msg.magnetic_field.x = msg.field_tesla.x
-            ros_msg.magnetic_field.y = msg.field_tesla.y
-            ros_msg.magnetic_field.z = msg.field_tesla.z
-            
-            # Publish ROS message
-            self.ros_mag_pub.publish(ros_msg)
-            # self.get_logger().info(f"Received magnetometer data: x={msg.field_tesla.x}, y={msg.field_tesla.y}, z={msg.field_tesla.z}")
+        # Convert Gazebo Magnetometer message to ROS MagneticField message
+        ros_msg = MagneticField()
+        
+        # Set header with current time
+        ros_msg.header.stamp = self.get_clock().now().to_msg()
+        ros_msg.header.frame_id = "magnetometer_frame"  # You can change this as needed
+        
+        # Convert magnetic field data
+        ros_msg.magnetic_field.x = msg.field_tesla.x
+        ros_msg.magnetic_field.y = msg.field_tesla.y
+        ros_msg.magnetic_field.z = msg.field_tesla.z
+        
+        # Publish ROS message
+        self.ros_mag_pub.publish(ros_msg)
+        # self.get_logger().info(f"Received magnetometer data: x={msg.field_tesla.x}, y={msg.field_tesla.y}, z={msg.field_tesla.z}")
 
 
 
+    def gps_callback(self, msg: NavSat):
+        navsat_msg = NavSatFix()
+        navsat_msg.header.stamp = self.get_clock().now().to_msg()
+        navsat_msg.header.frame_id = msg.frame_id
+
+        # mapowanie pól z Gazebo -> ROS2
+        navsat_msg.latitude = msg.latitude_deg
+        navsat_msg.longitude = msg.longitude_deg
+        navsat_msg.altitude = msg.altitude
+
+        # opcjonalnie: status
+        from sensor_msgs.msg import NavSatStatus
+        navsat_msg.status.status = NavSatStatus.STATUS_FIX
+        navsat_msg.status.service = NavSatStatus.SERVICE_GPS
+
+        self.ros_gps_pub.publish(navsat_msg)
 
 
 
