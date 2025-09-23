@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 #
-# In this script boat sails on given azimuth
+# In this script boat sails to given checkpoints
 #
 
 import rclpy
@@ -16,24 +16,37 @@ class GpsState:
     lat: float = 0.0
     lon: float = 0.0
 
+@dataclass
+class MagState:
+    x: float = 0.0
+    y: float = 0.0
+    z: float = 0.0
+
 class Checkpoints_node(Node):
     def __init__(self):
         super().__init__('Checkpoints_node')
 
-        self.given_azimuth = 355.0
-        self.given_position = GpsState(lat= -33.721365, lon=150.675268)
-        self.v = 0.5
-        self.d = 0.0
-        self.left_thrust = 0.0
-        self.right_thrust = 0.0
-
-        self.current_azimuth = 0.0
-        self.current_position = GpsState()    
-        self.e = 0
+        # Parametry ruchu
+        self.v = 1.0    # predkosc
+        self.given_position = GpsState(lat= -33.721365, lon=150.675268)  # punkt docelowy
         self.p = 0.05 # parametr regulatora P
-        self.mag_x = 0.0 
-        self.mag_y = 0.0
-        self.mag_z = 0.0 
+
+        # Dane pomiarowe
+        self.current_position = GpsState()
+        self.mag_vector = MagState()
+
+        # Sterowanie
+        self.d = 0.0    # skret (-1 do 1)
+        self.e = 0.0    # blad (potrzebny azymut - aktualny azymut)
+        self.left_thrust = 0.0  # moc lewego silnika [-1,1]
+        self.right_thrust = 0.0 # moc prawego silnika [-1,1]
+
+
+        # Azymuty
+        self.given_azimuth = 0.0    # azymut do punktu docelowego
+        self.current_azimuth = 0.0  # aktualny azymut
+
+
 
         # Subskrybujem /magnetometer
         self.subscription = self.create_subscription(
@@ -64,14 +77,23 @@ class Checkpoints_node(Node):
 
     def mag_callback(self, msg: MagneticField):
 
-        self.mag_x = msg.magnetic_field.x
-        self.mag_y = msg.magnetic_field.y
-        self.mag_z = msg.magnetic_field.z
 
-        azimuth_rad = math.atan2(self.mag_x, self.mag_y)
-        self.current_azimuth = math.degrees(azimuth_rad)
-        # Normalizacja do 0-360°
-        if self.current_azimuth < 0:
+        self.mag_vector.x = msg.magnetic_field.x
+        self.mag_vector.y = msg.magnetic_field.y
+        self.mag_vector.z = msg.magnetic_field.z
+
+        # obliczam kat wektora pola magnetycznego
+        theta_rad = math.atan2(self.mag_vector.y, self.mag_vector.x)
+
+        # Konwertuje z rad na stopnie
+        theta_deg = math.degrees(theta_rad)     
+
+        # atan2 oblicza kat od osi x, a polnoc jest na osi y, wiec trzeba obrocic
+        self.current_azimuth = theta_deg + 90.0
+
+        # atan 2 daje wartosc w przedziale (-pi,pi), a nie (0,2pi), a wiec dla
+        # azymutu z przedzialu (180,360) musimy przekalkulowac
+        if(self.current_azimuth < 0):
             self.current_azimuth += 360.0
 
 
@@ -114,14 +136,11 @@ class Checkpoints_node(Node):
         phi1 = math.radians(self.current_position.lat)
         phi2 = math.radians(self.given_position.lat)
         d_lambda = math.radians(self.given_position.lon - self.current_position.lon)
-
-        x = math.sin(d_lambda) * math.cos(phi2)
-        y = math.cos(phi1) * math.sin(phi2) - math.sin(phi1) * math.cos(phi2) * math.cos(d_lambda)
-
-        theta = math.atan2(x, y)
-        bearing = (math.degrees(theta) + 360.0) % 360.0
-        return bearing
-
+        y = math.sin(d_lambda) * math.cos(phi2)
+        x = math.cos(phi1) * math.sin(phi2) - math.sin(phi1) * math.cos(phi2) * math.cos(d_lambda)
+        theta = math.atan2(y, x)
+        bearing = (math.degrees(theta) + 360) % 360
+        return bearing  
 
 
 

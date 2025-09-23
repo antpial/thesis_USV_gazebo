@@ -66,7 +66,6 @@ class Azimuth_node(Node):
         if(self.azimuth < 0):
             self.azimuth = 360.0 + self.azimuth
 
-
     def publish_thrust(self):
 
         # Normuje skret. Nie moze przekraczac [-1,1]
