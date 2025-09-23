@@ -15,7 +15,6 @@ from gz.msgs10.navsat_pb2 import NavSat
 
 from sensor_msgs.msg import MagneticField
 from sensor_msgs.msg import NavSatFix
-from sensor_msgs.msg import NavSatStatus
 
 
 

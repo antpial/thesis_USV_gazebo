@@ -20,9 +20,11 @@ class Azimuth_node(Node):
         self.left_thrust = 0.0
         self.right_thrust = 0.0
 
+        self.atan = 0.0
+
         self.azimuth = 0.0
         self.e = 0
-        self.p = 0.05 # parametr regulatora P
+        self.p = 0.03 # parametr regulatora P
         self.mag_x = 0.0 
         self.mag_y = 0.0
         self.mag_z = 0.0 
@@ -50,11 +52,19 @@ class Azimuth_node(Node):
         self.mag_y = msg.magnetic_field.y
         self.mag_z = msg.magnetic_field.z
 
-        azimuth_rad = math.atan2(self.mag_y, self.mag_x)
-        self.azimuth = math.degrees(azimuth_rad)
-        # Normalizacja do 0-360°
-        if self.azimuth < 0:
-            self.azimuth += 360.0
+        # obliczam kat wektora pola magnetycznego
+        theta_rad = math.atan2(self.mag_y, self.mag_x)
+
+        # Konwertuje z rad na stopnie
+        theta_deg = math.degrees(theta_rad)     
+
+        # atan2 oblicza kat od osi x, a polnoc jest na osi y, wiec trzeba obrocic
+        self.azimuth = theta_deg + 90.0
+
+        # atan 2 daje wartosc w przedziale (-pi,pi), a nie (0,2pi), a wiec dla
+        # azymutu z przedzialu (180,360) musimy przekalkulowac
+        if(self.azimuth < 0):
+            self.azimuth = 360.0 + self.azimuth
 
 
     def publish_thrust(self):
@@ -102,7 +112,6 @@ class Azimuth_node(Node):
         self.get_logger().info("-------------------------------------------------------")
         self.get_logger().info(f"Given: {self.given_azimuth}°, Azymut: {self.azimuth:.2f}°, e = {self.e:.2f}°")
         self.get_logger().info(f"d: {self.d:.2f}%, v: {self.v}%, T_L: {self.left_thrust:.2f}%, T_R: {self.right_thrust:.2f}%")
-
 
 
 

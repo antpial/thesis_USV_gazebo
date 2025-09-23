@@ -25,6 +25,7 @@ setup(
     entry_points={
         'console_scripts': [
             'azimuth = autopilot.azimuth:main',
+            'checkpoints = autopilot.checkpoints:main',
         ],
     },
 )
