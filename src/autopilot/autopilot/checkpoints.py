@@ -11,6 +11,7 @@ from std_msgs.msg import Float64
 from sensor_msgs.msg import NavSatFix
 from dataclasses import dataclass
 from collections import deque
+import math
 import copy
 
 @dataclass
@@ -31,13 +32,14 @@ class Checkpoints_node(Node):
         super().__init__('Checkpoints_node')
 
         # Parametry ruchu
-        self.v = 1.0    # predkosc
+        self.v = 0.5    # predkosc
         self.given_position = GpsState(lat= -33.721365, lon=150.675268)  # punkt docelowy
         self.p = 0.05 # parametr regulatora P
-        self.alpha = 0.1 # wspolczynnik filtra dolnoprzepustowego dla azymutu docelowego
+        self.alpha_gps = 0.1 # wspolczynnik filtra dolnoprzepustowego dla azymutu docelowego
 
         # Dane pomiarowe
         self.current_position = GpsState()
+        self.avg_position = deque(maxlen=10)
         self.mag_vector = MagState()
 
         # Sterowanie
@@ -50,6 +52,7 @@ class Checkpoints_node(Node):
         # Azymuty
         self.given_azimuth = 0.0    # azymut do punktu docelowego
         self.current_azimuth = 0.0  # aktualny azymut
+        self.distance = 0.0 # odleglosc do punktu docelowego
 
 
 
@@ -86,12 +89,30 @@ class Checkpoints_node(Node):
         self.mag_vector.x = msg.magnetic_field.x
         self.mag_vector.y = msg.magnetic_field.y
         self.mag_vector.z = msg.magnetic_field.z
-        self.avgMagVec.add_measurement(self.mag_vector)
 
 
     def gps_callback(self, msg: NavSatFix):
-        self.current_position.lat = msg.latitude
-        self.current_position.lon = msg.longitude
+
+        # filtr dolnoprzepustowy na dane gps bo sa zaszumione
+        new_position = GpsState()
+        new_position.lat = (
+            self.alpha_gps * msg.latitude +
+            (1 - self.alpha_gps) * self.current_position.lat
+        )
+
+        new_position.lon = (
+            self.alpha_gps * msg.longitude +
+            (1 - self.alpha_gps) * self.current_position.lon
+        )
+
+        self.avg_position.append(new_position)
+        
+       # liczymy średnią jeśli w kolejce są elementy
+        if len(self.avg_position) > 0:
+            lat_sum = sum(p.lat for p in self.avg_position)
+            lon_sum = sum(p.lon for p in self.avg_position)
+            self.current_position.lat = lat_sum / len(self.avg_position)
+            self.current_position.lon = lon_sum / len(self.avg_position)
 
 
 
@@ -151,6 +172,37 @@ class Checkpoints_node(Node):
             azimuth += 360.0
 
         return azimuth
+    
+
+
+    def get_distance_from_lat_lon_in_km(self):
+
+        lat1 = self.current_position.lat
+        lon1 = self.current_position.lon
+        lat2 = self.given_position.lat
+        lon2 = self.given_position.lon
+
+        R = 6378137.0 # Radius of the earth in meters
+        dLat = math.radians(lat2 - lat1)
+        dLon = math.radians(lon2 - lon1)
+        a = (math.sin(dLat / 2) ** 2 +
+            math.cos(math.radians(lat1)) * math.cos(math.radians(lat2)) *
+            math.sin(dLon / 2) ** 2)
+        c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
+        d = R * c
+        return d 
+    
+
+    def show_logs(self):   
+
+        # Logowanie lub publikacja co sekunde
+        self.get_logger().info("-----------------------------")
+        self.get_logger().info(f"Given: {self.given_azimuth:.2f}°, Azymut: {self.current_azimuth:.2f}°, e = {self.e:.2f}°")
+        self.get_logger().info(f"d: {self.d:.2f}%, v: {self.v}%, T_L: {self.left_thrust:.2f}%, T_R: {self.right_thrust:.2f}%")
+        self.get_logger().info(f"cur. lat.: {self.current_position.lat:.5f}, cur. lon.: {self.current_position.lon:.5f}")
+        self.get_logger().info(f"goal lat.: {self.given_position.lat:.5f}, goal lon.: {self.given_position.lon:.5f}")
+        self.get_logger().info(f"Distance to goal: {self.distance:.2f} m")
+
 
 
 
@@ -159,10 +211,13 @@ class Checkpoints_node(Node):
         # kalkuluje aktualny azymut
         self.current_azimuth = self.calculate_current_azimuth()
 
-        # kalkuluje docelowy azymut (przepuszczam przez filtr dolnoprzepustowy bo gps jest zaszumiony)
-        self.given_azimuth = self.alpha * self.calculate_new_azimuth() + (1 - self.alpha) * self.given_azimuth
+        # kalkuluje docelowy azymut
+        self.given_azimuth = self.calculate_new_azimuth()
 
-        # licze blad normalizujac bo w stopniach jest modulo 360
+        # kalkuluje odleglosc do punktu docelowego
+        self.distance = self.get_distance_from_lat_lon_in_km()
+
+        # licze blad azymutow normalizujac bo w stopniach jest modulo 360
         self.e = (self.given_azimuth - self.current_azimuth + 180.0) % 360.0 - 180.0
 
         # steruje wartoscia d (skret) regulatorem P
@@ -171,12 +226,8 @@ class Checkpoints_node(Node):
         # ustawiam ciag na silnikach
         self.publish_thrust()
 
-        # Logowanie lub publikacja
-        self.get_logger().info("-------------------------------------------------------")
-        self.get_logger().info(f"Given: {self.given_azimuth:.2f}°, Azymut: {self.current_azimuth:.2f}°, e = {self.e:.2f}°")
-        self.get_logger().info(f"d: {self.d:.2f}%, v: {self.v}%, T_L: {self.left_thrust:.2f}%, T_R: {self.right_thrust:.2f}%")
-        self.get_logger().info(f"curr. lat.: {self.current_position.lat:.6f}, curr. lon.: {self.current_position.lon:.6f}" )
-
+        # wyswietlam logi
+        self.show_logs()
 
 
 
