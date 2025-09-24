@@ -430,5 +430,13 @@
       <uri>wam-v</uri>
     </include>
 
+    <!-- Markers -->
+    <include>
+      <uri>file:///home/antoni/gazebo_maritime_ws/src/gazebo_maritime/worlds/markers.sdf</uri>
+    </include>
+
+
+
+    
   </world>
 </sdf>

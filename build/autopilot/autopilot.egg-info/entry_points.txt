@@ -1,3 +1,4 @@
 [console_scripts]
+add_markers = autopilot.add_markers:main
 azimuth = autopilot.azimuth:main
 checkpoints = autopilot.checkpoints:main
