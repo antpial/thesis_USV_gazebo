@@ -1,5 +1,37 @@
 #!/usr/bin/env python3
 import sys
+import xml.etree.ElementTree as ET
+import math
+
+
+
+def read_kml_coordinates(filename):
+    tree = ET.parse(filename)
+    root = tree.getroot()
+
+    # przestrzeń nazw w KML
+    ns = {"kml": "http://www.opengis.net/kml/2.2"}
+
+    coords = []
+    for placemark in root.findall(".//kml:Placemark", ns):
+        name = placemark.find("kml:name", ns).text
+        coord_text = placemark.find(".//kml:coordinates", ns).text.strip()
+        lon, lat, *alt = map(float, coord_text.split(","))
+        coords.append((name, lon, lat, alt[0] if alt else 0.0))
+    return coords
+
+
+def approx_enu(lat, lon):
+    lat0 = -33.724223
+    lon0 = 150.679736
+    m_per_deg_lat = 111132.92 - 559.82 * math.cos(2*math.radians(lat0)) + 1.175 * math.cos(4*math.radians(lat0))
+    m_per_deg_lon = 111412.84 * math.cos(math.radians(lat0)) - 93.5 * math.cos(3*math.radians(lat0))
+    d_lat = lat - lat0
+    d_lon = lon - lon0
+    north = d_lat * m_per_deg_lat
+    east  = d_lon * m_per_deg_lon
+    return east, north
+
 
 def generate_marker_sdf(x=-533, y=165.0, z=0.0, radius=5.0, length=2.0,
                         r=0, g=1, b=0, a=0.5,
@@ -32,4 +64,7 @@ def generate_marker_sdf(x=-533, y=165.0, z=0.0, radius=5.0, length=2.0,
     print(f"File '{filename}' generated!")
 
 if __name__ == "__main__":
-    generate_marker_sdf()
+    filename = "/home/antoni/gazebo_maritime_ws/src/autopilot/autopilot/checkpoints_list.kml"
+    points = read_kml_coordinates(filename)
+    x, y = approx_enu(points[0][2], points[0][1])
+    generate_marker_sdf(x,y)
