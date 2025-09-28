@@ -13,6 +13,8 @@ from dataclasses import dataclass
 from collections import deque
 import math
 import copy
+import xml.etree.ElementTree as ET
+
 
 @dataclass
 class GpsState:
@@ -50,6 +52,7 @@ class Checkpoints_node(Node):
 
 
         # Azymuty
+        self.checkpoints = [] # lista wszystkich punktów docelowych (name, lat, lon, alt)
         self.given_azimuth = 0.0    # azymut do punktu docelowego
         self.current_azimuth = 0.0  # aktualny azymut
         self.distance = 0.0 # odleglosc do punktu docelowego
@@ -77,6 +80,9 @@ class Checkpoints_node(Node):
         # publishery na silniki
         self.left_pub = self.create_publisher(Float64, '/left_thrust', 10)
         self.right_pub = self.create_publisher(Float64, '/right_thrust', 10)
+
+        # Wczytuje punkty docelowe z pliku checkpoints_list.kml
+        self.get_checkpoints()
 
 
         # timer gdzie sie dzieje cala magia
@@ -118,6 +124,39 @@ class Checkpoints_node(Node):
             lon_sum = sum(p.lon for p in self.avg_position)
             self.current_position.lat = lat_sum / len(self.avg_position)
             self.current_position.lon = lon_sum / len(self.avg_position)
+
+
+    def get_checkpoints(self):
+        # Wczytuje punkty docelowe z pliku checkpoints_list.kml
+        tree = ET.parse('src/autopilot/autopilot/checkpoints_list.kml')
+        root = tree.getroot()
+
+        # przestrzeń nazw KML
+        ns = {'kml': 'http://www.opengis.net/kml/2.2'}
+
+        # Znajduje wszystkie Placemark
+        placemarks = root.findall('.//kml:Placemark', ns)
+
+        if not placemarks:
+            self.get_logger().error("Nie znaleziono żadnych punktów w pliku checkpoints_list.kml")
+            return
+
+        for i, placemark in enumerate(placemarks):
+            name = placemark.find('kml:name', ns).text
+            coordinates = placemark.find('.//kml:coordinates', ns).text.strip()
+            lon, lat, *alt = map(float, coordinates.split(','))
+            alt = alt[0] if alt else 0.0
+
+            # Dodajemy do listy wszystkich checkpointów
+            self.checkpoints.append((name, lat, lon, alt))
+
+            # Pierwszy punkt ustawiamy jako given_position
+            if i == 0:
+                self.given_position.lat = lat
+                self.given_position.lon = lon
+                self.get_logger().info(f"Wczytano pierwszy punkt docelowy: {name} (lat: {lat}, lon: {lon})")
+
+        self.get_logger().info(f"Wczytano wszystkie checkpointy: {len(self.checkpoints)} punktów.")
 
 
 
