@@ -16,3 +16,4 @@
 /home/antoni/gazebo_maritime_ws/install/share/gazebo_maritime/models/wam-v/meshes/propeller.dae
 /home/antoni/gazebo_maritime_ws/install/share/gazebo_maritime/models/wam-v/meshes/WamV.png
 /home/antoni/gazebo_maritime_ws/install/share/gazebo_maritime/worlds/sydney_regatta.sdf
+/home/antoni/gazebo_maritime_ws/install/share/gazebo_maritime/worlds/markers.sdf

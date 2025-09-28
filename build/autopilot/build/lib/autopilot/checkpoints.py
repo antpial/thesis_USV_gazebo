@@ -93,17 +93,22 @@ class Checkpoints_node(Node):
 
     def gps_callback(self, msg: NavSatFix):
 
-        # filtr dolnoprzepustowy na dane gps bo sa zaszumione
         new_position = GpsState()
-        new_position.lat = (
-            self.alpha_gps * msg.latitude +
-            (1 - self.alpha_gps) * self.current_position.lat
-        )
 
-        new_position.lon = (
-            self.alpha_gps * msg.longitude +
-            (1 - self.alpha_gps) * self.current_position.lon
-        )
+        # filtr dolnoprzepustowy na dane gps bo sa zaszumione (nie nakladam na pierwszy pomiar)
+        if self.current_position.lat == 0.0 and self.current_position.lon == 0.0:
+            new_position.lat = msg.latitude
+            new_position.lon = msg.longitude
+        else:
+            new_position.lat = (
+                self.alpha_gps * msg.latitude +
+                (1 - self.alpha_gps) * self.current_position.lat
+            )
+
+            new_position.lon = (
+                self.alpha_gps * msg.longitude +
+                (1 - self.alpha_gps) * self.current_position.lon
+            )
 
         self.avg_position.append(new_position)
         
