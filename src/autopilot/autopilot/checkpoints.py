@@ -34,14 +34,14 @@ class Checkpoints_node(Node):
         super().__init__('Checkpoints_node')
 
         # Parametry ruchu
-        self.v = 0.5    # predkosc
+        self.v = 0.8    # predkosc
         self.given_position = GpsState(lat= -33.721365, lon=150.675268)  # punkt docelowy
         self.p = 0.05 # parametr regulatora P
         self.alpha_gps = 0.1 # wspolczynnik filtra dolnoprzepustowego dla azymutu docelowego
 
         # Dane pomiarowe
         self.current_position = GpsState()
-        self.avg_position = deque(maxlen=10)
+        self.avg_position = deque(maxlen=5)
         self.mag_vector = MagState()
 
         # Sterowanie
@@ -54,6 +54,7 @@ class Checkpoints_node(Node):
         self.given_azimuth = 0.0    # azymut do punktu docelowego
         self.current_azimuth = 0.0  # aktualny azymut
         self.distance = 0.0 # odleglosc do punktu docelowego
+        self.offset_azimuth = 5.5 # offset azymutu magnetycznego w stopniach
 
         #checkpoints
         self.checkpoints = [] # lista wszystkich punktów docelowych (name, lat, lon, alt)
@@ -197,7 +198,7 @@ class Checkpoints_node(Node):
         y = math.sin(d_lambda) * math.cos(phi2)
         x = math.cos(phi1) * math.sin(phi2) - math.sin(phi1) * math.cos(phi2) * math.cos(d_lambda)
         theta = math.atan2(y, x)
-        bearing = (math.degrees(theta) + 360) % 360
+        bearing = (math.degrees(theta) + self.offset_azimuth + 360) % 360
         return bearing  
     
 

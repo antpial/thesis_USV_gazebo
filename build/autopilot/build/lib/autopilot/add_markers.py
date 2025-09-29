@@ -42,12 +42,13 @@ def generate_marker_models(points, radius=10.0, length=2.0, r=0, g=1, b=0, a=0.5
         ET.SubElement(model_elem, "static").text = "true"
 
         link = ET.SubElement(model_elem, "link", name="link")
+
+        # === VISUAL ===
         visual = ET.SubElement(link, "visual", name="visual")
         geometry = ET.SubElement(visual, "geometry")
         cylinder = ET.SubElement(geometry, "cylinder")
         ET.SubElement(cylinder, "radius").text = str(radius)
         ET.SubElement(cylinder, "length").text = str(length)
-
         material = ET.SubElement(visual, "material")
         ET.SubElement(material, "ambient").text = f"{r} {g} {b} {a}"
         ET.SubElement(material, "diffuse").text = f"{r} {g} {b} {a}"
