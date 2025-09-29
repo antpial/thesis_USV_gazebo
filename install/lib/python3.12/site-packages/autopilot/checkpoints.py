@@ -50,14 +50,16 @@ class Checkpoints_node(Node):
         self.left_thrust = 0.0  # moc lewego silnika [-1,1]
         self.right_thrust = 0.0 # moc prawego silnika [-1,1]
 
-
         # Azymuty
-        self.checkpoints = [] # lista wszystkich punktów docelowych (name, lat, lon, alt)
         self.given_azimuth = 0.0    # azymut do punktu docelowego
         self.current_azimuth = 0.0  # aktualny azymut
         self.distance = 0.0 # odleglosc do punktu docelowego
 
-
+        #checkpoints
+        self.checkpoints = [] # lista wszystkich punktów docelowych (name, lat, lon, alt)
+        self.current_checkpoint_index = 0 # indeks aktualnego punktu docelowego
+        self.distance_threshold = 5.0 # odleglosc w metrach do punktu docelowego przy ktorej uznajemy ze dotarlismy do punktu
+        self.reached_all_checkpoints = False # flaga czy dotarlismy do wszystkich punktow
 
         # Subskrybujem /magnetometer
         self.subscription = self.create_subscription(
@@ -83,7 +85,6 @@ class Checkpoints_node(Node):
 
         # Wczytuje punkty docelowe z pliku checkpoints_list.kml
         self.get_checkpoints()
-
 
         # timer gdzie sie dzieje cala magia
         self.timer = self.create_timer(0.1, self.control_loop)
@@ -245,13 +246,41 @@ class Checkpoints_node(Node):
         self.get_logger().info(f"d: {self.d:.2f}%, v: {self.v}%, T_L: {self.left_thrust:.2f}%, T_R: {self.right_thrust:.2f}%")
         self.get_logger().info(f"cur. lat.: {self.current_position.lat:.5f}, cur. lon.: {self.current_position.lon:.5f}")
         self.get_logger().info(f"goal lat.: {self.given_position.lat:.5f}, goal lon.: {self.given_position.lon:.5f}")
-        self.get_logger().info(f"Distance to goal: {self.distance:.2f} m")
+        self.get_logger().info(f"cur. check.: {self.current_checkpoint_index}, Distance to goal: {self.distance:.2f} m")
 
+
+    def reached_checkpoint(self):
+        if self.reached_all_checkpoints:
+            return
+
+        name, lat, lon, alt = self.checkpoints[self.current_checkpoint_index]
+        self.get_logger().info(f"Dotarłem do punktu: {name} (lat: {lat}, lon: {lon})")
+
+        # Przechodzimy do następnego punktu
+        self.current_checkpoint_index += 1
+
+        if self.current_checkpoint_index >= len(self.checkpoints):
+            self.get_logger().info("Dotarłem do wszystkich punktów docelowych!")
+            self.reached_all_checkpoints = True
+            self.left_thrust = 0.0
+            self.right_thrust = 0.0
+            self.publish_thrust()
+            return
+
+        # Ustawiamy nowy punkt docelowy
+        name, lat, lon, alt = self.checkpoints[self.current_checkpoint_index]
+        self.given_position.lat = lat
+        self.given_position.lon = lon
+        self.get_logger().info(f"Nowy punkt docelowy: {name} (lat: {lat}, lon: {lon})")
 
 
 
     def control_loop(self):
 
+        # jeśli dotarlismy do wszystkich punktow to nic nie robimy
+        if self.reached_all_checkpoints:
+            return
+        
         # kalkuluje aktualny azymut
         self.current_azimuth = self.calculate_current_azimuth()
 
@@ -269,6 +298,10 @@ class Checkpoints_node(Node):
 
         # ustawiam ciag na silnikach
         self.publish_thrust()
+
+        # sprawdzam czy dotarlismy do punktu docelowego
+        if self.distance < self.distance_threshold:
+            self.reached_checkpoint()
 
         # wyswietlam logi
         self.show_logs()

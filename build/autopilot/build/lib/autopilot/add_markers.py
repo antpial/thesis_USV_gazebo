@@ -29,7 +29,7 @@ def approx_enu(lat, lon):
     east  = d_lon * m_per_deg_lon
     return east, north
 
-def generate_marker_models(points, radius=5.0, length=2.0, r=0, g=1, b=0, a=0.5):
+def generate_marker_models(points, radius=10.0, length=2.0, r=0, g=1, b=0, a=0.5):
     """Zwraca listę elementów <model> gotowych do wklejenia do <world>"""
     models = []
     for i, (name, lon, lat, alt) in enumerate(points):

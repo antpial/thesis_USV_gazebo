@@ -351,13 +351,13 @@
       <uri>wam-v</uri>
     </include>
     <model name="marker_cylinder_1">
-      <pose>-414.10472200723734 317.00190495956076 0 0 0 0</pose>
+      <pose>-562.7672050183085 251.8933961380089 0 0 0 0</pose>
       <static>true</static>
       <link name="link">
         <visual name="visual">
           <geometry>
             <cylinder>
-              <radius>5.0</radius>
+              <radius>10.0</radius>
               <length>2.0</length>
             </cylinder>
           </geometry>
@@ -369,13 +369,13 @@
       </link>
     </model>
     <model name="marker_cylinder_2">
-      <pose>-562.7672050183085 251.8933961380089 0 0 0 0</pose>
+      <pose>-414.10472200723734 317.00190495956076 0 0 0 0</pose>
       <static>true</static>
       <link name="link">
         <visual name="visual">
           <geometry>
             <cylinder>
-              <radius>5.0</radius>
+              <radius>10.0</radius>
               <length>2.0</length>
             </cylinder>
           </geometry>
