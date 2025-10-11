@@ -7,6 +7,9 @@
 /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/autopilot/__pycache__/azimuth.cpython-312.pyc
 /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/autopilot/__pycache__/add_markers.cpython-312.pyc
 /home/antoni/gazebo_maritime_ws/install/share/ament_index/resource_index/packages/autopilot
+/home/antoni/gazebo_maritime_ws/install/share/autopilot/launch/robot_loc.launch.py
+/home/antoni/gazebo_maritime_ws/install/share/autopilot/config/navsat.yaml
+/home/antoni/gazebo_maritime_ws/install/share/autopilot/config/ekf.yaml
 /home/antoni/gazebo_maritime_ws/install/share/autopilot/package.xml
 /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/autopilot-0.0.0-py3.12.egg-info/zip-safe
 /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/autopilot-0.0.0-py3.12.egg-info/entry_points.txt

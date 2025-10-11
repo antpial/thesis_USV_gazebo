@@ -12,6 +12,9 @@ autopilot/__init__.py
 autopilot/add_markers.py
 autopilot/azimuth.py
 autopilot/checkpoints.py
+config/ekf.yaml
+config/navsat.yaml
+launch/robot_loc.launch.py
 resource/autopilot
 test/test_copyright.py
 test/test_flake8.py

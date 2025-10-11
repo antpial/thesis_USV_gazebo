@@ -1,0 +1,40 @@
+from launch import LaunchDescription
+from launch_ros.actions import Node
+from launch.substitutions import PathJoinSubstitution
+from launch_ros.substitutions import FindPackageShare
+import os
+
+def generate_launch_description():
+    pkg_name = 'autopilot'
+
+    # Ścieżki do plików konfiguracyjnych
+    ekf_config_path = PathJoinSubstitution([FindPackageShare(pkg_name), 'config', 'ekf.yaml'])
+    navsat_config_path = PathJoinSubstitution([FindPackageShare(pkg_name), 'config', 'navsat.yaml'])
+
+    # Debug: możesz odkomentować, jeśli chcesz sprawdzić, czy pliki istnieją
+    # pkg_share = FindPackageShare(pkg_name).find(pkg_name)
+    # print(f"Package share directory: {pkg_share}")
+    # print(f"EKF config path exists: {os.path.isfile(os.path.join(pkg_share, 'config', 'ekf.yaml'))}")
+    # print(f"NavSat config path exists: {os.path.isfile(os.path.join(pkg_share, 'config', 'navsat.yaml'))}")
+
+    return LaunchDescription([
+        Node(
+            package='tf2_ros',
+            executable='static_transform_publisher',
+            arguments=['0', '0', '0', '0', '0', '0', 'base_link', 'gps_link'],
+        ),
+        Node(
+            package='robot_localization',
+            executable='ekf_node',
+            name='ekf_filter_node',
+            output='screen',
+            parameters=[ekf_config_path]
+        ),
+        Node(
+            package='robot_localization',
+            executable='navsat_transform_node',
+            name='navsat_transform_node',
+            output='screen',
+            parameters=[navsat_config_path]
+        )
+    ])

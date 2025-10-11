@@ -1,0 +1,41 @@
+[0.768s] Invoking command in '/home/antoni/gazebo_maritime_ws/src/propeller_controller': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/antoni/gazebo_maritime_ws/build/propeller_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/propeller_controller build --build-base /home/antoni/gazebo_maritime_ws/build/propeller_controller/build install --record /home/antoni/gazebo_maritime_ws/build/propeller_controller/install.log --single-version-externally-managed install_data
+[0.902s] running egg_info
+[0.902s] creating ../../build/propeller_controller/propeller_controller.egg-info
+[0.909s] writing ../../build/propeller_controller/propeller_controller.egg-info/PKG-INFO
+[0.910s] writing dependency_links to ../../build/propeller_controller/propeller_controller.egg-info/dependency_links.txt
+[0.910s] writing entry points to ../../build/propeller_controller/propeller_controller.egg-info/entry_points.txt
+[0.910s] writing requirements to ../../build/propeller_controller/propeller_controller.egg-info/requires.txt
+[0.910s] writing top-level names to ../../build/propeller_controller/propeller_controller.egg-info/top_level.txt
+[0.910s] writing manifest file '../../build/propeller_controller/propeller_controller.egg-info/SOURCES.txt'
+[0.926s] reading manifest file '../../build/propeller_controller/propeller_controller.egg-info/SOURCES.txt'
+[0.926s] writing manifest file '../../build/propeller_controller/propeller_controller.egg-info/SOURCES.txt'
+[0.927s] running build
+[0.927s] running build_py
+[0.927s] creating /home/antoni/gazebo_maritime_ws/build/propeller_controller/build
+[0.927s] creating /home/antoni/gazebo_maritime_ws/build/propeller_controller/build/lib
+[0.927s] creating /home/antoni/gazebo_maritime_ws/build/propeller_controller/build/lib/propeller_controller
+[0.927s] copying propeller_controller/keyboard_controller.py -> /home/antoni/gazebo_maritime_ws/build/propeller_controller/build/lib/propeller_controller
+[0.927s] copying propeller_controller/__init__.py -> /home/antoni/gazebo_maritime_ws/build/propeller_controller/build/lib/propeller_controller
+[0.927s] copying propeller_controller/rotate.py -> /home/antoni/gazebo_maritime_ws/build/propeller_controller/build/lib/propeller_controller
+[0.927s] running install
+[0.932s] running install_lib
+[0.940s] creating /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/propeller_controller
+[0.940s] copying /home/antoni/gazebo_maritime_ws/build/propeller_controller/build/lib/propeller_controller/keyboard_controller.py -> /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/propeller_controller
+[0.941s] copying /home/antoni/gazebo_maritime_ws/build/propeller_controller/build/lib/propeller_controller/__init__.py -> /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/propeller_controller
+[0.941s] copying /home/antoni/gazebo_maritime_ws/build/propeller_controller/build/lib/propeller_controller/rotate.py -> /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/propeller_controller
+[0.941s] byte-compiling /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/propeller_controller/keyboard_controller.py to keyboard_controller.cpython-312.pyc
+[0.942s] byte-compiling /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/propeller_controller/__init__.py to __init__.cpython-312.pyc
+[0.942s] byte-compiling /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/propeller_controller/rotate.py to rotate.cpython-312.pyc
+[0.942s] running install_data
+[0.942s] creating /home/antoni/gazebo_maritime_ws/install/share/ament_index
+[0.942s] creating /home/antoni/gazebo_maritime_ws/install/share/ament_index/resource_index
+[0.942s] creating /home/antoni/gazebo_maritime_ws/install/share/ament_index/resource_index/packages
+[0.943s] copying resource/propeller_controller -> /home/antoni/gazebo_maritime_ws/install/share/ament_index/resource_index/packages
+[0.943s] copying package.xml -> /home/antoni/gazebo_maritime_ws/install/share/propeller_controller
+[0.943s] running install_egg_info
+[0.952s] Copying ../../build/propeller_controller/propeller_controller.egg-info to /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/propeller_controller-0.0.0-py3.12.egg-info
+[0.952s] running install_scripts
+[1.019s] Installing keyboard_controller script to /home/antoni/gazebo_maritime_ws/install/lib/propeller_controller
+[1.019s] Installing rotate script to /home/antoni/gazebo_maritime_ws/install/lib/propeller_controller
+[1.019s] writing list of installed files to '/home/antoni/gazebo_maritime_ws/build/propeller_controller/install.log'
+[1.047s] Invoked command in '/home/antoni/gazebo_maritime_ws/src/propeller_controller' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/antoni/gazebo_maritime_ws/build/propeller_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/propeller_controller build --build-base /home/antoni/gazebo_maritime_ws/build/propeller_controller/build install --record /home/antoni/gazebo_maritime_ws/build/propeller_controller/install.log --single-version-externally-managed install_data
