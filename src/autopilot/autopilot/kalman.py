@@ -41,7 +41,6 @@ class Kalman_node(Node):
 
         # Dane pomiarowe
         self.current_position = GpsState()
-        self.avg_position = deque(maxlen=5)
         self.mag_vector = MagState()
 
         # Sterowanie
@@ -101,8 +100,7 @@ class Kalman_node(Node):
 
     def gps_callback(self, msg: NavSatFix):
 
-        new_position = GpsState()
-
+        # aktualizuje aktualna pozycje
         self.current_position.lat = msg.latitude
         self.current_position.lon = msg.longitude
 

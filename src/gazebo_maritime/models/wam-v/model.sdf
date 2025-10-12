@@ -345,7 +345,7 @@
 <!-- imu -->
 
 <link name="imu_link">
-  <pose>0 0 0.5 0 0 0</pose>
+  <pose>0 0 0 0 0 0</pose>
   <inertial>
     <mass>0.1</mass>
     <inertia>
@@ -402,7 +402,7 @@
 
 <!-- gps sensor  -->
 <link name="gps_link">
-  <pose>0 0 0.5 0 0 0</pose>
+  <pose>0 0 0.0 0 0 0</pose>
   <inertial>
     <mass>0.05</mass>
     <inertia>
@@ -424,20 +424,20 @@
         <horizontal>
           <noise type="gaussian">
             <mean>0.0</mean>
-            <stddev>0.0002</stddev>   <!-- ~0.2 mm, możesz zwiększyć -->
+            <stddev>1.7e-5</stddev>   <!-- poziome σ ≈ 1.698 m (CEP 2.0 m) dla -33 stopnia dlugosci geograficznej-->
           </noise>
         </horizontal>
         <vertical>
           <noise type="gaussian">
             <mean>0.0</mean>
-            <stddev>0.0005</stddev>
+            <stddev>2.0e-5</stddev>     <!-- przykładowo σ_z = 2.0 m -->
           </noise>
         </vertical>
       </position_sensing>
       <velocity_sensing>
         <noise type="gaussian">
           <mean>0.0</mean>
-          <stddev>0.01</stddev>
+          <stddev>0.1</stddev>
         </noise>
       </velocity_sensing>
     </gps>

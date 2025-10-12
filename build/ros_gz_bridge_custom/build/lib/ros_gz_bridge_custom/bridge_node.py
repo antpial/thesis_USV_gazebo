@@ -40,6 +40,13 @@ class RosGzBridge(Node):
             10
         )
 
+        self.subscription = self.create_subscription(
+            NavSatFix,
+            '/gps/filtered',
+            self.gps_filtered_callback,
+            10
+        )
+
         # --- ROS publishers ----
 
         self.ros_mag_pub = self.create_publisher(
@@ -79,6 +86,13 @@ class RosGzBridge(Node):
 
 
         # --- Gazebo Publisher ---
+
+        #Node do debugingu lokalizacji w gazebo
+        self.gz_pub_gps_filtered = self.gz_node.advertise(
+            '/gz/gps/filtered',
+            NavSat
+        )
+
         self.gz_pub_right_thrust = self.gz_node.advertise(
             '/model/wam-V/joint/right_engine_propeller_joint/cmd_thrust',
             Double
@@ -94,18 +108,28 @@ class RosGzBridge(Node):
 
     # All callbacks
 
+    def gps_filtered_callback(self, msg: NavSatFix):
+        # Przekazuje przefiltrowane dane GPS z ROS do Gazebo (do debugowania)
+        gz_msg = NavSat()
+        gz_msg.latitude_deg = msg.latitude
+        gz_msg.longitude_deg = msg.longitude
+        gz_msg.altitude = msg.altitude
+        self.gz_pub_gps_filtered.publish(gz_msg)
+        self.get_logger().info(f"Przekazuję {msg.latitude}, {msg.longitude}, {msg.altitude} z ROS → Gazebo")
+
+
     def right_thrust_callback(self, msg: Float64):
         gz_msg = Double()
         gz_msg.data = msg.data * 4.79 * 9.81 # F = (max thrust dla 18V na stronie prod.) * g
         self.gz_pub_right_thrust.publish(gz_msg)
-        self.get_logger().info(f"Przekazuję {msg.data} z ROS → Gazebo")
+        # self.get_logger().info(f"Przekazuję {msg.data} z ROS → Gazebo")
 
 
     def left_thrust_callback(self, msg: Float64):
         gz_msg = Double()
         gz_msg.data = msg.data * 4.79 * 9.81 # F = (max thrust dla 18V na stronie prod.) * g
         self.gz_pub_left_thrust.publish(gz_msg)
-        self.get_logger().info(f"Przekazuję {msg.data} z ROS → Gazebo")
+        # self.get_logger().info(f"Przekazuję {msg.data} z ROS → Gazebo")
     
 
     def mag_callback(self, msg: Magnetometer):
@@ -128,7 +152,7 @@ class RosGzBridge(Node):
     def imu_callback(self, msg: gzImu):
         imu_msg = Imu()
         imu_msg.header.stamp = self.get_clock().now().to_msg()
-        imu_msg.header.frame_id = "base_link"
+        imu_msg.header.frame_id = "imu_link"
         # mapowanie pól z Gazebo -> ROS2
         imu_msg.orientation.x = msg.orientation.x
         imu_msg.orientation.y = msg.orientation.y
