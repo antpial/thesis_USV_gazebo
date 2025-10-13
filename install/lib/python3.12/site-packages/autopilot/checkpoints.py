@@ -54,7 +54,8 @@ class Checkpoints_node(Node):
         self.given_azimuth = 0.0    # azymut do punktu docelowego
         self.current_azimuth = 0.0  # aktualny azymut
         self.distance = 0.0 # odleglosc do punktu docelowego
-        self.offset_azimuth = 5.5 # offset azymutu magnetycznego w stopniach
+        self.magnetic_declination = 5.5 # offset azymutu magnetycznego w stopniach (dla Sydney, Australia)
+        self.magnetic_deviation = 0.0 # offset azymutu magnetycznego w stopniach
 
         #checkpoints
         self.checkpoints = [] # lista wszystkich punktów docelowych (name, lat, lon, alt)
@@ -74,7 +75,7 @@ class Checkpoints_node(Node):
         # Subskrybuje /gps
         self.subscription = self.create_subscription(
             NavSatFix,
-            '/gps',
+            '/gps/fix',
             self.gps_callback,
             10
         )
@@ -198,7 +199,7 @@ class Checkpoints_node(Node):
         y = math.sin(d_lambda) * math.cos(phi2)
         x = math.cos(phi1) * math.sin(phi2) - math.sin(phi1) * math.cos(phi2) * math.cos(d_lambda)
         theta = math.atan2(y, x)
-        bearing = (math.degrees(theta) + self.offset_azimuth + 360) % 360
+        bearing = (math.degrees(theta) + self.magnetic_declination + 360) % 360
         return bearing  
     
 
