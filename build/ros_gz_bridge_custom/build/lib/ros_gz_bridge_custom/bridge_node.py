@@ -61,6 +61,12 @@ class RosGzBridge(Node):
             10
         )
 
+        self.ros_perfect_gps_pub = self.create_publisher(
+            NavSatFix,
+            '/gps/perfect',
+            10
+        )
+
         self.ros_imu_pub = self.create_publisher(
             Imu,
             '/imu',
@@ -78,6 +84,10 @@ class RosGzBridge(Node):
 
         if not self.gz_node.subscribe(NavSat, "/wamv/gps", self.gps_callback):
             self.get_logger().error("Cannot subscribe /wamv/gps!")
+            return
+        
+        if not self.gz_node.subscribe(NavSat, "/wamv/gps/perfect", self.perfect_gps_callback):
+            self.get_logger().error("Cannot subscribe /wamv/gps/perfect!")
             return
         
         if not self.gz_node.subscribe(gzImu, "/wamv/imu", self.imu_callback):
@@ -221,6 +231,18 @@ class RosGzBridge(Node):
 
 
         self.ros_gps_pub.publish(navsat_msg)
+
+
+    def perfect_gps_callback(self, msg: NavSat):
+        navsat_msg = NavSatFix()
+        navsat_msg.header.stamp = self.get_clock().now().to_msg()
+        navsat_msg.header.frame_id = "perfect_gps_link"
+        # mapowanie pól z Gazebo -> ROS2
+        navsat_msg.latitude = msg.latitude_deg
+        navsat_msg.longitude = msg.longitude_deg
+        navsat_msg.altitude = msg.altitude
+
+        self.ros_perfect_gps_pub.publish(navsat_msg)
 
 
 

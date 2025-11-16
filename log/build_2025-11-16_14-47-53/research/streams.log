@@ -1,0 +1,34 @@
+[0.474s] Invoking command in '/home/antoni/gazebo_maritime_ws/src/research': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/antoni/gazebo_maritime_ws/build/research/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/research build --build-base /home/antoni/gazebo_maritime_ws/build/research/build install --record /home/antoni/gazebo_maritime_ws/build/research/install.log --single-version-externally-managed install_data
+[0.641s] running egg_info
+[0.641s] creating ../../build/research/research.egg-info
+[0.650s] writing ../../build/research/research.egg-info/PKG-INFO
+[0.650s] writing dependency_links to ../../build/research/research.egg-info/dependency_links.txt
+[0.650s] writing entry points to ../../build/research/research.egg-info/entry_points.txt
+[0.651s] writing requirements to ../../build/research/research.egg-info/requires.txt
+[0.651s] writing top-level names to ../../build/research/research.egg-info/top_level.txt
+[0.651s] writing manifest file '../../build/research/research.egg-info/SOURCES.txt'
+[0.671s] reading manifest file '../../build/research/research.egg-info/SOURCES.txt'
+[0.671s] writing manifest file '../../build/research/research.egg-info/SOURCES.txt'
+[0.671s] running build
+[0.671s] running build_py
+[0.671s] creating /home/antoni/gazebo_maritime_ws/build/research/build
+[0.671s] creating /home/antoni/gazebo_maritime_ws/build/research/build/lib
+[0.671s] creating /home/antoni/gazebo_maritime_ws/build/research/build/lib/research
+[0.672s] copying research/position_error.py -> /home/antoni/gazebo_maritime_ws/build/research/build/lib/research
+[0.672s] copying research/__init__.py -> /home/antoni/gazebo_maritime_ws/build/research/build/lib/research
+[0.672s] running install
+[0.676s] running install_lib
+[0.686s] creating /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/research
+[0.686s] copying /home/antoni/gazebo_maritime_ws/build/research/build/lib/research/position_error.py -> /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/research
+[0.686s] copying /home/antoni/gazebo_maritime_ws/build/research/build/lib/research/__init__.py -> /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/research
+[0.687s] byte-compiling /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/research/position_error.py to position_error.cpython-312.pyc
+[0.688s] byte-compiling /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/research/__init__.py to __init__.cpython-312.pyc
+[0.688s] running install_data
+[0.688s] copying resource/research -> /home/antoni/gazebo_maritime_ws/install/share/ament_index/resource_index/packages
+[0.688s] copying package.xml -> /home/antoni/gazebo_maritime_ws/install/share/research
+[0.688s] running install_egg_info
+[0.699s] Copying ../../build/research/research.egg-info to /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/research-0.0.0-py3.12.egg-info
+[0.700s] running install_scripts
+[0.776s] Installing position_error script to /home/antoni/gazebo_maritime_ws/install/lib/research
+[0.776s] writing list of installed files to '/home/antoni/gazebo_maritime_ws/build/research/install.log'
+[0.793s] Invoked command in '/home/antoni/gazebo_maritime_ws/src/research' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/antoni/gazebo_maritime_ws/build/research/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/research build --build-base /home/antoni/gazebo_maritime_ws/build/research/build install --record /home/antoni/gazebo_maritime_ws/build/research/install.log --single-version-externally-managed install_data

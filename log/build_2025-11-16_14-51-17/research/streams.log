@@ -1,0 +1,24 @@
+[1.025s] Invoking command in '/home/antoni/gazebo_maritime_ws/src/research': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/antoni/gazebo_maritime_ws/build/research/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/research build --build-base /home/antoni/gazebo_maritime_ws/build/research/build install --record /home/antoni/gazebo_maritime_ws/build/research/install.log --single-version-externally-managed install_data
+[1.357s] running egg_info
+[1.373s] writing ../../build/research/research.egg-info/PKG-INFO
+[1.373s] writing dependency_links to ../../build/research/research.egg-info/dependency_links.txt
+[1.373s] writing entry points to ../../build/research/research.egg-info/entry_points.txt
+[1.373s] writing requirements to ../../build/research/research.egg-info/requires.txt
+[1.373s] writing top-level names to ../../build/research/research.egg-info/top_level.txt
+[1.439s] reading manifest file '../../build/research/research.egg-info/SOURCES.txt'
+[1.442s] writing manifest file '../../build/research/research.egg-info/SOURCES.txt'
+[1.442s] running build
+[1.442s] running build_py
+[1.442s] copying research/position_error.py -> /home/antoni/gazebo_maritime_ws/build/research/build/lib/research
+[1.443s] running install
+[1.461s] running install_lib
+[1.494s] copying /home/antoni/gazebo_maritime_ws/build/research/build/lib/research/position_error.py -> /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/research
+[1.495s] byte-compiling /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/research/position_error.py to position_error.cpython-312.pyc
+[1.498s] running install_data
+[1.498s] running install_egg_info
+[1.518s] removing '/home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/research-0.0.0-py3.12.egg-info' (and everything under it)
+[1.519s] Copying ../../build/research/research.egg-info to /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/research-0.0.0-py3.12.egg-info
+[1.520s] running install_scripts
+[1.635s] Installing position_error script to /home/antoni/gazebo_maritime_ws/install/lib/research
+[1.635s] writing list of installed files to '/home/antoni/gazebo_maritime_ws/build/research/install.log'
+[1.668s] Invoked command in '/home/antoni/gazebo_maritime_ws/src/research' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/antoni/gazebo_maritime_ws/build/research/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/research build --build-base /home/antoni/gazebo_maritime_ws/build/research/build install --record /home/antoni/gazebo_maritime_ws/build/research/install.log --single-version-externally-managed install_data

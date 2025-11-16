@@ -1,0 +1,7 @@
+[0.000000] (-) TimerEvent: {}
+[0.000187] (-) JobUnselected: {'identifier': 'autopilot'}
+[0.000211] (-) JobUnselected: {'identifier': 'gazebo_maritime'}
+[0.000220] (-) JobUnselected: {'identifier': 'propeller_controller'}
+[0.000236] (-) JobUnselected: {'identifier': 'research'}
+[0.000242] (-) JobUnselected: {'identifier': 'ros_gz_bridge_custom'}
+[0.000248] (-) EventReactorShutdown: {}

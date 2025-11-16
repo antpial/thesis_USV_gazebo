@@ -1,0 +1,32 @@
+running egg_info
+creating ../../build/research/research.egg-info
+writing ../../build/research/research.egg-info/PKG-INFO
+writing dependency_links to ../../build/research/research.egg-info/dependency_links.txt
+writing entry points to ../../build/research/research.egg-info/entry_points.txt
+writing requirements to ../../build/research/research.egg-info/requires.txt
+writing top-level names to ../../build/research/research.egg-info/top_level.txt
+writing manifest file '../../build/research/research.egg-info/SOURCES.txt'
+reading manifest file '../../build/research/research.egg-info/SOURCES.txt'
+writing manifest file '../../build/research/research.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/antoni/gazebo_maritime_ws/build/research/build
+creating /home/antoni/gazebo_maritime_ws/build/research/build/lib
+creating /home/antoni/gazebo_maritime_ws/build/research/build/lib/research
+copying research/position_error.py -> /home/antoni/gazebo_maritime_ws/build/research/build/lib/research
+copying research/__init__.py -> /home/antoni/gazebo_maritime_ws/build/research/build/lib/research
+running install
+running install_lib
+creating /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/research
+copying /home/antoni/gazebo_maritime_ws/build/research/build/lib/research/position_error.py -> /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/research
+copying /home/antoni/gazebo_maritime_ws/build/research/build/lib/research/__init__.py -> /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/research
+byte-compiling /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/research/position_error.py to position_error.cpython-312.pyc
+byte-compiling /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/research/__init__.py to __init__.cpython-312.pyc
+running install_data
+copying resource/research -> /home/antoni/gazebo_maritime_ws/install/share/ament_index/resource_index/packages
+copying package.xml -> /home/antoni/gazebo_maritime_ws/install/share/research
+running install_egg_info
+Copying ../../build/research/research.egg-info to /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/research-0.0.0-py3.12.egg-info
+running install_scripts
+Installing position_error script to /home/antoni/gazebo_maritime_ws/install/lib/research
+writing list of installed files to '/home/antoni/gazebo_maritime_ws/build/research/install.log'

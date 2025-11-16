@@ -1,0 +1,48 @@
+[0.398s] Invoking command in '/home/antoni/gazebo_maritime_ws/build/gazebo_maritime': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/antoni/gazebo_maritime_ws/build/gazebo_maritime -- -j12 -l12
+[0.751s] [ 12%] [32mBuilding CXX object CMakeFiles/Waves.dir/src/Wavefield.cc.o[0m
+[5.650s] [ 25%] [32m[1mLinking CXX shared library libWaves.so[0m
+[6.176s] [ 25%] Built target Waves
+[6.210s] [ 37%] [32mBuilding CXX object CMakeFiles/PublisherPlugin.dir/src/PublisherPlugin.cc.o[0m
+[6.210s] [ 50%] [32mBuilding CXX object CMakeFiles/Surface.dir/src/Surface.cc.o[0m
+[6.216s] [ 62%] [32mBuilding CXX object CMakeFiles/WaveVisual.dir/src/WaveVisual.cc.o[0m
+[10.966s] [ 75%] [32m[1mLinking CXX shared library libPublisherPlugin.so[0m
+[11.267s] [ 75%] Built target PublisherPlugin
+[11.601s] [ 87%] [32m[1mLinking CXX shared library libSurface.so[0m
+[12.041s] [ 87%] Built target Surface
+[14.528s] [100%] [32m[1mLinking CXX shared library libWaveVisual.so[0m
+[14.865s] [100%] Built target WaveVisual
+[14.896s] Invoked command in '/home/antoni/gazebo_maritime_ws/build/gazebo_maritime' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/antoni/gazebo_maritime_ws/build/gazebo_maritime -- -j12 -l12
+[14.916s] Invoking command in '/home/antoni/gazebo_maritime_ws/build/gazebo_maritime': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/antoni/gazebo_maritime_ws/build/gazebo_maritime
+[14.927s] -- Install configuration: ""
+[14.929s] -- Installing: /home/antoni/gazebo_maritime_ws/install/lib/libWaves.so
+[14.931s] -- Installing: /home/antoni/gazebo_maritime_ws/install/lib/libPublisherPlugin.so
+[14.932s] -- Set non-toolchain portion of runtime path of "/home/antoni/gazebo_maritime_ws/install/lib/libPublisherPlugin.so" to ""
+[14.932s] -- Installing: /home/antoni/gazebo_maritime_ws/install/lib/libSurface.so
+[14.933s] -- Set non-toolchain portion of runtime path of "/home/antoni/gazebo_maritime_ws/install/lib/libSurface.so" to ""
+[14.933s] -- Installing: /home/antoni/gazebo_maritime_ws/install/lib/libWaveVisual.so
+[14.934s] -- Set non-toolchain portion of runtime path of "/home/antoni/gazebo_maritime_ws/install/lib/libWaveVisual.so" to ""
+[14.934s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/gazebo_maritime/models
+[14.935s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/gazebo_maritime/models/coast_waves
+[14.935s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/gazebo_maritime/models/coast_waves/materials
+[14.935s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/gazebo_maritime/models/coast_waves/materials/programs
+[14.935s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/gazebo_maritime/models/coast_waves/materials/programs/GerstnerWaves_fs_330.glsl
+[14.935s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/gazebo_maritime/models/coast_waves/materials/programs/GerstnerWaves_vs_330.glsl
+[14.935s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/gazebo_maritime/models/coast_waves/materials/textures
+[14.935s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/gazebo_maritime/models/coast_waves/materials/textures/wave_normals.dds
+[14.935s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/gazebo_maritime/models/coast_waves/materials/textures/skybox_lowres.dds
+[14.935s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/gazebo_maritime/models/coast_waves/model.config
+[14.935s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/gazebo_maritime/models/coast_waves/model.sdf
+[14.936s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/gazebo_maritime/models/coast_waves/meshes
+[14.936s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/gazebo_maritime/models/coast_waves/meshes/waterlow.dae
+[14.936s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/gazebo_maritime/models/wam-v
+[14.936s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/gazebo_maritime/models/wam-v/model.config
+[14.936s] -- Installing: /home/antoni/gazebo_maritime_ws/install/share/gazebo_maritime/models/wam-v/model.sdf
+[14.936s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/gazebo_maritime/models/wam-v/meshes
+[14.936s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/gazebo_maritime/models/wam-v/meshes/WAM-V-Base.dae
+[14.937s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/gazebo_maritime/models/wam-v/meshes/engine.dae
+[14.937s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/gazebo_maritime/models/wam-v/meshes/propeller.dae
+[14.937s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/gazebo_maritime/models/wam-v/meshes/WamV.png
+[14.937s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/gazebo_maritime/worlds
+[14.937s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/gazebo_maritime/worlds/sydney_regatta copy.sdf
+[14.937s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/gazebo_maritime/worlds/sydney_regatta.sdf
+[14.937s] Invoked command in '/home/antoni/gazebo_maritime_ws/build/gazebo_maritime' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/antoni/gazebo_maritime_ws/build/gazebo_maritime

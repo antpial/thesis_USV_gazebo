@@ -1,0 +1,17 @@
+package.xml
+setup.cfg
+setup.py
+../../build/research/research.egg-info/PKG-INFO
+../../build/research/research.egg-info/SOURCES.txt
+../../build/research/research.egg-info/dependency_links.txt
+../../build/research/research.egg-info/entry_points.txt
+../../build/research/research.egg-info/requires.txt
+../../build/research/research.egg-info/top_level.txt
+../../build/research/research.egg-info/zip-safe
+research/__init__.py
+research/analize_position_error.py
+research/position_error.py
+resource/research
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py
