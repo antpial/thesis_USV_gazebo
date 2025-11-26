@@ -3,10 +3,8 @@ navsat_transform:
     frequency: 30.0
     delay: 3.0
 
-    # WYMUSZA użycie odom jako układu świata
-    use_local_cartesian: false
-    broadcast_cartesian_transform: false
-    broadcast_cartesian_transform_as_parent_frame: false
+    broadcast_cartesian_transform: true
+    broadcast_cartesian_transform_as_parent_frame: true
 
     publish_filtered_gps: true
     use_odometry_yaw: false

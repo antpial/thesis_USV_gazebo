@@ -2,6 +2,7 @@ from launch import LaunchDescription
 from launch_ros.actions import Node
 from launch.substitutions import PathJoinSubstitution
 from launch_ros.substitutions import FindPackageShare
+from launch.actions import TimerAction
 import os
 
 def generate_launch_description():
@@ -31,7 +32,7 @@ def generate_launch_description():
         Node(
             package='tf2_ros',
             executable='static_transform_publisher',
-            arguments=['0', '0.5', '0', '0', '0', '0', 'base_link', 'magnetometer_link'],
+            arguments=['0', '0.0', '0.5', '0', '0', '0', 'base_link', 'magnetometer_link'],
         ),
         # Node(
         #     package='tf2_ros',
@@ -50,11 +51,16 @@ def generate_launch_description():
             output='screen',
             parameters=[ekf_config_path]
         ),
-        Node(
-            package='robot_localization',
-            executable='navsat_transform_node',
-            name='navsat_transform_node',
-            output='screen',
-            parameters=[navsat_config_path]
+        TimerAction(
+            period=3.0,  # 1 sekunda opóźnienia
+            actions=[
+                Node(
+                    package='robot_localization',
+                    executable='navsat_transform_node',
+                    name='navsat_transform_node',
+                    output='screen',
+                    parameters=[navsat_config_path]
+                )
+            ]
         )
     ])
