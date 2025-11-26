@@ -1,0 +1,30 @@
+[1.372s] Invoking command in '/home/antoni/gazebo_maritime_ws/src/propeller_controller': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/antoni/gazebo_maritime_ws/build/propeller_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/propeller_controller build --build-base /home/antoni/gazebo_maritime_ws/build/propeller_controller/build install --record /home/antoni/gazebo_maritime_ws/build/propeller_controller/install.log --single-version-externally-managed install_data
+[1.707s] running egg_info
+[1.707s] creating ../../build/propeller_controller/propeller_controller.egg-info
+[1.732s] writing ../../build/propeller_controller/propeller_controller.egg-info/PKG-INFO
+[1.732s] writing dependency_links to ../../build/propeller_controller/propeller_controller.egg-info/dependency_links.txt
+[1.732s] writing entry points to ../../build/propeller_controller/propeller_controller.egg-info/entry_points.txt
+[1.732s] writing requirements to ../../build/propeller_controller/propeller_controller.egg-info/requires.txt
+[1.732s] writing top-level names to ../../build/propeller_controller/propeller_controller.egg-info/top_level.txt
+[1.732s] writing manifest file '../../build/propeller_controller/propeller_controller.egg-info/SOURCES.txt'
+[1.776s] reading manifest file '../../build/propeller_controller/propeller_controller.egg-info/SOURCES.txt'
+[1.777s] writing manifest file '../../build/propeller_controller/propeller_controller.egg-info/SOURCES.txt'
+[1.777s] running build
+[1.777s] running build_py
+[1.777s] creating /home/antoni/gazebo_maritime_ws/build/propeller_controller/build
+[1.777s] creating /home/antoni/gazebo_maritime_ws/build/propeller_controller/build/lib
+[1.777s] creating /home/antoni/gazebo_maritime_ws/build/propeller_controller/build/lib/propeller_controller
+[1.777s] copying propeller_controller/keyboard_controller.py -> /home/antoni/gazebo_maritime_ws/build/propeller_controller/build/lib/propeller_controller
+[1.777s] copying propeller_controller/__init__.py -> /home/antoni/gazebo_maritime_ws/build/propeller_controller/build/lib/propeller_controller
+[1.778s] copying propeller_controller/rotate.py -> /home/antoni/gazebo_maritime_ws/build/propeller_controller/build/lib/propeller_controller
+[1.778s] running install
+[1.782s] running install_lib
+[1.794s] running install_data
+[1.794s] running install_egg_info
+[1.819s] removing '/home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/propeller_controller-0.0.0-py3.12.egg-info' (and everything under it)
+[1.819s] Copying ../../build/propeller_controller/propeller_controller.egg-info to /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/propeller_controller-0.0.0-py3.12.egg-info
+[1.822s] running install_scripts
+[1.942s] Installing keyboard_controller script to /home/antoni/gazebo_maritime_ws/install/lib/propeller_controller
+[1.942s] Installing rotate script to /home/antoni/gazebo_maritime_ws/install/lib/propeller_controller
+[1.943s] writing list of installed files to '/home/antoni/gazebo_maritime_ws/build/propeller_controller/install.log'
+[1.984s] Invoked command in '/home/antoni/gazebo_maritime_ws/src/propeller_controller' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/antoni/gazebo_maritime_ws/build/propeller_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/propeller_controller build --build-base /home/antoni/gazebo_maritime_ws/build/propeller_controller/build install --record /home/antoni/gazebo_maritime_ws/build/propeller_controller/install.log --single-version-externally-managed install_data

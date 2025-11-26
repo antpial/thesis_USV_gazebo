@@ -134,8 +134,8 @@ libWaves.so: /usr/lib/x86_64-linux-gnu/libprotobuf.so
 libWaves.so: /usr/lib/x86_64-linux-gnu/libuuid.so
 libWaves.so: /usr/lib/x86_64-linux-gnu/libuuid.so
 libWaves.so: /usr/lib/x86_64-linux-gnu/libsdformat14.so.14.8.0
-libWaves.so: /usr/lib/x86_64-linux-gnu/libgz-math7.so.7.5.1
-libWaves.so: /usr/lib/x86_64-linux-gnu/libgz-utils2.so.2.2.1
+libWaves.so: /opt/ros/jazzy/opt/gz_math_vendor/lib/libgz-math7.so.7.5.2
+libWaves.so: /opt/ros/jazzy/opt/gz_utils_vendor/lib/libgz-utils2.so.2.2.1
 libWaves.so: CMakeFiles/Waves.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/antoni/gazebo_maritime_ws/build/gazebo_maritime/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library libWaves.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Waves.dir/link.txt --verbose=$(VERBOSE)

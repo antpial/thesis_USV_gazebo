@@ -405,7 +405,7 @@ gazebo_maritime_IS_TOP_LEVEL:STATIC=ON
 gazebo_maritime_SOURCE_DIR:STATIC=/home/antoni/gazebo_maritime_ws/src/gazebo_maritime
 
 //The directory containing a CMake configuration file for gz-cmake3.
-gz-cmake3_DIR:PATH=/usr/share/cmake/gz-cmake3
+gz-cmake3_DIR:PATH=/opt/ros/jazzy/opt/gz_cmake_vendor/share/cmake/gz-cmake3
 
 //The directory containing a CMake configuration file for gz-common5-av.
 gz-common5-av_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/gz-common5-av
@@ -438,10 +438,10 @@ gz-fuel_tools9_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/gz-fuel_tools9
 gz-gui8_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/gz-gui8
 
 //The directory containing a CMake configuration file for gz-math7-eigen3.
-gz-math7-eigen3_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/gz-math7-eigen3
+gz-math7-eigen3_DIR:PATH=/opt/ros/jazzy/opt/gz_math_vendor/lib/cmake/gz-math7-eigen3
 
 //The directory containing a CMake configuration file for gz-math7.
-gz-math7_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/gz-math7
+gz-math7_DIR:PATH=/opt/ros/jazzy/opt/gz_math_vendor/lib/cmake/gz-math7
 
 //The directory containing a CMake configuration file for gz-msgs10.
 gz-msgs10_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/gz-msgs10
@@ -546,10 +546,10 @@ gz-transport13-parameters_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/gz-transport1
 gz-transport13_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/gz-transport13
 
 //The directory containing a CMake configuration file for gz-utils2-cli.
-gz-utils2-cli_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/gz-utils2-cli
+gz-utils2-cli_DIR:PATH=/opt/ros/jazzy/opt/gz_utils_vendor/lib/cmake/gz-utils2-cli
 
 //The directory containing a CMake configuration file for gz-utils2.
-gz-utils2_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/gz-utils2
+gz-utils2_DIR:PATH=/opt/ros/jazzy/opt/gz_utils_vendor/lib/cmake/gz-utils2
 
 //The directory containing a CMake configuration file for jsoncpp.
 jsoncpp_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/jsoncpp

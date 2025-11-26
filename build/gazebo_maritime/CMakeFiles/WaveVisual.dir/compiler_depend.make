@@ -4,6 +4,62 @@
 CMakeFiles/WaveVisual.dir/src/WaveVisual.cc.o: /home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WaveVisual.cc \
   /home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WaveVisual.hh \
   /home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/Wavefield.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Angle.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/AxisAlignedBox.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Box.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Capsule.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Color.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Cone.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Cylinder.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Ellipsoid.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Export.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Helpers.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Inertial.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Line2.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Line3.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/MassMatrix3.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Material.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/MaterialType.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Matrix3.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Matrix4.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Matrix6.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Plane.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Pose3.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Quaternion.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/RotationSpline.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/SemanticVersion.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Sphere.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/SphericalCoordinates.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Spline.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Temperature.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/TimeVaryingVolumetricGrid.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/TimeVaryingVolumetricGridLookupField.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Triangle3.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Vector2.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Vector3.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/VolumetricGridLookupField.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/config.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/detail/AxisIndex.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/detail/Box.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/detail/Capsule.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/detail/Cone.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/detail/Cylinder.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/detail/Ellipsoid.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/detail/Export.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/detail/InterpolationPoint.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/detail/Sphere.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/detail/WellOrderedVector.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/graph/Edge.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/graph/Graph.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/graph/Vertex.hh \
+  /opt/ros/jazzy/opt/gz_utils_vendor/include/gz/utils2/gz/utils/Export.hh \
+  /opt/ros/jazzy/opt/gz_utils_vendor/include/gz/utils2/gz/utils/ImplPtr.hh \
+  /opt/ros/jazzy/opt/gz_utils_vendor/include/gz/utils2/gz/utils/NeverDestroyed.hh \
+  /opt/ros/jazzy/opt/gz_utils_vendor/include/gz/utils2/gz/utils/SuppressWarning.hh \
+  /opt/ros/jazzy/opt/gz_utils_vendor/include/gz/utils2/gz/utils/detail/DefaultOps.hh \
+  /opt/ros/jazzy/opt/gz_utils_vendor/include/gz/utils2/gz/utils/detail/Export.hh \
+  /opt/ros/jazzy/opt/gz_utils_vendor/include/gz/utils2/gz/utils/detail/ImplPtr.hh \
+  /opt/ros/jazzy/opt/gz_utils_vendor/include/gz/utils2/gz/utils/detail/SuppressWarning.hh \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -298,54 +354,6 @@ CMakeFiles/WaveVisual.dir/src/WaveVisual.cc.o: /home/antoni/gazebo_maritime_ws/s
   /usr/include/gz/common5/gz/common/io/detail/Export.hh \
   /usr/include/gz/common5/gz/common/profiler/Export.hh \
   /usr/include/gz/common5/gz/common/profiler/detail/Export.hh \
-  /usr/include/gz/math7/gz/math/Angle.hh \
-  /usr/include/gz/math7/gz/math/AxisAlignedBox.hh \
-  /usr/include/gz/math7/gz/math/Box.hh \
-  /usr/include/gz/math7/gz/math/Capsule.hh \
-  /usr/include/gz/math7/gz/math/Color.hh \
-  /usr/include/gz/math7/gz/math/Cone.hh \
-  /usr/include/gz/math7/gz/math/Cylinder.hh \
-  /usr/include/gz/math7/gz/math/Ellipsoid.hh \
-  /usr/include/gz/math7/gz/math/Export.hh \
-  /usr/include/gz/math7/gz/math/Helpers.hh \
-  /usr/include/gz/math7/gz/math/Inertial.hh \
-  /usr/include/gz/math7/gz/math/Line2.hh \
-  /usr/include/gz/math7/gz/math/Line3.hh \
-  /usr/include/gz/math7/gz/math/MassMatrix3.hh \
-  /usr/include/gz/math7/gz/math/Material.hh \
-  /usr/include/gz/math7/gz/math/MaterialType.hh \
-  /usr/include/gz/math7/gz/math/Matrix3.hh \
-  /usr/include/gz/math7/gz/math/Matrix4.hh \
-  /usr/include/gz/math7/gz/math/Matrix6.hh \
-  /usr/include/gz/math7/gz/math/Plane.hh \
-  /usr/include/gz/math7/gz/math/Pose3.hh \
-  /usr/include/gz/math7/gz/math/Quaternion.hh \
-  /usr/include/gz/math7/gz/math/RotationSpline.hh \
-  /usr/include/gz/math7/gz/math/SemanticVersion.hh \
-  /usr/include/gz/math7/gz/math/Sphere.hh \
-  /usr/include/gz/math7/gz/math/SphericalCoordinates.hh \
-  /usr/include/gz/math7/gz/math/Spline.hh \
-  /usr/include/gz/math7/gz/math/Temperature.hh \
-  /usr/include/gz/math7/gz/math/TimeVaryingVolumetricGrid.hh \
-  /usr/include/gz/math7/gz/math/TimeVaryingVolumetricGridLookupField.hh \
-  /usr/include/gz/math7/gz/math/Triangle3.hh \
-  /usr/include/gz/math7/gz/math/Vector2.hh \
-  /usr/include/gz/math7/gz/math/Vector3.hh \
-  /usr/include/gz/math7/gz/math/VolumetricGridLookupField.hh \
-  /usr/include/gz/math7/gz/math/config.hh \
-  /usr/include/gz/math7/gz/math/detail/AxisIndex.hh \
-  /usr/include/gz/math7/gz/math/detail/Box.hh \
-  /usr/include/gz/math7/gz/math/detail/Capsule.hh \
-  /usr/include/gz/math7/gz/math/detail/Cone.hh \
-  /usr/include/gz/math7/gz/math/detail/Cylinder.hh \
-  /usr/include/gz/math7/gz/math/detail/Ellipsoid.hh \
-  /usr/include/gz/math7/gz/math/detail/Export.hh \
-  /usr/include/gz/math7/gz/math/detail/InterpolationPoint.hh \
-  /usr/include/gz/math7/gz/math/detail/Sphere.hh \
-  /usr/include/gz/math7/gz/math/detail/WellOrderedVector.hh \
-  /usr/include/gz/math7/gz/math/graph/Edge.hh \
-  /usr/include/gz/math7/gz/math/graph/Graph.hh \
-  /usr/include/gz/math7/gz/math/graph/Vertex.hh \
   /usr/include/gz/msgs10/gz/msgs/Export.hh \
   /usr/include/gz/msgs10/gz/msgs/Factory.hh \
   /usr/include/gz/msgs10/gz/msgs/MessageFactory.hh \
@@ -704,14 +712,6 @@ CMakeFiles/WaveVisual.dir/src/WaveVisual.cc.o: /home/antoni/gazebo_maritime_ws/s
   /usr/include/gz/transport13/gz/transport/parameters/Registry.hh \
   /usr/include/gz/transport13/gz/transport/parameters/detail/Export.hh \
   /usr/include/gz/transport13/gz/transport/parameters/result.hh \
-  /usr/include/gz/utils2/gz/utils/Export.hh \
-  /usr/include/gz/utils2/gz/utils/ImplPtr.hh \
-  /usr/include/gz/utils2/gz/utils/NeverDestroyed.hh \
-  /usr/include/gz/utils2/gz/utils/SuppressWarning.hh \
-  /usr/include/gz/utils2/gz/utils/detail/DefaultOps.hh \
-  /usr/include/gz/utils2/gz/utils/detail/Export.hh \
-  /usr/include/gz/utils2/gz/utils/detail/ImplPtr.hh \
-  /usr/include/gz/utils2/gz/utils/detail/SuppressWarning.hh \
   /usr/include/libintl.h \
   /usr/include/limits.h \
   /usr/include/linux/errno.h \
@@ -840,8 +840,6 @@ CMakeFiles/WaveVisual.dir/src/WaveVisual.cc.o: /home/antoni/gazebo_maritime_ws/s
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/13/include/limits.h:
-
 /usr/include/x86_64-linux-gnu/sys/types.h:
 
 /usr/include/x86_64-linux-gnu/sys/time.h:
@@ -857,6 +855,10 @@ CMakeFiles/WaveVisual.dir/src/WaveVisual.cc.o: /home/antoni/gazebo_maritime_ws/s
 /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_inline.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h:
 
@@ -926,8 +928,6 @@ CMakeFiles/WaveVisual.dir/src/WaveVisual.cc.o: /home/antoni/gazebo_maritime_ws/s
 
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
-/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
-
 /usr/include/x86_64-linux-gnu/bits/fp-fast.h:
 
 /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
@@ -976,14 +976,6 @@ CMakeFiles/WaveVisual.dir/src/WaveVisual.cc.o: /home/antoni/gazebo_maritime_ws/s
 
 /usr/include/libintl.h:
 
-/usr/include/gz/utils2/gz/utils/detail/SuppressWarning.hh:
-
-/usr/include/gz/utils2/gz/utils/detail/ImplPtr.hh:
-
-/usr/include/gz/utils2/gz/utils/detail/DefaultOps.hh:
-
-/usr/include/gz/utils2/gz/utils/Export.hh:
-
 /usr/include/gz/transport13/gz/transport/parameters/detail/Export.hh:
 
 /usr/include/gz/transport13/gz/transport/detail/Node.hh:
@@ -1002,8 +994,6 @@ CMakeFiles/WaveVisual.dir/src/WaveVisual.cc.o: /home/antoni/gazebo_maritime_ws/s
 
 /usr/include/gz/transport13/gz/transport/NodeOptions.hh:
 
-/usr/include/gz/utils2/gz/utils/detail/Export.hh:
-
 /usr/include/gz/transport13/gz/transport/AdvertiseOptions.hh:
 
 /usr/include/gz/sim8/gz/sim/rendering/RenderUtil.hh:
@@ -1015,8 +1005,6 @@ CMakeFiles/WaveVisual.dir/src/WaveVisual.cc.o: /home/antoni/gazebo_maritime_ws/s
 /usr/include/gz/sim8/gz/sim/rendering/Events.hh:
 
 /usr/include/gz/sim8/gz/sim/detail/Export.hh:
-
-/usr/include/gz/sim8/gz/sim/detail/EntityComponentManager.hh:
 
 /usr/include/gz/transport13/gz/transport/parameters/Registry.hh:
 
@@ -1068,6 +1056,8 @@ CMakeFiles/WaveVisual.dir/src/WaveVisual.cc.o: /home/antoni/gazebo_maritime_ws/s
 
 /usr/include/gz/sdformat14/sdf/Param.hh:
 
+/usr/include/gz/sdformat14/sdf/OutputConfig.hh:
+
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 
 /usr/include/gz/sdformat14/sdf/Noise.hh:
@@ -1094,8 +1084,6 @@ CMakeFiles/WaveVisual.dir/src/WaveVisual.cc.o: /home/antoni/gazebo_maritime_ws/s
 
 /usr/include/gz/sdformat14/sdf/Frame.hh:
 
-/usr/include/gz/sdformat14/sdf/ForceTorque.hh:
-
 /usr/include/gz/sdformat14/sdf/Filesystem.hh:
 
 /usr/include/gz/sdformat14/sdf/Exception.hh:
@@ -1121,6 +1109,8 @@ CMakeFiles/WaveVisual.dir/src/WaveVisual.cc.o: /home/antoni/gazebo_maritime_ws/s
 /usr/include/gz/sdformat14/sdf/Camera.hh:
 
 /usr/include/gz/sdformat14/sdf/Box.hh:
+
+/usr/include/gz/sdformat14/sdf/Atmosphere.hh:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
 
@@ -1150,6 +1140,10 @@ CMakeFiles/WaveVisual.dir/src/WaveVisual.cc.o: /home/antoni/gazebo_maritime_ws/s
 
 /usr/include/gz/rendering8/gz/rendering/RenderingIface.hh:
 
+/usr/include/gz/sim8/gz/sim/System.hh:
+
+/usr/include/gz/rendering8/gz/rendering/Object.hh:
+
 /usr/include/gz/rendering8/gz/rendering/MeshDescriptor.hh:
 
 /usr/include/gz/rendering8/gz/rendering/Mesh.hh:
@@ -1157,6 +1151,8 @@ CMakeFiles/WaveVisual.dir/src/WaveVisual.cc.o: /home/antoni/gazebo_maritime_ws/s
 /usr/include/gz/rendering8/gz/rendering/Light.hh:
 
 /usr/include/gz/rendering8/gz/rendering/HeightmapDescriptor.hh:
+
+/usr/include/gz/rendering8/gz/rendering/Geometry.hh:
 
 /usr/include/gz/rendering8/gz/rendering/Export.hh:
 
@@ -1188,89 +1184,11 @@ CMakeFiles/WaveVisual.dir/src/WaveVisual.cc.o: /home/antoni/gazebo_maritime_ws/s
 
 /usr/include/gz/msgs10/gz/msgs/version.pb.h:
 
-/usr/include/gz/plugin2/gz/plugin/Export.hh:
+/usr/include/gz/msgs10/gz/msgs/vector2d.pb.h:
 
-/usr/include/google/protobuf/stubs/casts.h:
+/usr/include/gz/plugin2/gz/plugin/Plugin.hh:
 
-/usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
-
-/usr/include/gz/sdformat14/sdf/Scene.hh:
-
-/usr/include/gz/msgs10/gz/msgs/heightmapgeom.pb.h:
-
-/usr/include/gz/msgs10/gz/msgs/details/scene.pb.h:
-
-/usr/include/google/protobuf/repeated_field.h:
-
-/usr/include/gz/msgs10/gz/msgs/detail/dynamic_message_cast.hh:
-
-/usr/include/google/protobuf/port_undef.inc:
-
-/usr/include/google/protobuf/message.h:
-
-/usr/include/gz/common5/gz/common/Animation.hh:
-
-/usr/include/google/protobuf/metadata_lite.h:
-
-/usr/include/google/protobuf/message_lite.h:
-
-/usr/include/google/protobuf/map_field.h:
-
-/usr/include/google/protobuf/map_entry.h:
-
-/usr/include/google/protobuf/map.h:
-
-/usr/include/c++/13/tr1/beta_function.tcc:
-
-/usr/include/stdint.h:
-
-/usr/include/gz/msgs10/gz/msgs/details/any.pb.h:
-
-/usr/include/google/protobuf/io/zero_copy_stream_impl_lite.h:
-
-/usr/include/google/protobuf/io/zero_copy_stream.h:
-
-/usr/include/gz/msgs10/gz/msgs/plugin_v.pb.h:
-
-/usr/include/gz/transport13/gz/transport/TransportTypes.hh:
-
-/usr/include/gz/sim8/gz/sim/rendering/detail/Export.hh:
-
-/usr/include/c++/13/bits/locale_classes.h:
-
-/usr/include/google/protobuf/has_bits.h:
-
-/usr/include/gz/math7/gz/math/detail/Cone.hh:
-
-/usr/include/gz/rendering8/gz/rendering/config.hh:
-
-/usr/include/google/protobuf/extension_set.h:
-
-/usr/include/c++/13/iosfwd:
-
-/usr/include/gz/common5/gz/common/io/detail/Export.hh:
-
-/usr/include/gz/msgs10/gz/msgs/details/lens.pb.h:
-
-/usr/include/gz/sdformat14/sdf/ParserConfig.hh:
-
-/usr/include/gz/msgs10/gz/msgs/details/time.pb.h:
-
-/usr/include/gz/msgs10/gz/msgs/boxgeom.pb.h:
-
-/usr/include/c++/13/future:
-
-/usr/include/gz/math7/gz/math/AxisAlignedBox.hh:
-
-/usr/include/gz/common5/gz/common/detail/Export.hh:
-
-/usr/include/gz/sdformat14/sdf/system_util.hh:
-
-/usr/include/gz/msgs10/gz/msgs/details/color.pb.h:
-
-/usr/include/gz/common5/gz/common/DataFrame.hh:
-
-/usr/include/google/protobuf/explicitly_constructed.h:
+/usr/include/gz/msgs10/gz/msgs/surface.pb.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
 
@@ -1280,13 +1198,9 @@ CMakeFiles/WaveVisual.dir/src/WaveVisual.cc.o: /home/antoni/gazebo_maritime_ws/s
 
 /usr/include/c++/13/bits/nested_exception.h:
 
-/usr/include/google/protobuf/port.h:
+/usr/include/gz/msgs10/gz/msgs/uint32.pb.h:
 
-/usr/include/c++/13/thread:
-
-/usr/include/gz/math7/gz/math/SemanticVersion.hh:
-
-/usr/include/gz/math7/gz/math/graph/Edge.hh:
+/usr/include/c++/13/tr1/legendre_function.tcc:
 
 /usr/include/gz/msgs10/gz/msgs/float.pb.h:
 
@@ -1296,67 +1210,25 @@ CMakeFiles/WaveVisual.dir/src/WaveVisual.cc.o: /home/antoni/gazebo_maritime_ws/s
 
 /usr/include/c++/13/bits/range_access.h:
 
-/usr/include/c++/13/tr1/exp_integral.tcc:
-
-/usr/include/gz/sim8/gz/sim/components/SourceFilePath.hh:
-
-/usr/include/google/protobuf/generated_message_reflection.h:
-
 /usr/include/c++/13/tr1/ell_integral.tcc:
-
-/usr/include/gz/sdformat14/sdf/AirSpeed.hh:
-
-/usr/include/gz/msgs10/gz/msgs/details/imu_sensor.pb.h:
-
-/usr/include/c++/13/string_view:
-
-/usr/include/c++/13/map:
-
-/usr/include/features.h:
-
-/usr/include/c++/13/string:
 
 /usr/include/gz/transport13/gz/transport/HandlerStorage.hh:
 
 /usr/include/c++/13/stdlib.h:
 
-/usr/include/gz/math7/gz/math/Export.hh:
-
-/usr/include/google/protobuf/implicit_weak_message.h:
-
 /usr/include/c++/13/sstream:
 
 /usr/include/gz/msgs10/gz/msgs/convert/Vector2.hh:
 
-/usr/include/ctype.h:
+/usr/include/c++/13/thread:
 
-/usr/include/google/protobuf/map_field_lite.h:
-
-/usr/include/c++/13/bits/std_mutex.h:
+/usr/include/google/protobuf/port.h:
 
 /usr/include/gz/sdformat14/sdf/Plane.hh:
 
 /usr/include/c++/13/set:
 
 /usr/include/c++/13/pstl/glue_numeric_defs.h:
-
-/usr/include/gz/math7/gz/math/Pose3.hh:
-
-/usr/include/c++/13/memory:
-
-/usr/include/gz/math7/gz/math/RotationSpline.hh:
-
-/usr/include/c++/13/list:
-
-/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
-
-/usr/include/c++/13/ext/alloc_traits.h:
-
-/usr/include/c++/13/limits:
-
-/usr/include/google/protobuf/stubs/logging.h:
-
-/usr/include/c++/13/bits/concept_check.h:
 
 /usr/include/c++/13/iterator:
 
@@ -1374,18 +1246,6 @@ CMakeFiles/WaveVisual.dir/src/WaveVisual.cc.o: /home/antoni/gazebo_maritime_ws/s
 
 /usr/include/gz/common5/gz/common/graphics/Export.hh:
 
-/usr/include/c++/13/tr1/bessel_function.tcc:
-
-/usr/include/c++/13/bits/std_thread.h:
-
-/usr/include/gz/transport13/gz/transport/Export.hh:
-
-/usr/include/gz/msgs10/gz/msgs/details/discovery.pb.h:
-
-/usr/include/c++/13/functional:
-
-/usr/include/gz/msgs10/gz/msgs/details/spheregeom.pb.h:
-
 /usr/include/x86_64-linux-gnu/bits/time64.h:
 
 /usr/include/c++/13/ext/type_traits.h:
@@ -1398,19 +1258,19 @@ CMakeFiles/WaveVisual.dir/src/WaveVisual.cc.o: /home/antoni/gazebo_maritime_ws/s
 
 /usr/include/c++/13/ext/numeric_traits.h:
 
-/usr/include/c++/13/pstl/glue_algorithm_defs.h:
-
-/usr/include/google/protobuf/descriptor.h:
-
-/usr/include/c++/13/ext/concurrence.h:
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Color.hh:
 
 /usr/include/c++/13/new:
 
-/usr/include/c++/13/tr1/legendre_function.tcc:
+/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
 
-/usr/include/gz/msgs10/gz/msgs/uint32.pb.h:
+/usr/include/c++/13/ext/alloc_traits.h:
+
+/usr/include/c++/13/list:
 
 /usr/include/c++/13/cwchar:
+
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/detail/Cylinder.hh:
 
 /usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
 
@@ -1434,12 +1294,6 @@ CMakeFiles/WaveVisual.dir/src/WaveVisual.cc.o: /home/antoni/gazebo_maritime_ws/s
 
 /usr/include/c++/13/cstdarg:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
-
-/usr/include/c++/13/numeric:
-
-/usr/include/google/protobuf/any.h:
-
 /usr/include/c++/13/cmath:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h:
@@ -1448,151 +1302,51 @@ CMakeFiles/WaveVisual.dir/src/WaveVisual.cc.o: /home/antoni/gazebo_maritime_ws/s
 
 /usr/include/gz/msgs10/gz/msgs/details/projector.pb.h:
 
-/usr/include/c++/13/utility:
-
-/usr/include/gz/sdformat14/sdf/JointAxis.hh:
-
-/usr/include/c++/13/bits/locale_facets_nonio.tcc:
-
-/usr/include/gz/rendering8/gz/rendering/Material.hh:
-
-/usr/include/gz/common5/gz/common/events/Export.hh:
-
-/usr/include/gz/math7/gz/math/detail/AxisIndex.hh:
-
-/usr/include/c++/13/bits/locale_facets_nonio.h:
-
-/usr/include/google/protobuf/generated_enum_util.h:
-
-/usr/include/c++/13/bits/locale_classes.tcc:
-
-/usr/include/c++/13/bits/uniform_int_dist.h:
-
-/usr/include/c++/13/bits/hashtable.h:
-
-/usr/include/gz/sim8/gz/sim/rendering/MarkerManager.hh:
-
-/usr/include/gz/msgs10/gz/msgs/details/serialized.pb.h:
-
-/usr/include/errno.h:
-
-/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
-
-/usr/include/google/protobuf/generated_message_util.h:
-
-/usr/include/c++/13/bits/functional_hash.h:
-
-/usr/include/c++/13/pstl/glue_memory_defs.h:
-
-/usr/include/c++/13/bits/memory_resource.h:
-
-/usr/include/gz/msgs10/gz/msgs/color.pb.h:
-
-/usr/include/c++/13/bits/exception.h:
-
-/usr/include/gz/msgs10/gz/msgs/contactsensor.pb.h:
-
-/usr/include/c++/13/bits/cxxabi_init_exception.h:
-
 /usr/include/c++/13/climits:
 
-/usr/include/gz/utils2/gz/utils/SuppressWarning.hh:
+/usr/include/c++/13/future:
 
-/usr/include/c++/13/bits/cxxabi_forced.h:
+/usr/include/c++/13/string:
 
-/usr/include/google/protobuf/generated_enum_reflection.h:
+/usr/include/features.h:
 
-/usr/include/gz/msgs10/gz/msgs/convert/Quaternion.hh:
+/usr/include/c++/13/chrono:
 
-/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
+/usr/include/gz/msgs10/gz/msgs/distortion.pb.h:
 
-/usr/include/c++/13/bits/locale_conv.h:
+/usr/include/c++/13/tr1/gamma.tcc:
 
-/usr/include/c++/13/bits/istream.tcc:
+/usr/include/c++/13/ext/atomicity.h:
 
-/usr/include/gz/common5/gz/common/graphics/Types.hh:
+/usr/include/c++/13/cctype:
 
-/usr/include/c++/13/bits/deque.tcc:
+/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 
-/usr/include/c++/13/optional:
+/usr/include/gz/rendering8/gz/rendering/ShaderParam.hh:
 
-/usr/include/gz/msgs10/gz/msgs/joint.pb.h:
+/usr/include/c++/13/tr1/poly_hermite.tcc:
 
-/usr/include/gz/transport13/gz/transport/parameters/Interface.hh:
-
-/usr/include/c++/13/bits/stl_multimap.h:
-
-/usr/include/gz/msgs10/gz/msgs/details/version.pb.h:
-
-/usr/include/gz/msgs10/gz/msgs/parameter_declarations.pb.h:
-
-/usr/include/c++/13/bits/char_traits.h:
-
-/usr/include/gz/sim8/gz/sim/Conversions.hh:
-
-/usr/include/c++/13/bits/std_function.h:
-
-/usr/include/google/protobuf/io/coded_stream.h:
-
-/usr/include/c++/13/bits/chrono.h:
-
-/usr/include/gz/msgs10/gz/msgs/versioned_name.pb.h:
-
-/usr/include/gz/msgs10/gz/msgs/air_speed_sensor.pb.h:
-
-/usr/include/gz/rendering8/gz/rendering/RenderTypes.hh:
-
-/usr/include/gz/msgs10/gz/msgs/details/int64.pb.h:
-
-/usr/include/gz/transport13/gz/transport/TopicStorage.hh:
-
-/usr/include/c++/13/backward/auto_ptr.h:
-
-/usr/include/assert.h:
-
-/usr/include/gz/math7/gz/math/graph/Graph.hh:
-
-/usr/include/asm-generic/errno-base.h:
-
-/usr/include/c++/13/bits/stl_iterator_base_funcs.h:
-
-/usr/include/c++/13/array:
-
-/usr/include/c++/13/algorithm:
-
-/usr/include/c++/13/bits/stl_raw_storage_iter.h:
-
-/usr/include/google/protobuf/parse_context.h:
-
-/usr/include/x86_64-linux-gnu/bits/timex.h:
-
-/usr/include/gz/msgs10/gz/msgs/details/contactsensor.pb.h:
-
-/usr/include/c++/13/bits/fstream.tcc:
-
-/usr/include/gz/common5/gz/common/events/detail/Export.hh:
-
-/usr/include/google/protobuf/endian.h:
-
-/usr/include/alloca.h:
+/usr/include/c++/13/cassert:
 
 /usr/include/gz/common5/gz/common/geospatial/detail/Export.hh:
 
 /usr/include/c++/13/bits/cpp_type_traits.h:
 
-/usr/include/c++/13/cassert:
+/usr/include/c++/13/optional:
+
+/usr/include/gz/msgs10/gz/msgs/joint.pb.h:
+
+/usr/include/c++/13/mutex:
+
+/usr/include/c++/13/bits/unique_lock.h:
+
+/usr/include/gz/plugin2/gz/plugin/EnablePluginFromThis.hh:
+
+/usr/include/c++/13/bits/string_view.tcc:
 
 /usr/include/c++/13/ostream:
 
 /usr/include/c++/13/bits/streambuf_iterator.h:
-
-/usr/include/uuid/uuid.h:
-
-/usr/include/gz/common5/gz/common/URI.hh:
-
-/usr/include/gz/msgs10/gz/msgs/details/link.pb.h:
-
-/usr/include/c++/13/bits/specfun.h:
 
 /usr/include/c++/13/bits/codecvt.h:
 
@@ -1604,71 +1358,143 @@ CMakeFiles/WaveVisual.dir/src/WaveVisual.cc.o: /home/antoni/gazebo_maritime_ws/s
 
 /usr/include/gz/msgs10/gz/msgs/discovery.pb.h:
 
-/usr/include/gz/transport13/gz/transport/detail/Export.hh:
+/usr/include/c++/13/bits/stl_set.h:
 
-/usr/include/c++/13/unordered_set:
+/usr/include/gz/msgs10/gz/msgs/details/gps_sensor.pb.h:
 
-/usr/include/byteswap.h:
+/usr/include/gz/msgs10/gz/msgs/details/inertial.pb.h:
 
-/usr/include/c++/13/bits/stl_vector.h:
+/usr/include/gz/sdformat14/sdf/Visual.hh:
 
-/usr/include/c++/13/any:
+/usr/include/c++/13/bits/stl_relops.h:
 
-/usr/include/gz/rendering8/gz/rendering/ShaderParams.hh:
-
-/usr/include/c++/13/typeinfo:
-
-/usr/include/gz/math7/gz/math/MassMatrix3.hh:
-
-/usr/include/c++/13/tr1/special_function_util.h:
-
-/usr/include/gz/msgs10/gz/msgs/details/density.pb.h:
-
-/usr/include/c++/13/tr1/poly_laguerre.tcc:
-
-/usr/include/gz/msgs10/gz/msgs/convert/AxisAlignedBox.hh:
-
-/usr/include/x86_64-linux-gnu/bits/timesize.h:
-
-/usr/include/gz/msgs10/gz/msgs/convert/FuelMetadata.hh:
-
-/usr/include/c++/13/bits/invoke.h:
-
-/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WaveVisual.cc:
+/usr/include/c++/13/bits/stl_raw_storage_iter.h:
 
 /usr/include/c++/13/bits/stl_numeric.h:
 
-/usr/include/c++/13/bits/exception_defines.h:
+/usr/include/gz/sdformat14/sdf/InterfaceModel.hh:
 
-/usr/include/c++/13/bits/localefwd.h:
+/usr/include/c++/13/bits/stl_uninitialized.h:
 
-/usr/include/gz/msgs10/gz/msgs/spherical_coordinates.pb.h:
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Sphere.hh:
 
-/usr/include/c++/13/bits/stream_iterator.h:
+/usr/include/c++/13/bits/new_allocator.h:
 
-/usr/include/google/protobuf/stubs/callback.h:
+/usr/include/c++/13/bits/stl_iterator_base_types.h:
 
-/usr/include/c++/13/bits/enable_special_members.h:
+/usr/include/c++/13/tr1/beta_function.tcc:
 
-/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
+/usr/include/stdint.h:
 
-/usr/include/c++/13/bits/basic_string.tcc:
+/usr/include/gz/msgs10/gz/msgs/details/any.pb.h:
 
-/usr/include/c++/13/bit:
+/usr/include/c++/13/bits/utility.h:
 
-/usr/include/c++/13/bits/allocated_ptr.h:
+/usr/include/c++/13/bits/stl_function.h:
 
-/usr/include/gz/msgs10/gz/msgs/meshgeom.pb.h:
+/usr/include/c++/13/bits/stl_deque.h:
 
-/usr/include/google/protobuf/port_def.inc:
+/usr/include/c++/13/cstddef:
 
-/usr/include/google/protobuf/stubs/mutex.h:
+/usr/include/c++/13/bits/stl_algo.h:
 
-/usr/include/gz/rendering8/gz/rendering/Node.hh:
+/usr/include/c++/13/bits/std_thread.h:
 
-/usr/include/gz/msgs10/gz/msgs/gui_camera.pb.h:
+/usr/include/c++/13/tr1/bessel_function.tcc:
 
-/usr/include/c++/13/fstream:
+/usr/include/gz/msgs10/gz/msgs/details/distortion.pb.h:
+
+/usr/include/c++/13/initializer_list:
+
+/usr/include/gz/transport13/gz/transport/Export.hh:
+
+/usr/include/gz/msgs10/gz/msgs/details/discovery.pb.h:
+
+/usr/include/c++/13/bits/stl_construct.h:
+
+/usr/include/c++/13/bits/std_mutex.h:
+
+/usr/include/gz/sim8/gz/sim/EventManager.hh:
+
+/usr/include/gz/common5/gz/common/Image.hh:
+
+/usr/include/gz/sdformat14/sdf/Material.hh:
+
+/usr/include/gz/msgs10/gz/msgs/details/gui.pb.h:
+
+/usr/include/gz/sim8/gz/sim/Conversions.hh:
+
+/usr/include/c++/13/bits/std_function.h:
+
+/usr/include/c++/13/bits/char_traits.h:
+
+/usr/include/gz/sim8/gz/sim/detail/EntityComponentManager.hh:
+
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Vector2.hh:
+
+/usr/include/c++/13/cwctype:
+
+/usr/include/c++/13/bits/sstream.tcc:
+
+/usr/include/c++/13/bits/specfun.h:
+
+/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
+
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Export.hh:
+
+/usr/include/c++/13/map:
+
+/usr/include/c++/13/string_view:
+
+/opt/ros/jazzy/opt/gz_utils_vendor/include/gz/utils2/gz/utils/NeverDestroyed.hh:
+
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/detail/Sphere.hh:
+
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/graph/Edge.hh:
+
+/opt/ros/jazzy/opt/gz_utils_vendor/include/gz/utils2/gz/utils/detail/SuppressWarning.hh:
+
+/usr/include/google/protobuf/metadata_lite.h:
+
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/detail/Export.hh:
+
+/usr/include/gz/msgs10/gz/msgs/details/polylinegeom.pb.h:
+
+/usr/include/c++/13/functional:
+
+/usr/include/gz/msgs10/gz/msgs/details/spheregeom.pb.h:
+
+/usr/include/gz/sdformat14/sdf/ForceTorque.hh:
+
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/detail/Ellipsoid.hh:
+
+/usr/include/c++/13/ratio:
+
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/config.hh:
+
+/usr/include/gz/common5/gz/common/Material.hh:
+
+/usr/include/gz/sdformat14/sdf/Sensor.hh:
+
+/usr/include/gz/sdformat14/sdf/Model.hh:
+
+/usr/include/gz/sdformat14/sdf/Export.hh:
+
+/usr/include/gz/msgs10/gz/msgs/atmosphere.pb.h:
+
+/usr/include/gz/transport13/gz/transport/parameters/Interface.hh:
+
+/usr/include/c++/13/bits/stl_multimap.h:
+
+/usr/include/gz/msgs10/gz/msgs/details/version.pb.h:
+
+/usr/include/c++/13/bits/istream.tcc:
+
+/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
+
+/usr/include/c++/13/bits/locale_conv.h:
+
+/usr/include/gz/common5/gz/common/graphics/Types.hh:
 
 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
 
@@ -1690,95 +1516,63 @@ CMakeFiles/WaveVisual.dir/src/WaveVisual.cc.o: /home/antoni/gazebo_maritime_ws/s
 
 /usr/include/gz/msgs10/gz/msgs/gps_sensor.pb.h:
 
-/usr/include/c++/13/mutex:
+/usr/include/c++/13/pstl/glue_algorithm_defs.h:
 
-/usr/include/c++/13/initializer_list:
+/usr/include/google/protobuf/descriptor.h:
 
-/usr/include/gz/msgs10/gz/msgs/details/distortion.pb.h:
+/usr/include/c++/13/ext/concurrence.h:
 
-/usr/include/c++/13/bits/unique_lock.h:
+/usr/lib/gcc/x86_64-linux-gnu/13/include/limits.h:
 
-/usr/include/c++/13/bits/basic_ios.h:
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Matrix6.hh:
 
-/usr/include/gz/msgs10/gz/msgs/cylindergeom.pb.h:
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Vector3.hh:
 
-/usr/include/google/protobuf/stubs/macros.h:
+/usr/include/gz/sdformat14/sdf/SemanticPose.hh:
 
-/usr/include/gz/msgs10/gz/msgs/battery.pb.h:
+/usr/include/c++/13/bits/unordered_map.h:
 
-/usr/include/gz/utils2/gz/utils/NeverDestroyed.hh:
+/usr/include/c++/13/tr1/exp_integral.tcc:
 
-/usr/include/c++/13/condition_variable:
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Triangle3.hh:
 
-/usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h:
+/usr/include/gz/msgs10/gz/msgs/details/uint64.pb.h:
 
-/usr/include/c++/13/bits/predefined_ops.h:
+/usr/include/c++/13/limits:
 
-/usr/include/gz/msgs10/gz/msgs/model.pb.h:
+/usr/include/c++/13/bits/locale_facets_nonio.h:
 
-/usr/include/gz/msgs10/gz/msgs/parameter_declaration.pb.h:
+/usr/include/assert.h:
 
-/usr/include/c++/13/bits/alloc_traits.h:
+/usr/include/gz/transport13/gz/transport/TopicStorage.hh:
 
-/usr/include/gz/sdformat14/sdf/NavSat.hh:
+/usr/include/c++/13/backward/auto_ptr.h:
 
-/usr/include/gz/sdformat14/sdf/Magnetometer.hh:
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/graph/Graph.hh:
 
-/usr/include/c++/13/pstl/execution_defs.h:
+/usr/include/alloca.h:
 
-/usr/include/c++/13/unordered_map:
+/usr/include/c++/13/bit:
 
-/usr/include/gz/msgs10/gz/msgs/details/pointcloud_packed.pb.h:
+/usr/include/c++/13/bits/allocated_ptr.h:
 
-/usr/include/google/protobuf/stubs/hash.h:
+/usr/include/gz/msgs10/gz/msgs/meshgeom.pb.h:
 
-/usr/include/c++/13/bits/basic_ios.tcc:
+/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
 
-/usr/include/gz/sdformat14/sdf/Actor.hh:
+/usr/include/c++/13/bits/basic_string.tcc:
 
-/usr/include/c++/13/stdexcept:
+/opt/ros/jazzy/opt/gz_utils_vendor/include/gz/utils2/gz/utils/detail/ImplPtr.hh:
 
-/usr/include/c++/13/clocale:
+/usr/include/c++/13/iomanip:
 
-/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/Wavefield.hh:
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/SphericalCoordinates.hh:
 
-/usr/include/c++/13/backward/binders.h:
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Plane.hh:
 
-/usr/include/google/protobuf/map_entry_lite.h:
+/usr/include/google/protobuf/map.h:
 
-/usr/include/gz/sim8/gz/sim/components/Name.hh:
-
-/usr/include/c++/13/bits/atomic_futex.h:
-
-/usr/include/gz/msgs10/gz/msgs/convert/StdTypes.hh:
-
-/usr/include/c++/13/bits/locale_facets.h:
-
-/usr/include/c++/13/bits/memoryfwd.h:
-
-/usr/include/c++/13/bits/move.h:
-
-/usr/include/google/protobuf/stubs/port.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h:
-
-/usr/include/gz/sdformat14/sdf/Plugin.hh:
-
-/usr/include/c++/13/bits/ostream.tcc:
-
-/usr/include/c++/13/bits/stl_set.h:
-
-/usr/include/gz/msgs10/gz/msgs/details/gps_sensor.pb.h:
-
-/usr/include/gz/msgs10/gz/msgs/details/inertial.pb.h:
-
-/usr/include/c++/13/bits/parse_numbers.h:
-
-/usr/include/linux/errno.h:
-
-/usr/include/gz/msgs10/gz/msgs/altimeter_sensor.pb.h:
-
-/usr/include/c++/13/bits/std_abs.h:
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/MassMatrix3.hh:
 
 /usr/include/c++/13/bits/ptr_traits.h:
 
@@ -1788,75 +1582,219 @@ CMakeFiles/WaveVisual.dir/src/WaveVisual.cc.o: /home/antoni/gazebo_maritime_ws/s
 
 /usr/include/gz/msgs10/gz/msgs/air_pressure_sensor.pb.h:
 
-/usr/include/c++/13/bits/locale_facets.tcc:
+/usr/include/gz/msgs10/gz/msgs/pointcloud_packed.pb.h:
 
-/usr/include/google/protobuf/stubs/common.h:
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/AxisAlignedBox.hh:
 
-/usr/include/gz/msgs10/gz/msgs/convert/ShaderType.hh:
+/usr/include/c++/13/bits/align.h:
 
-/usr/include/c++/13/bits/requires_hosted.h:
+/usr/include/gz/sdformat14/sdf/Link.hh:
 
-/usr/include/gz/msgs10/gz/msgs/details/conegeom.pb.h:
+/usr/include/gz/msgs10/gz/msgs/link.pb.h:
 
-/usr/include/c++/13/bits/stl_deque.h:
+/usr/include/asm-generic/errno-base.h:
 
-/usr/include/google/protobuf/stubs/once.h:
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Matrix3.hh:
 
-/usr/include/gz/plugin2/gz/plugin/EnablePluginFromThis.hh:
+/usr/include/c++/13/bits/stl_iterator_base_funcs.h:
 
-/usr/include/c++/13/bits/string_view.tcc:
+/usr/include/c++/13/array:
 
-/usr/include/c++/13/bits/shared_ptr.h:
+/usr/include/gz/msgs10/gz/msgs/detail/Export.hh:
 
-/usr/include/c++/13/tr1/riemann_zeta.tcc:
+/usr/include/c++/13/bits/hash_bytes.h:
 
-/usr/include/google/protobuf/arena.h:
+/usr/include/gz/rendering8/gz/rendering/Node.hh:
 
-/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
+/usr/include/c++/13/fstream:
 
-/usr/include/gz/plugin2/gz/plugin/Register.hh:
+/usr/include/gz/msgs10/gz/msgs/gui_camera.pb.h:
 
-/usr/include/c++/13/bits/exception_ptr.h:
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Helpers.hh:
 
-/usr/include/c++/13/bits/this_thread_sleep.h:
+/usr/include/c++/13/bits/basic_ios.h:
+
+/usr/include/gz/msgs10/gz/msgs/cylindergeom.pb.h:
+
+/usr/include/c++/13/debug/assertions.h:
+
+/usr/include/gz/msgs10/gz/msgs/Export.hh:
+
+/usr/include/c++/13/istream:
+
+/usr/include/gz/msgs10/gz/msgs/details/serialized_map.pb.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
 
 /usr/include/c++/13/bits/erase_if.h:
 
-/usr/include/c++/13/debug/debug.h:
+/usr/include/c++/13/bits/shared_ptr.h:
 
-/usr/include/c++/13/bits/stl_list.h:
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Ellipsoid.hh:
 
-/usr/include/c++/13/ratio:
+/usr/include/c++/13/utility:
 
-/usr/include/gz/msgs10/gz/msgs/vector2d.pb.h:
+/usr/include/gz/sdformat14/sdf/JointAxis.hh:
 
-/usr/include/c++/13/cwctype:
+/usr/include/c++/13/bits/locale_facets_nonio.tcc:
 
-/usr/include/c++/13/bits/sstream.tcc:
+/usr/include/gz/rendering8/gz/rendering/Material.hh:
 
-/usr/include/gz/sdformat14/sdf/Material.hh:
+/usr/include/gz/common5/gz/common/events/Export.hh:
 
-/usr/include/gz/msgs10/gz/msgs/details/gui.pb.h:
+/usr/include/linux/errno.h:
 
-/usr/include/c++/13/iomanip:
+/usr/include/gz/msgs10/gz/msgs/altimeter_sensor.pb.h:
+
+/usr/include/c++/13/bits/std_abs.h:
+
+/usr/include/c++/13/bits/parse_numbers.h:
 
 /usr/include/c++/13/bits/postypes.h:
 
-/usr/include/c++/13/cstddef:
+/usr/include/gz/msgs10/gz/msgs/sensor.pb.h:
 
-/usr/include/c++/13/bits/stl_algo.h:
+/usr/include/c++/13/bits/locale_classes.tcc:
 
-/usr/include/google/protobuf/inlined_string_field.h:
+/usr/include/c++/13/cerrno:
 
-/usr/include/gz/msgs10/gz/msgs/convert/DiscoveryType.hh:
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Temperature.hh:
 
-/usr/include/c++/13/chrono:
+/usr/include/c++/13/bits/stringfwd.h:
+
+/usr/include/google/protobuf/message.h:
+
+/usr/include/google/protobuf/port_undef.inc:
+
+/usr/include/gz/common5/gz/common/Animation.hh:
+
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/MaterialType.hh:
+
+/usr/include/c++/13/bits/stream_iterator.h:
+
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/SemanticVersion.hh:
+
+/usr/include/gz/msgs10/gz/msgs/details/planegeom.pb.h:
+
+/usr/include/c++/13/bits/functexcept.h:
+
+/usr/include/gz/msgs10/gz/msgs/model.pb.h:
+
+/usr/include/gz/msgs10/gz/msgs/parameter_declaration.pb.h:
+
+/usr/include/c++/13/memory:
+
+/usr/include/c++/13/bits/uniform_int_dist.h:
+
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Material.hh:
+
+/usr/include/gz/msgs10/gz/msgs/details/image.pb.h:
+
+/usr/include/gz/msgs10/gz/msgs/material.pb.h:
+
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Box.hh:
+
+/usr/include/c++/13/bits/quoted_string.h:
+
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/detail/WellOrderedVector.hh:
+
+/usr/include/c++/13/backward/binders.h:
+
+/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/Wavefield.hh:
+
+/opt/ros/jazzy/opt/gz_utils_vendor/include/gz/utils2/gz/utils/detail/DefaultOps.hh:
+
+/usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
+
+/usr/include/gz/msgs10/gz/msgs/convert/JointType.hh:
+
+/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WaveVisual.hh:
+
+/usr/include/c++/13/bits/deque.tcc:
+
+/opt/ros/jazzy/opt/gz_utils_vendor/include/gz/utils2/gz/utils/detail/Export.hh:
+
+/usr/include/c++/13/bits/stl_list.h:
+
+/usr/include/c++/13/debug/debug.h:
+
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Inertial.hh:
+
+/usr/include/c++/13/bits/unordered_set.h:
+
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Line2.hh:
+
+/usr/include/gz/sim8/gz/sim/components/Name.hh:
+
+/usr/include/c++/13/bits/atomic_futex.h:
+
+/usr/include/gz/msgs10/gz/msgs/convert/StdTypes.hh:
+
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/TimeVaryingVolumetricGridLookupField.hh:
+
+/usr/include/gz/common5/gz/common/IOBase.hh:
+
+/usr/include/gz/msgs10/gz/msgs/convert/SphericalCoordinates.hh:
+
+/usr/include/gz/common5/gz/common/Export.hh:
+
+/usr/include/gz/msgs10/gz/msgs/details/versioned_name.pb.h:
+
+/usr/include/c++/13/tr1/special_function_util.h:
+
+/usr/include/gz/msgs10/gz/msgs/details/density.pb.h:
+
+/usr/include/c++/13/tr1/poly_laguerre.tcc:
+
+/usr/include/gz/msgs10/gz/msgs/convert/AxisAlignedBox.hh:
+
+/usr/include/x86_64-linux-gnu/bits/timesize.h:
+
+/usr/include/gz/msgs10/gz/msgs/convert/FuelMetadata.hh:
+
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Line3.hh:
+
+/usr/include/c++/13/bits/functional_hash.h:
 
 /usr/include/c++/13/bits/stl_algobase.h:
 
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/detail/AxisIndex.hh:
+
 /usr/include/gz/msgs10/gz/msgs/details/sensor_noise.pb.h:
+
+/usr/include/c++/13/bits/concept_check.h:
+
+/usr/include/google/protobuf/stubs/logging.h:
+
+/usr/include/c++/13/bits/alloc_traits.h:
+
+/usr/include/c++/13/bits/stl_vector.h:
+
+/usr/include/byteswap.h:
+
+/usr/include/c++/13/algorithm:
+
+/usr/include/c++/13/any:
+
+/usr/include/c++/13/bits/unique_ptr.h:
+
+/usr/include/gz/msgs10/gz/msgs/convert/Color.hh:
+
+/usr/include/c++/13/iosfwd:
+
+/usr/include/gz/rendering8/gz/rendering/config.hh:
+
+/usr/include/google/protobuf/extension_set.h:
+
+/usr/include/gz/common5/gz/common/io/detail/Export.hh:
+
+/usr/include/gz/msgs10/gz/msgs/details/lens.pb.h:
+
+/usr/include/c++/13/condition_variable:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h:
+
+/usr/include/c++/13/bits/predefined_ops.h:
 
 /usr/include/gz/sdformat14/sdf/Collision.hh:
 
@@ -1868,63 +1806,129 @@ CMakeFiles/WaveVisual.dir/src/WaveVisual.cc.o: /home/antoni/gazebo_maritime_ws/s
 
 /usr/include/gz/msgs10/gz/msgs/details/air_pressure_sensor.pb.h:
 
-/usr/include/c++/13/bits/stl_construct.h:
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/detail/Box.hh:
 
-/usr/include/c++/13/bits/functexcept.h:
+/usr/include/gz/sdformat14/sdf/NavSat.hh:
 
-/usr/include/gz/math7/gz/math/Inertial.hh:
+/usr/include/gz/sdformat14/sdf/Magnetometer.hh:
 
-/usr/include/c++/13/bits/stl_iterator_base_types.h:
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/detail/InterpolationPoint.hh:
 
-/usr/include/c++/13/debug/assertions.h:
+/usr/include/c++/13/pstl/execution_defs.h:
 
-/usr/include/gz/msgs10/gz/msgs/Export.hh:
+/usr/include/c++/13/unordered_map:
 
-/usr/include/c++/13/istream:
+/usr/include/gz/msgs10/gz/msgs/details/pointcloud_packed.pb.h:
 
-/usr/include/gz/msgs10/gz/msgs/details/serialized_map.pb.h:
+/usr/include/gz/msgs10/gz/msgs/time.pb.h:
 
-/usr/include/c++/13/bits/stringfwd.h:
+/usr/include/gz/msgs10/gz/msgs/entity.pb.h:
 
-/usr/include/c++/13/cerrno:
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/graph/Vertex.hh:
 
-/usr/include/gz/msgs10/gz/msgs/distortion.pb.h:
+/usr/include/c++/13/bits/localefwd.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
+/usr/include/gz/msgs10/gz/msgs/spherical_coordinates.pb.h:
 
-/usr/include/gz/rendering8/gz/rendering/ShaderParam.hh:
+/usr/include/gz/msgs10/gz/msgs/versioned_name.pb.h:
 
-/usr/include/c++/13/tr1/poly_hermite.tcc:
+/usr/include/gz/msgs10/gz/msgs/air_speed_sensor.pb.h:
 
-/usr/include/gz/sdformat14/sdf/Visual.hh:
+/usr/include/gz/rendering8/gz/rendering/RenderTypes.hh:
 
-/usr/include/c++/13/bits/stl_relops.h:
+/usr/include/gz/msgs10/gz/msgs/details/int64.pb.h:
 
-/usr/include/google/protobuf/reflection_ops.h:
+/usr/include/c++/13/bits/cxxabi_forced.h:
 
-/usr/include/gz/sdformat14/sdf/InterfaceModel.hh:
+/usr/include/gz/rendering8/gz/rendering/ShaderParams.hh:
 
-/usr/include/c++/13/bits/stl_uninitialized.h:
+/usr/include/c++/13/typeinfo:
 
-/usr/include/c++/13/bits/new_allocator.h:
+/usr/include/c++/13/bits/cxxabi_init_exception.h:
 
-/usr/include/c++/13/bits/quoted_string.h:
+/usr/include/c++/13/pstl/glue_memory_defs.h:
 
-/usr/include/gz/sdformat14/sdf/SemanticPose.hh:
+/usr/include/c++/13/bits/memory_resource.h:
 
-/usr/include/c++/13/bits/unordered_map.h:
+/usr/include/gz/msgs10/gz/msgs/color.pb.h:
 
-/usr/include/endian.h:
+/usr/include/c++/13/bits/exception.h:
 
-/usr/include/c++/13/bits/align.h:
+/usr/include/gz/msgs10/gz/msgs/contactsensor.pb.h:
 
-/usr/include/gz/msgs10/gz/msgs/convert/Color.hh:
+/usr/include/gz/msgs10/gz/msgs/parameter_declarations.pb.h:
 
-/usr/include/c++/13/bits/unordered_set.h:
+/usr/include/c++/13/bits/exception_defines.h:
 
-/usr/include/gz/math7/gz/math/Line3.hh:
+/usr/include/c++/13/bits/fstream.tcc:
 
-/usr/include/gz/msgs10/gz/msgs/pointcloud_packed.pb.h:
+/usr/include/gz/common5/gz/common/events/detail/Export.hh:
+
+/usr/include/c++/13/bits/hashtable.h:
+
+/usr/include/gz/sim8/gz/sim/rendering/MarkerManager.hh:
+
+/usr/include/gz/msgs10/gz/msgs/details/serialized.pb.h:
+
+/usr/include/gz/transport13/gz/transport/Node.hh:
+
+/usr/include/gz/msgs10/gz/msgs/empty.pb.h:
+
+/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WaveVisual.cc:
+
+/usr/include/c++/13/bits/invoke.h:
+
+/usr/include/uuid/uuid.h:
+
+/usr/include/gz/common5/gz/common/URI.hh:
+
+/usr/include/gz/msgs10/gz/msgs/details/link.pb.h:
+
+/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
+
+/usr/include/gz/plugin2/gz/plugin/Register.hh:
+
+/usr/include/c++/13/bits/exception_ptr.h:
+
+/usr/include/c++/13/bits/this_thread_sleep.h:
+
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Matrix4.hh:
+
+/usr/include/gz/sdformat14/sdf/Actor.hh:
+
+/usr/include/c++/13/stdexcept:
+
+/usr/include/c++/13/clocale:
+
+/usr/include/gz/transport13/gz/transport/TransportTypes.hh:
+
+/usr/include/gz/sim8/gz/sim/rendering/detail/Export.hh:
+
+/usr/include/c++/13/bits/locale_classes.h:
+
+/usr/include/c++/13/bits/chrono.h:
+
+/usr/include/google/protobuf/io/coded_stream.h:
+
+/usr/include/c++/13/bits/locale_facets.h:
+
+/usr/include/c++/13/bits/requires_hosted.h:
+
+/usr/include/gz/msgs10/gz/msgs/details/conegeom.pb.h:
+
+/usr/include/c++/13/bits/locale_facets.tcc:
+
+/usr/include/c++/13/bits/memoryfwd.h:
+
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Pose3.hh:
+
+/usr/include/x86_64-linux-gnu/bits/long-double.h:
+
+/usr/include/gz/msgs10/gz/msgs/details/plugin.pb.h:
+
+/usr/include/c++/13/bits/move.h:
+
+/usr/include/c++/13/bits/uses_allocator_args.h:
 
 /usr/include/c++/13/locale:
 
@@ -1932,19 +1936,155 @@ CMakeFiles/WaveVisual.dir/src/WaveVisual.cc.o: /home/antoni/gazebo_maritime_ws/s
 
 /usr/include/google/protobuf/stubs/stl_util.h:
 
-/usr/include/c++/13/bits/uses_allocator_args.h:
+/usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h:
 
-/usr/include/c++/13/bits/utility.h:
+/usr/include/gz/sdformat14/sdf/Plugin.hh:
 
-/usr/include/c++/13/tr1/gamma.tcc:
+/usr/include/c++/13/bits/ostream.tcc:
 
-/usr/include/c++/13/ext/atomicity.h:
+/usr/include/gz/transport13/gz/transport/detail/Export.hh:
 
-/usr/include/gz/msgs10/gz/msgs/fuel_metadata.pb.h:
+/usr/include/c++/13/unordered_set:
+
+/usr/include/gz/common5/gz/common/DataFrame.hh:
+
+/usr/include/google/protobuf/map_field_lite.h:
+
+/usr/include/ctype.h:
+
+/usr/include/gz/common5/gz/common/detail/Export.hh:
+
+/usr/include/gz/sdformat14/sdf/system_util.hh:
+
+/opt/ros/jazzy/opt/gz_utils_vendor/include/gz/utils2/gz/utils/Export.hh:
+
+/usr/include/gz/msgs10/gz/msgs/details/color.pb.h:
+
+/usr/include/endian.h:
+
+/usr/include/errno.h:
+
+/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
+
+/opt/ros/jazzy/opt/gz_utils_vendor/include/gz/utils2/gz/utils/ImplPtr.hh:
+
+/usr/include/google/protobuf/generated_message_util.h:
+
+/usr/include/gz/sdformat14/sdf/AirSpeed.hh:
+
+/usr/include/gz/msgs10/gz/msgs/details/imu_sensor.pb.h:
 
 /usr/include/gz/msgs10/gz/msgs/details/axis_aligned_box.pb.h:
 
-/usr/include/c++/13/cctype:
+/usr/include/gz/msgs10/gz/msgs/fuel_metadata.pb.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
+
+/usr/include/c++/13/numeric:
+
+/usr/include/google/protobuf/any.h:
+
+/usr/include/c++/13/tr1/riemann_zeta.tcc:
+
+/usr/include/google/protobuf/arena.h:
+
+/usr/include/gz/msgs10/gz/msgs/boxgeom.pb.h:
+
+/usr/include/google/protobuf/endian.h:
+
+/usr/include/google/protobuf/explicitly_constructed.h:
+
+/usr/include/google/protobuf/generated_enum_reflection.h:
+
+/usr/include/gz/msgs10/gz/msgs/convert/Quaternion.hh:
+
+/usr/include/google/protobuf/generated_enum_util.h:
+
+/usr/include/gz/sim8/gz/sim/components/SourceFilePath.hh:
+
+/usr/include/google/protobuf/generated_message_reflection.h:
+
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/RotationSpline.hh:
+
+/usr/include/google/protobuf/has_bits.h:
+
+/usr/include/google/protobuf/implicit_weak_message.h:
+
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Cone.hh:
+
+/usr/include/google/protobuf/inlined_string_field.h:
+
+/usr/include/gz/msgs10/gz/msgs/convert/DiscoveryType.hh:
+
+/usr/include/google/protobuf/io/zero_copy_stream.h:
+
+/usr/include/gz/msgs10/gz/msgs/plugin_v.pb.h:
+
+/usr/include/google/protobuf/io/zero_copy_stream_impl_lite.h:
+
+/usr/include/google/protobuf/map_entry.h:
+
+/usr/include/google/protobuf/map_entry_lite.h:
+
+/usr/include/google/protobuf/map_field.h:
+
+/usr/include/google/protobuf/message_lite.h:
+
+/usr/include/google/protobuf/parse_context.h:
+
+/usr/include/x86_64-linux-gnu/bits/timex.h:
+
+/usr/include/gz/msgs10/gz/msgs/details/contactsensor.pb.h:
+
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/TimeVaryingVolumetricGrid.hh:
+
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Spline.hh:
+
+/usr/include/google/protobuf/port_def.inc:
+
+/usr/include/google/protobuf/stubs/mutex.h:
+
+/usr/include/google/protobuf/reflection_ops.h:
+
+/usr/include/google/protobuf/repeated_field.h:
+
+/usr/include/gz/msgs10/gz/msgs/detail/dynamic_message_cast.hh:
+
+/usr/include/gz/msgs10/gz/msgs/details/scene.pb.h:
+
+/usr/include/c++/13/bits/enable_special_members.h:
+
+/usr/include/google/protobuf/stubs/callback.h:
+
+/usr/include/gz/plugin2/gz/plugin/Export.hh:
+
+/usr/include/google/protobuf/stubs/casts.h:
+
+/usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
+
+/usr/include/gz/sdformat14/sdf/Scene.hh:
+
+/usr/include/gz/msgs10/gz/msgs/heightmapgeom.pb.h:
+
+/usr/include/gz/msgs10/gz/msgs/convert/ShaderType.hh:
+
+/usr/include/google/protobuf/stubs/common.h:
+
+/usr/include/c++/13/bits/basic_ios.tcc:
+
+/usr/include/google/protobuf/stubs/hash.h:
+
+/usr/include/google/protobuf/stubs/macros.h:
+
+/usr/include/gz/msgs10/gz/msgs/battery.pb.h:
+
+/usr/include/google/protobuf/stubs/once.h:
+
+/usr/include/gz/sdformat14/sdf/ParserConfig.hh:
+
+/usr/include/gz/msgs10/gz/msgs/details/time.pb.h:
+
+/usr/include/google/protobuf/stubs/port.h:
 
 /usr/include/google/protobuf/stubs/status.h:
 
@@ -1964,21 +2104,17 @@ CMakeFiles/WaveVisual.dir/src/WaveVisual.cc.o: /home/antoni/gazebo_maritime_ws/s
 
 /usr/include/google/protobuf/wire_format_lite.h:
 
+/usr/include/x86_64-linux-gnu/bits/local_lim.h:
+
+/usr/include/gz/common5/gz/common/CSVStreams.hh:
+
 /usr/include/gz/common5/gz/common/Console.hh:
 
+/usr/include/c++/13/bits/stl_tree.h:
+
+/usr/include/gz/common5/gz/common/EnumIface.hh:
+
 /usr/include/gz/common5/gz/common/Event.hh:
-
-/usr/include/gz/math7/gz/math/detail/WellOrderedVector.hh:
-
-/usr/include/gz/common5/gz/common/Material.hh:
-
-/usr/include/gz/sdformat14/sdf/Sensor.hh:
-
-/usr/include/gz/sdformat14/sdf/Model.hh:
-
-/usr/include/gz/sdformat14/sdf/Export.hh:
-
-/usr/include/gz/msgs10/gz/msgs/atmosphere.pb.h:
 
 /usr/include/c++/13/bits/streambuf.tcc:
 
@@ -1988,13 +2124,9 @@ CMakeFiles/WaveVisual.dir/src/WaveVisual.cc.o: /home/antoni/gazebo_maritime_ws/s
 
 /usr/include/gz/msgs10/gz/msgs/details/camerasensor.pb.h:
 
-/usr/include/gz/common5/gz/common/IOBase.hh:
+/usr/include/gz/msgs10/gz/msgs/track_visual.pb.h:
 
-/usr/include/gz/msgs10/gz/msgs/convert/SphericalCoordinates.hh:
-
-/usr/include/gz/common5/gz/common/Export.hh:
-
-/usr/include/gz/msgs10/gz/msgs/details/versioned_name.pb.h:
+/usr/include/gz/msgs10/gz/msgs/int32.pb.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
 
@@ -2002,13 +2134,19 @@ CMakeFiles/WaveVisual.dir/src/WaveVisual.cc.o: /home/antoni/gazebo_maritime_ws/s
 
 /usr/include/c++/13/compare:
 
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/VolumetricGridLookupField.hh:
+
 /usr/include/gz/msgs10/gz/msgs/statistic.pb.h:
+
+/usr/include/gz/msgs10/gz/msgs/serialized.pb.h:
+
+/usr/include/c++/13/bits/uses_allocator.h:
+
+/usr/include/gz/common5/gz/common/Mesh.hh:
 
 /usr/include/c++/13/bits/stl_multiset.h:
 
 /usr/include/gz/common5/gz/common/Pbr.hh:
-
-/usr/include/gz/math7/gz/math/Box.hh:
 
 /usr/include/c++/13/bits/algorithmfwd.h:
 
@@ -2032,9 +2170,9 @@ CMakeFiles/WaveVisual.dir/src/WaveVisual.cc.o: /home/antoni/gazebo_maritime_ws/s
 
 /usr/include/gz/common5/gz/common/geospatial/HeightmapData.hh:
 
-/usr/include/gz/msgs10/gz/msgs/planegeom.pb.h:
-
 /usr/include/c++/13/bits/stl_iterator.h:
+
+/usr/include/gz/msgs10/gz/msgs/planegeom.pb.h:
 
 /usr/include/gz/msgs10/gz/msgs/details/float.pb.h:
 
@@ -2052,83 +2190,35 @@ CMakeFiles/WaveVisual.dir/src/WaveVisual.cc.o: /home/antoni/gazebo_maritime_ws/s
 
 /usr/include/gz/common5/gz/common/profiler/detail/Export.hh:
 
-/usr/include/c++/13/bits/stl_function.h:
+/usr/include/gz/msgs10/gz/msgs/Factory.hh:
 
-/usr/include/gz/math7/gz/math/Angle.hh:
+/usr/include/gz/transport13/gz/transport/TopicStatistics.hh:
 
-/usr/include/gz/sdformat14/sdf/Atmosphere.hh:
+/usr/include/c++/13/exception:
 
-/usr/include/gz/math7/gz/math/Capsule.hh:
+/usr/include/gz/msgs10/gz/msgs/MessageFactory.hh:
 
-/usr/include/gz/msgs10/gz/msgs/details/light.pb.h:
-
-/usr/include/gz/sim8/gz/sim/EventManager.hh:
-
-/usr/include/gz/common5/gz/common/Image.hh:
-
-/usr/include/gz/math7/gz/math/Color.hh:
+/usr/include/gz/msgs10/gz/msgs/actor.pb.h:
 
 /usr/include/google/protobuf/arena_impl.h:
 
 /usr/include/gz/msgs10/gz/msgs/any.pb.h:
 
-/usr/include/gz/math7/gz/math/Cylinder.hh:
+/usr/include/c++/13/bits/basic_string.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h:
+/usr/include/gz/msgs10/gz/msgs/axis_aligned_box.pb.h:
 
-/usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h:
+/usr/include/gz/msgs10/gz/msgs/details/physics.pb.h:
 
-/usr/include/gz/math7/gz/math/Ellipsoid.hh:
+/usr/include/gz/msgs10/gz/msgs/physics.pb.h:
 
-/usr/include/gz/msgs10/gz/msgs/details/axis.pb.h:
+/usr/include/gz/sdformat14/sdf/Physics.hh:
 
-/usr/include/gz/math7/gz/math/Helpers.hh:
+/usr/include/gz/msgs10/gz/msgs/boolean.pb.h:
 
-/usr/include/gz/math7/gz/math/Material.hh:
+/usr/include/gz/msgs10/gz/msgs/camerasensor.pb.h:
 
-/usr/include/c++/13/bits/hash_bytes.h:
-
-/usr/include/gz/msgs10/gz/msgs/detail/Export.hh:
-
-/usr/include/gz/math7/gz/math/MaterialType.hh:
-
-/usr/include/gz/math7/gz/math/Matrix3.hh:
-
-/usr/include/gz/math7/gz/math/Matrix6.hh:
-
-/usr/include/gz/math7/gz/math/VolumetricGridLookupField.hh:
-
-/usr/include/x86_64-linux-gnu/bits/local_lim.h:
-
-/usr/include/gz/common5/gz/common/CSVStreams.hh:
-
-/usr/include/gz/math7/gz/math/Plane.hh:
-
-/usr/include/gz/msgs10/gz/msgs/details/image.pb.h:
-
-/usr/include/gz/msgs10/gz/msgs/material.pb.h:
-
-/usr/include/gz/transport13/gz/transport/Node.hh:
-
-/usr/include/gz/msgs10/gz/msgs/empty.pb.h:
-
-/usr/include/gz/math7/gz/math/Quaternion.hh:
-
-/usr/include/gz/msgs10/gz/msgs/convert/Plane.hh:
-
-/usr/include/gz/math7/gz/math/Sphere.hh:
-
-/usr/include/gz/math7/gz/math/SphericalCoordinates.hh:
-
-/usr/include/gz/math7/gz/math/Temperature.hh:
-
-/usr/include/gz/sdformat14/sdf/OutputConfig.hh:
-
-/usr/include/gz/math7/gz/math/TimeVaryingVolumetricGrid.hh:
-
-/usr/include/gz/math7/gz/math/Vector2.hh:
-
-/usr/include/gz/math7/gz/math/graph/Vertex.hh:
+/usr/include/gz/msgs10/gz/msgs/sensor_noise.pb.h:
 
 /usr/include/gz/msgs10/gz/msgs/stringmsg.pb.h:
 
@@ -2146,90 +2236,6 @@ CMakeFiles/WaveVisual.dir/src/WaveVisual.cc.o: /home/antoni/gazebo_maritime_ws/s
 
 /usr/include/gz/msgs10/gz/msgs/sky.pb.h:
 
-/usr/include/gz/math7/gz/math/Vector3.hh:
-
-/usr/include/c++/13/bits/unique_ptr.h:
-
-/usr/include/gz/math7/gz/math/config.hh:
-
-/usr/include/c++/13/bits/stl_tree.h:
-
-/usr/include/gz/common5/gz/common/EnumIface.hh:
-
-/usr/include/gz/math7/gz/math/detail/Box.hh:
-
-/usr/include/gz/math7/gz/math/detail/Capsule.hh:
-
-/usr/include/google/protobuf/stubs/platform_macros.h:
-
-/usr/include/gz/msgs10/gz/msgs/details/actor.pb.h:
-
-/usr/include/gz/sdformat14/sdf/Imu.hh:
-
-/usr/include/gz/msgs10/gz/msgs/light.pb.h:
-
-/usr/include/gz/rendering8/gz/rendering/Geometry.hh:
-
-/usr/include/gz/math7/gz/math/detail/Cylinder.hh:
-
-/usr/include/gz/utils2/gz/utils/ImplPtr.hh:
-
-/usr/include/gz/sim8/gz/sim/System.hh:
-
-/usr/include/gz/rendering8/gz/rendering/Object.hh:
-
-/usr/include/gz/math7/gz/math/detail/Ellipsoid.hh:
-
-/usr/include/gz/math7/gz/math/TimeVaryingVolumetricGridLookupField.hh:
-
-/usr/include/gz/math7/gz/math/detail/Export.hh:
-
-/usr/include/gz/transport13/gz/transport/parameters/result.hh:
-
-/usr/include/gz/msgs10/gz/msgs/details/plugin_v.pb.h:
-
-/usr/include/gz/msgs10/gz/msgs/convert/GeometryType.hh:
-
-/usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
-
-/usr/include/gz/msgs10/gz/msgs/convert/JointType.hh:
-
-/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WaveVisual.hh:
-
-/usr/include/gz/math7/gz/math/detail/InterpolationPoint.hh:
-
-/usr/include/gz/math7/gz/math/detail/Sphere.hh:
-
-/usr/include/gz/msgs10/gz/msgs/Factory.hh:
-
-/usr/include/gz/transport13/gz/transport/TopicStatistics.hh:
-
-/usr/include/c++/13/exception:
-
-/usr/include/gz/msgs10/gz/msgs/MessageFactory.hh:
-
-/usr/include/gz/msgs10/gz/msgs/actor.pb.h:
-
-/usr/include/c++/13/bits/basic_string.h:
-
-/usr/include/gz/msgs10/gz/msgs/axis_aligned_box.pb.h:
-
-/usr/include/gz/msgs10/gz/msgs/details/physics.pb.h:
-
-/usr/include/gz/msgs10/gz/msgs/physics.pb.h:
-
-/usr/include/gz/sdformat14/sdf/Physics.hh:
-
-/usr/include/gz/msgs10/gz/msgs/boolean.pb.h:
-
-/usr/include/gz/msgs10/gz/msgs/camerasensor.pb.h:
-
-/usr/include/gz/msgs10/gz/msgs/details/gui_camera.pb.h:
-
-/usr/include/gz/msgs10/gz/msgs/capsulegeom.pb.h:
-
-/usr/include/gz/msgs10/gz/msgs/sensor_noise.pb.h:
-
 /usr/include/gz/msgs10/gz/msgs/conegeom.pb.h:
 
 /usr/include/gz/msgs10/gz/msgs/config.hh:
@@ -2239,6 +2245,22 @@ CMakeFiles/WaveVisual.dir/src/WaveVisual.cc.o: /home/antoni/gazebo_maritime_ws/s
 /usr/include/gz/common5/gz/common/SingletonT.hh:
 
 /usr/include/gz/msgs10/gz/msgs/details/air_speed_sensor.pb.h:
+
+/usr/include/gz/transport13/gz/transport/parameters/result.hh:
+
+/usr/include/gz/msgs10/gz/msgs/details/plugin_v.pb.h:
+
+/usr/include/gz/msgs10/gz/msgs/convert/GeometryType.hh:
+
+/usr/include/gz/msgs10/gz/msgs/vector3d.pb.h:
+
+/usr/include/gz/msgs10/gz/msgs/convert/Inertial.hh:
+
+/usr/include/gz/msgs10/gz/msgs/convert/Plane.hh:
+
+/usr/include/gz/msgs10/gz/msgs/capsulegeom.pb.h:
+
+/usr/include/gz/msgs10/gz/msgs/details/gui_camera.pb.h:
 
 /usr/include/gz/sim8/gz/sim/Export.hh:
 
@@ -2256,11 +2278,9 @@ CMakeFiles/WaveVisual.dir/src/WaveVisual.cc.o: /home/antoni/gazebo_maritime_ws/s
 
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
-/usr/include/gz/math7/gz/math/Line2.hh:
-
 /usr/include/gz/msgs10/gz/msgs/details/stringmsg.pb.h:
 
-/usr/include/gz/math7/gz/math/Triangle3.hh:
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/detail/Cone.hh:
 
 /usr/include/gz/msgs10/gz/msgs/density.pb.h:
 
@@ -2270,15 +2290,23 @@ CMakeFiles/WaveVisual.dir/src/WaveVisual.cc.o: /home/antoni/gazebo_maritime_ws/s
 
 /usr/include/gz/msgs10/gz/msgs/details/boxgeom.pb.h:
 
+/usr/include/google/protobuf/stubs/platform_macros.h:
+
+/usr/include/gz/msgs10/gz/msgs/details/actor.pb.h:
+
+/usr/include/gz/sdformat14/sdf/Imu.hh:
+
+/usr/include/gz/msgs10/gz/msgs/light.pb.h:
+
 /usr/include/gz/msgs10/gz/msgs/details/altimeter_sensor.pb.h:
 
 /usr/include/gz/msgs10/gz/msgs/details/atmosphere.pb.h:
 
+/usr/include/gz/msgs10/gz/msgs/details/axis.pb.h:
+
 /usr/include/gz/msgs10/gz/msgs/details/battery.pb.h:
 
 /usr/include/gz/msgs10/gz/msgs/details/boolean.pb.h:
-
-/usr/include/gz/math7/gz/math/Spline.hh:
 
 /usr/include/gz/msgs10/gz/msgs/details/cylindergeom.pb.h:
 
@@ -2326,6 +2354,8 @@ CMakeFiles/WaveVisual.dir/src/WaveVisual.cc.o: /home/antoni/gazebo_maritime_ws/s
 
 /usr/include/gz/sdformat14/sdf/InterfaceModelPoseGraph.hh:
 
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Cylinder.hh:
+
 /usr/include/gz/msgs10/gz/msgs/details/heightmapgeom.pb.h:
 
 /usr/include/c++/13/bits/vector.tcc:
@@ -2342,7 +2372,13 @@ CMakeFiles/WaveVisual.dir/src/WaveVisual.cc.o: /home/antoni/gazebo_maritime_ws/s
 
 /usr/include/gz/msgs10/gz/msgs/details/joint.pb.h:
 
+/usr/include/gz/msgs10/gz/msgs/details/light.pb.h:
+
 /usr/include/gz/msgs10/gz/msgs/details/log_playback_stats.pb.h:
+
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Capsule.hh:
+
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/detail/Capsule.hh:
 
 /usr/include/google/protobuf/arenaz_sampler.h:
 
@@ -2356,23 +2392,9 @@ CMakeFiles/WaveVisual.dir/src/WaveVisual.cc.o: /home/antoni/gazebo_maritime_ws/s
 
 /usr/include/gz/msgs10/gz/msgs/details/model.pb.h:
 
-/usr/include/gz/msgs10/gz/msgs/entity.pb.h:
-
-/usr/include/gz/msgs10/gz/msgs/time.pb.h:
-
 /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
 
 /usr/include/gz/msgs10/gz/msgs/details/particle_emitter.pb.h:
-
-/usr/include/gz/msgs10/gz/msgs/details/planegeom.pb.h:
-
-/usr/include/x86_64-linux-gnu/bits/long-double.h:
-
-/usr/include/gz/msgs10/gz/msgs/details/plugin.pb.h:
-
-/usr/include/gz/math7/gz/math/Cone.hh:
-
-/usr/include/gz/msgs10/gz/msgs/details/polylinegeom.pb.h:
 
 /usr/include/gz/sdformat14/sdf/Assert.hh:
 
@@ -2404,8 +2426,6 @@ CMakeFiles/WaveVisual.dir/src/WaveVisual.cc.o: /home/antoni/gazebo_maritime_ws/s
 
 /usr/include/gz/msgs10/gz/msgs/details/surface.pb.h:
 
-/usr/include/gz/msgs10/gz/msgs/details/uint64.pb.h:
-
 /usr/include/gz/msgs10/gz/msgs/details/fog.pb.h:
 
 /usr/include/gz/msgs10/gz/msgs/details/vector2d.pb.h:
@@ -2424,13 +2444,15 @@ CMakeFiles/WaveVisual.dir/src/WaveVisual.cc.o: /home/antoni/gazebo_maritime_ws/s
 
 /usr/include/gz/msgs10/gz/msgs/double.pb.h:
 
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Quaternion.hh:
+
 /usr/include/gz/msgs10/gz/msgs/ellipsoidgeom.pb.h:
 
 /usr/include/gz/msgs10/gz/msgs/fog.pb.h:
 
-/usr/include/gz/msgs10/gz/msgs/details/ellipsoidgeom.pb.h:
-
 /usr/include/c++/13/cstdint:
+
+/usr/include/gz/msgs10/gz/msgs/details/ellipsoidgeom.pb.h:
 
 /usr/include/gz/msgs10/gz/msgs/header.pb.h:
 
@@ -2440,10 +2462,6 @@ CMakeFiles/WaveVisual.dir/src/WaveVisual.cc.o: /home/antoni/gazebo_maritime_ws/s
 
 /usr/include/gz/msgs10/gz/msgs/inertial.pb.h:
 
-/usr/include/gz/sdformat14/sdf/Link.hh:
-
-/usr/include/gz/msgs10/gz/msgs/link.pb.h:
-
 /usr/include/gz/transport13/gz/transport/MessageInfo.hh:
 
 /usr/include/gz/msgs10/gz/msgs/log_playback_stats.pb.h:
@@ -2451,6 +2469,12 @@ CMakeFiles/WaveVisual.dir/src/WaveVisual.cc.o: /home/antoni/gazebo_maritime_ws/s
 /usr/include/c++/13/tr1/modified_bessel_func.tcc:
 
 /usr/include/gz/msgs10/gz/msgs/logical_camera_sensor.pb.h:
+
+/usr/include/gz/msgs10/gz/msgs/uint64.pb.h:
+
+/usr/include/gz/msgs10/gz/msgs/magnetometer_sensor.pb.h:
+
+/opt/ros/jazzy/opt/gz_utils_vendor/include/gz/utils2/gz/utils/SuppressWarning.hh:
 
 /usr/include/gz/msgs10/gz/msgs/particle_emitter.pb.h:
 
@@ -2464,17 +2488,11 @@ CMakeFiles/WaveVisual.dir/src/WaveVisual.cc.o: /home/antoni/gazebo_maritime_ws/s
 
 /usr/include/gz/msgs10/gz/msgs/projector.pb.h:
 
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Angle.hh:
+
 /usr/include/c++/13/bits/hashtable_policy.h:
 
 /usr/include/gz/msgs10/gz/msgs/quaternion.pb.h:
-
-/usr/include/gz/msgs10/gz/msgs/sensor.pb.h:
-
-/usr/include/c++/13/bits/uses_allocator.h:
-
-/usr/include/gz/common5/gz/common/Mesh.hh:
-
-/usr/include/gz/msgs10/gz/msgs/serialized.pb.h:
 
 /usr/include/c++/13/vector:
 
@@ -2483,21 +2501,3 @@ CMakeFiles/WaveVisual.dir/src/WaveVisual.cc.o: /home/antoni/gazebo_maritime_ws/s
 /usr/include/gz/msgs10/gz/msgs/details/vector3d.pb.h:
 
 /usr/include/gz/msgs10/gz/msgs/spheregeom.pb.h:
-
-/usr/include/gz/plugin2/gz/plugin/Plugin.hh:
-
-/usr/include/gz/msgs10/gz/msgs/surface.pb.h:
-
-/usr/include/gz/msgs10/gz/msgs/int32.pb.h:
-
-/usr/include/gz/msgs10/gz/msgs/track_visual.pb.h:
-
-/usr/include/gz/math7/gz/math/Matrix4.hh:
-
-/usr/include/gz/msgs10/gz/msgs/magnetometer_sensor.pb.h:
-
-/usr/include/gz/msgs10/gz/msgs/uint64.pb.h:
-
-/usr/include/gz/msgs10/gz/msgs/convert/Inertial.hh:
-
-/usr/include/gz/msgs10/gz/msgs/vector3d.pb.h:

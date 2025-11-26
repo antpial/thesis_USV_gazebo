@@ -21,13 +21,28 @@ def generate_launch_description():
         Node(
             package='tf2_ros',
             executable='static_transform_publisher',
-            arguments=['0', '0', '0', '0', '0', '0', 'base_link', 'gps_link'],
+            arguments=['0', '0', '0.1', '0', '0', '0', 'base_link', 'gps_link'],
         ),
         Node(
             package='tf2_ros',
             executable='static_transform_publisher',
-            arguments=['0', '0', '0', '0', '0', '0', 'base_link', 'imu_link'],
+            arguments=['0', '0.2', '0', '0', '0', '0', 'base_link', 'imu_link'],
         ),
+        Node(
+            package='tf2_ros',
+            executable='static_transform_publisher',
+            arguments=['0', '0.5', '0', '0', '0', '0', 'base_link', 'magnetometer_link'],
+        ),
+        # Node(
+        #     package='tf2_ros',
+        #     executable='static_transform_publisher',
+        #     arguments=['0','0','0','0','0','0','odom','base_link'],
+        # ),
+        # Node(
+        #     package='tf2_ros',
+        #     executable='static_transform_publisher',
+        #     arguments=['0', '0', '0', '0', '0', '0', 'map', 'odom'],
+        # ),
         Node(
             package='robot_localization',
             executable='ekf_node',

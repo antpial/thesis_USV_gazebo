@@ -3,6 +3,53 @@
 
 CMakeFiles/PublisherPlugin.dir/src/PublisherPlugin.cc.o: /home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/PublisherPlugin.cc \
   /home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/PublisherPlugin.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Angle.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/AxisAlignedBox.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Box.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Capsule.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Color.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Cone.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Cylinder.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Ellipsoid.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Export.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Helpers.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Inertial.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Line2.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Line3.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/MassMatrix3.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Material.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/MaterialType.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Matrix3.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Matrix6.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Plane.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Pose3.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Quaternion.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Sphere.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/SphericalCoordinates.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Temperature.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Triangle3.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Vector2.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Vector3.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/config.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/detail/Box.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/detail/Capsule.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/detail/Cone.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/detail/Cylinder.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/detail/Ellipsoid.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/detail/Export.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/detail/Sphere.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/detail/WellOrderedVector.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/graph/Edge.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/graph/Graph.hh \
+  /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/graph/Vertex.hh \
+  /opt/ros/jazzy/opt/gz_utils_vendor/include/gz/utils2/gz/utils/Export.hh \
+  /opt/ros/jazzy/opt/gz_utils_vendor/include/gz/utils2/gz/utils/ImplPtr.hh \
+  /opt/ros/jazzy/opt/gz_utils_vendor/include/gz/utils2/gz/utils/NeverDestroyed.hh \
+  /opt/ros/jazzy/opt/gz_utils_vendor/include/gz/utils2/gz/utils/SuppressWarning.hh \
+  /opt/ros/jazzy/opt/gz_utils_vendor/include/gz/utils2/gz/utils/detail/DefaultOps.hh \
+  /opt/ros/jazzy/opt/gz_utils_vendor/include/gz/utils2/gz/utils/detail/Export.hh \
+  /opt/ros/jazzy/opt/gz_utils_vendor/include/gz/utils2/gz/utils/detail/ImplPtr.hh \
+  /opt/ros/jazzy/opt/gz_utils_vendor/include/gz/utils2/gz/utils/detail/SuppressWarning.hh \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -272,45 +319,6 @@ CMakeFiles/PublisherPlugin.dir/src/PublisherPlugin.cc.o: /home/antoni/gazebo_mar
   /usr/include/gz/common5/gz/common/events/detail/Export.hh \
   /usr/include/gz/common5/gz/common/profiler/Export.hh \
   /usr/include/gz/common5/gz/common/profiler/detail/Export.hh \
-  /usr/include/gz/math7/gz/math/Angle.hh \
-  /usr/include/gz/math7/gz/math/AxisAlignedBox.hh \
-  /usr/include/gz/math7/gz/math/Box.hh \
-  /usr/include/gz/math7/gz/math/Capsule.hh \
-  /usr/include/gz/math7/gz/math/Color.hh \
-  /usr/include/gz/math7/gz/math/Cone.hh \
-  /usr/include/gz/math7/gz/math/Cylinder.hh \
-  /usr/include/gz/math7/gz/math/Ellipsoid.hh \
-  /usr/include/gz/math7/gz/math/Export.hh \
-  /usr/include/gz/math7/gz/math/Helpers.hh \
-  /usr/include/gz/math7/gz/math/Inertial.hh \
-  /usr/include/gz/math7/gz/math/Line2.hh \
-  /usr/include/gz/math7/gz/math/Line3.hh \
-  /usr/include/gz/math7/gz/math/MassMatrix3.hh \
-  /usr/include/gz/math7/gz/math/Material.hh \
-  /usr/include/gz/math7/gz/math/MaterialType.hh \
-  /usr/include/gz/math7/gz/math/Matrix3.hh \
-  /usr/include/gz/math7/gz/math/Matrix6.hh \
-  /usr/include/gz/math7/gz/math/Plane.hh \
-  /usr/include/gz/math7/gz/math/Pose3.hh \
-  /usr/include/gz/math7/gz/math/Quaternion.hh \
-  /usr/include/gz/math7/gz/math/Sphere.hh \
-  /usr/include/gz/math7/gz/math/SphericalCoordinates.hh \
-  /usr/include/gz/math7/gz/math/Temperature.hh \
-  /usr/include/gz/math7/gz/math/Triangle3.hh \
-  /usr/include/gz/math7/gz/math/Vector2.hh \
-  /usr/include/gz/math7/gz/math/Vector3.hh \
-  /usr/include/gz/math7/gz/math/config.hh \
-  /usr/include/gz/math7/gz/math/detail/Box.hh \
-  /usr/include/gz/math7/gz/math/detail/Capsule.hh \
-  /usr/include/gz/math7/gz/math/detail/Cone.hh \
-  /usr/include/gz/math7/gz/math/detail/Cylinder.hh \
-  /usr/include/gz/math7/gz/math/detail/Ellipsoid.hh \
-  /usr/include/gz/math7/gz/math/detail/Export.hh \
-  /usr/include/gz/math7/gz/math/detail/Sphere.hh \
-  /usr/include/gz/math7/gz/math/detail/WellOrderedVector.hh \
-  /usr/include/gz/math7/gz/math/graph/Edge.hh \
-  /usr/include/gz/math7/gz/math/graph/Graph.hh \
-  /usr/include/gz/math7/gz/math/graph/Vertex.hh \
   /usr/include/gz/msgs10/gz/msgs/Export.hh \
   /usr/include/gz/msgs10/gz/msgs/Factory.hh \
   /usr/include/gz/msgs10/gz/msgs/MessageFactory.hh \
@@ -462,14 +470,6 @@ CMakeFiles/PublisherPlugin.dir/src/PublisherPlugin.cc.o: /home/antoni/gazebo_mar
   /usr/include/gz/transport13/gz/transport/parameters/Registry.hh \
   /usr/include/gz/transport13/gz/transport/parameters/detail/Export.hh \
   /usr/include/gz/transport13/gz/transport/parameters/result.hh \
-  /usr/include/gz/utils2/gz/utils/Export.hh \
-  /usr/include/gz/utils2/gz/utils/ImplPtr.hh \
-  /usr/include/gz/utils2/gz/utils/NeverDestroyed.hh \
-  /usr/include/gz/utils2/gz/utils/SuppressWarning.hh \
-  /usr/include/gz/utils2/gz/utils/detail/DefaultOps.hh \
-  /usr/include/gz/utils2/gz/utils/detail/Export.hh \
-  /usr/include/gz/utils2/gz/utils/detail/ImplPtr.hh \
-  /usr/include/gz/utils2/gz/utils/detail/SuppressWarning.hh \
   /usr/include/libintl.h \
   /usr/include/limits.h \
   /usr/include/linux/errno.h \
@@ -597,13 +597,13 @@ CMakeFiles/PublisherPlugin.dir/src/PublisherPlugin.cc.o: /home/antoni/gazebo_mar
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/13/include/limits.h:
-
 /usr/include/x86_64-linux-gnu/sys/types.h:
 
 /usr/include/x86_64-linux-gnu/sys/time.h:
 
 /usr/include/x86_64-linux-gnu/sys/cdefs.h:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/time_members.h:
 
@@ -614,6 +614,10 @@ CMakeFiles/PublisherPlugin.dir/src/PublisherPlugin.cc.o: /home/antoni/gazebo_mar
 /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_inline.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h:
 
@@ -645,71 +649,13 @@ CMakeFiles/PublisherPlugin.dir/src/PublisherPlugin.cc.o: /home/antoni/gazebo_mar
 
 /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
 
-/usr/include/gz/common5/gz/common/Event.hh:
-
-/usr/include/gz/math7/gz/math/detail/WellOrderedVector.hh:
-
-/usr/include/google/protobuf/stubs/status.h:
-
-/usr/include/x86_64-linux-gnu/sys/single_threaded.h:
-
-/usr/include/google/protobuf/repeated_ptr_field.h:
-
-/usr/include/google/protobuf/repeated_field.h:
-
-/usr/include/gz/msgs10/gz/msgs/detail/dynamic_message_cast.hh:
-
-/usr/include/google/protobuf/port_undef.inc:
-
-/usr/include/google/protobuf/message.h:
-
-/usr/include/google/protobuf/metadata_lite.h:
-
-/usr/include/google/protobuf/message_lite.h:
-
-/usr/include/google/protobuf/map_field.h:
-
-/usr/include/x86_64-linux-gnu/bits/waitflags.h:
-
-/usr/include/gz/sdformat14/sdf/Console.hh:
-
-/usr/include/gz/sdformat14/sdf/Link.hh:
-
-/usr/include/google/protobuf/map_entry.h:
-
-/usr/include/google/protobuf/map.h:
-
-/usr/include/c++/13/tr1/beta_function.tcc:
-
-/usr/include/google/protobuf/io/zero_copy_stream_impl_lite.h:
-
-/usr/include/google/protobuf/io/zero_copy_stream.h:
-
-/usr/include/x86_64-linux-gnu/bits/timesize.h:
-
-/usr/include/google/protobuf/has_bits.h:
-
-/usr/include/gz/math7/gz/math/detail/Cone.hh:
-
-/usr/include/google/protobuf/extension_set.h:
-
-/usr/include/c++/13/iosfwd:
-
-/usr/include/gz/common5/gz/common/Console.hh:
-
-/usr/include/google/protobuf/stubs/platform_macros.h:
-
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
 /usr/include/c++/13/future:
 
-/usr/include/gz/math7/gz/math/AxisAlignedBox.hh:
-
 /usr/include/gz/common5/gz/common/detail/Export.hh:
 
 /usr/include/gz/plugin2/gz/plugin/detail/Export.hh:
-
-/usr/include/google/protobuf/explicitly_constructed.h:
 
 /usr/include/c++/13/unordered_map:
 
@@ -719,17 +665,11 @@ CMakeFiles/PublisherPlugin.dir/src/PublisherPlugin.cc.o: /home/antoni/gazebo_mar
 
 /usr/include/c++/13/tuple:
 
-/usr/include/google/protobuf/port.h:
-
-/usr/include/c++/13/thread:
-
 /usr/include/c++/13/tr1/modified_bessel_func.tcc:
 
 /home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/PublisherPlugin.cc:
 
 /usr/include/c++/13/tr1/legendre_function.tcc:
-
-/usr/include/gz/math7/gz/math/graph/Edge.hh:
 
 /usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
 
@@ -737,27 +677,11 @@ CMakeFiles/PublisherPlugin.dir/src/PublisherPlugin.cc.o: /home/antoni/gazebo_mar
 
 /usr/include/c++/13/bits/range_access.h:
 
-/usr/include/c++/13/tr1/exp_integral.tcc:
-
-/usr/include/google/protobuf/generated_message_reflection.h:
-
 /usr/include/c++/13/tr1/ell_integral.tcc:
-
-/usr/include/c++/13/string_view:
-
-/usr/include/c++/13/map:
-
-/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
 
 /usr/include/features.h:
 
 /usr/include/c++/13/string:
-
-/usr/include/gz/math7/gz/math/Export.hh:
-
-/usr/include/google/protobuf/implicit_weak_message.h:
-
-/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
 
 /usr/include/c++/13/sstream:
 
@@ -765,11 +689,9 @@ CMakeFiles/PublisherPlugin.dir/src/PublisherPlugin.cc.o: /home/antoni/gazebo_mar
 
 /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
 
-/usr/include/ctype.h:
+/usr/include/c++/13/thread:
 
-/usr/include/google/protobuf/map_field_lite.h:
-
-/usr/include/c++/13/bits/std_mutex.h:
+/usr/include/google/protobuf/port.h:
 
 /usr/include/c++/13/pstl/pstl_config.h:
 
@@ -781,27 +703,13 @@ CMakeFiles/PublisherPlugin.dir/src/PublisherPlugin.cc.o: /home/antoni/gazebo_mar
 
 /usr/include/gz/sdformat14/sdf/InstallationDirectories.hh:
 
-/usr/include/c++/13/memory:
-
-/usr/include/gz/sdformat14/sdf/Capsule.hh:
-
-/usr/include/c++/13/list:
-
-/usr/include/c++/13/limits:
-
-/usr/include/google/protobuf/stubs/logging.h:
-
-/usr/include/c++/13/bits/concept_check.h:
-
-/usr/include/gz/sim8/gz/sim/components/Component.hh:
-
 /usr/include/c++/13/iterator:
 
 /usr/include/c++/13/bits/ios_base.h:
 
 /usr/include/google/protobuf/map_type_handler.h:
 
-/usr/include/gz/math7/gz/math/Cone.hh:
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Quaternion.hh:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
 
@@ -809,29 +717,25 @@ CMakeFiles/PublisherPlugin.dir/src/PublisherPlugin.cc.o: /home/antoni/gazebo_mar
 
 /usr/include/c++/13/initializer_list:
 
-/usr/include/c++/13/tr1/bessel_function.tcc:
-
 /usr/include/c++/13/bits/std_thread.h:
 
-/usr/include/c++/13/functional:
+/usr/include/c++/13/tr1/bessel_function.tcc:
 
 /usr/include/c++/13/ext/string_conversions.h:
 
 /usr/include/c++/13/ext/numeric_traits.h:
 
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Color.hh:
+
 /usr/include/c++/13/bits/stl_iterator.h:
-
-/usr/include/c++/13/pstl/glue_algorithm_defs.h:
-
-/usr/include/google/protobuf/descriptor.h:
-
-/usr/include/c++/13/ext/concurrence.h:
 
 /usr/include/c++/13/new:
 
-/usr/include/gz/utils2/gz/utils/detail/SuppressWarning.hh:
+/usr/include/c++/13/list:
 
 /usr/include/c++/13/cwchar:
+
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/detail/Cylinder.hh:
 
 /home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/PublisherPlugin.hh:
 
@@ -841,447 +745,21 @@ CMakeFiles/PublisherPlugin.dir/src/PublisherPlugin.cc.o: /home/antoni/gazebo_mar
 
 /usr/include/c++/13/cstring:
 
-/usr/include/c++/13/bits/memoryfwd.h:
+/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
 
-/usr/include/gz/msgs10/gz/msgs/details/parameter_declaration.pb.h:
+/usr/include/google/protobuf/any.h:
 
-/usr/include/gz/sdformat14/sdf/Cylinder.hh:
-
-/usr/include/c++/13/bits/invoke.h:
-
-/usr/include/uuid/uuid.h:
-
-/usr/include/gz/common5/gz/common/URI.hh:
-
-/usr/include/c++/13/utility:
-
-/usr/include/gz/sdformat14/sdf/Sphere.hh:
-
-/usr/include/gz/common5/gz/common/events/Export.hh:
-
-/usr/include/google/protobuf/generated_enum_util.h:
-
-/usr/include/c++/13/bits/locale_classes.tcc:
-
-/usr/include/c++/13/bits/uniform_int_dist.h:
-
-/usr/include/gz/sim8/gz/sim/detail/Export.hh:
-
-/usr/include/c++/13/bits/hashtable.h:
-
-/usr/include/gz/msgs10/gz/msgs/details/serialized.pb.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/error_t.h:
-
-/usr/include/errno.h:
-
-/usr/include/c++/13/bits/locale_facets_nonio.tcc:
-
-/usr/include/gz/sdformat14/sdf/JointAxis.hh:
-
-/usr/include/c++/13/bits/functional_hash.h:
-
-/usr/include/c++/13/streambuf:
-
-/usr/include/c++/13/pstl/glue_memory_defs.h:
-
-/usr/include/c++/13/bits/memory_resource.h:
-
-/usr/include/c++/13/bits/exception.h:
-
-/usr/include/c++/13/bits/cxxabi_init_exception.h:
-
-/usr/include/c++/13/bits/exception_defines.h:
-
-/usr/include/c++/13/bits/localefwd.h:
+/usr/include/c++/13/cmath:
 
 /usr/include/c++/13/climits:
 
 /usr/include/gz/plugin2/gz/plugin/detail/Common.hh:
 
-/usr/include/google/protobuf/generated_enum_reflection.h:
-
-/usr/include/c++/13/bits/istream.tcc:
-
-/usr/include/gz/math7/gz/math/graph/Graph.hh:
-
-/usr/include/asm-generic/errno-base.h:
-
-/usr/include/c++/13/bits/stl_iterator_base_funcs.h:
-
-/usr/include/c++/13/array:
-
-/usr/include/c++/13/algorithm:
-
-/usr/include/c++/13/bits/stl_raw_storage_iter.h:
-
-/usr/include/google/protobuf/parse_context.h:
-
-/usr/include/c++/13/bits/fstream.tcc:
-
-/usr/include/gz/common5/gz/common/events/detail/Export.hh:
-
-/usr/include/c++/13/bits/refwrap.h:
+/usr/include/c++/13/chrono:
 
 /usr/include/google/protobuf/arena_impl.h:
 
-/usr/include/google/protobuf/endian.h:
-
-/usr/include/alloca.h:
-
-/usr/include/c++/13/bits/cpp_type_traits.h:
-
-/usr/include/c++/13/cassert:
-
-/usr/include/c++/13/ostream:
-
-/usr/include/c++/13/bits/streambuf_iterator.h:
-
-/usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
-
-/usr/include/c++/13/tr1/special_function_util.h:
-
-/usr/include/c++/13/tr1/poly_laguerre.tcc:
-
-/usr/include/c++/13/bits/basic_string.h:
-
-/usr/include/google/protobuf/arenaz_sampler.h:
-
-/usr/include/c++/13/bits/specfun.h:
-
-/usr/include/c++/13/bits/hashtable_policy.h:
-
-/usr/include/gz/msgs10/gz/msgs/parameter_declarations.pb.h:
-
-/usr/include/c++/13/bits/char_traits.h:
-
-/usr/include/c++/13/bits/std_function.h:
-
-/usr/include/c++/13/optional:
-
-/usr/include/c++/13/bits/vector.tcc:
-
-/usr/include/gz/utils2/gz/utils/detail/ImplPtr.hh:
-
-/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
-
-/usr/include/gz/sdformat14/sdf/ParticleEmitter.hh:
-
-/usr/include/c++/13/bits/codecvt.h:
-
-/usr/include/c++/13/bits/stl_tempbuf.h:
-
-/usr/include/gz/common5/gz/common/config.hh:
-
-/usr/include/gz/msgs10/gz/msgs/details/parameter_declarations.pb.h:
-
-/usr/include/gz/msgs10/gz/msgs/discovery.pb.h:
-
-/usr/include/gz/sdformat14/sdformat.hh:
-
-/usr/include/byteswap.h:
-
-/usr/include/gz/sdformat14/sdf/InterfaceFrame.hh:
-
-/usr/include/c++/13/bits/stl_vector.h:
-
-/usr/include/assert.h:
-
-/usr/include/gz/sdformat14/sdf/Polyline.hh:
-
-/usr/include/c++/13/any:
-
-/usr/include/c++/13/typeinfo:
-
-/usr/include/gz/math7/gz/math/MassMatrix3.hh:
-
-/usr/include/c++/13/backward/binders.h:
-
-/usr/include/gz/sdformat14/sdf/World.hh:
-
-/usr/include/gz/transport13/gz/transport/NodeOptions.hh:
-
-/usr/include/google/protobuf/stubs/common.h:
-
-/usr/include/locale.h:
-
-/usr/include/c++/13/bits/locale_facets_nonio.h:
-
-/usr/include/gz/msgs10/gz/msgs/details/time.pb.h:
-
-/usr/include/gz/sdformat14/sdf/ParserConfig.hh:
-
-/usr/include/c++/13/bits/locale_facets.tcc:
-
-/usr/include/c++/13/bits/requires_hosted.h:
-
-/usr/include/c++/13/unordered_set:
-
-/usr/include/gz/transport13/gz/transport/detail/Export.hh:
-
-/usr/include/google/protobuf/generated_message_util.h:
-
-/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
-
-/usr/include/google/protobuf/stubs/once.h:
-
-/usr/include/c++/13/bits/stream_iterator.h:
-
-/usr/include/google/protobuf/stubs/callback.h:
-
-/usr/include/c++/13/bits/enable_special_members.h:
-
-/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
-
-/usr/include/c++/13/bit:
-
-/usr/include/c++/13/bits/allocated_ptr.h:
-
-/usr/include/google/protobuf/port_def.inc:
-
-/usr/include/google/protobuf/stubs/mutex.h:
-
-/usr/include/x86_64-linux-gnu/bits/fp-fast.h:
-
-/usr/include/c++/13/fstream:
-
-/usr/include/gz/sdformat14/sdf/Frame.hh:
-
-/usr/include/x86_64-linux-gnu/bits/errno.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h:
-
-/usr/include/c++/13/bits/charconv.h:
-
-/usr/include/c++/13/mutex:
-
-/usr/include/c++/13/bits/unique_lock.h:
-
-/usr/include/c++/13/bits/basic_ios.h:
-
-/usr/include/gz/sdformat14/sdf/PrintConfig.hh:
-
-/usr/include/gz/plugin2/gz/plugin/detail/Plugin.hh:
-
-/usr/include/google/protobuf/stubs/macros.h:
-
-/usr/include/gz/utils2/gz/utils/NeverDestroyed.hh:
-
-/usr/include/c++/13/condition_variable:
-
-/usr/include/google/protobuf/stubs/strutil.h:
-
-/usr/include/wchar.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h:
-
-/usr/include/c++/13/bits/predefined_ops.h:
-
-/usr/include/c++/13/bits/node_handle.h:
-
-/usr/include/gz/msgs10/gz/msgs/parameter_declaration.pb.h:
-
-/usr/include/x86_64-linux-gnu/bits/long-double.h:
-
-/usr/include/c++/13/bits/alloc_traits.h:
-
-/usr/include/google/protobuf/stubs/hash.h:
-
-/usr/include/c++/13/bits/basic_ios.tcc:
-
-/usr/include/google/protobuf/map_entry_lite.h:
-
-/usr/include/c++/13/bits/atomic_futex.h:
-
-/usr/include/c++/13/bits/locale_facets.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
-
-/usr/include/gz/sdformat14/sdf/Noise.hh:
-
-/usr/include/google/protobuf/wire_format_lite.h:
-
-/usr/include/c++/13/bits/stl_heap.h:
-
-/usr/include/c++/13/bits/atomic_lockfree_defines.h:
-
-/usr/include/gz/transport13/gz/transport/config.hh:
-
-/usr/include/google/protobuf/io/coded_stream.h:
-
-/usr/include/c++/13/bits/chrono.h:
-
-/usr/include/x86_64-linux-gnu/bits/endianness.h:
-
-/usr/include/c++/13/bits/move.h:
-
-/usr/include/google/protobuf/stubs/port.h:
-
-/usr/include/c++/13/bits/stl_set.h:
-
-/usr/include/c++/13/bits/parse_numbers.h:
-
-/usr/include/linux/errno.h:
-
-/usr/include/c++/13/bits/std_abs.h:
-
-/usr/include/gz/plugin2/gz/plugin/Info.hh:
-
-/usr/include/c++/13/bits/ptr_traits.h:
-
-/usr/include/c++/13/bits/ostream_insert.h:
-
-/usr/include/c++/13/system_error:
-
-/usr/include/c++/13/bits/shared_ptr.h:
-
-/usr/include/gz/sdformat14/sdf/Material.hh:
-
-/usr/include/c++/13/tr1/riemann_zeta.tcc:
-
-/usr/include/google/protobuf/arena.h:
-
-/usr/include/gz/sdformat14/sdf/Root.hh:
-
-/usr/include/x86_64-linux-gnu/gnu/stubs.h:
-
-/usr/include/c++/13/bits/erase_if.h:
-
-/usr/include/c++/13/debug/debug.h:
-
-/usr/include/c++/13/bits/stl_list.h:
-
-/usr/include/c++/13/ratio:
-
-/usr/include/gz/transport13/gz/transport/Uuid.hh:
-
-/usr/include/linux/limits.h:
-
-/usr/include/c++/13/cwctype:
-
-/usr/include/c++/13/bits/sstream.tcc:
-
-/usr/include/limits.h:
-
-/usr/include/c++/13/cstdlib:
-
-/usr/include/gz/sdformat14/sdf/InterfaceElements.hh:
-
-/usr/include/c++/13/iomanip:
-
-/usr/include/strings.h:
-
-/usr/include/c++/13/bits/postypes.h:
-
-/usr/include/c++/13/bits/stl_multiset.h:
-
-/usr/include/c++/13/backward/auto_ptr.h:
-
-/usr/include/gz/transport13/gz/transport/TopicStorage.hh:
-
-/usr/include/c++/13/cstddef:
-
-/usr/include/c++/13/bits/stl_algo.h:
-
-/usr/include/google/protobuf/inlined_string_field.h:
-
-/usr/include/gz/sdformat14/sdf/Box.hh:
-
-/usr/include/c++/13/chrono:
-
-/usr/include/c++/13/bits/stl_algobase.h:
-
-/usr/include/c++/13/bits/stl_construct.h:
-
-/usr/include/c++/13/bits/functexcept.h:
-
-/usr/include/c++/13/iostream:
-
-/usr/include/asm-generic/errno.h:
-
-/usr/include/gz/math7/gz/math/Inertial.hh:
-
-/usr/include/gz/sdformat14/sdf/Element.hh:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
-
-/usr/include/google/protobuf/any.h:
-
-/usr/include/c++/13/bits/stl_iterator_base_types.h:
-
-/usr/include/stdio.h:
-
-/usr/include/c++/13/debug/assertions.h:
-
-/usr/include/gz/msgs10/gz/msgs/Export.hh:
-
-/usr/include/c++/13/istream:
-
-/usr/include/gz/msgs10/gz/msgs/details/serialized_map.pb.h:
-
-/usr/include/google/protobuf/stubs/casts.h:
-
-/usr/include/gz/plugin2/gz/plugin/Export.hh:
-
-/usr/include/c++/13/bits/stringfwd.h:
-
-/usr/include/c++/13/cerrno:
-
-/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
-
-/usr/include/c++/13/tr1/poly_hermite.tcc:
-
-/usr/include/c++/13/atomic:
-
-/usr/include/google/protobuf/stubs/stringpiece.h:
-
-/usr/include/google/protobuf/reflection_ops.h:
-
-/usr/include/google/protobuf/stubs/stl_util.h:
-
-/usr/include/c++/13/locale:
-
-/usr/include/c++/13/bits/stl_map.h:
-
-/usr/include/c++/13/bits/new_allocator.h:
-
-/usr/include/c++/13/bits/quoted_string.h:
-
-/usr/include/gz/sdformat14/sdf/SemanticPose.hh:
-
-/usr/include/c++/13/bits/unordered_map.h:
-
-/usr/include/endian.h:
-
-/usr/include/gz/sdformat14/sdf/AirSpeed.hh:
-
-/usr/include/stdint.h:
-
-/usr/include/c++/13/bits/align.h:
-
-/usr/include/c++/13/bits/unordered_set.h:
-
-/usr/include/gz/math7/gz/math/Line3.hh:
-
-/usr/include/c++/13/bits/locale_classes.h:
-
-/usr/include/gz/transport13/gz/transport/TransportTypes.hh:
-
-/usr/include/gz/transport13/gz/transport/parameters/detail/Export.hh:
-
-/usr/include/c++/13/bits/uses_allocator_args.h:
-
-/usr/include/c++/13/bits/utility.h:
-
-/usr/include/c++/13/bits/atomic_base.h:
-
-/usr/include/c++/13/variant:
-
-/usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
-
-/usr/include/gz/sdformat14/sdf/Scene.hh:
+/usr/include/c++/13/bits/refwrap.h:
 
 /usr/include/c++/13/tr1/gamma.tcc:
 
@@ -1295,17 +773,635 @@ CMakeFiles/PublisherPlugin.dir/src/PublisherPlugin.cc.o: /home/antoni/gazebo_mar
 
 /usr/include/gz/sdformat14/sdf/Altimeter.hh:
 
-/usr/include/c++/13/stdexcept:
+/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 
-/usr/include/gz/sdformat14/sdf/Actor.hh:
+/usr/include/c++/13/tr1/poly_hermite.tcc:
 
-/usr/include/c++/13/clocale:
+/usr/include/c++/13/cassert:
+
+/usr/include/c++/13/bits/cpp_type_traits.h:
+
+/usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
+
+/usr/include/gz/sdformat14/sdf/Scene.hh:
+
+/usr/include/c++/13/bits/vector.tcc:
+
+/usr/include/c++/13/optional:
+
+/usr/include/c++/13/mutex:
+
+/usr/include/c++/13/bits/unique_lock.h:
+
+/usr/include/c++/13/ostream:
+
+/usr/include/c++/13/bits/streambuf_iterator.h:
+
+/usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
+
+/usr/include/c++/13/bits/stl_tempbuf.h:
+
+/usr/include/gz/common5/gz/common/config.hh:
+
+/usr/include/gz/msgs10/gz/msgs/details/parameter_declarations.pb.h:
+
+/usr/include/gz/msgs10/gz/msgs/discovery.pb.h:
+
+/usr/include/c++/13/bits/stl_set.h:
+
+/usr/include/c++/13/system_error:
+
+/usr/include/c++/13/bits/ostream_insert.h:
+
+/usr/include/c++/13/bits/stl_raw_storage_iter.h:
+
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Sphere.hh:
+
+/usr/include/c++/13/bits/new_allocator.h:
+
+/usr/include/c++/13/debug/assertions.h:
+
+/usr/include/gz/msgs10/gz/msgs/Export.hh:
+
+/usr/include/c++/13/istream:
+
+/usr/include/gz/msgs10/gz/msgs/details/serialized_map.pb.h:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs.h:
+
+/usr/include/c++/13/bits/erase_if.h:
+
+/usr/include/c++/13/bits/stl_iterator_base_types.h:
+
+/usr/include/stdio.h:
+
+/usr/include/c++/13/utility:
+
+/usr/include/gz/sdformat14/sdf/Sphere.hh:
+
+/usr/include/c++/13/tr1/beta_function.tcc:
+
+/usr/include/c++/13/bits/utility.h:
+
+/usr/include/c++/13/bits/stl_function.h:
+
+/usr/include/c++/13/cstddef:
+
+/usr/include/c++/13/bits/stl_algo.h:
+
+/usr/include/c++/13/bits/stl_construct.h:
+
+/usr/include/c++/13/bits/std_mutex.h:
+
+/usr/include/ctype.h:
+
+/usr/include/google/protobuf/map_field_lite.h:
+
+/usr/include/c++/13/array:
+
+/usr/include/asm-generic/errno-base.h:
+
+/usr/include/c++/13/bits/stl_iterator_base_funcs.h:
+
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Matrix3.hh:
+
+/usr/include/c++/13/iostream:
+
+/usr/include/asm-generic/errno.h:
+
+/opt/ros/jazzy/opt/gz_utils_vendor/include/gz/utils2/gz/utils/detail/DefaultOps.hh:
+
+/usr/include/gz/sdformat14/sdf/Element.hh:
+
+/usr/include/c++/13/any:
+
+/opt/ros/jazzy/opt/gz_utils_vendor/include/gz/utils2/gz/utils/detail/SuppressWarning.hh:
+
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/detail/Sphere.hh:
+
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/graph/Edge.hh:
+
+/usr/include/c++/13/algorithm:
+
+/usr/include/c++/13/limits:
+
+/opt/ros/jazzy/opt/gz_utils_vendor/include/gz/utils2/gz/utils/SuppressWarning.hh:
+
+/opt/ros/jazzy/opt/gz_utils_vendor/include/gz/utils2/gz/utils/NeverDestroyed.hh:
+
+/usr/include/c++/13/tr1/special_function_util.h:
+
+/usr/include/c++/13/tr1/poly_laguerre.tcc:
+
+/usr/include/c++/13/bits/basic_string.h:
+
+/usr/include/c++/13/bits/specfun.h:
+
+/usr/include/google/protobuf/metadata_lite.h:
+
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/detail/Export.hh:
+
+/usr/include/x86_64-linux-gnu/asm/errno.h:
+
+/usr/include/google/protobuf/endian.h:
+
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/graph/Graph.hh:
+
+/usr/include/alloca.h:
+
+/usr/include/c++/13/functional:
+
+/usr/include/gz/common5/gz/common/Export.hh:
+
+/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
+
+/usr/include/gz/sdformat14/sdf/ParticleEmitter.hh:
+
+/usr/include/c++/13/bits/istream.tcc:
+
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/detail/Cone.hh:
+
+/usr/include/c++/13/bit:
+
+/usr/include/c++/13/bits/allocated_ptr.h:
+
+/usr/include/c++/13/fstream:
+
+/usr/include/gz/sdformat14/sdf/Frame.hh:
+
+/usr/include/x86_64-linux-gnu/bits/errno.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h:
+
+/usr/include/c++/13/bits/charconv.h:
+
+/usr/include/c++/13/bits/stl_list.h:
+
+/usr/include/c++/13/debug/debug.h:
+
+/opt/ros/jazzy/opt/gz_utils_vendor/include/gz/utils2/gz/utils/detail/Export.hh:
+
+/usr/include/gz/sdformat14/sdf/Error.hh:
+
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Inertial.hh:
+
+/usr/include/assert.h:
+
+/usr/include/gz/sdformat14/sdf/Polyline.hh:
+
+/usr/include/c++/13/memory:
+
+/usr/include/gz/sdformat14/sdf/Capsule.hh:
+
+/usr/include/endian.h:
+
+/usr/include/gz/sdformat14/sdf/AirSpeed.hh:
+
+/usr/include/stdint.h:
+
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Box.hh:
+
+/opt/ros/jazzy/opt/gz_utils_vendor/include/gz/utils2/gz/utils/detail/ImplPtr.hh:
+
+/usr/include/c++/13/iomanip:
+
+/usr/include/strings.h:
+
+/usr/include/c++/13/bits/stream_iterator.h:
+
+/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
+
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/SphericalCoordinates.hh:
+
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Plane.hh:
+
+/usr/include/c++/13/bits/hash_bytes.h:
+
+/usr/include/gz/msgs10/gz/msgs/detail/Export.hh:
+
+/usr/include/gz/transport13/gz/transport/parameters/detail/Export.hh:
+
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/AxisAlignedBox.hh:
+
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Helpers.hh:
+
+/usr/include/c++/13/bits/basic_ios.h:
+
+/usr/include/gz/common5/gz/common/events/Export.hh:
+
+/usr/include/gz/msgs10/gz/msgs/serialized.pb.h:
+
+/usr/include/c++/13/bits/uses_allocator.h:
+
+/usr/include/c++/13/bits/stl_multiset.h:
+
+/usr/include/c++/13/backward/auto_ptr.h:
+
+/usr/include/gz/transport13/gz/transport/TopicStorage.hh:
+
+/usr/include/linux/errno.h:
+
+/usr/include/c++/13/bits/std_abs.h:
+
+/usr/include/c++/13/bits/parse_numbers.h:
+
+/usr/include/gz/plugin2/gz/plugin/Info.hh:
+
+/usr/include/c++/13/bits/postypes.h:
+
+/usr/include/c++/13/tr1/exp_integral.tcc:
+
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/config.hh:
+
+/usr/include/c++/13/ratio:
+
+/usr/include/gz/transport13/gz/transport/Uuid.hh:
+
+/usr/include/linux/limits.h:
+
+/usr/include/errno.h:
+
+/usr/include/c++/13/bits/locale_facets_nonio.tcc:
+
+/usr/include/gz/sdformat14/sdf/JointAxis.hh:
+
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Line3.hh:
+
+/usr/include/c++/13/bits/functional_hash.h:
+
+/usr/include/c++/13/pstl/glue_algorithm_defs.h:
+
+/usr/include/google/protobuf/descriptor.h:
+
+/usr/include/c++/13/ext/concurrence.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/limits.h:
+
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Matrix6.hh:
+
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Vector3.hh:
+
+/usr/include/gz/sdformat14/sdf/SemanticPose.hh:
+
+/usr/include/c++/13/bits/unordered_map.h:
+
+/usr/include/gz/sdformat14/sdf/Atmosphere.hh:
+
+/usr/include/gz/sdformat14/sdformat.hh:
+
+/usr/include/c++/13/bits/stl_vector.h:
+
+/usr/include/byteswap.h:
+
+/usr/include/gz/sdformat14/sdf/InterfaceFrame.hh:
+
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Triangle3.hh:
+
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Material.hh:
+
+/usr/include/c++/13/bits/uniform_int_dist.h:
+
+/usr/include/c++/13/bits/locale_classes.tcc:
+
+/usr/include/gz/sim8/gz/sim/detail/Export.hh:
+
+/usr/include/google/protobuf/message.h:
+
+/usr/include/google/protobuf/port_undef.inc:
+
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/MaterialType.hh:
+
+/usr/include/c++/13/string_view:
+
+/usr/include/c++/13/map:
+
+/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
+
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Export.hh:
+
+/usr/include/gz/sdformat14/sdf/PrintConfig.hh:
+
+/usr/include/gz/plugin2/gz/plugin/detail/Plugin.hh:
+
+/usr/include/c++/13/bits/stl_tree.h:
+
+/usr/include/c++/13/bits/codecvt.h:
+
+/usr/include/c++/13/bits/unordered_set.h:
+
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Line2.hh:
+
+/usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
+
+/usr/include/c++/13/bits/atomic_futex.h:
+
+/usr/include/google/protobuf/map.h:
+
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/MassMatrix3.hh:
+
+/usr/include/c++/13/bits/stl_algobase.h:
+
+/usr/include/c++/13/bits/concept_check.h:
+
+/usr/include/google/protobuf/stubs/logging.h:
+
+/usr/include/gz/sim8/gz/sim/components/Component.hh:
+
+/usr/include/c++/13/bits/alloc_traits.h:
+
+/usr/include/c++/13/bits/ptr_traits.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
+
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Capsule.hh:
+
+/usr/include/google/protobuf/arenaz_sampler.h:
+
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/detail/Capsule.hh:
+
+/usr/include/c++/13/cerrno:
+
+/usr/include/c++/13/bits/stringfwd.h:
+
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Temperature.hh:
+
+/usr/include/c++/13/bits/align.h:
+
+/usr/include/c++/13/backward/binders.h:
+
+/usr/include/gz/sdformat14/sdf/World.hh:
+
+/usr/include/gz/transport13/gz/transport/NodeOptions.hh:
+
+/usr/include/x86_64-linux-gnu/bits/long-double.h:
+
+/usr/include/c++/13/bits/unique_ptr.h:
+
+/usr/include/c++/13/iosfwd:
+
+/usr/include/google/protobuf/extension_set.h:
+
+/usr/include/c++/13/condition_variable:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h:
+
+/usr/include/c++/13/bits/predefined_ops.h:
+
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/detail/Box.hh:
+
+/usr/include/gz/sdformat14/sdf/OutputConfig.hh:
+
+/usr/include/gz/transport13/gz/transport/config.hh:
+
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/graph/Vertex.hh:
+
+/usr/include/c++/13/bits/localefwd.h:
+
+/usr/include/x86_64-linux-gnu/bits/endianness.h:
+
+/usr/include/c++/13/bits/cxxabi_forced.h:
+
+/usr/include/c++/13/typeinfo:
+
+/usr/include/c++/13/bits/cxxabi_init_exception.h:
+
+/usr/include/c++/13/streambuf:
+
+/usr/include/c++/13/pstl/glue_memory_defs.h:
+
+/usr/include/c++/13/bits/memory_resource.h:
+
+/usr/include/c++/13/bits/exception.h:
+
+/usr/include/c++/13/bits/char_traits.h:
+
+/usr/include/c++/13/bits/std_function.h:
+
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Angle.hh:
+
+/usr/include/c++/13/bits/hashtable_policy.h:
+
+/usr/include/gz/msgs10/gz/msgs/parameter_declarations.pb.h:
+
+/usr/include/c++/13/bits/exception_defines.h:
+
+/usr/include/c++/13/bits/fstream.tcc:
+
+/usr/include/gz/common5/gz/common/events/detail/Export.hh:
+
+/usr/include/c++/13/bits/functexcept.h:
+
+/usr/include/c++/13/bits/node_handle.h:
+
+/usr/include/gz/msgs10/gz/msgs/parameter_declaration.pb.h:
+
+/usr/include/c++/13/bits/hashtable.h:
+
+/usr/include/gz/msgs10/gz/msgs/details/serialized.pb.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/error_t.h:
+
+/usr/include/c++/13/bits/invoke.h:
+
+/usr/include/uuid/uuid.h:
+
+/usr/include/gz/common5/gz/common/URI.hh:
+
+/usr/include/c++/13/tr1/riemann_zeta.tcc:
+
+/usr/include/google/protobuf/arena.h:
+
+/usr/include/gz/sdformat14/sdf/Root.hh:
 
 /usr/include/gz/plugin2/gz/plugin/detail/PluginPtr.hh:
 
-/usr/include/c++/13/cmath:
+/usr/include/gz/transport13/gz/transport/TransportTypes.hh:
 
-/usr/include/gz/common5/gz/common/Export.hh:
+/usr/include/c++/13/bits/locale_classes.h:
+
+/usr/include/c++/13/bits/chrono.h:
+
+/usr/include/google/protobuf/io/coded_stream.h:
+
+/usr/include/x86_64-linux-gnu/bits/timesize.h:
+
+/usr/include/c++/13/bits/locale_facets.h:
+
+/usr/include/c++/13/stdexcept:
+
+/usr/include/c++/13/clocale:
+
+/usr/include/gz/sdformat14/sdf/Actor.hh:
+
+/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
+
+/usr/include/gz/sdformat14/sdf/Noise.hh:
+
+/usr/include/c++/13/bits/requires_hosted.h:
+
+/usr/include/c++/13/unordered_set:
+
+/usr/include/gz/transport13/gz/transport/detail/Export.hh:
+
+/opt/ros/jazzy/opt/gz_utils_vendor/include/gz/utils2/gz/utils/ImplPtr.hh:
+
+/usr/include/google/protobuf/generated_message_util.h:
+
+/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
+
+/usr/include/c++/13/bits/locale_facets.tcc:
+
+/usr/include/c++/13/bits/locale_facets_nonio.h:
+
+/usr/include/c++/13/bits/memoryfwd.h:
+
+/usr/include/gz/msgs10/gz/msgs/details/parameter_declaration.pb.h:
+
+/usr/include/gz/sdformat14/sdf/Cylinder.hh:
+
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Pose3.hh:
+
+/usr/include/c++/13/bits/move.h:
+
+/usr/include/c++/13/bits/uses_allocator_args.h:
+
+/usr/include/c++/13/variant:
+
+/usr/include/c++/13/bits/atomic_base.h:
+
+/usr/include/c++/13/locale:
+
+/usr/include/c++/13/bits/stl_map.h:
+
+/usr/include/google/protobuf/stubs/stl_util.h:
+
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/detail/WellOrderedVector.hh:
+
+/usr/include/c++/13/bits/quoted_string.h:
+
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Ellipsoid.hh:
+
+/usr/include/c++/13/bits/shared_ptr.h:
+
+/usr/include/gz/sdformat14/sdf/Material.hh:
+
+/usr/include/c++/13/cwctype:
+
+/usr/include/c++/13/bits/sstream.tcc:
+
+/usr/include/limits.h:
+
+/usr/include/c++/13/cstdlib:
+
+/usr/include/gz/transport13/gz/transport/AdvertiseOptions.hh:
+
+/usr/include/gz/sdformat14/sdf/InterfaceElements.hh:
+
+/usr/include/google/protobuf/explicitly_constructed.h:
+
+/usr/include/google/protobuf/generated_enum_reflection.h:
+
+/usr/include/google/protobuf/generated_enum_util.h:
+
+/usr/include/google/protobuf/generated_message_reflection.h:
+
+/usr/include/google/protobuf/has_bits.h:
+
+/usr/include/google/protobuf/implicit_weak_message.h:
+
+/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
+
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Cone.hh:
+
+/usr/include/google/protobuf/inlined_string_field.h:
+
+/usr/include/gz/sdformat14/sdf/Box.hh:
+
+/usr/include/google/protobuf/io/zero_copy_stream.h:
+
+/usr/include/google/protobuf/io/zero_copy_stream_impl_lite.h:
+
+/usr/include/google/protobuf/map_entry.h:
+
+/usr/include/google/protobuf/map_entry_lite.h:
+
+/usr/include/google/protobuf/map_field.h:
+
+/usr/include/x86_64-linux-gnu/bits/waitflags.h:
+
+/usr/include/gz/sdformat14/sdf/Console.hh:
+
+/usr/include/gz/sdformat14/sdf/Link.hh:
+
+/usr/include/google/protobuf/message_lite.h:
+
+/usr/include/google/protobuf/parse_context.h:
+
+/usr/include/google/protobuf/port_def.inc:
+
+/usr/include/google/protobuf/stubs/mutex.h:
+
+/usr/include/x86_64-linux-gnu/bits/fp-fast.h:
+
+/usr/include/google/protobuf/reflection_ops.h:
+
+/usr/include/google/protobuf/repeated_field.h:
+
+/usr/include/gz/msgs10/gz/msgs/detail/dynamic_message_cast.hh:
+
+/usr/include/x86_64-linux-gnu/sys/single_threaded.h:
+
+/usr/include/google/protobuf/repeated_ptr_field.h:
+
+/usr/include/c++/13/bits/enable_special_members.h:
+
+/usr/include/google/protobuf/stubs/callback.h:
+
+/usr/include/gz/plugin2/gz/plugin/Export.hh:
+
+/usr/include/google/protobuf/stubs/casts.h:
+
+/usr/include/google/protobuf/stubs/common.h:
+
+/usr/include/locale.h:
+
+/usr/include/c++/13/bits/basic_ios.tcc:
+
+/usr/include/google/protobuf/stubs/hash.h:
+
+/usr/include/google/protobuf/stubs/macros.h:
+
+/usr/include/google/protobuf/stubs/once.h:
+
+/usr/include/google/protobuf/stubs/platform_macros.h:
+
+/usr/include/gz/sdformat14/sdf/ParserConfig.hh:
+
+/usr/include/gz/msgs10/gz/msgs/details/time.pb.h:
+
+/usr/include/google/protobuf/stubs/port.h:
+
+/usr/include/google/protobuf/stubs/status.h:
+
+/usr/include/c++/13/atomic:
+
+/usr/include/google/protobuf/stubs/stringpiece.h:
+
+/usr/include/wchar.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
+
+/usr/include/google/protobuf/stubs/strutil.h:
+
+/usr/include/c++/13/bits/stl_heap.h:
+
+/usr/include/c++/13/bits/atomic_lockfree_defines.h:
+
+/usr/include/google/protobuf/wire_format_lite.h:
+
+/usr/include/gz/common5/gz/common/Console.hh:
+
+/usr/include/gz/common5/gz/common/Event.hh:
 
 /usr/include/c++/13/bits/streambuf.tcc:
 
@@ -1339,95 +1435,9 @@ CMakeFiles/PublisherPlugin.dir/src/PublisherPlugin.cc.o: /home/antoni/gazebo_mar
 
 /usr/include/gz/common5/gz/common/profiler/Export.hh:
 
-/usr/include/c++/13/bits/stl_function.h:
+/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
 
-/usr/include/gz/math7/gz/math/Angle.hh:
-
-/usr/include/gz/math7/gz/math/Box.hh:
-
-/usr/include/gz/sdformat14/sdf/Atmosphere.hh:
-
-/usr/include/gz/math7/gz/math/Capsule.hh:
-
-/usr/include/gz/math7/gz/math/Cylinder.hh:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/gthr-default.h:
-
-/usr/include/x86_64-linux-gnu/bits/select.h:
-
-/usr/include/x86_64-linux-gnu/bits/time.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h:
-
-/usr/include/gz/math7/gz/math/Ellipsoid.hh:
-
-/usr/include/gz/math7/gz/math/Helpers.hh:
-
-/usr/include/gz/utils2/gz/utils/Export.hh:
-
-/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
-
-/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
-
-/usr/include/gz/math7/gz/math/Line2.hh:
-
-/usr/include/gz/math7/gz/math/Material.hh:
-
-/usr/include/c++/13/bits/hash_bytes.h:
-
-/usr/include/gz/msgs10/gz/msgs/detail/Export.hh:
-
-/usr/include/gz/math7/gz/math/MaterialType.hh:
-
-/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
-
-/usr/include/x86_64-linux-gnu/bits/endian.h:
-
-/usr/include/gz/math7/gz/math/Matrix3.hh:
-
-/usr/include/gz/math7/gz/math/Matrix6.hh:
-
-/usr/include/gz/sdformat14/sdf/Param.hh:
-
-/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
-
-/usr/include/gz/math7/gz/math/Pose3.hh:
-
-/usr/include/gz/math7/gz/math/Sphere.hh:
-
-/usr/include/gz/math7/gz/math/SphericalCoordinates.hh:
-
-/usr/include/gz/math7/gz/math/Temperature.hh:
-
-/usr/include/gz/math7/gz/math/Triangle3.hh:
-
-/usr/include/gz/math7/gz/math/Vector2.hh:
-
-/usr/include/gz/math7/gz/math/graph/Vertex.hh:
-
-/usr/include/gz/math7/gz/math/Vector3.hh:
-
-/usr/include/gz/transport13/gz/transport/NodeShared.hh:
-
-/usr/include/c++/13/bits/unique_ptr.h:
-
-/usr/include/gz/math7/gz/math/config.hh:
-
-/usr/include/c++/13/bits/stl_tree.h:
-
-/usr/include/gz/math7/gz/math/detail/Box.hh:
-
-/usr/include/gz/math7/gz/math/detail/Capsule.hh:
-
-/usr/include/gz/math7/gz/math/detail/Cylinder.hh:
-
-/usr/include/gz/transport13/gz/transport/parameters/result.hh:
-
-/usr/include/gz/math7/gz/math/detail/Export.hh:
-
-/usr/include/gz/math7/gz/math/detail/Sphere.hh:
+/usr/include/gz/common5/gz/common/profiler/detail/Export.hh:
 
 /usr/include/gz/msgs10/gz/msgs/Factory.hh:
 
@@ -1481,10 +1491,6 @@ CMakeFiles/PublisherPlugin.dir/src/PublisherPlugin.cc.o: /home/antoni/gazebo_mar
 
 /usr/include/gz/sdformat14/sdf/sdf.hh:
 
-/usr/include/c++/13/bits/uses_allocator.h:
-
-/usr/include/gz/msgs10/gz/msgs/serialized.pb.h:
-
 /usr/include/c++/13/vector:
 
 /usr/include/gz/msgs10/gz/msgs/serialized_map.pb.h:
@@ -1533,9 +1539,9 @@ CMakeFiles/PublisherPlugin.dir/src/PublisherPlugin.cc.o: /home/antoni/gazebo_mar
 
 /usr/include/gz/transport13/gz/transport/parameters/Export.hh:
 
-/usr/include/gz/sdformat14/sdf/Error.hh:
-
 /usr/include/gz/sdformat14/sdf/Exception.hh:
+
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/detail/Ellipsoid.hh:
 
 /usr/include/gz/sdformat14/sdf/ForceTorque.hh:
 
@@ -1554,6 +1560,8 @@ CMakeFiles/PublisherPlugin.dir/src/PublisherPlugin.cc.o: /home/antoni/gazebo_mar
 /usr/include/c++/13/bits/stl_uninitialized.h:
 
 /usr/include/gz/sdformat14/sdf/InterfaceModel.hh:
+
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Cylinder.hh:
 
 /usr/include/gz/sdformat14/sdf/InterfaceModelPoseGraph.hh:
 
@@ -1575,7 +1583,9 @@ CMakeFiles/PublisherPlugin.dir/src/PublisherPlugin.cc.o: /home/antoni/gazebo_mar
 
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
 
-/usr/include/gz/sdformat14/sdf/OutputConfig.hh:
+/usr/include/gz/sdformat14/sdf/Param.hh:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
 
 /usr/include/gz/sdformat14/sdf/Pbr.hh:
 
@@ -1615,6 +1625,8 @@ CMakeFiles/PublisherPlugin.dir/src/PublisherPlugin.cc.o: /home/antoni/gazebo_mar
 
 /usr/include/gz/sdformat14/sdf/detail/Export.hh:
 
+/opt/ros/jazzy/opt/gz_utils_vendor/include/gz/utils2/gz/utils/Export.hh:
+
 /usr/include/gz/sdformat14/sdf/system_util.hh:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
@@ -1623,13 +1635,7 @@ CMakeFiles/PublisherPlugin.dir/src/PublisherPlugin.cc.o: /home/antoni/gazebo_mar
 
 /usr/include/gz/sim8/gz/sim/EntityComponentManager.hh:
 
-/usr/include/gz/math7/gz/math/Color.hh:
-
 /usr/include/gz/sim8/gz/sim/EventManager.hh:
-
-/usr/include/gz/utils2/gz/utils/ImplPtr.hh:
-
-/usr/include/gz/math7/gz/math/detail/Ellipsoid.hh:
 
 /usr/include/gz/sim8/gz/sim/System.hh:
 
@@ -1644,6 +1650,8 @@ CMakeFiles/PublisherPlugin.dir/src/PublisherPlugin.cc.o: /home/antoni/gazebo_mar
 /usr/include/gz/transport13/gz/transport/parameters/Registry.hh:
 
 /usr/include/gz/sim8/gz/sim/detail/BaseView.hh:
+
+/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Vector2.hh:
 
 /usr/include/gz/sim8/gz/sim/detail/EntityComponentManager.hh:
 
@@ -1663,17 +1671,15 @@ CMakeFiles/PublisherPlugin.dir/src/PublisherPlugin.cc.o: /home/antoni/gazebo_mar
 
 /usr/include/gz/msgs10/gz/msgs/empty.pb.h:
 
-/usr/include/gz/math7/gz/math/Quaternion.hh:
-
 /usr/include/gz/transport13/gz/transport/Node.hh:
+
+/usr/include/gz/transport13/gz/transport/NodeShared.hh:
 
 /usr/include/c++/13/exception:
 
 /usr/include/gz/msgs10/gz/msgs/MessageFactory.hh:
 
 /usr/include/gz/transport13/gz/transport/TopicStatistics.hh:
-
-/usr/include/gz/utils2/gz/utils/detail/DefaultOps.hh:
 
 /usr/include/gz/transport13/gz/transport/TopicUtils.hh:
 
@@ -1687,13 +1693,7 @@ CMakeFiles/PublisherPlugin.dir/src/PublisherPlugin.cc.o: /home/antoni/gazebo_mar
 
 /usr/include/gz/transport13/gz/transport/parameters/Interface.hh:
 
-/usr/include/c++/13/bits/cxxabi_forced.h:
-
-/usr/include/gz/utils2/gz/utils/SuppressWarning.hh:
-
-/usr/include/gz/transport13/gz/transport/AdvertiseOptions.hh:
-
-/usr/include/gz/utils2/gz/utils/detail/Export.hh:
+/usr/include/gz/transport13/gz/transport/parameters/result.hh:
 
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
 
@@ -1721,23 +1721,17 @@ CMakeFiles/PublisherPlugin.dir/src/PublisherPlugin.cc.o: /home/antoni/gazebo_mar
 
 /usr/include/x86_64-linux-gnu/bits/setjmp.h:
 
-/usr/include/x86_64-linux-gnu/asm/errno.h:
-
-/usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
-
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
 
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
+
+/usr/include/x86_64-linux-gnu/bits/endian.h:
+
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
-
-/usr/include/gz/common5/gz/common/profiler/detail/Export.hh:
-
-/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
 
 /usr/include/c++/13/ext/alloc_traits.h:
 
 /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
-
-/usr/include/gz/math7/gz/math/Plane.hh:
 
 /usr/include/x86_64-linux-gnu/bits/local_lim.h:
 
@@ -1748,6 +1742,12 @@ CMakeFiles/PublisherPlugin.dir/src/PublisherPlugin.cc.o: /home/antoni/gazebo_mar
 /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
 
 /usr/include/x86_64-linux-gnu/bits/sched.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/gthr-default.h:
+
+/usr/include/x86_64-linux-gnu/bits/select.h:
+
+/usr/include/x86_64-linux-gnu/bits/time.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-least.h:
 
@@ -1767,8 +1767,8 @@ CMakeFiles/PublisherPlugin.dir/src/PublisherPlugin.cc.o: /home/antoni/gazebo_mar
 
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
-
 /usr/include/c++/13/bits/basic_string.tcc:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:

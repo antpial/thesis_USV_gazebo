@@ -136,8 +136,8 @@ libSurface.so: /usr/lib/x86_64-linux-gnu/libgz-msgs10.so.10.3.2
 libSurface.so: /usr/lib/x86_64-linux-gnu/libprotobuf.so
 libSurface.so: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
 libSurface.so: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
-libSurface.so: /usr/lib/x86_64-linux-gnu/libgz-math7.so.7.5.1
-libSurface.so: /usr/lib/x86_64-linux-gnu/libgz-utils2.so.2.2.1
+libSurface.so: /opt/ros/jazzy/opt/gz_math_vendor/lib/libgz-math7.so.7.5.2
+libSurface.so: /opt/ros/jazzy/opt/gz_utils_vendor/lib/libgz-utils2.so.2.2.1
 libSurface.so: CMakeFiles/Surface.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/antoni/gazebo_maritime_ws/build/gazebo_maritime/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library libSurface.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Surface.dir/link.txt --verbose=$(VERBOSE)

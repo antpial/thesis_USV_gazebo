@@ -5,6 +5,62 @@ CMakeFiles/WaveVisual.dir/src/WaveVisual.cc.o
  /home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WaveVisual.cc
  /home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WaveVisual.hh
  /home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/Wavefield.hh
+ /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Angle.hh
+ /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/AxisAlignedBox.hh
+ /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Box.hh
+ /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Capsule.hh
+ /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Color.hh
+ /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Cone.hh
+ /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Cylinder.hh
+ /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Ellipsoid.hh
+ /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Export.hh
+ /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Helpers.hh
+ /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Inertial.hh
+ /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Line2.hh
+ /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Line3.hh
+ /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/MassMatrix3.hh
+ /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Material.hh
+ /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/MaterialType.hh
+ /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Matrix3.hh
+ /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Matrix4.hh
+ /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Matrix6.hh
+ /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Plane.hh
+ /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Pose3.hh
+ /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Quaternion.hh
+ /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/RotationSpline.hh
+ /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/SemanticVersion.hh
+ /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Sphere.hh
+ /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/SphericalCoordinates.hh
+ /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Spline.hh
+ /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Temperature.hh
+ /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/TimeVaryingVolumetricGrid.hh
+ /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/TimeVaryingVolumetricGridLookupField.hh
+ /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Triangle3.hh
+ /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Vector2.hh
+ /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Vector3.hh
+ /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/VolumetricGridLookupField.hh
+ /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/config.hh
+ /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/detail/AxisIndex.hh
+ /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/detail/Box.hh
+ /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/detail/Capsule.hh
+ /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/detail/Cone.hh
+ /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/detail/Cylinder.hh
+ /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/detail/Ellipsoid.hh
+ /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/detail/Export.hh
+ /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/detail/InterpolationPoint.hh
+ /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/detail/Sphere.hh
+ /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/detail/WellOrderedVector.hh
+ /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/graph/Edge.hh
+ /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/graph/Graph.hh
+ /opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/graph/Vertex.hh
+ /opt/ros/jazzy/opt/gz_utils_vendor/include/gz/utils2/gz/utils/Export.hh
+ /opt/ros/jazzy/opt/gz_utils_vendor/include/gz/utils2/gz/utils/ImplPtr.hh
+ /opt/ros/jazzy/opt/gz_utils_vendor/include/gz/utils2/gz/utils/NeverDestroyed.hh
+ /opt/ros/jazzy/opt/gz_utils_vendor/include/gz/utils2/gz/utils/SuppressWarning.hh
+ /opt/ros/jazzy/opt/gz_utils_vendor/include/gz/utils2/gz/utils/detail/DefaultOps.hh
+ /opt/ros/jazzy/opt/gz_utils_vendor/include/gz/utils2/gz/utils/detail/Export.hh
+ /opt/ros/jazzy/opt/gz_utils_vendor/include/gz/utils2/gz/utils/detail/ImplPtr.hh
+ /opt/ros/jazzy/opt/gz_utils_vendor/include/gz/utils2/gz/utils/detail/SuppressWarning.hh
  /usr/include/alloca.h
  /usr/include/asm-generic/errno-base.h
  /usr/include/asm-generic/errno.h
@@ -299,54 +355,6 @@ CMakeFiles/WaveVisual.dir/src/WaveVisual.cc.o
  /usr/include/gz/common5/gz/common/io/detail/Export.hh
  /usr/include/gz/common5/gz/common/profiler/Export.hh
  /usr/include/gz/common5/gz/common/profiler/detail/Export.hh
- /usr/include/gz/math7/gz/math/Angle.hh
- /usr/include/gz/math7/gz/math/AxisAlignedBox.hh
- /usr/include/gz/math7/gz/math/Box.hh
- /usr/include/gz/math7/gz/math/Capsule.hh
- /usr/include/gz/math7/gz/math/Color.hh
- /usr/include/gz/math7/gz/math/Cone.hh
- /usr/include/gz/math7/gz/math/Cylinder.hh
- /usr/include/gz/math7/gz/math/Ellipsoid.hh
- /usr/include/gz/math7/gz/math/Export.hh
- /usr/include/gz/math7/gz/math/Helpers.hh
- /usr/include/gz/math7/gz/math/Inertial.hh
- /usr/include/gz/math7/gz/math/Line2.hh
- /usr/include/gz/math7/gz/math/Line3.hh
- /usr/include/gz/math7/gz/math/MassMatrix3.hh
- /usr/include/gz/math7/gz/math/Material.hh
- /usr/include/gz/math7/gz/math/MaterialType.hh
- /usr/include/gz/math7/gz/math/Matrix3.hh
- /usr/include/gz/math7/gz/math/Matrix4.hh
- /usr/include/gz/math7/gz/math/Matrix6.hh
- /usr/include/gz/math7/gz/math/Plane.hh
- /usr/include/gz/math7/gz/math/Pose3.hh
- /usr/include/gz/math7/gz/math/Quaternion.hh
- /usr/include/gz/math7/gz/math/RotationSpline.hh
- /usr/include/gz/math7/gz/math/SemanticVersion.hh
- /usr/include/gz/math7/gz/math/Sphere.hh
- /usr/include/gz/math7/gz/math/SphericalCoordinates.hh
- /usr/include/gz/math7/gz/math/Spline.hh
- /usr/include/gz/math7/gz/math/Temperature.hh
- /usr/include/gz/math7/gz/math/TimeVaryingVolumetricGrid.hh
- /usr/include/gz/math7/gz/math/TimeVaryingVolumetricGridLookupField.hh
- /usr/include/gz/math7/gz/math/Triangle3.hh
- /usr/include/gz/math7/gz/math/Vector2.hh
- /usr/include/gz/math7/gz/math/Vector3.hh
- /usr/include/gz/math7/gz/math/VolumetricGridLookupField.hh
- /usr/include/gz/math7/gz/math/config.hh
- /usr/include/gz/math7/gz/math/detail/AxisIndex.hh
- /usr/include/gz/math7/gz/math/detail/Box.hh
- /usr/include/gz/math7/gz/math/detail/Capsule.hh
- /usr/include/gz/math7/gz/math/detail/Cone.hh
- /usr/include/gz/math7/gz/math/detail/Cylinder.hh
- /usr/include/gz/math7/gz/math/detail/Ellipsoid.hh
- /usr/include/gz/math7/gz/math/detail/Export.hh
- /usr/include/gz/math7/gz/math/detail/InterpolationPoint.hh
- /usr/include/gz/math7/gz/math/detail/Sphere.hh
- /usr/include/gz/math7/gz/math/detail/WellOrderedVector.hh
- /usr/include/gz/math7/gz/math/graph/Edge.hh
- /usr/include/gz/math7/gz/math/graph/Graph.hh
- /usr/include/gz/math7/gz/math/graph/Vertex.hh
  /usr/include/gz/msgs10/gz/msgs/Export.hh
  /usr/include/gz/msgs10/gz/msgs/Factory.hh
  /usr/include/gz/msgs10/gz/msgs/MessageFactory.hh
@@ -705,14 +713,6 @@ CMakeFiles/WaveVisual.dir/src/WaveVisual.cc.o
  /usr/include/gz/transport13/gz/transport/parameters/Registry.hh
  /usr/include/gz/transport13/gz/transport/parameters/detail/Export.hh
  /usr/include/gz/transport13/gz/transport/parameters/result.hh
- /usr/include/gz/utils2/gz/utils/Export.hh
- /usr/include/gz/utils2/gz/utils/ImplPtr.hh
- /usr/include/gz/utils2/gz/utils/NeverDestroyed.hh
- /usr/include/gz/utils2/gz/utils/SuppressWarning.hh
- /usr/include/gz/utils2/gz/utils/detail/DefaultOps.hh
- /usr/include/gz/utils2/gz/utils/detail/Export.hh
- /usr/include/gz/utils2/gz/utils/detail/ImplPtr.hh
- /usr/include/gz/utils2/gz/utils/detail/SuppressWarning.hh
  /usr/include/libintl.h
  /usr/include/limits.h
  /usr/include/linux/errno.h

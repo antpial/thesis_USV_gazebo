@@ -345,7 +345,7 @@
 <!-- imu -->
 
 <link name="imu_link">
-  <pose>0 0 0 0 0 0</pose>
+  <pose>0 0.2 0 0 0 0</pose>
   <inertial>
     <mass>0.1</mass>
     <inertia>
@@ -402,7 +402,7 @@
 
 <!-- gps sensor  -->
 <link name="gps_link">
-  <pose>0 0 0.0 0 0 0</pose>
+  <pose>0 0 0.1 0 0 0</pose>
   <inertial>
     <mass>0.05</mass>
     <inertia>
