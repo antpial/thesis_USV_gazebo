@@ -52,7 +52,7 @@ def generate_launch_description():
             parameters=[ekf_config_path]
         ),
         TimerAction(
-            period=3.0,  # 1 sekunda opóźnienia
+            period=5.0,  # 1 sekunda opóźnienia
             actions=[
                 Node(
                     package='robot_localization',

@@ -3,9 +3,8 @@ navsat_transform:
     frequency: 30.0
     delay: 3.0
 
-    broadcast_cartesian_transform: true
-    broadcast_cartesian_transform_as_parent_frame: true
-
+    broadcast_cartesian_transform: false
+    broadcast_cartesian_transform_as_parent_frame: false
     publish_filtered_gps: true
     use_odometry_yaw: false
     wait_for_datum: false
