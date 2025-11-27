@@ -35,6 +35,7 @@ setup(
             'checkpoints = autopilot.checkpoints:main',
             'add_markers = autopilot.add_markers:main',
             'kalman = autopilot.kalman:main',
+            'compass = autopilot.compass:main',
         ],
     },
 )

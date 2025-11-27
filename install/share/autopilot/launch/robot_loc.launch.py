@@ -45,6 +45,12 @@ def generate_launch_description():
         #     arguments=['0', '0', '0', '0', '0', '0', 'map', 'odom'],
         # ),
         Node(
+            package='autopilot',
+            executable='compass',
+            name='CompassOdomNode',
+            output='screen',
+        ),
+        Node(
             package='robot_localization',
             executable='ekf_node',
             name='ekf_filter_node',

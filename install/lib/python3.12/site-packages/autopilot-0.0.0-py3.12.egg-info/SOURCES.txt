@@ -12,6 +12,7 @@ autopilot/__init__.py
 autopilot/add_markers.py
 autopilot/azimuth.py
 autopilot/checkpoints.py
+autopilot/compass.py
 autopilot/kalman.py
 config/ekf.yaml
 config/navsat.yaml
