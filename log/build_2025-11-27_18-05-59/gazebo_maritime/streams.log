@@ -1,0 +1,26 @@
+[0.283s] Invoking command in '/home/antoni/gazebo_maritime_ws/build/gazebo_maritime': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/antoni/gazebo_maritime_ws/build/gazebo_maritime -- -j12 -l12
+[0.699s] [ 20%] Built target Waves
+[0.699s] [ 40%] Built target PublisherPlugin
+[0.699s] [ 60%] Built target Surface
+[0.699s] [ 70%] [32mBuilding CXX object CMakeFiles/WindPlugin.dir/src/WindPlugin.cc.o[0m
+[0.699s] [ 90%] Built target WaveVisual
+[2.069s] In file included from [01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.hh:8[m[K,
+[2.069s]                  from [01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:1[m[K:
+[2.069s] [01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.hh:60:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass maritime::WindPlugin::Implementation[m[K’ redeclared with different access
+[2.069s]    60 |     [01;31m[KGZ_UTILS_UNIQUE_IMPL_PTR[m[K(dataPtr)
+[2.069s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.406s] [01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:[m[K In member function ‘[01m[Kvoid maritime::WindPlugin::[01;32m[KLoad[m[K(const std::shared_ptr<const sdf::v14::Element>&)[m[K’:
+[2.407s] [01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:53:36:[m[K [01;31m[Kerror: [m[Kpassing ‘[01m[Kstd::__shared_ptr_access<const sdf::v14::Element, __gnu_cxx::_S_atomic, false, false>::element_type[m[K’ {aka ‘[01m[Kconst sdf::v14::Element[m[K’} as ‘[01m[Kthis[m[K’ argument discards qualifiers [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[2.407s]    53 |     auto sdfWind = [01;31m[K_sdf->GetElement("wind")[m[K;
+[2.407s]       |                    [01;31m[K~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[2.407s] In file included from [01m[K/usr/include/gz/sdformat14/sdf/Actor.hh:26[m[K,
+[2.407s]                  from [01m[K/usr/include/gz/sdformat14/sdformat.hh:23[m[K,
+[2.407s]                  from [01m[K/usr/include/gz/sdformat14/sdf/sdf.hh:23[m[K,
+[2.407s]                  from [01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.hh:9[m[K:
+[2.407s] [01m[K/usr/include/gz/sdformat14/sdf/Element.hh:645:24:[m[K [01;36m[Knote: [m[K  in call to ‘[01m[Ksdf::v14::ElementPtr sdf::v14::Element::[01;32m[KGetElement[m[K(const std::string&)[m[K’
+[2.407s]   645 |     public: ElementPtr [01;36m[KGetElement[m[K(const std::string &_name);
+[2.407s]       |                        [01;36m[K^~~~~~~~~~[m[K
+[2.700s] gmake[2]: *** [CMakeFiles/WindPlugin.dir/build.make:76: CMakeFiles/WindPlugin.dir/src/WindPlugin.cc.o] Error 1
+[2.701s] gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/WindPlugin.dir/all] Error 2
+[2.701s] gmake: *** [Makefile:136: all] Error 2
+[2.703s] Invoked command in '/home/antoni/gazebo_maritime_ws/build/gazebo_maritime' returned '2': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/antoni/gazebo_maritime_ws/build/gazebo_maritime -- -j12 -l12

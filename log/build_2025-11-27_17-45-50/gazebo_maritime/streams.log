@@ -1,0 +1,181 @@
+[0.196s] Invoking command in '/home/antoni/gazebo_maritime_ws/build/gazebo_maritime': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/antoni/gazebo_maritime_ws/build/gazebo_maritime -- -j12 -l12
+[0.621s] [ 20%] Built target Waves
+[0.622s] [ 40%] Built target Surface
+[0.622s] [ 60%] Built target PublisherPlugin
+[0.622s] [ 80%] Built target WaveVisual
+[0.622s] [ 90%] [32mBuilding CXX object CMakeFiles/WindPlugin.dir/src/WindPlugin.cc.o[0m
+[0.623s] In file included from [01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:1[m[K:
+[0.623s] [01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.hh:11:48:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[Ktype name[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[0.623s]    11 |       void Load(const std::shared_ptr<const sdf[01;31m[K::[m[KElement> &_sdf);
+[0.623s]       |                                                [01;31m[K^~[m[K
+[0.623s] [01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.hh:11:57:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[0.623s]    11 |       void Load(const std::shared_ptr<const sdf::Element[01;31m[K>[m[K &_sdf);
+[0.624s]       |                                                         [01;31m[K^[m[K
+[0.624s] [01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.hh:11:48:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[Ktype name[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[0.624s]    11 |       void Load(const std::shared_ptr<const sdf[01;31m[K::[m[KElement> &_sdf);
+[0.624s]       |                                                [01;31m[K^~[m[K
+[0.624s] [01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.hh:11:57:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[0.624s]    11 |       void Load(const std::shared_ptr<const sdf::Element[01;31m[K>[m[K &_sdf);
+[0.624s]       |                                                         [01;31m[K^[m[K
+[0.624s] [01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.hh:11:48:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[Ktype name[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[0.625s]    11 |       void Load(const std::shared_ptr<const sdf[01;31m[K::[m[KElement> &_sdf);
+[0.625s]       |                                                [01;31m[K^~[m[K
+[0.625s] [01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.hh:11:57:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[0.625s]    11 |       void Load(const std::shared_ptr<const sdf::Element[01;31m[K>[m[K &_sdf);
+[0.625s]       |                                                         [01;31m[K^[m[K
+[0.625s] [01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.hh:11:23:[m[K [01;31m[Kerror: [m[Kinvalid template-id
+[0.626s]    11 |       void Load(const [01;31m[Kstd[m[K::shared_ptr<const sdf::Element> &_sdf);
+[0.626s]       |                       [01;31m[K^~~[m[K
+[0.626s] [01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.hh:11:48:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[Ktype name[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[0.626s]    11 |       void Load(const std::shared_ptr<const sdf[01;31m[K::[m[KElement> &_sdf);
+[0.626s]       |                                                [01;31m[K^~[m[K
+[0.626s] [01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.hh:11:39:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kconst[m[K’
+[0.627s]    11 |       void Load(const std::shared_ptr<[01;31m[Kconst[m[K sdf::Element> &_sdf);
+[0.627s]       |                                       [01;31m[K^~~~~[m[K
+[0.627s] [01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.hh:11:39:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K>[m[K’ before ‘[01m[Kconst[m[K’
+[0.627s] [01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.hh:11:17:[m[K [01;31m[Kerror: [m[Kmissing template argument list after ‘[01m[Kstd::shared_ptr[m[K’; template placeholder not permitted in parameter
+[0.627s]    11 |       void Load([01;31m[Kconst[m[K std::shared_ptr<const sdf::Element> &_sdf);
+[0.627s]       |                 [01;31m[K^~~~~[m[K
+[0.628s]       |                      [32m[K<>[m[K
+[0.628s] In file included from [01m[K/usr/include/c++/13/bits/shared_ptr.h:53[m[K,
+[0.628s]                  from [01m[K/usr/include/c++/13/memory:80[m[K,
+[0.628s]                  from [01m[K/opt/ros/jazzy/opt/gz_utils_vendor/include/gz/utils2/gz/utils/ImplPtr.hh:21[m[K,
+[0.628s]                  from [01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.hh:1[m[K:
+[0.628s] [01m[K/usr/include/c++/13/bits/shared_ptr_base.h:395:11:[m[K [01;36m[Knote: [m[K‘[01m[Ktemplate<class _Tp> class std::shared_ptr[m[K’ declared here
+[0.628s]   395 |     class [01;36m[Kshared_ptr[m[K;
+[0.628s]       |           [01;36m[K^~~~~~~~~~[m[K
+[1.112s] [01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:16:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsgs[m[K’ in namespace ‘[01m[Kgz[m[K’ does not name a type
+[1.112s]    16 |   gz::[01;31m[Kmsgs[m[K::Param params;
+[1.112s]       |       [01;31m[K^~~~[m[K
+[1.115s] [01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:[m[K In member function ‘[01m[Kvoid maritime::WindPlugin::Implementation::[01;32m[KFill[m[K()[m[K’:
+[1.116s] [01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:20:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kparams[m[K’ was not declared in this scope
+[1.116s]    20 |     [01;31m[Kparams[m[K.mutable_params()->clear();
+[1.116s]       |     [01;31m[K^~~~~~[m[K
+[1.116s] [01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:23:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kgz::msgs[m[K’ has not been declared
+[1.116s]    23 |     gz::[01;31m[Kmsgs[m[K::Any s;
+[1.116s]       |         [01;31m[K^~~~[m[K
+[1.119s] [01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:24:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ks[m[K’ was not declared in this scope
+[1.119s]    24 |     [01;31m[Ks[m[K.set_type(gz::msgs::Any_ValueType_DOUBLE);
+[1.119s]       |     [01;31m[K^[m[K
+[1.119s] [01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:24:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kgz::msgs[m[K’ has not been declared
+[1.119s]    24 |     s.set_type(gz::[01;31m[Kmsgs[m[K::Any_ValueType_DOUBLE);
+[1.119s]       |                    [01;31m[K^~~~[m[K
+[1.119s] [01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:28:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kgz::msgs[m[K’ has not been declared
+[1.119s]    28 |     gz::[01;31m[Kmsgs[m[K::Any d;
+[1.119s]       |         [01;31m[K^~~~[m[K
+[1.122s] [01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:29:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kd[m[K’ was not declared in this scope
+[1.122s]    29 |     [01;31m[Kd[m[K.set_type(gz::msgs::Any_ValueType_DOUBLE);
+[1.122s]       |     [01;31m[K^[m[K
+[1.122s] [01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:29:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kgz::msgs[m[K’ has not been declared
+[1.122s]    29 |     d.set_type(gz::[01;31m[Kmsgs[m[K::Any_ValueType_DOUBLE);
+[1.122s]       |                    [01;31m[K^~~~[m[K
+[1.122s] [01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:[m[K In constructor ‘[01m[Kmaritime::WindPlugin::[01;32m[KWindPlugin[m[K()[m[K’:
+[1.123s] [01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:35:24:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kstd::unique_ptr<maritime::WindPlugin::Implementation, void (*)(maritime::WindPlugin::Implementation*)>::unique_ptr()[m[K’
+[1.123s]    35 | WindPlugin::WindPlugin([01;31m[K)[m[K
+[1.123s]       |                        [01;31m[K^[m[K
+[1.123s] In file included from [01m[K/usr/include/c++/13/memory:78[m[K:
+[1.123s] [01m[K/usr/include/c++/13/bits/unique_ptr.h:390:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Up, class> std::unique_ptr<_Tp, _Dp>::[01;32m[Kunique_ptr[m[K(std::auto_ptr<_Up>&&) [35m[K[with <template-parameter-2-2> = _Up; _Tp = maritime::WindPlugin::Implementation; _Dp = void (*)(maritime::WindPlugin::Implementation*)][m[K[m[K’
+[1.123s]   390 |         [01;36m[Kunique_ptr[m[K(auto_ptr<_Up>&& __u) noexcept;
+[1.123s]       |         [01;36m[K^~~~~~~~~~[m[K
+[1.123s] [01m[K/usr/include/c++/13/bits/unique_ptr.h:390:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.124s] [01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:35:24:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[1.124s]    35 | WindPlugin::WindPlugin([01;36m[K)[m[K
+[1.124s]       |                        [01;36m[K^[m[K
+[1.124s] [01m[K/usr/include/c++/13/bits/unique_ptr.h:380:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Up, class _Ep, class> std::unique_ptr<_Tp, _Dp>::[01;32m[Kunique_ptr[m[K(std::unique_ptr<_Up, _Ep>&&) [35m[K[with _Ep = _Up; <template-parameter-2-3> = _Ep; _Tp = maritime::WindPlugin::Implementation; _Dp = void (*)(maritime::WindPlugin::Implementation*)][m[K[m[K’
+[1.124s]   380 |         [01;36m[Kunique_ptr[m[K(unique_ptr<_Up, _Ep>&& __u) noexcept
+[1.124s]       |         [01;36m[K^~~~~~~~~~[m[K
+[1.124s] [01m[K/usr/include/c++/13/bits/unique_ptr.h:380:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.124s] [01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:35:24:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[1.124s]    35 | WindPlugin::WindPlugin([01;36m[K)[m[K
+[1.124s]       |                        [01;36m[K^[m[K
+[1.124s] [01m[K/usr/include/c++/13/bits/unique_ptr.h:359:19:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Del, class> constexpr std::unique_ptr<_Tp, _Dp>::[01;32m[Kunique_ptr[m[K(std::nullptr_t) [35m[K[with <template-parameter-2-2> = _Del; _Tp = maritime::WindPlugin::Implementation; _Dp = void (*)(maritime::WindPlugin::Implementation*)][m[K[m[K’
+[1.124s]   359 |         constexpr [01;36m[Kunique_ptr[m[K(nullptr_t) noexcept
+[1.125s]       |                   [01;36m[K^~~~~~~~~~[m[K
+[1.125s] [01m[K/usr/include/c++/13/bits/unique_ptr.h:359:19:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.125s] [01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:35:24:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[1.125s]    35 | WindPlugin::WindPlugin([01;36m[K)[m[K
+[1.125s]       |                        [01;36m[K^[m[K
+[1.125s] [01m[K/usr/include/c++/13/bits/unique_ptr.h:353:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Del, class _DelUnref> std::unique_ptr<_Tp, _Dp>::[01;32m[Kunique_ptr[m[K(pointer, std::__enable_if_t<std::is_lvalue_reference<_Del>::value, _DelUnref&&>) [35m[K[with _DelUnref = _Del; _Tp = maritime::WindPlugin::Implementation; _Dp = void (*)(maritime::WindPlugin::Implementation*)][m[K[m[K’ (deleted)
+[1.125s]   353 |         [01;36m[Kunique_ptr[m[K(pointer,
+[1.125s]       |         [01;36m[K^~~~~~~~~~[m[K
+[1.125s] [01m[K/usr/include/c++/13/bits/unique_ptr.h:353:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.125s] [01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:35:24:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[1.125s]    35 | WindPlugin::WindPlugin([01;36m[K)[m[K
+[1.125s]       |                        [01;36m[K^[m[K
+[1.126s] [01m[K/usr/include/c++/13/bits/unique_ptr.h:344:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Del, class> std::unique_ptr<_Tp, _Dp>::[01;32m[Kunique_ptr[m[K(pointer, std::__enable_if_t<(! std::is_lvalue_reference<_Del>::value), _Del&&>) [35m[K[with <template-parameter-2-2> = _Del; _Tp = maritime::WindPlugin::Implementation; _Dp = void (*)(maritime::WindPlugin::Implementation*)][m[K[m[K’
+[1.126s]   344 |         [01;36m[Kunique_ptr[m[K(pointer __p,
+[1.126s]       |         [01;36m[K^~~~~~~~~~[m[K
+[1.126s] [01m[K/usr/include/c++/13/bits/unique_ptr.h:344:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.126s] [01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:35:24:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[1.126s]    35 | WindPlugin::WindPlugin([01;36m[K)[m[K
+[1.126s]       |                        [01;36m[K^[m[K
+[1.126s] [01m[K/usr/include/c++/13/bits/unique_ptr.h:331:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Del, class> std::unique_ptr<_Tp, _Dp>::[01;32m[Kunique_ptr[m[K(pointer, const deleter_type&) [35m[K[with <template-parameter-2-2> = _Del; _Tp = maritime::WindPlugin::Implementation; _Dp = void (*)(maritime::WindPlugin::Implementation*)][m[K[m[K’
+[1.126s]   331 |         [01;36m[Kunique_ptr[m[K(pointer __p, const deleter_type& __d) noexcept
+[1.126s]       |         [01;36m[K^~~~~~~~~~[m[K
+[1.126s] [01m[K/usr/include/c++/13/bits/unique_ptr.h:331:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.126s] [01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:35:24:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[1.127s]    35 | WindPlugin::WindPlugin([01;36m[K)[m[K
+[1.127s]       |                        [01;36m[K^[m[K
+[1.127s] [01m[K/usr/include/c++/13/bits/unique_ptr.h:317:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Del, class> std::unique_ptr<_Tp, _Dp>::[01;32m[Kunique_ptr[m[K(pointer) [35m[K[with <template-parameter-2-2> = _Del; _Tp = maritime::WindPlugin::Implementation; _Dp = void (*)(maritime::WindPlugin::Implementation*)][m[K[m[K’
+[1.127s]   317 |         [01;36m[Kunique_ptr[m[K(pointer __p) noexcept
+[1.127s]       |         [01;36m[K^~~~~~~~~~[m[K
+[1.127s] [01m[K/usr/include/c++/13/bits/unique_ptr.h:317:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.127s] [01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:35:24:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[1.127s]    35 | WindPlugin::WindPlugin([01;36m[K)[m[K
+[1.127s]       |                        [01;36m[K^[m[K
+[1.127s] [01m[K/usr/include/c++/13/bits/unique_ptr.h:304:19:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Del, class> constexpr std::unique_ptr<_Tp, _Dp>::[01;32m[Kunique_ptr[m[K() [35m[K[with <template-parameter-2-2> = _Del; _Tp = maritime::WindPlugin::Implementation; _Dp = void (*)(maritime::WindPlugin::Implementation*)][m[K[m[K’
+[1.127s]   304 |         constexpr [01;36m[Kunique_ptr[m[K() noexcept
+[1.127s]       |                   [01;36m[K^~~~~~~~~~[m[K
+[1.128s] [01m[K/usr/include/c++/13/bits/unique_ptr.h:304:19:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.128s] /usr/include/c++/13/bits/unique_ptr.h: In substitution of ‘[01m[Ktemplate<class _Tp, class _Dp> template<class _Up> using std::unique_ptr<_Tp, _Dp>::_DeleterConstraint = typename std::__uniq_ptr_impl<_Tp, _Up>::_DeleterConstraint::type [35m[K[with _Up = void (*)(maritime::WindPlugin::Implementation*); _Tp = maritime::WindPlugin::Implementation; _Dp = void (*)(maritime::WindPlugin::Implementation*)][m[K[m[K’:
+[1.128s] [01m[K/usr/include/c++/13/bits/unique_ptr.h:303:37:[m[K   required from here
+[1.128s] [01m[K/usr/include/c++/13/bits/unique_ptr.h:280:15:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kusing std::__uniq_ptr_impl<maritime::WindPlugin::Implementation, void (*)(maritime::WindPlugin::Implementation*)>::_DeleterConstraint = struct std::enable_if<false, void>[m[K’ {aka ‘[01m[Kstruct std::enable_if<false, void>[m[K’}
+[1.128s]   280 |         using [01;31m[K_DeleterConstraint[m[K =
+[1.128s]       |               [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[1.128s] [01m[K/usr/include/c++/13/bits/unique_ptr.h:366:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::unique_ptr<_Tp, _Dp>::[01;32m[Kunique_ptr[m[K(std::unique_ptr<_Tp, _Dp>&&) [35m[K[with _Tp = maritime::WindPlugin::Implementation; _Dp = void (*)(maritime::WindPlugin::Implementation*)][m[K[m[K’
+[1.128s]   366 |       [01;36m[Kunique_ptr[m[K(unique_ptr&&) = default;
+[1.128s]       |       [01;36m[K^~~~~~~~~~[m[K
+[1.128s] [01m[K/usr/include/c++/13/bits/unique_ptr.h:366:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[1.128s] [01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:37:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass maritime::WindPlugin[m[K’ has no member named ‘[01m[KdataPtr[m[K’
+[1.128s]    37 |   this->[01;31m[KdataPtr[m[K = std::make_unique<Implementation>();
+[1.129s]       |         [01;31m[K^~~~~~~[m[K
+[1.129s] [01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:37:36:[m[K [01;31m[Kerror: [m[Kuse of ‘[01m[Kthis[m[K’ in a constant expression
+[1.129s]    37 |   this->dataPtr = std::make_unique<[01;31m[KImplementation[m[K>();
+[1.129s]       |                                    [01;31m[K^~~~~~~~~~~~~~[m[K
+[1.129s] [01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:37:51:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_unique<((maritime::WindPlugin*)this)->maritime::WindPlugin::Implementation>()[m[K’
+[1.129s]    37 |   this->dataPtr = [01;31m[Kstd::make_unique<Implementation>()[m[K;
+[1.129s]       |                   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[1.129s] [01m[K/usr/include/c++/13/bits/unique_ptr.h:1069:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> std::__detail::__unique_ptr_t<_Tp> std::[01;32m[Kmake_unique[m[K(_Args&& ...)[m[K’
+[1.129s]  1069 |     [01;36m[Kmake_unique[m[K(_Args&&... __args)
+[1.129s]       |     [01;36m[K^~~~~~~~~~~[m[K
+[1.129s] [01m[K/usr/include/c++/13/bits/unique_ptr.h:1069:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.129s] [01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:37:51:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class ... _Args> std::__detail::__unique_ptr_t<_Tp> std::[01;32m[Kmake_unique[m[K(_Args&& ...)[m[K’
+[1.130s]    37 |   this->dataPtr = [01;31m[Kstd::make_unique<Implementation>()[m[K;
+[1.130s]       |                   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[1.130s] [01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:37:51:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K((maritime::WindPlugin*)this)->maritime::WindPlugin::Implementation[m[K’
+[1.130s] [01m[K/usr/include/c++/13/bits/unique_ptr.h:1084:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::__detail::__unique_ptr_array_t<_Tp> std::[01;32m[Kmake_unique[m[K(size_t)[m[K’
+[1.130s]  1084 |     [01;36m[Kmake_unique[m[K(size_t __num)
+[1.130s]       |     [01;36m[K^~~~~~~~~~~[m[K
+[1.130s] [01m[K/usr/include/c++/13/bits/unique_ptr.h:1084:5:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[1.130s] [01m[K/usr/include/c++/13/bits/unique_ptr.h:1094:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> std::__detail::__invalid_make_unique_t<_Tp> std::[01;32m[Kmake_unique[m[K(_Args&& ...)[m[K’ (deleted)
+[1.130s]  1094 |     [01;36m[Kmake_unique[m[K(_Args&&...) = delete;
+[1.130s]       |     [01;36m[K^~~~~~~~~~~[m[K
+[1.130s] [01m[K/usr/include/c++/13/bits/unique_ptr.h:1094:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.130s] [01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:37:51:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class ... _Args> std::__detail::__invalid_make_unique_t<_Tp> std::[01;32m[Kmake_unique[m[K(_Args&& ...)[m[K’
+[1.131s]    37 |   this->dataPtr = [01;31m[Kstd::make_unique<Implementation>()[m[K;
+[1.131s]       |                   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[1.131s] [01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:37:51:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K((maritime::WindPlugin*)this)->maritime::WindPlugin::Implementation[m[K’
+[1.131s] [01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:[m[K At global scope:
+[1.131s] [01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:42:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid maritime::WindPlugin::[01;32m[KLoad[m[K(const std::shared_ptr<const sdf::v14::Element>&)[m[K’
+[1.131s]    42 | void [01;31m[KWindPlugin[m[K::Load(const std::shared_ptr<const sdf::Element> &_sdf)
+[1.131s]       |      [01;31m[K^~~~~~~~~~[m[K
+[1.131s] [01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.hh:11:12:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid maritime::WindPlugin::[01;32m[KLoad[m[K(...)[m[K’
+[1.131s]    11 |       void [01;36m[KLoad[m[K(const std::shared_ptr<const sdf::Element> &_sdf);
+[1.131s]       |            [01;36m[K^~~~[m[K
+[1.131s] [01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.hh:5:9:[m[K [01;36m[Knote: [m[K‘[01m[Kclass maritime::WindPlugin[m[K’ defined here
+[1.131s]     5 |   class [01;36m[KWindPlugin[m[K
+[1.132s]       |         [01;36m[K^~~~~~~~~~[m[K
+[1.210s] gmake[2]: *** [CMakeFiles/WindPlugin.dir/build.make:76: CMakeFiles/WindPlugin.dir/src/WindPlugin.cc.o] Error 1
+[1.210s] gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/WindPlugin.dir/all] Error 2
+[1.210s] gmake: *** [Makefile:136: all] Error 2
+[1.212s] Invoked command in '/home/antoni/gazebo_maritime_ws/build/gazebo_maritime' returned '2': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/antoni/gazebo_maritime_ws/build/gazebo_maritime -- -j12 -l12

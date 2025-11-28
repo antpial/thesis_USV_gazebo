@@ -1,0 +1,6 @@
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:45:2:[m[K [01;31m[Kerror: [m[Kexpected constructor, destructor, or type conversion before ‘[01m[K;[m[K’ token
+   45 | )[01;31m[K;[m[K
+      |  [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/WindPlugin.dir/build.make:76: CMakeFiles/WindPlugin.dir/src/WindPlugin.cc.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/WindPlugin.dir/all] Error 2
+gmake: *** [Makefile:136: all] Error 2

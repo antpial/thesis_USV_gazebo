@@ -1,0 +1,10 @@
+[0.010s] Invoking command in '/home/antoni/gazebo_maritime_ws/build/apply_wind_plugin': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/antoni/gazebo_maritime_ws/install:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/antoni/gazebo_maritime_ws/build/apply_wind_plugin -- -j12 -l12
+[0.060s] [ 50%] [32mBuilding CXX object CMakeFiles/ApplyWindForceSystem.dir/src/apply_wind_force_system.cpp.o[0m
+[0.379s] [01m[K/home/antoni/gazebo_maritime_ws/src/apply_wind_plugin/src/apply_wind_force_system.cpp:8:10:[m[K [01;31m[Kfatal error: [m[Kgz/sim/components/WorldForceCmd.hh: No such file or directory
+[0.379s]     8 | #include [01;31m[K<gz/sim/components/WorldForceCmd.hh>[m[K
+[0.379s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.379s] compilation terminated.
+[0.383s] gmake[2]: *** [CMakeFiles/ApplyWindForceSystem.dir/build.make:76: CMakeFiles/ApplyWindForceSystem.dir/src/apply_wind_force_system.cpp.o] Error 1
+[0.383s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ApplyWindForceSystem.dir/all] Error 2
+[0.383s] gmake: *** [Makefile:146: all] Error 2
+[0.385s] Invoked command in '/home/antoni/gazebo_maritime_ws/build/apply_wind_plugin' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/antoni/gazebo_maritime_ws/install:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/antoni/gazebo_maritime_ws/build/apply_wind_plugin -- -j12 -l12

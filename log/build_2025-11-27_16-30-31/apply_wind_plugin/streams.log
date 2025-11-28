@@ -1,0 +1,317 @@
+[0.008s] Invoking command in '/home/antoni/gazebo_maritime_ws/build/apply_wind_plugin': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/antoni/gazebo_maritime_ws/install:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/antoni/gazebo_maritime_ws/src/apply_wind_plugin -DCMAKE_INSTALL_PREFIX=/home/antoni/gazebo_maritime_ws/install
+[0.019s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.214s] -- Looking for gz-sim8 -- found version 8.9.0
+[0.223s] -- Searching for dependencies of gz-sim8
+[0.227s] -- Looking for sdformat14 -- found version 14.8.0
+[0.227s] -- Searching for dependencies of sdformat14
+[0.238s] -- Checking for module 'tinyxml2'
+[0.256s] --   Found tinyxml2, version 10.0.0
+[0.298s] -- Looking for gz-math7 -- found version 7.5.2
+[0.299s] -- Searching for dependencies of gz-math7
+[0.300s] -- Looking for gz-utils2 -- found version 2.2.1
+[0.300s] -- Searching for dependencies of gz-utils2
+[0.302s] -- Looking for gz-utils2 -- found version 2.2.1
+[0.302s] -- Searching for dependencies of gz-utils2
+[0.303s] -- Searching for <gz-utils2> component [cli]
+[0.303s] -- Looking for gz-utils2-cli -- found version 2.2.1
+[0.303s] -- Searching for dependencies of gz-utils2-cli
+[0.307s] -- Looking for gz-plugin2 -- found version 2.0.4
+[0.307s] -- Searching for dependencies of gz-plugin2
+[0.308s] -- Looking for gz-utils2 -- found version 2.2.1
+[0.308s] -- Searching for <gz-plugin2> component [loader]
+[0.310s] -- Looking for gz-plugin2-loader -- found version 2.0.4
+[0.310s] -- Searching for dependencies of gz-plugin2-loader
+[0.310s] -- Searching for <gz-plugin2> component [register]
+[0.312s] -- Looking for gz-plugin2-register -- found version 2.0.4
+[0.312s] -- Searching for dependencies of gz-plugin2-register
+[0.314s] -- Looking for gz-transport13 -- found version 13.4.1
+[0.314s] -- Searching for dependencies of gz-transport13
+[0.453s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.21.12") 
+[0.469s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[0.474s] -- Checking for module 'libzmq >= 4'
+[0.490s] --   Found libzmq, version 4.3.5
+[0.538s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[0.543s] -- Checking for module 'uuid'
+[0.554s] --   Found uuid, version 2.39.3
+[0.596s] -- Found UUID: TRUE  
+[0.597s] -- Looking for gz-utils2 -- found version 2.2.1
+[0.600s] -- Looking for gz-msgs10 -- found version 10.3.2
+[0.600s] -- Searching for dependencies of gz-msgs10
+[0.619s] -- Looking for gz-utils2 -- found version 2.2.1
+[0.619s] -- Looking for gz-math7 -- found version 7.5.2
+[0.627s] -- Searching for <gz-transport13> component [log]
+[0.630s] -- Looking for gz-transport13-log -- found version 13.4.1
+[0.630s] -- Searching for dependencies of gz-transport13-log
+[0.631s] -- Searching for <gz-transport13> component [parameters]
+[0.633s] -- Looking for gz-transport13-parameters -- found version 13.4.1
+[0.634s] -- Searching for dependencies of gz-transport13-parameters
+[0.635s] -- Looking for gz-msgs10 -- found version 10.3.2
+[0.638s] -- Looking for gz-common5 -- found version 5.7.1
+[0.638s] -- Searching for dependencies of gz-common5
+[0.638s] -- Looking for gz-utils2 -- found version 2.2.1
+[0.639s] -- Looking for dlfcn.h - found
+[0.641s] -- Looking for libdl - found
+[0.642s] -- Found DL: TRUE  
+[0.651s] -- Searching for <gz-common5> component [av]
+[0.654s] -- Looking for gz-common5-av -- found version 5.7.1
+[0.655s] -- Searching for dependencies of gz-common5-av
+[0.662s] -- Checking for module 'libswscale'
+[0.683s] --   Found libswscale, version 7.5.100
+[0.730s] -- Found SWSCALE: TRUE  
+[0.739s] -- Checking for module 'libavdevice >= 56.4.100'
+[0.757s] --   Found libavdevice, version 60.3.100
+[0.814s] -- Found AVDEVICE: TRUE (Required is at least version "56.4.100") 
+[0.821s] -- Checking for module 'libavformat'
+[0.840s] --   Found libavformat, version 60.16.100
+[0.891s] -- Found AVFORMAT: TRUE  
+[0.899s] -- Checking for module 'libavcodec'
+[0.917s] --   Found libavcodec, version 60.31.102
+[0.966s] -- Found AVCODEC: TRUE  
+[0.976s] -- Checking for module 'libavutil'
+[0.992s] --   Found libavutil, version 58.29.100
+[1.039s] -- Found AVUTIL: TRUE  
+[1.042s] -- Searching for <gz-common5> component [events]
+[1.045s] -- Looking for gz-common5-events -- found version 5.7.1
+[1.045s] -- Searching for dependencies of gz-common5-events
+[1.046s] -- Looking for gz-math7 -- found version 7.5.2
+[1.047s] -- Searching for <gz-common5> component [graphics]
+[1.050s] -- Looking for gz-common5-graphics -- found version 5.7.1
+[1.050s] -- Searching for dependencies of gz-common5-graphics
+[1.051s] -- Looking for gz-math7 -- found version 7.5.2
+[1.057s] -- Found GzAssimp: TRUE (found version "5.3.0") 
+[1.057s] -- Searching for <gz-common5> component [io]
+[1.060s] -- Looking for gz-common5-io -- found version 5.7.1
+[1.060s] -- Searching for dependencies of gz-common5-io
+[1.060s] -- Searching for <gz-common5> component [profiler]
+[1.062s] -- Looking for gz-common5-profiler -- found version 5.7.1
+[1.062s] -- Searching for dependencies of gz-common5-profiler
+[1.064s] -- Looking for gz-fuel_tools9 -- found version 9.1.1
+[1.064s] -- Searching for dependencies of gz-fuel_tools9
+[1.174s] -- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "8.5.0")  
+[1.185s] -- Checking for module 'jsoncpp'
+[1.201s] --   Found jsoncpp, version 1.9.5
+[1.248s] -- Found JSONCPP: TRUE  
+[1.271s] -- Checking for module 'yaml-0.1'
+[1.288s] --   Found yaml-0.1, version 0.2.5
+[1.334s] -- Found YAML: TRUE  
+[1.343s] -- Checking for module 'libzip'
+[1.363s] --   Found libzip, version 1.7.3
+[1.405s] -- Found ZIP: TRUE  
+[1.405s] -- Looking for gz-utils2 -- found version 2.2.1
+[1.406s] -- Looking for gz-common5 -- found version 5.7.1
+[1.406s] -- Searching for dependencies of gz-common5
+[1.407s] -- Looking for gz-utils2 -- found version 2.2.1
+[1.407s] -- Looking for dlfcn.h - found
+[1.407s] -- Looking for libdl - found
+[1.418s] -- Searching for <gz-common5> component [testing]
+[1.422s] -- Looking for gz-common5-testing -- found version 5.7.1
+[1.422s] -- Searching for dependencies of gz-common5-testing
+[1.424s] -- Looking for gz-math7 -- found version 7.5.2
+[1.425s] -- Looking for gz-msgs10 -- found version 10.3.2
+[1.429s] -- Looking for gz-gui8 -- found version 8.4.0
+[1.429s] -- Searching for dependencies of gz-gui8
+[1.447s] -- Looking for gz-utils2 -- found version 2.2.1
+[1.447s] -- Looking for gz-math7 -- found version 7.5.2
+[1.447s] -- Looking for gz-common5 -- found version 5.7.1
+[1.448s] -- Looking for gz-plugin2 -- found version 2.0.4
+[1.448s] -- Looking for gz-transport13 -- found version 13.4.1
+[1.452s] -- Looking for gz-rendering8 -- found version 8.2.2
+[1.452s] -- Searching for dependencies of gz-rendering8
+[1.452s] -- Looking for gz-math7 -- found version 7.5.2
+[1.453s] -- Searching for dependencies of gz-math7
+[1.453s] -- Looking for gz-utils2 -- found version 2.2.1
+[1.453s] -- Searching for <gz-math7> component [eigen3]
+[1.454s] -- Looking for gz-math7-eigen3 -- found version 7.5.2
+[1.454s] -- Searching for dependencies of gz-math7-eigen3
+[1.463s] -- Looking for gz-common5 -- found version 5.7.1
+[1.463s] -- Searching for dependencies of gz-common5
+[1.464s] -- Looking for gz-utils2 -- found version 2.2.1
+[1.464s] -- Looking for dlfcn.h - found
+[1.464s] -- Looking for libdl - found
+[1.472s] -- Searching for <gz-common5> component [graphics]
+[1.472s] -- Searching for <gz-common5> component [events]
+[1.472s] -- Searching for <gz-common5> component [geospatial]
+[1.474s] -- Looking for gz-common5-geospatial -- found version 5.7.1
+[1.474s] -- Searching for dependencies of gz-common5-geospatial
+[1.474s] -- Looking for gz-math7 -- found version 7.5.2
+[1.474s] -- Looking for gz-common5 -- found version 5.7.1
+[1.475s] -- Looking for gz-plugin2 -- found version 2.0.4
+[1.475s] -- Searching for dependencies of gz-plugin2
+[1.475s] -- Looking for gz-utils2 -- found version 2.2.1
+[1.476s] -- Searching for <gz-plugin2> component [all]
+[1.477s] -- Looking for all libraries of gz-plugin2 -- found version 2.0.4
+[1.477s] -- Looking for gz-plugin2 -- found version 2.0.4
+[1.478s] -- Looking for gz-utils2 -- found version 2.2.1
+[1.483s] -- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so  found components: OpenGL 
+[1.484s] -- Looking for gz-msgs10 -- found version 10.3.2
+[1.500s] -- Looking for gz-physics7 -- found version 7.5.0
+[1.500s] -- Searching for dependencies of gz-physics7
+[1.500s] -- Looking for gz-common5 -- found version 5.7.1
+[1.501s] -- Looking for gz-math7 -- found version 7.5.2
+[1.501s] -- Looking for gz-plugin2 -- found version 2.0.4
+[1.501s] -- Looking for gz-utils2 -- found version 2.2.1
+[1.502s] -- Searching for <gz-physics7> component [heightmap]
+[1.503s] -- Looking for gz-physics7-heightmap -- found version 7.5.0
+[1.503s] -- Searching for dependencies of gz-physics7-heightmap
+[1.503s] -- Looking for gz-common5 -- found version 5.7.1
+[1.504s] -- Searching for <gz-physics7> component [mesh]
+[1.505s] -- Looking for gz-physics7-mesh -- found version 7.5.0
+[1.505s] -- Searching for dependencies of gz-physics7-mesh
+[1.505s] -- Looking for gz-common5 -- found version 5.7.1
+[1.506s] -- Searching for <gz-physics7> component [sdf]
+[1.507s] -- Looking for gz-physics7-sdf -- found version 7.5.0
+[1.507s] -- Searching for dependencies of gz-physics7-sdf
+[1.507s] -- Looking for sdformat14 -- found version 14.8.0
+[1.509s] -- Looking for gz-sensors8 -- found version 8.2.2
+[1.509s] -- Searching for dependencies of gz-sensors8
+[1.521s] -- Looking for gz-math7 -- found version 7.5.2
+[1.521s] -- Looking for gz-common5 -- found version 5.7.1
+[1.521s] -- Looking for gz-transport13 -- found version 13.4.1
+[1.521s] -- Looking for gz-rendering8 -- found version 8.2.2
+[1.522s] -- Looking for gz-msgs10 -- found version 10.3.2
+[1.522s] -- Looking for sdformat14 -- found version 14.8.0
+[1.522s] -- Searching for <gz-sensors8> component [air_pressure]
+[1.523s] -- Looking for gz-sensors8-air_pressure -- found version 8.2.2
+[1.523s] -- Searching for dependencies of gz-sensors8-air_pressure
+[1.524s] -- Searching for <gz-sensors8> component [air_speed]
+[1.525s] -- Looking for gz-sensors8-air_speed -- found version 8.2.2
+[1.525s] -- Searching for dependencies of gz-sensors8-air_speed
+[1.525s] -- Searching for <gz-sensors8> component [altimeter]
+[1.527s] -- Looking for gz-sensors8-altimeter -- found version 8.2.2
+[1.527s] -- Searching for dependencies of gz-sensors8-altimeter
+[1.527s] -- Searching for <gz-sensors8> component [imu]
+[1.528s] -- Looking for gz-sensors8-imu -- found version 8.2.2
+[1.528s] -- Searching for dependencies of gz-sensors8-imu
+[1.529s] -- Searching for <gz-sensors8> component [force_torque]
+[1.530s] -- Looking for gz-sensors8-force_torque -- found version 8.2.2
+[1.530s] -- Searching for dependencies of gz-sensors8-force_torque
+[1.530s] -- Searching for <gz-sensors8> component [logical_camera]
+[1.531s] -- Looking for gz-sensors8-logical_camera -- found version 8.2.2
+[1.532s] -- Searching for dependencies of gz-sensors8-logical_camera
+[1.532s] -- Searching for <gz-sensors8> component [magnetometer]
+[1.533s] -- Looking for gz-sensors8-magnetometer -- found version 8.2.2
+[1.533s] -- Searching for dependencies of gz-sensors8-magnetometer
+[1.534s] -- Searching for <gz-sensors8> component [navsat]
+[1.535s] -- Looking for gz-sensors8-navsat -- found version 8.2.2
+[1.535s] -- Searching for dependencies of gz-sensors8-navsat
+[1.535s] -- Searching for <gz-sensors8> component [dvl]
+[1.537s] -- Looking for gz-sensors8-dvl -- found version 8.2.2
+[1.537s] -- Searching for dependencies of gz-sensors8-dvl
+[1.537s] -- Looking for gz-sensors8 -- found version 8.2.2
+[1.537s] -- Searching for dependencies of gz-sensors8
+[1.548s] -- Looking for gz-math7 -- found version 7.5.2
+[1.548s] -- Looking for gz-common5 -- found version 5.7.1
+[1.548s] -- Looking for gz-transport13 -- found version 13.4.1
+[1.549s] -- Looking for gz-rendering8 -- found version 8.2.2
+[1.549s] -- Looking for gz-msgs10 -- found version 10.3.2
+[1.549s] -- Looking for sdformat14 -- found version 14.8.0
+[1.549s] -- Searching for <gz-sensors8> component [rendering]
+[1.550s] -- Looking for gz-sensors8-rendering -- found version 8.2.2
+[1.550s] -- Searching for dependencies of gz-sensors8-rendering
+[1.551s] -- Searching for <gz-sensors8> component [rendering]
+[1.551s] -- Searching for <gz-sensors8> component [lidar]
+[1.553s] -- Looking for gz-sensors8-lidar -- found version 8.2.2
+[1.553s] -- Searching for dependencies of gz-sensors8-lidar
+[1.553s] -- Looking for gz-sensors8 -- found version 8.2.2
+[1.553s] -- Searching for <gz-sensors8> component [gpu_lidar]
+[1.555s] -- Looking for gz-sensors8-gpu_lidar -- found version 8.2.2
+[1.555s] -- Searching for dependencies of gz-sensors8-gpu_lidar
+[1.555s] -- Looking for gz-sensors8 -- found version 8.2.2
+[1.555s] -- Searching for <gz-sensors8> component [camera]
+[1.557s] -- Looking for gz-sensors8-camera -- found version 8.2.2
+[1.557s] -- Searching for dependencies of gz-sensors8-camera
+[1.557s] -- Looking for gz-sensors8 -- found version 8.2.2
+[1.557s] -- Searching for <gz-sensors8> component [boundingbox_camera]
+[1.559s] -- Looking for gz-sensors8-boundingbox_camera -- found version 8.2.2
+[1.559s] -- Searching for dependencies of gz-sensors8-boundingbox_camera
+[1.559s] -- Searching for <gz-sensors8> component [segmentation_camera]
+[1.560s] -- Looking for gz-sensors8-segmentation_camera -- found version 8.2.2
+[1.560s] -- Searching for dependencies of gz-sensors8-segmentation_camera
+[1.561s] -- Searching for <gz-sensors8> component [depth_camera]
+[1.562s] -- Looking for gz-sensors8-depth_camera -- found version 8.2.2
+[1.562s] -- Searching for dependencies of gz-sensors8-depth_camera
+[1.562s] -- Looking for gz-sensors8 -- found version 8.2.2
+[1.563s] -- Searching for <gz-sensors8> component [rgbd_camera]
+[1.564s] -- Looking for gz-sensors8-rgbd_camera -- found version 8.2.2
+[1.564s] -- Searching for dependencies of gz-sensors8-rgbd_camera
+[1.564s] -- Looking for gz-sensors8 -- found version 8.2.2
+[1.565s] -- Searching for <gz-sensors8> component [thermal_camera]
+[1.566s] -- Looking for gz-sensors8-thermal_camera -- found version 8.2.2
+[1.566s] -- Searching for dependencies of gz-sensors8-thermal_camera
+[1.566s] -- Looking for gz-sensors8 -- found version 8.2.2
+[1.567s] -- Searching for <gz-sensors8> component [wide_angle_camera]
+[1.568s] -- Looking for gz-sensors8-wide_angle_camera -- found version 8.2.2
+[1.568s] -- Searching for dependencies of gz-sensors8-wide_angle_camera
+[1.569s] -- Looking for gz-rendering8 -- found version 8.2.2
+[1.569s] -- Looking for gz-math7 -- found version 7.5.2
+[1.569s] -- Looking for gz-utils2 -- found version 2.2.1
+[1.583s] -- Found rclcpp: 28.1.12 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.606s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.615s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.626s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.638s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.688s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.690s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.779s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.807s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[1.836s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.941s] -- Configuring done (1.9s)
+[1.951s] -- Generating done (0.0s)
+[1.954s] -- Build files have been written to: /home/antoni/gazebo_maritime_ws/build/apply_wind_plugin
+[1.963s] Invoked command in '/home/antoni/gazebo_maritime_ws/build/apply_wind_plugin' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/antoni/gazebo_maritime_ws/install:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/antoni/gazebo_maritime_ws/src/apply_wind_plugin -DCMAKE_INSTALL_PREFIX=/home/antoni/gazebo_maritime_ws/install
+[1.964s] Invoking command in '/home/antoni/gazebo_maritime_ws/build/apply_wind_plugin': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/antoni/gazebo_maritime_ws/install:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/antoni/gazebo_maritime_ws/build/apply_wind_plugin -- -j12 -l12
+[2.032s] [ 50%] [32mBuilding CXX object CMakeFiles/ApplyWindForceSystem.dir/src/apply_wind_force_system.cpp.o[0m
+[3.788s] [01m[K/home/antoni/gazebo_maritime_ws/src/apply_wind_plugin/src/apply_wind_force_system.cpp:28:8:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid maritime::ApplyWindForce::[01;32m[KPostUpdate[m[K(const gz::sim::v8::UpdateInfo&, gz::sim::v8::EntityComponentManager&)[m[K’ marked ‘[01m[Koverride[m[K’, but does not override
+[3.789s]    28 |   void [01;31m[KPostUpdate[m[K(const gz::sim::UpdateInfo &/*info*/,
+[3.789s]       |        [01;31m[K^~~~~~~~~~[m[K
+[3.789s] [01m[K/home/antoni/gazebo_maritime_ws/src/apply_wind_plugin/src/apply_wind_force_system.cpp:[m[K In member function ‘[01m[Kvoid maritime::ApplyWindForce::[01;32m[KPostUpdate[m[K(const gz::sim::v8::UpdateInfo&, gz::sim::v8::EntityComponentManager&)[m[K’:
+[3.789s] [01m[K/home/antoni/gazebo_maritime_ws/src/apply_wind_plugin/src/apply_wind_force_system.cpp:33:27:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kgz::sim::v8::Model::Valid()[m[K’
+[3.789s]    33 |     if (![01;31m[KmodelEntity.Valid()[m[K)
+[3.789s]       |          [01;31m[K~~~~~~~~~~~~~~~~~^~[m[K
+[3.789s] In file included from [01m[K/home/antoni/gazebo_maritime_ws/src/apply_wind_plugin/src/apply_wind_force_system.cpp:4[m[K:
+[3.789s] [01m[K/usr/include/gz/sim8/gz/sim/Model.hh:94:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool gz::sim::v8::Model::[01;32m[KValid[m[K(const gz::sim::v8::EntityComponentManager&) const[m[K’
+[3.789s]    94 |       public: bool [01;36m[KValid[m[K(const EntityComponentManager &_ecm) const;
+[3.790s]       |                    [01;36m[K^~~~~[m[K
+[3.790s] [01m[K/usr/include/gz/sim8/gz/sim/Model.hh:94:20:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[3.790s] [01m[K/home/antoni/gazebo_maritime_ws/src/apply_wind_plugin/src/apply_wind_force_system.cpp:37:52:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} to ‘[01m[Kconst gz::sim::v8::EntityComponentManager&[m[K’
+[3.790s]    37 |     auto linkEntity = modelEntity.LinkByName([01;31m[Kthis->linkName[m[K, ecm);
+[3.790s]       |                                              [01;31m[K~~~~~~^~~~~~~~[m[K
+[3.790s]       |                                                    [01;31m[K|[m[K
+[3.790s]       |                                                    [01;31m[Kstd::string {aka std::__cxx11::basic_string<char>}[m[K
+[3.790s] [01m[K/usr/include/gz/sim8/gz/sim/Model.hh:137:68:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kgz::sim::v8::Entity gz::sim::v8::Model::[01;32m[KLinkByName[m[K(const gz::sim::v8::EntityComponentManager&, const std::string&) const[m[K’
+[3.790s]   137 |      public: sim::Entity LinkByName([01;36m[Kconst EntityComponentManager &_ecm[m[K,
+[3.791s]       |                                     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[3.791s] 
+[3.791s] [01m[K/home/antoni/gazebo_maritime_ws/src/apply_wind_plugin/src/apply_wind_force_system.cpp:[m[K In member function ‘[01m[Kgz::sim::v8::Entity maritime::ApplyWindForce::[01;32m[KentityByName[m[K(gz::sim::v8::EntityComponentManager&, const std::string&)[m[K’:
+[3.791s] [01m[K/home/antoni/gazebo_maritime_ws/src/apply_wind_plugin/src/apply_wind_force_system.cpp:59:65:[m[K [01;31m[Kerror: [m[K‘[01m[KName[m[K’ is not a member of ‘[01m[Kgz::sim::v8::components[m[K’
+[3.791s]    59 |    for (auto e : ecm.EntitiesByComponents(gz::sim::components::[01;31m[KName[m[K()))
+[3.791s]       |                                                                [01;31m[K^~~~[m[K
+[3.791s] 
+[3.791s] [01m[K/home/antoni/gazebo_maritime_ws/src/apply_wind_plugin/src/apply_wind_force_system.cpp:61:54:[m[K [01;31m[Kerror: [m[K‘[01m[KName[m[K’ is not a member of ‘[01m[Kgz::sim::v8::components[m[K’
+[3.791s]    61 |       auto comp = ecm.Component<gz::sim::components::[01;31m[KName[m[K>(e);
+[3.791s]       |                                                      [01;31m[K^~~~[m[K
+[3.791s] [01m[K/home/antoni/gazebo_maritime_ws/src/apply_wind_plugin/src/apply_wind_force_system.cpp:65:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kgz::sim::Entity[m[K’ is not a class, namespace, or enumeration
+[3.791s]    65 |     return gz::sim::[01;31m[KEntity[m[K::kNull;
+[3.791s]       |                     [01;31m[K^~~~~~[m[K
+[3.792s] In file included from [01m[K/usr/include/gz/plugin2/gz/plugin/Register.hh:22[m[K,
+[3.792s]                  from [01m[K/home/antoni/gazebo_maritime_ws/src/apply_wind_plugin/src/apply_wind_force_system.cpp:8[m[K:
+[3.792s] [01m[K/home/antoni/gazebo_maritime_ws/src/apply_wind_plugin/src/apply_wind_force_system.cpp:[m[K In constructor ‘[01m[Kmaritime::gz::plugin::{anonymous}::ExecuteWhenLoadingLibrary0::[01;32m[KExecuteWhenLoadingLibrary0[m[K()[m[K’:
+[3.792s] [01m[K/home/antoni/gazebo_maritime_ws/src/apply_wind_plugin/src/apply_wind_force_system.cpp:70:19:[m[K [01;31m[Kerror: [m[K‘[01m[Ksim[m[K’ is not a member of ‘[01m[Kmaritime::gz[m[K’; did you mean ‘[01m[Kgz::sim[m[K’?
+[3.792s]    70 |               gz::[01;31m[Ksim[m[K::System,
+[3.792s]       |                   [01;31m[K^~~[m[K
+[3.792s] In file included from [01m[K/usr/include/gz/sim8/gz/sim/EntityComponentManager.hh:37[m[K,
+[3.792s]                  from [01m[K/usr/include/gz/sim8/gz/sim/System.hh:24[m[K,
+[3.792s]                  from [01m[K/home/antoni/gazebo_maritime_ws/src/apply_wind_plugin/src/apply_wind_force_system.cpp:2[m[K:
+[3.792s] [01m[K/usr/include/gz/sim8/gz/sim/Entity.hh:29:13:[m[K [01;36m[Knote: [m[K‘[01m[Kgz::sim[m[K’ declared here
+[3.792s]    29 |   namespace [01;36m[Ksim[m[K
+[3.792s]       |             [01;36m[K^~~[m[K
+[3.792s] [01m[K/home/antoni/gazebo_maritime_ws/src/apply_wind_plugin/src/apply_wind_force_system.cpp:69:1:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[3.793s]    69 | [01;31m[KGZ_ADD_PLUGIN[m[K(maritime::ApplyWindForce,
+[3.793s]       | [01;31m[K^~~~~~~~~~~~~[m[K
+[3.793s] [01m[K/home/antoni/gazebo_maritime_ws/src/apply_wind_plugin/src/apply_wind_force_system.cpp:69:1:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+[3.793s]    69 | [01;31m[KGZ_ADD_PLUGIN[m[K(maritime::ApplyWindForce,
+[3.793s]       | [01;31m[K^~~~~~~~~~~~~[m[K
+[4.048s] gmake[2]: *** [CMakeFiles/ApplyWindForceSystem.dir/build.make:76: CMakeFiles/ApplyWindForceSystem.dir/src/apply_wind_force_system.cpp.o] Error 1
+[4.048s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ApplyWindForceSystem.dir/all] Error 2
+[4.048s] gmake: *** [Makefile:146: all] Error 2
+[4.051s] Invoked command in '/home/antoni/gazebo_maritime_ws/build/apply_wind_plugin' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/antoni/gazebo_maritime_ws/install:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/antoni/gazebo_maritime_ws/build/apply_wind_plugin -- -j12 -l12

@@ -1,0 +1,398 @@
+-- Looking for gz-sim8 -- found version 8.9.0
+-- Searching for dependencies of gz-sim8
+-- Looking for sdformat14 -- found version 14.8.0
+-- Searching for dependencies of sdformat14
+-- Checking for module 'tinyxml2'
+--   Found tinyxml2, version 10.0.0
+-- Looking for gz-math7 -- found version 7.5.2
+-- Searching for dependencies of gz-math7
+-- Looking for gz-utils2 -- found version 2.2.1
+-- Searching for dependencies of gz-utils2
+-- Looking for gz-utils2 -- found version 2.2.1
+-- Searching for dependencies of gz-utils2
+-- Searching for <gz-utils2> component [cli]
+-- Looking for gz-utils2-cli -- found version 2.2.1
+-- Searching for dependencies of gz-utils2-cli
+-- Looking for gz-plugin2 -- found version 2.0.4
+-- Searching for dependencies of gz-plugin2
+-- Looking for gz-utils2 -- found version 2.2.1
+-- Searching for <gz-plugin2> component [loader]
+-- Looking for gz-plugin2-loader -- found version 2.0.4
+-- Searching for dependencies of gz-plugin2-loader
+-- Searching for <gz-plugin2> component [register]
+-- Looking for gz-plugin2-register -- found version 2.0.4
+-- Searching for dependencies of gz-plugin2-register
+-- Looking for gz-transport13 -- found version 13.4.1
+-- Searching for dependencies of gz-transport13
+-- Config-file not installed for ZeroMQ -- checking for pkg-config
+-- Checking for module 'libzmq >= 4'
+--   Found libzmq, version 4.3.5
+-- Checking for module 'uuid'
+--   Found uuid, version 2.39.3
+-- Looking for gz-utils2 -- found version 2.2.1
+-- Looking for gz-msgs10 -- found version 10.3.2
+-- Searching for dependencies of gz-msgs10
+-- Looking for gz-utils2 -- found version 2.2.1
+-- Looking for gz-math7 -- found version 7.5.2
+-- Searching for <gz-transport13> component [log]
+-- Looking for gz-transport13-log -- found version 13.4.1
+-- Searching for dependencies of gz-transport13-log
+-- Searching for <gz-transport13> component [parameters]
+-- Looking for gz-transport13-parameters -- found version 13.4.1
+-- Searching for dependencies of gz-transport13-parameters
+-- Looking for gz-msgs10 -- found version 10.3.2
+-- Looking for gz-common5 -- found version 5.7.1
+-- Searching for dependencies of gz-common5
+-- Looking for gz-utils2 -- found version 2.2.1
+-- Looking for dlfcn.h - found
+-- Looking for libdl - found
+-- Searching for <gz-common5> component [av]
+-- Looking for gz-common5-av -- found version 5.7.1
+-- Searching for dependencies of gz-common5-av
+-- Checking for module 'libswscale'
+--   Found libswscale, version 7.5.100
+-- Checking for module 'libavdevice >= 56.4.100'
+--   Found libavdevice, version 60.3.100
+-- Checking for module 'libavformat'
+--   Found libavformat, version 60.16.100
+-- Checking for module 'libavcodec'
+--   Found libavcodec, version 60.31.102
+-- Checking for module 'libavutil'
+--   Found libavutil, version 58.29.100
+-- Searching for <gz-common5> component [events]
+-- Looking for gz-common5-events -- found version 5.7.1
+-- Searching for dependencies of gz-common5-events
+-- Looking for gz-math7 -- found version 7.5.2
+-- Searching for <gz-common5> component [graphics]
+-- Looking for gz-common5-graphics -- found version 5.7.1
+-- Searching for dependencies of gz-common5-graphics
+-- Looking for gz-math7 -- found version 7.5.2
+-- Searching for <gz-common5> component [io]
+-- Looking for gz-common5-io -- found version 5.7.1
+-- Searching for dependencies of gz-common5-io
+-- Searching for <gz-common5> component [profiler]
+-- Looking for gz-common5-profiler -- found version 5.7.1
+-- Searching for dependencies of gz-common5-profiler
+-- Looking for gz-fuel_tools9 -- found version 9.1.1
+-- Searching for dependencies of gz-fuel_tools9
+-- Checking for module 'jsoncpp'
+--   Found jsoncpp, version 1.9.5
+-- Checking for module 'yaml-0.1'
+--   Found yaml-0.1, version 0.2.5
+-- Checking for module 'libzip'
+--   Found libzip, version 1.7.3
+-- Looking for gz-utils2 -- found version 2.2.1
+-- Looking for gz-common5 -- found version 5.7.1
+-- Searching for dependencies of gz-common5
+-- Looking for gz-utils2 -- found version 2.2.1
+-- Looking for dlfcn.h - found
+-- Looking for libdl - found
+-- Searching for <gz-common5> component [testing]
+-- Looking for gz-common5-testing -- found version 5.7.1
+-- Searching for dependencies of gz-common5-testing
+-- Looking for gz-math7 -- found version 7.5.2
+-- Looking for gz-msgs10 -- found version 10.3.2
+-- Looking for gz-gui8 -- found version 8.4.0
+-- Searching for dependencies of gz-gui8
+-- Looking for gz-utils2 -- found version 2.2.1
+-- Looking for gz-math7 -- found version 7.5.2
+-- Looking for gz-common5 -- found version 5.7.1
+-- Looking for gz-plugin2 -- found version 2.0.4
+-- Looking for gz-transport13 -- found version 13.4.1
+-- Looking for gz-rendering8 -- found version 8.2.2
+-- Searching for dependencies of gz-rendering8
+-- Looking for gz-math7 -- found version 7.5.2
+-- Searching for dependencies of gz-math7
+-- Looking for gz-utils2 -- found version 2.2.1
+-- Searching for <gz-math7> component [eigen3]
+-- Looking for gz-math7-eigen3 -- found version 7.5.2
+-- Searching for dependencies of gz-math7-eigen3
+-- Looking for gz-common5 -- found version 5.7.1
+-- Searching for dependencies of gz-common5
+-- Looking for gz-utils2 -- found version 2.2.1
+-- Looking for dlfcn.h - found
+-- Looking for libdl - found
+-- Searching for <gz-common5> component [graphics]
+-- Searching for <gz-common5> component [events]
+-- Searching for <gz-common5> component [geospatial]
+-- Looking for gz-common5-geospatial -- found version 5.7.1
+-- Searching for dependencies of gz-common5-geospatial
+-- Looking for gz-math7 -- found version 7.5.2
+-- Looking for gz-common5 -- found version 5.7.1
+-- Looking for gz-plugin2 -- found version 2.0.4
+-- Searching for dependencies of gz-plugin2
+-- Looking for gz-utils2 -- found version 2.2.1
+-- Searching for <gz-plugin2> component [all]
+-- Looking for all libraries of gz-plugin2 -- found version 2.0.4
+-- Looking for gz-plugin2 -- found version 2.0.4
+-- Looking for gz-utils2 -- found version 2.2.1
+-- Looking for gz-msgs10 -- found version 10.3.2
+-- Looking for gz-physics7 -- found version 7.5.0
+-- Searching for dependencies of gz-physics7
+-- Looking for gz-common5 -- found version 5.7.1
+-- Looking for gz-math7 -- found version 7.5.2
+-- Looking for gz-plugin2 -- found version 2.0.4
+-- Looking for gz-utils2 -- found version 2.2.1
+-- Searching for <gz-physics7> component [heightmap]
+-- Looking for gz-physics7-heightmap -- found version 7.5.0
+-- Searching for dependencies of gz-physics7-heightmap
+-- Looking for gz-common5 -- found version 5.7.1
+-- Searching for <gz-physics7> component [mesh]
+-- Looking for gz-physics7-mesh -- found version 7.5.0
+-- Searching for dependencies of gz-physics7-mesh
+-- Looking for gz-common5 -- found version 5.7.1
+-- Searching for <gz-physics7> component [sdf]
+-- Looking for gz-physics7-sdf -- found version 7.5.0
+-- Searching for dependencies of gz-physics7-sdf
+-- Looking for sdformat14 -- found version 14.8.0
+-- Looking for gz-sensors8 -- found version 8.2.2
+-- Searching for dependencies of gz-sensors8
+-- Looking for gz-math7 -- found version 7.5.2
+-- Looking for gz-common5 -- found version 5.7.1
+-- Looking for gz-transport13 -- found version 13.4.1
+-- Looking for gz-rendering8 -- found version 8.2.2
+-- Looking for gz-msgs10 -- found version 10.3.2
+-- Looking for sdformat14 -- found version 14.8.0
+-- Searching for <gz-sensors8> component [air_pressure]
+-- Looking for gz-sensors8-air_pressure -- found version 8.2.2
+-- Searching for dependencies of gz-sensors8-air_pressure
+-- Searching for <gz-sensors8> component [air_speed]
+-- Looking for gz-sensors8-air_speed -- found version 8.2.2
+-- Searching for dependencies of gz-sensors8-air_speed
+-- Searching for <gz-sensors8> component [altimeter]
+-- Looking for gz-sensors8-altimeter -- found version 8.2.2
+-- Searching for dependencies of gz-sensors8-altimeter
+-- Searching for <gz-sensors8> component [imu]
+-- Looking for gz-sensors8-imu -- found version 8.2.2
+-- Searching for dependencies of gz-sensors8-imu
+-- Searching for <gz-sensors8> component [force_torque]
+-- Looking for gz-sensors8-force_torque -- found version 8.2.2
+-- Searching for dependencies of gz-sensors8-force_torque
+-- Searching for <gz-sensors8> component [logical_camera]
+-- Looking for gz-sensors8-logical_camera -- found version 8.2.2
+-- Searching for dependencies of gz-sensors8-logical_camera
+-- Searching for <gz-sensors8> component [magnetometer]
+-- Looking for gz-sensors8-magnetometer -- found version 8.2.2
+-- Searching for dependencies of gz-sensors8-magnetometer
+-- Searching for <gz-sensors8> component [navsat]
+-- Looking for gz-sensors8-navsat -- found version 8.2.2
+-- Searching for dependencies of gz-sensors8-navsat
+-- Searching for <gz-sensors8> component [dvl]
+-- Looking for gz-sensors8-dvl -- found version 8.2.2
+-- Searching for dependencies of gz-sensors8-dvl
+-- Looking for gz-sensors8 -- found version 8.2.2
+-- Searching for dependencies of gz-sensors8
+-- Looking for gz-math7 -- found version 7.5.2
+-- Looking for gz-common5 -- found version 5.7.1
+-- Looking for gz-transport13 -- found version 13.4.1
+-- Looking for gz-rendering8 -- found version 8.2.2
+-- Looking for gz-msgs10 -- found version 10.3.2
+-- Looking for sdformat14 -- found version 14.8.0
+-- Searching for <gz-sensors8> component [rendering]
+-- Looking for gz-sensors8-rendering -- found version 8.2.2
+-- Searching for dependencies of gz-sensors8-rendering
+-- Searching for <gz-sensors8> component [rendering]
+-- Searching for <gz-sensors8> component [lidar]
+-- Looking for gz-sensors8-lidar -- found version 8.2.2
+-- Searching for dependencies of gz-sensors8-lidar
+-- Looking for gz-sensors8 -- found version 8.2.2
+-- Searching for <gz-sensors8> component [gpu_lidar]
+-- Looking for gz-sensors8-gpu_lidar -- found version 8.2.2
+-- Searching for dependencies of gz-sensors8-gpu_lidar
+-- Looking for gz-sensors8 -- found version 8.2.2
+-- Searching for <gz-sensors8> component [camera]
+-- Looking for gz-sensors8-camera -- found version 8.2.2
+-- Searching for dependencies of gz-sensors8-camera
+-- Looking for gz-sensors8 -- found version 8.2.2
+-- Searching for <gz-sensors8> component [boundingbox_camera]
+-- Looking for gz-sensors8-boundingbox_camera -- found version 8.2.2
+-- Searching for dependencies of gz-sensors8-boundingbox_camera
+-- Searching for <gz-sensors8> component [segmentation_camera]
+-- Looking for gz-sensors8-segmentation_camera -- found version 8.2.2
+-- Searching for dependencies of gz-sensors8-segmentation_camera
+-- Searching for <gz-sensors8> component [depth_camera]
+-- Looking for gz-sensors8-depth_camera -- found version 8.2.2
+-- Searching for dependencies of gz-sensors8-depth_camera
+-- Looking for gz-sensors8 -- found version 8.2.2
+-- Searching for <gz-sensors8> component [rgbd_camera]
+-- Looking for gz-sensors8-rgbd_camera -- found version 8.2.2
+-- Searching for dependencies of gz-sensors8-rgbd_camera
+-- Looking for gz-sensors8 -- found version 8.2.2
+-- Searching for <gz-sensors8> component [thermal_camera]
+-- Looking for gz-sensors8-thermal_camera -- found version 8.2.2
+-- Searching for dependencies of gz-sensors8-thermal_camera
+-- Looking for gz-sensors8 -- found version 8.2.2
+-- Searching for <gz-sensors8> component [wide_angle_camera]
+-- Looking for gz-sensors8-wide_angle_camera -- found version 8.2.2
+-- Searching for dependencies of gz-sensors8-wide_angle_camera
+-- Looking for gz-rendering8 -- found version 8.2.2
+-- Looking for gz-math7 -- found version 7.5.2
+-- Looking for gz-utils2 -- found version 2.2.1
+-- Looking for gz-common5 -- found version 5.7.1
+-- Looking for gz-math7 -- found version 7.5.2
+-- Looking for gz-msgs10 -- found version 10.3.2
+-- Looking for gz-transport13 -- found version 13.4.1
+-- Looking for gz-plugin2 -- found version 2.0.4
+-- Looking for gz-rendering8 -- found version 8.2.2
+-- Looking for gz-sensors8 -- found version 8.2.2
+-- Looking for gz-utils2 -- found version 2.2.1
+-- Looking for sdformat14 -- found version 14.8.0
+-- Configuring done (1.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/antoni/gazebo_maritime_ws/build/gazebo_maritime
+[ 20%] Built target Waves
+[ 30%] [32mBuilding CXX object CMakeFiles/WindPlugin.dir/src/WindPlugin.cc.o[0m
+[ 50%] Built target WaveVisual
+[ 70%] Built target Surface
+[ 90%] Built target PublisherPlugin
+In file included from [01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.hh:6[m[K,
+                 from [01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:1[m[K:
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.hh:42:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass maritime::WindPlugin::Implementation[m[K’ redeclared with different access
+   42 |   [01;31m[KGZ_UTILS_UNIQUE_IMPL_PTR[m[K(Implementation)
+      |   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:[m[K In constructor ‘[01m[Kmaritime::WindPlugin::[01;32m[KWindPlugin[m[K()[m[K’:
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:32:5:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Kmaritime::WindPlugin[m[K’ does not have any field named ‘[01m[KdataPtr[m[K’
+   32 |   : [01;31m[KdataPtr[m[K(utils::MakeUniqueImpl<Implementation>())
+      |     [01;31m[K^~~~~~~[m[K
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:32:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kutils[m[K’ has not been declared
+   32 |   : dataPtr([01;31m[Kutils[m[K::MakeUniqueImpl<Implementation>())
+      |             [01;31m[K^~~~~[m[K
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:32:51:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K)[m[K’ token
+   32 |   : dataPtr(utils::MakeUniqueImpl<Implementation>([01;31m[K)[m[K)
+      |                                                   [01;31m[K^[m[K
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:32:52:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kstd::unique_ptr<maritime::WindPlugin::Implementation, void (*)(maritime::WindPlugin::Implementation*)>::unique_ptr()[m[K’
+   32 |   : dataPtr(utils::MakeUniqueImpl<Implementation>()[01;31m[K)[m[K
+      |                                                    [01;31m[K^[m[K
+In file included from [01m[K/usr/include/c++/13/memory:78[m[K,
+                 from [01m[K/usr/include/gz/msgs10/gz/msgs/param.pb.h:8[m[K,
+                 from [01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.hh:4[m[K:
+[01m[K/usr/include/c++/13/bits/unique_ptr.h:390:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Up, class> std::unique_ptr<_Tp, _Dp>::[01;32m[Kunique_ptr[m[K(std::auto_ptr<_Up>&&) [35m[K[with <template-parameter-2-2> = _Up; _Tp = maritime::WindPlugin::Implementation; _Dp = void (*)(maritime::WindPlugin::Implementation*)][m[K[m[K’
+  390 |         [01;36m[Kunique_ptr[m[K(auto_ptr<_Up>&& __u) noexcept;
+      |         [01;36m[K^~~~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/unique_ptr.h:390:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:32:52:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+   32 |   : dataPtr(utils::MakeUniqueImpl<Implementation>()[01;36m[K)[m[K
+      |                                                    [01;36m[K^[m[K
+[01m[K/usr/include/c++/13/bits/unique_ptr.h:380:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Up, class _Ep, class> std::unique_ptr<_Tp, _Dp>::[01;32m[Kunique_ptr[m[K(std::unique_ptr<_Up, _Ep>&&) [35m[K[with _Ep = _Up; <template-parameter-2-3> = _Ep; _Tp = maritime::WindPlugin::Implementation; _Dp = void (*)(maritime::WindPlugin::Implementation*)][m[K[m[K’
+  380 |         [01;36m[Kunique_ptr[m[K(unique_ptr<_Up, _Ep>&& __u) noexcept
+      |         [01;36m[K^~~~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/unique_ptr.h:380:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:32:52:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+   32 |   : dataPtr(utils::MakeUniqueImpl<Implementation>()[01;36m[K)[m[K
+      |                                                    [01;36m[K^[m[K
+[01m[K/usr/include/c++/13/bits/unique_ptr.h:359:19:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Del, class> constexpr std::unique_ptr<_Tp, _Dp>::[01;32m[Kunique_ptr[m[K(std::nullptr_t) [35m[K[with <template-parameter-2-2> = _Del; _Tp = maritime::WindPlugin::Implementation; _Dp = void (*)(maritime::WindPlugin::Implementation*)][m[K[m[K’
+  359 |         constexpr [01;36m[Kunique_ptr[m[K(nullptr_t) noexcept
+      |                   [01;36m[K^~~~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/unique_ptr.h:359:19:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:32:52:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+   32 |   : dataPtr(utils::MakeUniqueImpl<Implementation>()[01;36m[K)[m[K
+      |                                                    [01;36m[K^[m[K
+[01m[K/usr/include/c++/13/bits/unique_ptr.h:353:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Del, class _DelUnref> std::unique_ptr<_Tp, _Dp>::[01;32m[Kunique_ptr[m[K(pointer, std::__enable_if_t<std::is_lvalue_reference<_Del>::value, _DelUnref&&>) [35m[K[with _DelUnref = _Del; _Tp = maritime::WindPlugin::Implementation; _Dp = void (*)(maritime::WindPlugin::Implementation*)][m[K[m[K’ (deleted)
+  353 |         [01;36m[Kunique_ptr[m[K(pointer,
+      |         [01;36m[K^~~~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/unique_ptr.h:353:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:32:52:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+   32 |   : dataPtr(utils::MakeUniqueImpl<Implementation>()[01;36m[K)[m[K
+      |                                                    [01;36m[K^[m[K
+[01m[K/usr/include/c++/13/bits/unique_ptr.h:344:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Del, class> std::unique_ptr<_Tp, _Dp>::[01;32m[Kunique_ptr[m[K(pointer, std::__enable_if_t<(! std::is_lvalue_reference<_Del>::value), _Del&&>) [35m[K[with <template-parameter-2-2> = _Del; _Tp = maritime::WindPlugin::Implementation; _Dp = void (*)(maritime::WindPlugin::Implementation*)][m[K[m[K’
+  344 |         [01;36m[Kunique_ptr[m[K(pointer __p,
+      |         [01;36m[K^~~~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/unique_ptr.h:344:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:32:52:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+   32 |   : dataPtr(utils::MakeUniqueImpl<Implementation>()[01;36m[K)[m[K
+      |                                                    [01;36m[K^[m[K
+[01m[K/usr/include/c++/13/bits/unique_ptr.h:331:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Del, class> std::unique_ptr<_Tp, _Dp>::[01;32m[Kunique_ptr[m[K(pointer, const deleter_type&) [35m[K[with <template-parameter-2-2> = _Del; _Tp = maritime::WindPlugin::Implementation; _Dp = void (*)(maritime::WindPlugin::Implementation*)][m[K[m[K’
+  331 |         [01;36m[Kunique_ptr[m[K(pointer __p, const deleter_type& __d) noexcept
+      |         [01;36m[K^~~~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/unique_ptr.h:331:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:32:52:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+   32 |   : dataPtr(utils::MakeUniqueImpl<Implementation>()[01;36m[K)[m[K
+      |                                                    [01;36m[K^[m[K
+[01m[K/usr/include/c++/13/bits/unique_ptr.h:317:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Del, class> std::unique_ptr<_Tp, _Dp>::[01;32m[Kunique_ptr[m[K(pointer) [35m[K[with <template-parameter-2-2> = _Del; _Tp = maritime::WindPlugin::Implementation; _Dp = void (*)(maritime::WindPlugin::Implementation*)][m[K[m[K’
+  317 |         [01;36m[Kunique_ptr[m[K(pointer __p) noexcept
+      |         [01;36m[K^~~~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/unique_ptr.h:317:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:32:52:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+   32 |   : dataPtr(utils::MakeUniqueImpl<Implementation>()[01;36m[K)[m[K
+      |                                                    [01;36m[K^[m[K
+[01m[K/usr/include/c++/13/bits/unique_ptr.h:304:19:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Del, class> constexpr std::unique_ptr<_Tp, _Dp>::[01;32m[Kunique_ptr[m[K() [35m[K[with <template-parameter-2-2> = _Del; _Tp = maritime::WindPlugin::Implementation; _Dp = void (*)(maritime::WindPlugin::Implementation*)][m[K[m[K’
+  304 |         constexpr [01;36m[Kunique_ptr[m[K() noexcept
+      |                   [01;36m[K^~~~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/unique_ptr.h:304:19:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+/usr/include/c++/13/bits/unique_ptr.h: In substitution of ‘[01m[Ktemplate<class _Tp, class _Dp> template<class _Up> using std::unique_ptr<_Tp, _Dp>::_DeleterConstraint = typename std::__uniq_ptr_impl<_Tp, _Up>::_DeleterConstraint::type [35m[K[with _Up = void (*)(maritime::WindPlugin::Implementation*); _Tp = maritime::WindPlugin::Implementation; _Dp = void (*)(maritime::WindPlugin::Implementation*)][m[K[m[K’:
+[01m[K/usr/include/c++/13/bits/unique_ptr.h:303:37:[m[K   required from here
+[01m[K/usr/include/c++/13/bits/unique_ptr.h:280:15:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kusing std::__uniq_ptr_impl<maritime::WindPlugin::Implementation, void (*)(maritime::WindPlugin::Implementation*)>::_DeleterConstraint = struct std::enable_if<false, void>[m[K’ {aka ‘[01m[Kstruct std::enable_if<false, void>[m[K’}
+  280 |         using [01;31m[K_DeleterConstraint[m[K =
+      |               [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/unique_ptr.h:366:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::unique_ptr<_Tp, _Dp>::[01;32m[Kunique_ptr[m[K(std::unique_ptr<_Tp, _Dp>&&) [35m[K[with _Tp = maritime::WindPlugin::Implementation; _Dp = void (*)(maritime::WindPlugin::Implementation*)][m[K[m[K’
+  366 |       [01;36m[Kunique_ptr[m[K(unique_ptr&&) = default;
+      |       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/unique_ptr.h:366:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:[m[K In member function ‘[01m[Kvoid maritime::WindPlugin::[01;32m[KLoad[m[K(const std::shared_ptr<const sdf::v14::Element>&)[m[K’:
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:45:37:[m[K [01;31m[Kerror: [m[Kpassing ‘[01m[Kstd::__shared_ptr_access<const sdf::v14::Element, __gnu_cxx::_S_atomic, false, false>::element_type[m[K’ {aka ‘[01m[Kconst sdf::v14::Element[m[K’} as ‘[01m[Kthis[m[K’ argument discards qualifiers [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   45 |     auto windElem = [01;31m[K_sdf->GetElement("wind")[m[K;
+      |                     [01;31m[K~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+In file included from [01m[K/usr/include/gz/sdformat14/sdf/Actor.hh:26[m[K,
+                 from [01m[K/usr/include/gz/sdformat14/sdformat.hh:23[m[K,
+                 from [01m[K/usr/include/gz/sdformat14/sdf/sdf.hh:23[m[K,
+                 from [01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.hh:7[m[K:
+[01m[K/usr/include/gz/sdformat14/sdf/Element.hh:645:24:[m[K [01;36m[Knote: [m[K  in call to ‘[01m[Ksdf::v14::ElementPtr sdf::v14::Element::[01;32m[KGetElement[m[K(const std::string&)[m[K’
+  645 |     public: ElementPtr [01;36m[KGetElement[m[K(const std::string &_name);
+      |                        [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:46:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass maritime::WindPlugin[m[K’ has no member named ‘[01m[KdataPtr[m[K’
+   46 |     this->[01;31m[KdataPtr[m[K->speed = windElem->Get<double>("speed", this->dataPtr->speed).first;
+      |           [01;31m[K^~~~~~~[m[K
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:46:65:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass maritime::WindPlugin[m[K’ has no member named ‘[01m[KdataPtr[m[K’
+   46 |     this->dataPtr->speed = windElem->Get<double>("speed", this->[01;31m[KdataPtr[m[K->speed).first;
+      |                                                                 [01;31m[K^~~~~~~[m[K
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:47:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass maritime::WindPlugin[m[K’ has no member named ‘[01m[KdataPtr[m[K’
+   47 |     this->[01;31m[KdataPtr[m[K->direction = windElem->Get<double>("direction", this->dataPtr->direction).first;
+      |           [01;31m[K^~~~~~~[m[K
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:47:73:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass maritime::WindPlugin[m[K’ has no member named ‘[01m[KdataPtr[m[K’
+   47 |     this->dataPtr->direction = windElem->Get<double>("direction", this->[01;31m[KdataPtr[m[K->direction).first;
+      |                                                                         [01;31m[K^~~~~~~[m[K
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:50:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass maritime::WindPlugin[m[K’ has no member named ‘[01m[KdataPtr[m[K’
+   50 |   this->[01;31m[KdataPtr[m[K->FillParameters();
+      |         [01;31m[K^~~~~~~[m[K
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:51:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass maritime::WindPlugin[m[K’ has no member named ‘[01m[KdataPtr[m[K’
+   51 |   this->[01;31m[KdataPtr[m[K->active = true;
+      |         [01;31m[K^~~~~~~[m[K
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:54:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass maritime::WindPlugin[m[K’ has no member named ‘[01m[KdataPtr[m[K’
+   54 |         << this->[01;31m[KdataPtr[m[K->speed << " m/s, direction="
+      |                  [01;31m[K^~~~~~~[m[K
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:55:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass maritime::WindPlugin[m[K’ has no member named ‘[01m[KdataPtr[m[K’
+   55 |         << this->[01;31m[KdataPtr[m[K->direction << " rad\n";
+      |                  [01;31m[K^~~~~~~[m[K
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:[m[K In member function ‘[01m[Kbool maritime::WindPlugin::[01;32m[KActive[m[K() const[m[K’:
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:60:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst class maritime::WindPlugin[m[K’ has no member named ‘[01m[KdataPtr[m[K’
+   60 |   return this->[01;31m[KdataPtr[m[K->active;
+      |                [01;31m[K^~~~~~~[m[K
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:[m[K In member function ‘[01m[Kdouble maritime::WindPlugin::[01;32m[KSpeed[m[K() const[m[K’:
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:65:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst class maritime::WindPlugin[m[K’ has no member named ‘[01m[KdataPtr[m[K’
+   65 |   return this->[01;31m[KdataPtr[m[K->speed;
+      |                [01;31m[K^~~~~~~[m[K
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:[m[K In member function ‘[01m[Kdouble maritime::WindPlugin::[01;32m[KDirection[m[K() const[m[K’:
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:70:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst class maritime::WindPlugin[m[K’ has no member named ‘[01m[KdataPtr[m[K’
+   70 |   return this->[01;31m[KdataPtr[m[K->direction;
+      |                [01;31m[K^~~~~~~[m[K
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:[m[K In member function ‘[01m[Kvoid maritime::WindPlugin::[01;32m[KSetSpeed[m[K(double)[m[K’:
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:75:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass maritime::WindPlugin[m[K’ has no member named ‘[01m[KdataPtr[m[K’
+   75 |   this->[01;31m[KdataPtr[m[K->speed = _speed;
+      |         [01;31m[K^~~~~~~[m[K
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:76:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass maritime::WindPlugin[m[K’ has no member named ‘[01m[KdataPtr[m[K’
+   76 |   this->[01;31m[KdataPtr[m[K->FillParameters();
+      |         [01;31m[K^~~~~~~[m[K
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:[m[K In member function ‘[01m[Kvoid maritime::WindPlugin::[01;32m[KSetDirection[m[K(double)[m[K’:
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:81:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass maritime::WindPlugin[m[K’ has no member named ‘[01m[KdataPtr[m[K’
+   81 |   this->[01;31m[KdataPtr[m[K->direction = _direction;
+      |         [01;31m[K^~~~~~~[m[K
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:82:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass maritime::WindPlugin[m[K’ has no member named ‘[01m[KdataPtr[m[K’
+   82 |   this->[01;31m[KdataPtr[m[K->FillParameters();
+      |         [01;31m[K^~~~~~~[m[K
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:[m[K In member function ‘[01m[Kgz::msgs::Param maritime::WindPlugin::[01;32m[KParameters[m[K() const[m[K’:
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:87:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst class maritime::WindPlugin[m[K’ has no member named ‘[01m[KdataPtr[m[K’
+   87 |   return this->[01;31m[KdataPtr[m[K->params;
+      |                [01;31m[K^~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/WindPlugin.dir/build.make:76: CMakeFiles/WindPlugin.dir/src/WindPlugin.cc.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/WindPlugin.dir/all] Error 2
+gmake: *** [Makefile:136: all] Error 2

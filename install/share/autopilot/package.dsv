@@ -1,3 +1,6 @@
+source;share/autopilot/hook/cmake_prefix_path.ps1
+source;share/autopilot/hook/cmake_prefix_path.dsv
+source;share/autopilot/hook/cmake_prefix_path.sh
 source;share/autopilot/hook/ld_library_path_lib.ps1
 source;share/autopilot/hook/ld_library_path_lib.dsv
 source;share/autopilot/hook/ld_library_path_lib.sh

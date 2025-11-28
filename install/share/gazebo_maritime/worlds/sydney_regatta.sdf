@@ -206,6 +206,7 @@
         </record_video>
         <legacy>false</legacy>
       </plugin>
+      <!-- <plugin filename="libApplyWindForceSystem.so" name="maritime::ApplyWindForce"/> -->
       <plugin filename="ComponentInspector" name="Component inspector">
         <gz-gui>
           <property type="string" key="state">docked_collapsed</property>

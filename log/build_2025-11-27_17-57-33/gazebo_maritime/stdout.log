@@ -1,0 +1,5 @@
+[ 20%] Built target Waves
+[ 40%] Built target PublisherPlugin
+[ 60%] Built target Surface
+[ 70%] [32mBuilding CXX object CMakeFiles/WindPlugin.dir/src/WindPlugin.cc.o[0m
+[ 90%] Built target WaveVisual

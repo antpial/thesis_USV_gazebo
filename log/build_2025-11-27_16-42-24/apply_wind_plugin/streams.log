@@ -1,0 +1,25 @@
+[0.011s] Invoking command in '/home/antoni/gazebo_maritime_ws/build/apply_wind_plugin': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/antoni/gazebo_maritime_ws/install:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/antoni/gazebo_maritime_ws/build/apply_wind_plugin -- -j12 -l12
+[0.070s] [ 50%] [32mBuilding CXX object CMakeFiles/ApplyWindForceSystem.dir/src/apply_wind_force_system.cpp.o[0m
+[2.185s] [100%] [32m[1mLinking CXX shared library libApplyWindForceSystem.so[0m
+[2.323s] [100%] Built target ApplyWindForceSystem
+[2.332s] Invoked command in '/home/antoni/gazebo_maritime_ws/build/apply_wind_plugin' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/antoni/gazebo_maritime_ws/install:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/antoni/gazebo_maritime_ws/build/apply_wind_plugin -- -j12 -l12
+[2.344s] Invoking command in '/home/antoni/gazebo_maritime_ws/build/apply_wind_plugin': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/antoni/gazebo_maritime_ws/install:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/antoni/gazebo_maritime_ws/build/apply_wind_plugin
+[2.356s] -- Install configuration: ""
+[2.357s] -- Installing: /home/antoni/gazebo_maritime_ws/install/lib/apply_wind_plugin/libApplyWindForceSystem.so
+[2.358s] -- Set non-toolchain portion of runtime path of "/home/antoni/gazebo_maritime_ws/install/lib/apply_wind_plugin/libApplyWindForceSystem.so" to ""
+[2.358s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/ament_index/resource_index/package_run_dependencies/apply_wind_plugin
+[2.358s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/ament_index/resource_index/parent_prefix_path/apply_wind_plugin
+[2.358s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/apply_wind_plugin/environment/ament_prefix_path.sh
+[2.358s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/apply_wind_plugin/environment/ament_prefix_path.dsv
+[2.358s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/apply_wind_plugin/environment/path.sh
+[2.358s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/apply_wind_plugin/environment/path.dsv
+[2.359s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/apply_wind_plugin/local_setup.bash
+[2.359s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/apply_wind_plugin/local_setup.sh
+[2.359s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/apply_wind_plugin/local_setup.zsh
+[2.359s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/apply_wind_plugin/local_setup.dsv
+[2.359s] -- Installing: /home/antoni/gazebo_maritime_ws/install/share/apply_wind_plugin/package.dsv
+[2.359s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/ament_index/resource_index/packages/apply_wind_plugin
+[2.359s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/apply_wind_plugin/cmake/apply_wind_pluginConfig.cmake
+[2.359s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/apply_wind_plugin/cmake/apply_wind_pluginConfig-version.cmake
+[2.359s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/apply_wind_plugin/package.xml
+[2.361s] Invoked command in '/home/antoni/gazebo_maritime_ws/build/apply_wind_plugin' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/antoni/gazebo_maritime_ws/install:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/antoni/gazebo_maritime_ws/build/apply_wind_plugin

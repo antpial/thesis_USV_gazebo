@@ -1,0 +1,29 @@
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:[m[K In constructor ‘[01m[Kmaritime::WindPlugin::[01;32m[KWindPlugin[m[K()[m[K’:
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:37:5:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kgz::utils::ImplPtr<maritime::WindPlugin::Implementation>::ImplPtr(gz::utils::UniqueImplPtr<maritime::WindPlugin::Implementation, void (*)(maritime::WindPlugin::Implementation*)>)[m[K’
+   37 |   : [01;31m[KdataPtr(MakeUniqueImpl<Implementation>())[m[K
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.hh:5[m[K,
+                 from [01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:1[m[K:
+[01m[K/opt/ros/jazzy/opt/gz_utils_vendor/include/gz/utils2/gz/utils/ImplPtr.hh:85:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class U, class D, class Ops> gz::utils::ImplPtr<T, Deleter, Operations>::[01;32m[KImplPtr[m[K(Ptr*, D&&, Ops&&) [35m[K[with U = Ptr; Ops = D; T = maritime::WindPlugin::Implementation; Deleter = void (*)(maritime::WindPlugin::Implementation*); Operations = gz::utils::detail::CopyMoveDeleteOperations<maritime::WindPlugin::Implementation, maritime::WindPlugin::Implementation* (*)(const maritime::WindPlugin::Implementation&), void (*)(maritime::WindPlugin::Implementation&, const maritime::WindPlugin::Implementation&)>][m[K[m[K’
+   85 |       [01;36m[KImplPtr[m[K(U *_ptr, D &&_deleter, Ops &&_ops);
+      |       [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/jazzy/opt/gz_utils_vendor/include/gz/utils2/gz/utils/ImplPtr.hh:85:7:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:37:5:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[KPtr*[m[K’ and ‘[01m[Kstd::unique_ptr<maritime::WindPlugin::Implementation, void (*)(maritime::WindPlugin::Implementation*)>[m[K’
+   37 |   : [01;36m[KdataPtr(MakeUniqueImpl<Implementation>())[m[K
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/jazzy/opt/gz_utils_vendor/include/gz/utils2/gz/utils/ImplPtr.hh:98:15:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgz::utils::ImplPtr<T, Deleter, Operations>::[01;32m[KImplPtr[m[K(gz::utils::ImplPtr<T, Deleter, Operations>&&) [35m[K[with T = maritime::WindPlugin::Implementation; Deleter = void (*)(maritime::WindPlugin::Implementation*); Operations = gz::utils::detail::CopyMoveDeleteOperations<maritime::WindPlugin::Implementation, maritime::WindPlugin::Implementation* (*)(const maritime::WindPlugin::Implementation&), void (*)(maritime::WindPlugin::Implementation&, const maritime::WindPlugin::Implementation&)>][m[K[m[K’
+   98 |       public: [01;36m[KImplPtr[m[K(ImplPtr &&) = default;
+      |               [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/jazzy/opt/gz_utils_vendor/include/gz/utils2/gz/utils/ImplPtr.hh:98:23:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kgz::utils::UniqueImplPtr<maritime::WindPlugin::Implementation, void (*)(maritime::WindPlugin::Implementation*)>[m[K’ {aka ‘[01m[Kstd::unique_ptr<maritime::WindPlugin::Implementation, void (*)(maritime::WindPlugin::Implementation*)>[m[K’} to ‘[01m[Kgz::utils::ImplPtr<maritime::WindPlugin::Implementation>&&[m[K’
+   98 |       public: ImplPtr([01;36m[KImplPtr &&[m[K) = default;
+      |                       [01;36m[K^~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/jazzy/opt/gz_utils_vendor/include/gz/utils2/gz/utils/ImplPtr.hh:258[m[K:
+[01m[K/opt/ros/jazzy/opt/gz_utils_vendor/include/gz/utils2/gz/utils/detail/ImplPtr.hh:57:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgz::utils::ImplPtr<T, Deleter, Operations>::[01;32m[KImplPtr[m[K(const gz::utils::ImplPtr<T, Deleter, Operations>&) [35m[K[with T = maritime::WindPlugin::Implementation; Deleter = void (*)(maritime::WindPlugin::Implementation*); Operations = gz::utils::detail::CopyMoveDeleteOperations<maritime::WindPlugin::Implementation, maritime::WindPlugin::Implementation* (*)(const maritime::WindPlugin::Implementation&), void (*)(maritime::WindPlugin::Implementation&, const maritime::WindPlugin::Implementation&)>][m[K[m[K’
+   57 |     [01;36m[KImplPtr<T, Deleter, Operations>[m[K::ImplPtr(const ImplPtr &_other)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/jazzy/opt/gz_utils_vendor/include/gz/utils2/gz/utils/detail/ImplPtr.hh:57:61:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kgz::utils::UniqueImplPtr<maritime::WindPlugin::Implementation, void (*)(maritime::WindPlugin::Implementation*)>[m[K’ {aka ‘[01m[Kstd::unique_ptr<maritime::WindPlugin::Implementation, void (*)(maritime::WindPlugin::Implementation*)>[m[K’} to ‘[01m[Kconst gz::utils::ImplPtr<maritime::WindPlugin::Implementation>&[m[K’
+   57 |     ImplPtr<T, Deleter, Operations>::ImplPtr([01;36m[Kconst ImplPtr &_other[m[K)
+      |                                              [01;36m[K~~~~~~~~~~~~~~~^~~~~~[m[K
+gmake[2]: *** [CMakeFiles/WindPlugin.dir/build.make:76: CMakeFiles/WindPlugin.dir/src/WindPlugin.cc.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/WindPlugin.dir/all] Error 2
+gmake: *** [Makefile:136: all] Error 2

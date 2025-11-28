@@ -380,6 +380,9 @@ WaveVisual_LIB_DEPENDS:STATIC=general;gz-plugin2::gz-plugin2;general;gz-renderin
 //Dependencies for the target
 Waves_LIB_DEPENDS:STATIC=general;gz-common5::gz-common5;general;gz-msgs10::gz-msgs10;
 
+//Dependencies for the target
+WindPlugin_LIB_DEPENDS:STATIC=general;gz-plugin2::gz-plugin2;general;gz-rendering8::gz-rendering8;general;gz-sensors8::gz-sensors8;general;gz-transport13::gz-transport13;general;gz-utils2::gz-utils2;general;Waves;
+
 //Path to a library.
 YAML_LIBRARY_yaml:FILEPATH=/usr/lib/x86_64-linux-gnu/libyaml.so
 

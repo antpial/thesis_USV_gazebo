@@ -1,0 +1,21 @@
+[0.007s] Invoking command in '/home/antoni/gazebo_maritime_ws/build/apply_wind_plugin': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/antoni/gazebo_maritime_ws/install:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/antoni/gazebo_maritime_ws/src/apply_wind_plugin -DCMAKE_INSTALL_PREFIX=/home/antoni/gazebo_maritime_ws/install
+[0.018s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.190s] [31mCMake Error at CMakeLists.txt:5 (find_package):
+[0.190s]   By not providing "Findgz-sim7.cmake" in CMAKE_MODULE_PATH this project has
+[0.190s]   asked CMake to find a package configuration file provided by "gz-sim7", but
+[0.190s]   CMake did not find one.
+[0.191s] 
+[0.191s]   Could not find a package configuration file provided by "gz-sim7" with any
+[0.191s]   of the following names:
+[0.191s] 
+[0.191s]     gz-sim7Config.cmake
+[0.191s]     gz-sim7-config.cmake
+[0.191s] 
+[0.191s]   Add the installation prefix of "gz-sim7" to CMAKE_PREFIX_PATH or set
+[0.191s]   "gz-sim7_DIR" to a directory containing one of the above files.  If
+[0.191s]   "gz-sim7" provides a separate development package or SDK, be sure it has
+[0.191s]   been installed.
+[0.192s] 
+[0.192s] [0m
+[0.192s] -- Configuring incomplete, errors occurred!
+[0.192s] Invoked command in '/home/antoni/gazebo_maritime_ws/build/apply_wind_plugin' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/antoni/gazebo_maritime_ws/install:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/antoni/gazebo_maritime_ws/src/apply_wind_plugin -DCMAKE_INSTALL_PREFIX=/home/antoni/gazebo_maritime_ws/install

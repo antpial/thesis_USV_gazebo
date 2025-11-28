@@ -43,6 +43,7 @@ list(APPEND MARITIME_GZ_PLUGINS
   PublisherPlugin
   Surface
   WaveVisual
+  # WindPlugin
 )
 
 foreach(PLUGIN ${MARITIME_GZ_PLUGINS})

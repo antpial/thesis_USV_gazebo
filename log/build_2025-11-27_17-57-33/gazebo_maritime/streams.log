@@ -1,0 +1,27 @@
+[0.194s] Invoking command in '/home/antoni/gazebo_maritime_ws/build/gazebo_maritime': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/antoni/gazebo_maritime_ws/build/gazebo_maritime -- -j12 -l12
+[0.586s] [ 20%] Built target Waves
+[0.587s] [ 40%] Built target PublisherPlugin
+[0.587s] [ 60%] Built target Surface
+[0.587s] [ 70%] [32mBuilding CXX object CMakeFiles/WindPlugin.dir/src/WindPlugin.cc.o[0m
+[0.587s] [ 90%] Built target WaveVisual
+[1.399s] [01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:[m[K In member function ‘[01m[Kvirtual void maritime::WindPlugin::[01;32m[KConfigure[m[K(const gz::sim::v8::Entity&, const std::shared_ptr<const sdf::v14::Element>&, gz::sim::v8::EntityComponentManager&, gz::sim::v8::EventManager&)[m[K’:
+[1.399s] [01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:30:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass maritime::WindPlugin[m[K’ has no member named ‘[01m[KdataPtr[m[K’
+[1.399s]    30 |   this->[01;31m[KdataPtr[m[K->speed = elem->Get<double>("speed", 0.0).first;
+[1.399s]       |         [01;31m[K^~~~~~~[m[K
+[1.400s] [01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:31:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass maritime::WindPlugin[m[K’ has no member named ‘[01m[KdataPtr[m[K’
+[1.400s]    31 |   this->[01;31m[KdataPtr[m[K->direction = elem->Get<double>("direction", 0.0).first;
+[1.400s]       |         [01;31m[K^~~~~~~[m[K
+[1.401s] [01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:34:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass maritime::WindPlugin[m[K’ has no member named ‘[01m[KdataPtr[m[K’
+[1.401s]    34 |         << " speed=" << this->[01;31m[KdataPtr[m[K->speed
+[1.401s]       |                               [01;31m[K^~~~~~~[m[K
+[1.401s] [01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:35:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass maritime::WindPlugin[m[K’ has no member named ‘[01m[KdataPtr[m[K’
+[1.401s]    35 |         << " dir=" << this->[01;31m[KdataPtr[m[K->direction << "\n";
+[1.402s]       |                             [01;31m[K^~~~~~~[m[K
+[1.402s] [01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:[m[K At global scope:
+[1.402s] [01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:45:2:[m[K [01;31m[Kerror: [m[Kexpected constructor, destructor, or type conversion at end of input
+[1.402s]    45 | )
+[1.402s]       |  [01;31m[K^[m[K
+[1.591s] gmake[2]: *** [CMakeFiles/WindPlugin.dir/build.make:76: CMakeFiles/WindPlugin.dir/src/WindPlugin.cc.o] Error 1
+[1.591s] gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/WindPlugin.dir/all] Error 2
+[1.592s] gmake: *** [Makefile:136: all] Error 2
+[1.594s] Invoked command in '/home/antoni/gazebo_maritime_ws/build/gazebo_maritime' returned '2': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/antoni/gazebo_maritime_ws/build/gazebo_maritime -- -j12 -l12

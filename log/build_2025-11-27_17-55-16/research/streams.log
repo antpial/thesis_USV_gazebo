@@ -1,0 +1,21 @@
+[1.570s] Invoking command in '/home/antoni/gazebo_maritime_ws/src/research': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/antoni/gazebo_maritime_ws/build/research/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/research build --build-base /home/antoni/gazebo_maritime_ws/build/research/build install --record /home/antoni/gazebo_maritime_ws/build/research/install.log --single-version-externally-managed install_data
+[1.830s] running egg_info
+[1.861s] writing ../../build/research/research.egg-info/PKG-INFO
+[1.862s] writing dependency_links to ../../build/research/research.egg-info/dependency_links.txt
+[1.862s] writing entry points to ../../build/research/research.egg-info/entry_points.txt
+[1.862s] writing requirements to ../../build/research/research.egg-info/requires.txt
+[1.862s] writing top-level names to ../../build/research/research.egg-info/top_level.txt
+[1.919s] reading manifest file '../../build/research/research.egg-info/SOURCES.txt'
+[1.920s] writing manifest file '../../build/research/research.egg-info/SOURCES.txt'
+[1.920s] running build
+[1.920s] running build_py
+[1.921s] running install
+[1.928s] running install_lib
+[1.955s] running install_data
+[1.956s] running install_egg_info
+[1.981s] removing '/home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/research-0.0.0-py3.12.egg-info' (and everything under it)
+[1.981s] Copying ../../build/research/research.egg-info to /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/research-0.0.0-py3.12.egg-info
+[1.982s] running install_scripts
+[2.130s] Installing analize_position_error script to /home/antoni/gazebo_maritime_ws/install/lib/research
+[2.130s] Installing position_error script to /home/antoni/gazebo_maritime_ws/install/lib/research
+[2.131s] writing list of installed files to '/home/antoni/gazebo_maritime_ws/build/research/install.log'

@@ -1,0 +1,34 @@
+[0.007s] Invoking command in '/home/antoni/gazebo_maritime_ws/build/apply_wind_plugin': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/antoni/gazebo_maritime_ws/install:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/antoni/gazebo_maritime_ws/src/apply_wind_plugin -DCMAKE_INSTALL_PREFIX=/home/antoni/gazebo_maritime_ws/install
+[0.121s] -- The C compiler identification is GNU 13.3.0
+[0.179s] -- The CXX compiler identification is GNU 13.3.0
+[0.195s] -- Detecting C compiler ABI info
+[0.309s] -- Detecting C compiler ABI info - done
+[0.320s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.320s] -- Detecting C compile features
+[0.321s] -- Detecting C compile features - done
+[0.337s] -- Detecting CXX compiler ABI info
+[0.448s] -- Detecting CXX compiler ABI info - done
+[0.454s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.454s] -- Detecting CXX compile features
+[0.454s] -- Detecting CXX compile features - done
+[0.457s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.610s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.696s] -- Configuring incomplete, errors occurred!
+[0.696s] [31mCMake Error at CMakeLists.txt:5 (find_package):
+[0.696s]   By not providing "Findgz-sim7.cmake" in CMAKE_MODULE_PATH this project has
+[0.696s]   asked CMake to find a package configuration file provided by "gz-sim7", but
+[0.696s]   CMake did not find one.
+[0.696s] 
+[0.697s]   Could not find a package configuration file provided by "gz-sim7" with any
+[0.697s]   of the following names:
+[0.697s] 
+[0.697s]     gz-sim7Config.cmake
+[0.697s]     gz-sim7-config.cmake
+[0.697s] 
+[0.697s]   Add the installation prefix of "gz-sim7" to CMAKE_PREFIX_PATH or set
+[0.697s]   "gz-sim7_DIR" to a directory containing one of the above files.  If
+[0.697s]   "gz-sim7" provides a separate development package or SDK, be sure it has
+[0.697s]   been installed.
+[0.697s] 
+[0.697s] [0m
+[0.699s] Invoked command in '/home/antoni/gazebo_maritime_ws/build/apply_wind_plugin' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/antoni/gazebo_maritime_ws/install:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/antoni/gazebo_maritime_ws/src/apply_wind_plugin -DCMAKE_INSTALL_PREFIX=/home/antoni/gazebo_maritime_ws/install

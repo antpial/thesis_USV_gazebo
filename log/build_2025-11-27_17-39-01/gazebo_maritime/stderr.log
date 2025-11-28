@@ -1,0 +1,77 @@
+In file included from [01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:1[m[K:
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.hh:42:14:[m[K [01;31m[Kerror: [m[K‘[01m[KUniquePtr[m[K’ in namespace ‘[01m[Kgz::utils[m[K’ does not name a template type; did you mean ‘[01m[KUniqueImplPtr[m[K’?
+   42 |   gz::utils::[01;31m[KUniquePtr[m[K<Implementation> dataPtr;  // <- zamiast makra GZ_UTILS_UNIQUE_IMPL_PTR
+      |              [01;31m[K^~~~~~~~~[m[K
+      |              [32m[KUniqueImplPtr[m[K
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:[m[K In constructor ‘[01m[Kmaritime::WindPlugin::[01;32m[KWindPlugin[m[K()[m[K’:
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:34:28:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Kmaritime::WindPlugin[m[K’ does not have any field named ‘[01m[KdataPtr[m[K’
+   34 | WindPlugin::WindPlugin() : [01;31m[KdataPtr[m[K(MakeUniqueImpl<Implementation>())
+      |                            [01;31m[K^~~~~~~[m[K
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:[m[K In member function ‘[01m[Kvoid maritime::WindPlugin::[01;32m[KLoad[m[K(const std::shared_ptr<const sdf::v14::Element>&)[m[K’:
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:47:37:[m[K [01;31m[Kerror: [m[Kpassing ‘[01m[Kstd::__shared_ptr_access<const sdf::v14::Element, __gnu_cxx::_S_atomic, false, false>::element_type[m[K’ {aka ‘[01m[Kconst sdf::v14::Element[m[K’} as ‘[01m[Kthis[m[K’ argument discards qualifiers [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   47 |     auto windElem = [01;31m[K_sdf->GetElement("wind")[m[K;
+      |                     [01;31m[K~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+In file included from [01m[K/usr/include/gz/sdformat14/sdf/Actor.hh:26[m[K,
+                 from [01m[K/usr/include/gz/sdformat14/sdformat.hh:23[m[K,
+                 from [01m[K/usr/include/gz/sdformat14/sdf/sdf.hh:23[m[K,
+                 from [01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.hh:7[m[K:
+[01m[K/usr/include/gz/sdformat14/sdf/Element.hh:645:24:[m[K [01;36m[Knote: [m[K  in call to ‘[01m[Ksdf::v14::ElementPtr sdf::v14::Element::[01;32m[KGetElement[m[K(const std::string&)[m[K’
+  645 |     public: ElementPtr [01;36m[KGetElement[m[K(const std::string &_name);
+      |                        [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:48:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass maritime::WindPlugin[m[K’ has no member named ‘[01m[KdataPtr[m[K’
+   48 |     this->[01;31m[KdataPtr[m[K->speed = windElem->Get<double>("speed", this->dataPtr->speed).first;
+      |           [01;31m[K^~~~~~~[m[K
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:48:65:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass maritime::WindPlugin[m[K’ has no member named ‘[01m[KdataPtr[m[K’
+   48 |     this->dataPtr->speed = windElem->Get<double>("speed", this->[01;31m[KdataPtr[m[K->speed).first;
+      |                                                                 [01;31m[K^~~~~~~[m[K
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:49:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass maritime::WindPlugin[m[K’ has no member named ‘[01m[KdataPtr[m[K’
+   49 |     this->[01;31m[KdataPtr[m[K->direction = windElem->Get<double>("direction", this->dataPtr->direction).first;
+      |           [01;31m[K^~~~~~~[m[K
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:49:73:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass maritime::WindPlugin[m[K’ has no member named ‘[01m[KdataPtr[m[K’
+   49 |     this->dataPtr->direction = windElem->Get<double>("direction", this->[01;31m[KdataPtr[m[K->direction).first;
+      |                                                                         [01;31m[K^~~~~~~[m[K
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:52:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass maritime::WindPlugin[m[K’ has no member named ‘[01m[KdataPtr[m[K’
+   52 |   this->[01;31m[KdataPtr[m[K->FillParameters();
+      |         [01;31m[K^~~~~~~[m[K
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:53:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass maritime::WindPlugin[m[K’ has no member named ‘[01m[KdataPtr[m[K’
+   53 |   this->[01;31m[KdataPtr[m[K->active = true;
+      |         [01;31m[K^~~~~~~[m[K
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:56:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass maritime::WindPlugin[m[K’ has no member named ‘[01m[KdataPtr[m[K’
+   56 |         << this->[01;31m[KdataPtr[m[K->speed << " m/s, direction="
+      |                  [01;31m[K^~~~~~~[m[K
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:57:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass maritime::WindPlugin[m[K’ has no member named ‘[01m[KdataPtr[m[K’
+   57 |         << this->[01;31m[KdataPtr[m[K->direction << " rad\n";
+      |                  [01;31m[K^~~~~~~[m[K
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:[m[K In member function ‘[01m[Kbool maritime::WindPlugin::[01;32m[KActive[m[K() const[m[K’:
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:62:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst class maritime::WindPlugin[m[K’ has no member named ‘[01m[KdataPtr[m[K’
+   62 |   return this->[01;31m[KdataPtr[m[K->active;
+      |                [01;31m[K^~~~~~~[m[K
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:[m[K In member function ‘[01m[Kdouble maritime::WindPlugin::[01;32m[KSpeed[m[K() const[m[K’:
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:67:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst class maritime::WindPlugin[m[K’ has no member named ‘[01m[KdataPtr[m[K’
+   67 |   return this->[01;31m[KdataPtr[m[K->speed;
+      |                [01;31m[K^~~~~~~[m[K
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:[m[K In member function ‘[01m[Kdouble maritime::WindPlugin::[01;32m[KDirection[m[K() const[m[K’:
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:72:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst class maritime::WindPlugin[m[K’ has no member named ‘[01m[KdataPtr[m[K’
+   72 |   return this->[01;31m[KdataPtr[m[K->direction;
+      |                [01;31m[K^~~~~~~[m[K
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:[m[K In member function ‘[01m[Kvoid maritime::WindPlugin::[01;32m[KSetSpeed[m[K(double)[m[K’:
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:77:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass maritime::WindPlugin[m[K’ has no member named ‘[01m[KdataPtr[m[K’
+   77 |   this->[01;31m[KdataPtr[m[K->speed = _speed;
+      |         [01;31m[K^~~~~~~[m[K
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:78:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass maritime::WindPlugin[m[K’ has no member named ‘[01m[KdataPtr[m[K’
+   78 |   this->[01;31m[KdataPtr[m[K->FillParameters();
+      |         [01;31m[K^~~~~~~[m[K
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:[m[K In member function ‘[01m[Kvoid maritime::WindPlugin::[01;32m[KSetDirection[m[K(double)[m[K’:
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:83:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass maritime::WindPlugin[m[K’ has no member named ‘[01m[KdataPtr[m[K’
+   83 |   this->[01;31m[KdataPtr[m[K->direction = _direction;
+      |         [01;31m[K^~~~~~~[m[K
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:84:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass maritime::WindPlugin[m[K’ has no member named ‘[01m[KdataPtr[m[K’
+   84 |   this->[01;31m[KdataPtr[m[K->FillParameters();
+      |         [01;31m[K^~~~~~~[m[K
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:[m[K In member function ‘[01m[Kgz::msgs::Param maritime::WindPlugin::[01;32m[KParameters[m[K() const[m[K’:
+[01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:89:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst class maritime::WindPlugin[m[K’ has no member named ‘[01m[KdataPtr[m[K’
+   89 |   return this->[01;31m[KdataPtr[m[K->params;
+      |                [01;31m[K^~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/WindPlugin.dir/build.make:76: CMakeFiles/WindPlugin.dir/src/WindPlugin.cc.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/WindPlugin.dir/all] Error 2
+gmake: *** [Makefile:136: all] Error 2

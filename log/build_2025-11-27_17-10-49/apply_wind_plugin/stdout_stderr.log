@@ -1,0 +1,19 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/ApplyWindForceSystem.dir/src/apply_wind_force_system.cpp.o[0m
+In file included from [01m[K/usr/include/gz/plugin2/gz/plugin/Register.hh:22[m[K,
+                 from [01m[K/home/antoni/gazebo_maritime_ws/src/apply_wind_plugin/src/apply_wind_force_system.cpp:5[m[K:
+[01m[K/home/antoni/gazebo_maritime_ws/src/apply_wind_plugin/src/apply_wind_force_system.cpp:[m[K In constructor ‘[01m[Kgz::plugin::{anonymous}::ExecuteWhenLoadingLibrary0::[01;32m[KExecuteWhenLoadingLibrary0[m[K()[m[K’:
+[01m[K/home/antoni/gazebo_maritime_ws/src/apply_wind_plugin/src/apply_wind_force_system.cpp:72:5:[m[K [01;31m[Kerror: [m[K‘[01m[KApplyWindForce[m[K’ was not declared in this scope; did you mean ‘[01m[Kmaritime::ApplyWindForce[m[K’?
+   72 |     [01;31m[KApplyWindForce[m[K,
+      |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/antoni/gazebo_maritime_ws/src/apply_wind_plugin/src/apply_wind_force_system.cpp:11:7:[m[K [01;36m[Knote: [m[K‘[01m[Kmaritime::ApplyWindForce[m[K’ declared here
+   11 | class [01;36m[KApplyWindForce[m[K
+      |       [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/antoni/gazebo_maritime_ws/src/apply_wind_plugin/src/apply_wind_force_system.cpp:71:1:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   71 | [01;31m[KGZ_ADD_PLUGIN[m[K(
+      | [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/antoni/gazebo_maritime_ws/src/apply_wind_plugin/src/apply_wind_force_system.cpp:71:1:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+   71 | [01;31m[KGZ_ADD_PLUGIN[m[K(
+      | [01;31m[K^~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/ApplyWindForceSystem.dir/build.make:76: CMakeFiles/ApplyWindForceSystem.dir/src/apply_wind_force_system.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ApplyWindForceSystem.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

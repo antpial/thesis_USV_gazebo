@@ -1,0 +1,30 @@
+[0.009s] Invoking command in '/home/antoni/gazebo_maritime_ws/build/apply_wind_plugin': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/antoni/gazebo_maritime_ws/install:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/antoni/gazebo_maritime_ws/build/apply_wind_plugin -- -j12 -l12
+[0.088s] [ 50%] [32mBuilding CXX object CMakeFiles/ApplyWindForceSystem.dir/src/apply_wind_force_system.cpp.o[0m
+[1.598s] [01m[K/home/antoni/gazebo_maritime_ws/src/apply_wind_plugin/src/apply_wind_force_system.cpp:[m[K In member function ‘[01m[Kvirtual void maritime::ApplyWindVelocity::[01;32m[KPostUpdate[m[K(const gz::sim::v8::UpdateInfo&, const gz::sim::v8::EntityComponentManager&)[m[K’:
+[1.598s] [01m[K/home/antoni/gazebo_maritime_ws/src/apply_wind_plugin/src/apply_wind_force_system.cpp:46:27:[m[K [01;31m[Kerror: [m[Kpassing ‘[01m[Kconst gz::sim::v8::EntityComponentManager[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[1.598s]    46 |       [01;31m[K_ecm.CreateComponent([m[K
+[1.599s]       |       [01;31m[K~~~~~~~~~~~~~~~~~~~~^[m[K
+[1.599s]    47 | [01;31m[K          link,[m[K
+[1.599s]       |           [01;31m[K~~~~~[m[K            
+[1.599s]    48 | [01;31m[K          gz::sim::components::LinearVelocityCmd(this->windVel))[m[K;
+[1.599s]       |           [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.599s] In file included from [01m[K/usr/include/gz/sim8/gz/sim/EntityComponentManager.hh:851[m[K,
+[1.599s]                  from [01m[K/usr/include/gz/sim8/gz/sim/System.hh:24[m[K,
+[1.599s]                  from [01m[K/home/antoni/gazebo_maritime_ws/src/apply_wind_plugin/src/apply_wind_force_system.cpp:1[m[K:
+[1.599s] [01m[K/usr/include/gz/sim8/gz/sim/detail/EntityComponentManager.hh:94:17:[m[K [01;36m[Knote: [m[K  in call to ‘[01m[KComponentTypeT* gz::sim::v8::EntityComponentManager::[01;32m[KCreateComponent[m[K(gz::sim::v8::Entity, const ComponentTypeT&) [35m[K[with ComponentTypeT = gz::sim::v8::components::Component<gz::math::v7::Vector3<double>, gz::sim::v8::components::LinearVelocityCmdTag>; gz::sim::v8::Entity = long unsigned int][m[K[m[K’
+[1.599s]    94 | ComponentTypeT *[01;36m[KEntityComponentManager[m[K::CreateComponent(const Entity _entity,
+[1.599s]       |                 [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.599s] [01m[K/home/antoni/gazebo_maritime_ws/src/apply_wind_plugin/src/apply_wind_force_system.cpp:53:27:[m[K [01;31m[Kerror: [m[Kpassing ‘[01m[Kconst gz::math::v7::Vector3<double>[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[1.600s]    53 |     comp->Data() += this->[01;31m[KwindVel[m[K;
+[1.600s]       |                           [01;31m[K^~~~~~~[m[K
+[1.600s] In file included from [01m[K/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Color.hh:25[m[K,
+[1.600s]                  from [01m[K/usr/include/gz/sdformat14/sdf/Param.hh:37[m[K,
+[1.600s]                  from [01m[K/usr/include/gz/sdformat14/sdf/Element.hh:29[m[K,
+[1.600s]                  from [01m[K/usr/include/gz/sim8/gz/sim/System.hh:31[m[K:
+[1.600s] [01m[K/opt/ros/jazzy/opt/gz_math_vendor/include/gz/math7/gz/math/Vector3.hh:355:28:[m[K [01;36m[Knote: [m[K  in call to ‘[01m[Kconst gz::math::v7::Vector3<T>& gz::math::v7::Vector3<T>::[01;32m[Koperator+=[m[K(const gz::math::v7::Vector3<T>&) [35m[K[with T = double][m[K[m[K’
+[1.600s]   355 |     public: const Vector3 &[01;36m[Koperator[m[K+=(const Vector3<T> &_v)
+[1.600s]       |                            [01;36m[K^~~~~~~~[m[K
+[1.895s] gmake[2]: *** [CMakeFiles/ApplyWindForceSystem.dir/build.make:76: CMakeFiles/ApplyWindForceSystem.dir/src/apply_wind_force_system.cpp.o] Error 1
+[1.895s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ApplyWindForceSystem.dir/all] Error 2
+[1.895s] gmake: *** [Makefile:146: all] Error 2
+[1.897s] Invoked command in '/home/antoni/gazebo_maritime_ws/build/apply_wind_plugin' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/antoni/gazebo_maritime_ws/install:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/antoni/gazebo_maritime_ws/build/apply_wind_plugin -- -j12 -l12

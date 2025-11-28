@@ -67,6 +67,7 @@ all: CMakeFiles/Waves.dir/all
 all: CMakeFiles/PublisherPlugin.dir/all
 all: CMakeFiles/Surface.dir/all
 all: CMakeFiles/WaveVisual.dir/all
+all: CMakeFiles/WindPlugin.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -78,6 +79,7 @@ clean: CMakeFiles/Waves.dir/clean
 clean: CMakeFiles/PublisherPlugin.dir/clean
 clean: CMakeFiles/Surface.dir/clean
 clean: CMakeFiles/WaveVisual.dir/clean
+clean: CMakeFiles/WindPlugin.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -183,6 +185,32 @@ WaveVisual: CMakeFiles/WaveVisual.dir/rule
 CMakeFiles/WaveVisual.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/WaveVisual.dir/build.make CMakeFiles/WaveVisual.dir/clean
 .PHONY : CMakeFiles/WaveVisual.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/WindPlugin.dir
+
+# All Build rule for target.
+CMakeFiles/WindPlugin.dir/all: CMakeFiles/Waves.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WindPlugin.dir/build.make CMakeFiles/WindPlugin.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WindPlugin.dir/build.make CMakeFiles/WindPlugin.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/antoni/gazebo_maritime_ws/build/gazebo_maritime/CMakeFiles --progress-num=9,10 "Built target WindPlugin"
+.PHONY : CMakeFiles/WindPlugin.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/WindPlugin.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/antoni/gazebo_maritime_ws/build/gazebo_maritime/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/WindPlugin.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/antoni/gazebo_maritime_ws/build/gazebo_maritime/CMakeFiles 0
+.PHONY : CMakeFiles/WindPlugin.dir/rule
+
+# Convenience name for target.
+WindPlugin: CMakeFiles/WindPlugin.dir/rule
+.PHONY : WindPlugin
+
+# clean rule for target.
+CMakeFiles/WindPlugin.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WindPlugin.dir/build.make CMakeFiles/WindPlugin.dir/clean
+.PHONY : CMakeFiles/WindPlugin.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

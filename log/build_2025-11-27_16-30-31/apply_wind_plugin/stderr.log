@@ -1,0 +1,53 @@
+[01m[K/home/antoni/gazebo_maritime_ws/src/apply_wind_plugin/src/apply_wind_force_system.cpp:28:8:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid maritime::ApplyWindForce::[01;32m[KPostUpdate[m[K(const gz::sim::v8::UpdateInfo&, gz::sim::v8::EntityComponentManager&)[m[K’ marked ‘[01m[Koverride[m[K’, but does not override
+   28 |   void [01;31m[KPostUpdate[m[K(const gz::sim::UpdateInfo &/*info*/,
+      |        [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/antoni/gazebo_maritime_ws/src/apply_wind_plugin/src/apply_wind_force_system.cpp:[m[K In member function ‘[01m[Kvoid maritime::ApplyWindForce::[01;32m[KPostUpdate[m[K(const gz::sim::v8::UpdateInfo&, gz::sim::v8::EntityComponentManager&)[m[K’:
+[01m[K/home/antoni/gazebo_maritime_ws/src/apply_wind_plugin/src/apply_wind_force_system.cpp:33:27:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kgz::sim::v8::Model::Valid()[m[K’
+   33 |     if (![01;31m[KmodelEntity.Valid()[m[K)
+      |          [01;31m[K~~~~~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/home/antoni/gazebo_maritime_ws/src/apply_wind_plugin/src/apply_wind_force_system.cpp:4[m[K:
+[01m[K/usr/include/gz/sim8/gz/sim/Model.hh:94:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool gz::sim::v8::Model::[01;32m[KValid[m[K(const gz::sim::v8::EntityComponentManager&) const[m[K’
+   94 |       public: bool [01;36m[KValid[m[K(const EntityComponentManager &_ecm) const;
+      |                    [01;36m[K^~~~~[m[K
+[01m[K/usr/include/gz/sim8/gz/sim/Model.hh:94:20:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/home/antoni/gazebo_maritime_ws/src/apply_wind_plugin/src/apply_wind_force_system.cpp:37:52:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} to ‘[01m[Kconst gz::sim::v8::EntityComponentManager&[m[K’
+   37 |     auto linkEntity = modelEntity.LinkByName([01;31m[Kthis->linkName[m[K, ecm);
+      |                                              [01;31m[K~~~~~~^~~~~~~~[m[K
+      |                                                    [01;31m[K|[m[K
+      |                                                    [01;31m[Kstd::string {aka std::__cxx11::basic_string<char>}[m[K
+[01m[K/usr/include/gz/sim8/gz/sim/Model.hh:137:68:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kgz::sim::v8::Entity gz::sim::v8::Model::[01;32m[KLinkByName[m[K(const gz::sim::v8::EntityComponentManager&, const std::string&) const[m[K’
+  137 |      public: sim::Entity LinkByName([01;36m[Kconst EntityComponentManager &_ecm[m[K,
+      |                                     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+
+[01m[K/home/antoni/gazebo_maritime_ws/src/apply_wind_plugin/src/apply_wind_force_system.cpp:[m[K In member function ‘[01m[Kgz::sim::v8::Entity maritime::ApplyWindForce::[01;32m[KentityByName[m[K(gz::sim::v8::EntityComponentManager&, const std::string&)[m[K’:
+[01m[K/home/antoni/gazebo_maritime_ws/src/apply_wind_plugin/src/apply_wind_force_system.cpp:59:65:[m[K [01;31m[Kerror: [m[K‘[01m[KName[m[K’ is not a member of ‘[01m[Kgz::sim::v8::components[m[K’
+   59 |    for (auto e : ecm.EntitiesByComponents(gz::sim::components::[01;31m[KName[m[K()))
+      |                                                                [01;31m[K^~~~[m[K
+
+[01m[K/home/antoni/gazebo_maritime_ws/src/apply_wind_plugin/src/apply_wind_force_system.cpp:61:54:[m[K [01;31m[Kerror: [m[K‘[01m[KName[m[K’ is not a member of ‘[01m[Kgz::sim::v8::components[m[K’
+   61 |       auto comp = ecm.Component<gz::sim::components::[01;31m[KName[m[K>(e);
+      |                                                      [01;31m[K^~~~[m[K
+[01m[K/home/antoni/gazebo_maritime_ws/src/apply_wind_plugin/src/apply_wind_force_system.cpp:65:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kgz::sim::Entity[m[K’ is not a class, namespace, or enumeration
+   65 |     return gz::sim::[01;31m[KEntity[m[K::kNull;
+      |                     [01;31m[K^~~~~~[m[K
+In file included from [01m[K/usr/include/gz/plugin2/gz/plugin/Register.hh:22[m[K,
+                 from [01m[K/home/antoni/gazebo_maritime_ws/src/apply_wind_plugin/src/apply_wind_force_system.cpp:8[m[K:
+[01m[K/home/antoni/gazebo_maritime_ws/src/apply_wind_plugin/src/apply_wind_force_system.cpp:[m[K In constructor ‘[01m[Kmaritime::gz::plugin::{anonymous}::ExecuteWhenLoadingLibrary0::[01;32m[KExecuteWhenLoadingLibrary0[m[K()[m[K’:
+[01m[K/home/antoni/gazebo_maritime_ws/src/apply_wind_plugin/src/apply_wind_force_system.cpp:70:19:[m[K [01;31m[Kerror: [m[K‘[01m[Ksim[m[K’ is not a member of ‘[01m[Kmaritime::gz[m[K’; did you mean ‘[01m[Kgz::sim[m[K’?
+   70 |               gz::[01;31m[Ksim[m[K::System,
+      |                   [01;31m[K^~~[m[K
+In file included from [01m[K/usr/include/gz/sim8/gz/sim/EntityComponentManager.hh:37[m[K,
+                 from [01m[K/usr/include/gz/sim8/gz/sim/System.hh:24[m[K,
+                 from [01m[K/home/antoni/gazebo_maritime_ws/src/apply_wind_plugin/src/apply_wind_force_system.cpp:2[m[K:
+[01m[K/usr/include/gz/sim8/gz/sim/Entity.hh:29:13:[m[K [01;36m[Knote: [m[K‘[01m[Kgz::sim[m[K’ declared here
+   29 |   namespace [01;36m[Ksim[m[K
+      |             [01;36m[K^~~[m[K
+[01m[K/home/antoni/gazebo_maritime_ws/src/apply_wind_plugin/src/apply_wind_force_system.cpp:69:1:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+   69 | [01;31m[KGZ_ADD_PLUGIN[m[K(maritime::ApplyWindForce,
+      | [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/antoni/gazebo_maritime_ws/src/apply_wind_plugin/src/apply_wind_force_system.cpp:69:1:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+   69 | [01;31m[KGZ_ADD_PLUGIN[m[K(maritime::ApplyWindForce,
+      | [01;31m[K^~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/ApplyWindForceSystem.dir/build.make:76: CMakeFiles/ApplyWindForceSystem.dir/src/apply_wind_force_system.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ApplyWindForceSystem.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

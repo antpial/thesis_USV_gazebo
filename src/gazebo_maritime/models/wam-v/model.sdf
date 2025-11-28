@@ -4,6 +4,8 @@
 <!-- Basic model of the 16' WAM-V USV -->
 <model name="wamv">
   <static>false</static>
+  <enable_wind>true</enable_wind>
+  <self_collide>true</self_collide>
   <link name="base_link">
     <enable_wind>true</enable_wind>
     <inertial>
@@ -30,6 +32,14 @@
       <geometry>
         <box><size>1.85 1 0.1" </size></box>
       </geometry>
+      <surface>
+        <friction>
+          <ode>
+            <mu>0.1</mu>
+            <mu2>0</mu2>
+          </ode>
+        </friction>
+      </surface>
     </collision>
 
     <!-- left base -->
@@ -322,6 +332,18 @@
     </wavefield>
   </plugin>
 
+  <!-- <plugin
+    filename="gz-sim-wind-effects-system"
+    name="gz::sim::systems::WindEffects">
+    <wind>
+      <linear_velocity>50 0 0</linear_velocity>
+    </wind>
+  </plugin> -->
+
+
+
+
+
   <!-- Uncomment to enable hydrodynamics -->
   <plugin
     filename="gz-sim-hydrodynamics-system"
@@ -498,7 +520,6 @@
   <parent>base_link</parent>
   <child>perfect_gps_link</child>
 </joint>
-
 
 </model>
 

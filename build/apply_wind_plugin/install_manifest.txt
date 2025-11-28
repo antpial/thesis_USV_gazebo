@@ -1,0 +1,16 @@
+/home/antoni/gazebo_maritime_ws/install/lib/apply_wind_plugin/libApplyWindForceSystem.so
+/home/antoni/gazebo_maritime_ws/install/share/ament_index/resource_index/package_run_dependencies/apply_wind_plugin
+/home/antoni/gazebo_maritime_ws/install/share/ament_index/resource_index/parent_prefix_path/apply_wind_plugin
+/home/antoni/gazebo_maritime_ws/install/share/apply_wind_plugin/environment/ament_prefix_path.sh
+/home/antoni/gazebo_maritime_ws/install/share/apply_wind_plugin/environment/ament_prefix_path.dsv
+/home/antoni/gazebo_maritime_ws/install/share/apply_wind_plugin/environment/path.sh
+/home/antoni/gazebo_maritime_ws/install/share/apply_wind_plugin/environment/path.dsv
+/home/antoni/gazebo_maritime_ws/install/share/apply_wind_plugin/local_setup.bash
+/home/antoni/gazebo_maritime_ws/install/share/apply_wind_plugin/local_setup.sh
+/home/antoni/gazebo_maritime_ws/install/share/apply_wind_plugin/local_setup.zsh
+/home/antoni/gazebo_maritime_ws/install/share/apply_wind_plugin/local_setup.dsv
+/home/antoni/gazebo_maritime_ws/install/share/apply_wind_plugin/package.dsv
+/home/antoni/gazebo_maritime_ws/install/share/ament_index/resource_index/packages/apply_wind_plugin
+/home/antoni/gazebo_maritime_ws/install/share/apply_wind_plugin/cmake/apply_wind_pluginConfig.cmake
+/home/antoni/gazebo_maritime_ws/install/share/apply_wind_plugin/cmake/apply_wind_pluginConfig-version.cmake
+/home/antoni/gazebo_maritime_ws/install/share/apply_wind_plugin/package.xml

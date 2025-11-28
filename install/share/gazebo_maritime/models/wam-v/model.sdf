@@ -322,6 +322,17 @@
     </wavefield>
   </plugin>
 
+  <plugin name="wind_plugin" filename="libWindPlugin.so">
+    <wind>
+      <speed>5.0</speed>
+      <direction>1.57</direction>
+    </wind>
+  </plugin>
+
+
+
+
+
   <!-- Uncomment to enable hydrodynamics -->
   <plugin
     filename="gz-sim-hydrodynamics-system"
@@ -498,7 +509,6 @@
   <parent>base_link</parent>
   <child>perfect_gps_link</child>
 </joint>
-
 
 </model>
 

@@ -1,0 +1,13 @@
+[0.186s] Invoking command in '/home/antoni/gazebo_maritime_ws/build/gazebo_maritime': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/antoni/gazebo_maritime_ws/build/gazebo_maritime -- -j12 -l12
+[0.793s] [ 20%] Built target Waves
+[0.793s] [ 40%] Built target PublisherPlugin
+[0.793s] [ 60%] Built target Surface
+[0.793s] [ 80%] Built target WaveVisual
+[0.793s] [ 90%] [32mBuilding CXX object CMakeFiles/WindPlugin.dir/src/WindPlugin.cc.o[0m
+[1.876s] [01m[K/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/src/WindPlugin.cc:39:80:[m[K [01;31m[Kerror: [m[Kexpected constructor, destructor, or type conversion before ‘[01m[K;[m[K’ token
+[1.876s]    39 | GZ_ADD_PLUGIN(maritime::WindPlugin, gz::sim::System, gz::sim::ISystemConfigure)[01;31m[K;[m[K
+[1.876s]       |                                                                                [01;31m[K^[m[K
+[2.152s] gmake[2]: *** [CMakeFiles/WindPlugin.dir/build.make:76: CMakeFiles/WindPlugin.dir/src/WindPlugin.cc.o] Error 1
+[2.153s] gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/WindPlugin.dir/all] Error 2
+[2.153s] gmake: *** [Makefile:136: all] Error 2
+[2.155s] Invoked command in '/home/antoni/gazebo_maritime_ws/build/gazebo_maritime' returned '2': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/antoni/gazebo_maritime_ws/build/gazebo_maritime -- -j12 -l12

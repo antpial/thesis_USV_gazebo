@@ -1,0 +1,43 @@
+[0.009s] Invoking command in '/home/antoni/gazebo_maritime_ws/build/apply_wind_plugin': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/antoni/gazebo_maritime_ws/install:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/antoni/gazebo_maritime_ws/build/apply_wind_plugin -- -j12 -l12
+[0.073s] [ 50%] [32mBuilding CXX object CMakeFiles/ApplyWindForceSystem.dir/src/apply_wind_force_system.cpp.o[0m
+[1.583s] [01m[K/home/antoni/gazebo_maritime_ws/src/apply_wind_plugin/src/apply_wind_force_system.cpp:[m[K In member function ‘[01m[Kvirtual void maritime::ApplyWindForce::[01;32m[KPreUpdate[m[K(const gz::sim::v8::UpdateInfo&, gz::sim::v8::EntityComponentManager&)[m[K’:
+[1.584s] [01m[K/home/antoni/gazebo_maritime_ws/src/apply_wind_plugin/src/apply_wind_force_system.cpp:48:43:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kgz::msgs::Wrench::Wrench(gz::math::v7::Vector3d&, const gz::math::v7::Vector3<double>&)[m[K’
+[1.584s]    48 |                   gz::math::Vector3d::Zero[01;31m[K)[m[K));   // moment = 0
+[1.584s]       |                                           [01;31m[K^[m[K
+[1.584s] In file included from [01m[K/usr/include/gz/msgs10/gz/msgs/wrench.pb.h:12[m[K,
+[1.584s]                  from [01m[K/usr/include/gz/sim8/gz/sim/components/ExternalWorldWrenchCmd.hh:20[m[K,
+[1.584s]                  from [01m[K/home/antoni/gazebo_maritime_ws/src/apply_wind_plugin/src/apply_wind_force_system.cpp:4[m[K:
+[1.584s] [01m[K/usr/include/gz/msgs10/gz/msgs/details/wrench.pb.h:171:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgz::msgs::Wrench::[01;32m[KWrench[m[K(google::protobuf::Arena*, bool)[m[K’
+[1.584s]   171 |   explicit [01;36m[KWrench[m[K(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+[1.584s]       |            [01;36m[K^~~~~~[m[K
+[1.584s] [01m[K/usr/include/gz/msgs10/gz/msgs/details/wrench.pb.h:171:51:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kgz::math::v7::Vector3d[m[K’ {aka ‘[01m[Kgz::math::v7::Vector3<double>[m[K’} to ‘[01m[Kgoogle::protobuf::Arena*[m[K’
+[1.584s]   171 |   explicit Wrench([01;36m[K::PROTOBUF_NAMESPACE_ID::Arena* arena[m[K,
+[1.584s]       |                   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[1.585s] [01m[K/usr/include/gz/msgs10/gz/msgs/details/wrench.pb.h:72:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgz::msgs::Wrench::[01;32m[KWrench[m[K(gz::msgs::Wrench&&)[m[K’
+[1.585s]    72 |   [01;36m[KWrench[m[K(Wrench&& from) noexcept
+[1.585s]       |   [01;36m[K^~~~~~[m[K
+[1.585s] [01m[K/usr/include/gz/msgs10/gz/msgs/details/wrench.pb.h:72:3:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[1.585s] [01m[K/usr/include/gz/msgs10/gz/msgs/details/wrench.pb.h:71:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgz::msgs::Wrench::[01;32m[KWrench[m[K(const gz::msgs::Wrench&)[m[K’
+[1.585s]    71 |   [01;36m[KWrench[m[K(const Wrench& from);
+[1.585s]       |   [01;36m[K^~~~~~[m[K
+[1.585s] [01m[K/usr/include/gz/msgs10/gz/msgs/details/wrench.pb.h:71:3:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[1.585s] [01m[K/usr/include/gz/msgs10/gz/msgs/details/wrench.pb.h:69:31:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr gz::msgs::Wrench::[01;32m[KWrench[m[K(google::protobuf::internal::ConstantInitialized)[m[K’
+[1.585s]    69 |   explicit PROTOBUF_CONSTEXPR [01;36m[KWrench[m[K(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+[1.585s]       |                               [01;36m[K^~~~~~[m[K
+[1.585s] [01m[K/usr/include/gz/msgs10/gz/msgs/details/wrench.pb.h:69:31:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[1.586s] [01m[K/usr/include/gz/msgs10/gz/msgs/details/wrench.pb.h:67:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgz::msgs::Wrench::[01;32m[KWrench[m[K()[m[K’
+[1.586s]    67 |   inline [01;36m[KWrench[m[K() : Wrench(nullptr) {}
+[1.586s]       |          [01;36m[K^~~~~~[m[K
+[1.586s] [01m[K/usr/include/gz/msgs10/gz/msgs/details/wrench.pb.h:67:10:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 2 provided
+[1.586s] [01m[K/home/antoni/gazebo_maritime_ws/src/apply_wind_plugin/src/apply_wind_force_system.cpp:52:18:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[Kconst gz::msgs::Vector3d& gz::msgs::Wrench::[01;32m[Kforce[m[K() const[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+[1.586s]    52 |     [01;31m[Kcomp->Data().force[m[K = this->windForce;
+[1.586s]       |     [01;31m[K~~~~~~~~~~~~~^~~~~[m[K
+[1.586s]       |                       [32m[K()[m[K
+[1.586s] [01m[K/home/antoni/gazebo_maritime_ws/src/apply_wind_plugin/src/apply_wind_force_system.cpp:53:18:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[Kconst gz::msgs::Vector3d& gz::msgs::Wrench::[01;32m[Ktorque[m[K() const[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+[1.586s]    53 |     [01;31m[Kcomp->Data().torque[m[K = gz::math::Vector3d::Zero;
+[1.586s]       |     [01;31m[K~~~~~~~~~~~~~^~~~~~[m[K
+[1.586s]       |                        [32m[K()[m[K
+[1.850s] gmake[2]: *** [CMakeFiles/ApplyWindForceSystem.dir/build.make:76: CMakeFiles/ApplyWindForceSystem.dir/src/apply_wind_force_system.cpp.o] Error 1
+[1.850s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ApplyWindForceSystem.dir/all] Error 2
+[1.850s] gmake: *** [Makefile:146: all] Error 2
+[1.853s] Invoked command in '/home/antoni/gazebo_maritime_ws/build/apply_wind_plugin' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/antoni/gazebo_maritime_ws/install:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/antoni/gazebo_maritime_ws/build/apply_wind_plugin -- -j12 -l12
