@@ -56,6 +56,10 @@ class Los_node(Node):
         self.distance = 0.0 # odleglosc do punktu docelowego
         self.magnetic_declination = -12.82 # deklinacja magnetyczna w stopniach
 
+        # LOS
+        self.de = 0.0 # odleglosc od linii prostej wyznaczonej przez punkty startowy i docelowy
+        self.Kp_los = 8.0 # wspolczynnik wzmocnienia regulatora P dla LOS
+
         #checkpoints
         self.checkpoints = [] # lista wszystkich punktów docelowych (name, lat, lon, alt)
         self.current_checkpoint_index = 0 # indeks aktualnego punktu docelowego
@@ -321,7 +325,7 @@ class Los_node(Node):
         self.current_azimuth = self.calculate_current_azimuth()
 
         # kalkuluje docelowy azymut
-        self.given_azimuth = self.calculate_new_azimuth()
+        self.given_azimuth = self.calculate_new_azimuth() + (self.Kp_los * self.de) # korekta azymutu docelowego o odleglosc od linii prostej
 
         # kalkuluje odleglosc do punktu docelowego
         self.distance = self.get_distance_from_lat_lon_in_km()
