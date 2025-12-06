@@ -213,19 +213,6 @@ WaveVisual/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/WaveVisual.dir/build.make CMakeFiles/WaveVisual.dir/build
 .PHONY : WaveVisual/fast
 
-#=============================================================================
-# Target rules for targets named WindPlugin
-
-# Build rule for target.
-WindPlugin: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 WindPlugin
-.PHONY : WindPlugin
-
-# fast build rule for target.
-WindPlugin/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/WindPlugin.dir/build.make CMakeFiles/WindPlugin.dir/build
-.PHONY : WindPlugin/fast
-
 src/PublisherPlugin.o: src/PublisherPlugin.cc.o
 .PHONY : src/PublisherPlugin.o
 
@@ -322,30 +309,6 @@ src/Wavefield.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waves.dir/build.make CMakeFiles/Waves.dir/src/Wavefield.cc.s
 .PHONY : src/Wavefield.cc.s
 
-src/WindPlugin.o: src/WindPlugin.cc.o
-.PHONY : src/WindPlugin.o
-
-# target to build an object file
-src/WindPlugin.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/WindPlugin.dir/build.make CMakeFiles/WindPlugin.dir/src/WindPlugin.cc.o
-.PHONY : src/WindPlugin.cc.o
-
-src/WindPlugin.i: src/WindPlugin.cc.i
-.PHONY : src/WindPlugin.i
-
-# target to preprocess a source file
-src/WindPlugin.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/WindPlugin.dir/build.make CMakeFiles/WindPlugin.dir/src/WindPlugin.cc.i
-.PHONY : src/WindPlugin.cc.i
-
-src/WindPlugin.s: src/WindPlugin.cc.s
-.PHONY : src/WindPlugin.s
-
-# target to generate assembly for a file
-src/WindPlugin.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/WindPlugin.dir/build.make CMakeFiles/WindPlugin.dir/src/WindPlugin.cc.s
-.PHONY : src/WindPlugin.cc.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -362,7 +325,6 @@ help:
 	@echo "... Surface"
 	@echo "... WaveVisual"
 	@echo "... Waves"
-	@echo "... WindPlugin"
 	@echo "... src/PublisherPlugin.o"
 	@echo "... src/PublisherPlugin.i"
 	@echo "... src/PublisherPlugin.s"
@@ -375,9 +337,6 @@ help:
 	@echo "... src/Wavefield.o"
 	@echo "... src/Wavefield.i"
 	@echo "... src/Wavefield.s"
-	@echo "... src/WindPlugin.o"
-	@echo "... src/WindPlugin.i"
-	@echo "... src/WindPlugin.s"
 .PHONY : help
 
 

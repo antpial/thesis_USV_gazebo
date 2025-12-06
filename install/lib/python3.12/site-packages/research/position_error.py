@@ -4,11 +4,12 @@ from sensor_msgs.msg import NavSatFix
 from rclpy.time import Time
 import os
 import csv
+import sys
 
 
 class GpsComparator(Node):
 
-    def __init__(self):
+    def __init__(self, csv_filename):
         super().__init__('gps_comparator')
 
         self.sub_fix = self.create_subscription(
@@ -22,7 +23,8 @@ class GpsComparator(Node):
         self.buffer_perf = []
 
         # Nazwa pliku
-        self.csv_filename = "gps_compare_output.csv"
+        self.csv_directory = "Sim_output"
+        self.csv_filename = os.path.join(self.csv_directory, csv_filename)
 
         # Jeśli plik nie istnieje — utwórz nagłówki
         self.create_csv_if_not_exist()
@@ -95,12 +97,19 @@ class GpsComparator(Node):
                 alt_error
             ])
 
-        self.get_logger().info("Dodano wpis do CSV")
+        self.get_logger().info(f"Dodano wpis do CSV ({self.csv_filename})")
 
 
 def main(args=None):
     rclpy.init(args=args)
-    node = GpsComparator()
+
+    # Argument pliku CSV
+    if len(sys.argv) > 1:
+        csv_filename = sys.argv[1]
+    else:
+        csv_filename = "gps_compare_output.csv"
+
+    node = GpsComparator(csv_filename)
     rclpy.spin(node)
     node.destroy_node()
     rclpy.shutdown()

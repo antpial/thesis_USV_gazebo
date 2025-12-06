@@ -4,3 +4,4 @@ azimuth = autopilot.azimuth:main
 checkpoints = autopilot.checkpoints:main
 compass = autopilot.compass:main
 kalman = autopilot.kalman:main
+los = autopilot.los:main

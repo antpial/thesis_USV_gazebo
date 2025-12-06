@@ -3,12 +3,14 @@
 /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/autopilot/checkpoints.py
 /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/autopilot/__init__.py
 /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/autopilot/azimuth.py
+/home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/autopilot/los.py
 /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/autopilot/add_markers.py
 /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/autopilot/__pycache__/kalman.cpython-312.pyc
 /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/autopilot/__pycache__/compass.cpython-312.pyc
 /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/autopilot/__pycache__/checkpoints.cpython-312.pyc
 /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/autopilot/__pycache__/__init__.cpython-312.pyc
 /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/autopilot/__pycache__/azimuth.cpython-312.pyc
+/home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/autopilot/__pycache__/los.cpython-312.pyc
 /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/autopilot/__pycache__/add_markers.cpython-312.pyc
 /home/antoni/gazebo_maritime_ws/install/share/ament_index/resource_index/packages/autopilot
 /home/antoni/gazebo_maritime_ws/install/share/autopilot/launch/robot_loc.launch.py
@@ -27,3 +29,4 @@
 /home/antoni/gazebo_maritime_ws/install/lib/autopilot/checkpoints
 /home/antoni/gazebo_maritime_ws/install/lib/autopilot/compass
 /home/antoni/gazebo_maritime_ws/install/lib/autopilot/kalman
+/home/antoni/gazebo_maritime_ws/install/lib/autopilot/los

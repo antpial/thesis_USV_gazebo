@@ -380,5 +380,4 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/PublisherPlugin.dir/DependInfo.cmake"
   "CMakeFiles/Surface.dir/DependInfo.cmake"
   "CMakeFiles/WaveVisual.dir/DependInfo.cmake"
-  "CMakeFiles/WindPlugin.dir/DependInfo.cmake"
   )

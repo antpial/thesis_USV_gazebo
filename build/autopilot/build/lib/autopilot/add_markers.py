@@ -77,7 +77,10 @@ def insert_models_into_world(world_file, model_elements):
     tree.write(world_file, encoding="utf-8", xml_declaration=True)
     print(f"Wstawiono {len(model_elements)} modeli do pliku {world_file}.")
 
-if __name__ == "__main__":
+def main():
     points = read_kml_coordinates(KML_FILE)
     models = generate_marker_models(points)
     insert_models_into_world(WORLD_FILE, models)
+
+if __name__ == "__main__":
+    main()

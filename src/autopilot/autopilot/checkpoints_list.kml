@@ -6,14 +6,14 @@
     <Placemark>
       <name>First</name>
       <Point>
-        <coordinates>150.673664,-33.721952</coordinates>
+        <coordinates>150.674264,-33.721992</coordinates>
       </Point>
     </Placemark>
 
     <Placemark>
       <name>Second</name>
       <Point>
-        <coordinates>150.675268,-33.721365</coordinates>
+        <coordinates>150.675368,-33.721365</coordinates>
       </Point>
     </Placemark>
 

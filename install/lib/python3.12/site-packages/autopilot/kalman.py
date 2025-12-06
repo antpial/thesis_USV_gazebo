@@ -36,7 +36,7 @@ class Kalman_node(Node):
         # Parametry ruchu
         self.v = 0.8    # predkosc
         self.given_position = GpsState(lat= -33.721365, lon=150.675268)  # punkt docelowy
-        self.p = 0.05 # parametr regulatora P
+        self.p = 0.02 # parametr regulatora P
         self.alpha_gps = 0.1 # wspolczynnik filtra dolnoprzepustowego dla azymutu docelowego
 
         # Dane pomiarowe
@@ -53,7 +53,7 @@ class Kalman_node(Node):
         self.given_azimuth = 0.0    # azymut do punktu docelowego
         self.current_azimuth = 0.0  # aktualny azymut
         self.distance = 0.0 # odleglosc do punktu docelowego
-        self.offset_azimuth = 5.5 # offset azymutu magnetycznego w stopniach
+        self.magnetic_declination = -12.82 # deklinacja magnetyczna w stopniach
 
         #checkpoints
         self.checkpoints = [] # lista wszystkich punktów docelowych (name, lat, lon, alt)
@@ -103,31 +103,6 @@ class Kalman_node(Node):
         # aktualizuje aktualna pozycje
         self.current_position.lat = msg.latitude
         self.current_position.lon = msg.longitude
-
-
-    #     # filtr dolnoprzepustowy na dane gps bo sa zaszumione (nie nakladam na pierwszy pomiar)
-    #     if self.current_position.lat == 0.0 and self.current_position.lon == 0.0:
-    #         new_position.lat = msg.latitude
-    #         new_position.lon = msg.longitude
-    #     else:
-    #         new_position.lat = (
-    #             self.alpha_gps * msg.latitude +
-    #             (1 - self.alpha_gps) * self.current_position.lat
-    #         )
-
-    #         new_position.lon = (
-    #             self.alpha_gps * msg.longitude +
-    #             (1 - self.alpha_gps) * self.current_position.lon
-    #         )
-
-    #     self.avg_position.append(new_position)
-        
-    #    # liczymy średnią jeśli w kolejce są elementy
-    #     if len(self.avg_position) > 0:
-    #         lat_sum = sum(p.lat for p in self.avg_position)
-    #         lon_sum = sum(p.lon for p in self.avg_position)
-    #         self.current_position.lat = lat_sum / len(self.avg_position)
-    #         self.current_position.lon = lon_sum / len(self.avg_position)
 
 
     def get_checkpoints(self):
@@ -200,7 +175,7 @@ class Kalman_node(Node):
         y = math.sin(d_lambda) * math.cos(phi2)
         x = math.cos(phi1) * math.sin(phi2) - math.sin(phi1) * math.cos(phi2) * math.cos(d_lambda)
         theta = math.atan2(y, x)
-        bearing = (math.degrees(theta) + self.offset_azimuth + 360) % 360
+        bearing = (math.degrees(theta) + 360) % 360
         return bearing  
     
 
@@ -212,7 +187,7 @@ class Kalman_node(Node):
         theta_deg = math.degrees(theta_rad)     
 
         # atan2 oblicza kat od osi x, a polnoc jest na osi y, wiec trzeba obrocic
-        azimuth = theta_deg + 90.0
+        azimuth = theta_deg + 90.0 + self.magnetic_declination
 
         # atan 2 daje wartosc w przedziale (-pi,pi), a nie (0,2pi), a wiec dla
         # azymutu z przedzialu (180,360) musimy przekalkulowac

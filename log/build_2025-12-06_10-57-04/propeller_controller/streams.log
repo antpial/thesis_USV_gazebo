@@ -1,0 +1,22 @@
+[5.657s] Invoking command in '/home/antoni/gazebo_maritime_ws/src/propeller_controller': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/antoni/gazebo_maritime_ws/build/propeller_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/propeller_controller build --build-base /home/antoni/gazebo_maritime_ws/build/propeller_controller/build install --record /home/antoni/gazebo_maritime_ws/build/propeller_controller/install.log --single-version-externally-managed install_data
+[6.412s] running egg_info
+[6.460s] writing ../../build/propeller_controller/propeller_controller.egg-info/PKG-INFO
+[6.460s] writing dependency_links to ../../build/propeller_controller/propeller_controller.egg-info/dependency_links.txt
+[6.461s] writing entry points to ../../build/propeller_controller/propeller_controller.egg-info/entry_points.txt
+[6.461s] writing requirements to ../../build/propeller_controller/propeller_controller.egg-info/requires.txt
+[6.461s] writing top-level names to ../../build/propeller_controller/propeller_controller.egg-info/top_level.txt
+[6.557s] reading manifest file '../../build/propeller_controller/propeller_controller.egg-info/SOURCES.txt'
+[6.561s] writing manifest file '../../build/propeller_controller/propeller_controller.egg-info/SOURCES.txt'
+[6.561s] running build
+[6.561s] running build_py
+[6.562s] running install
+[6.578s] running install_lib
+[6.630s] running install_data
+[6.630s] running install_egg_info
+[6.686s] removing '/home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/propeller_controller-0.0.0-py3.12.egg-info' (and everything under it)
+[6.686s] Copying ../../build/propeller_controller/propeller_controller.egg-info to /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/propeller_controller-0.0.0-py3.12.egg-info
+[6.691s] running install_scripts
+[7.066s] Installing keyboard_controller script to /home/antoni/gazebo_maritime_ws/install/lib/propeller_controller
+[7.066s] Installing rotate script to /home/antoni/gazebo_maritime_ws/install/lib/propeller_controller
+[7.067s] writing list of installed files to '/home/antoni/gazebo_maritime_ws/build/propeller_controller/install.log'
+[7.280s] Invoked command in '/home/antoni/gazebo_maritime_ws/src/propeller_controller' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/antoni/gazebo_maritime_ws/build/propeller_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/propeller_controller build --build-base /home/antoni/gazebo_maritime_ws/build/propeller_controller/build install --record /home/antoni/gazebo_maritime_ws/build/propeller_controller/install.log --single-version-externally-managed install_data

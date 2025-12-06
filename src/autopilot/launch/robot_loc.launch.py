@@ -45,6 +45,12 @@ def generate_launch_description():
         #     arguments=['0', '0', '0', '0', '0', '0', 'map', 'odom'],
         # ),
         Node(
+            package='ros_gz_bridge_custom',
+            executable='bridge_node',
+            name='ros_gz_bridge_node',
+            output='screen',
+        ),
+        Node(
             package='autopilot',
             executable='compass',
             name='CompassOdomNode',

@@ -36,6 +36,7 @@ setup(
             'add_markers = autopilot.add_markers:main',
             'kalman = autopilot.kalman:main',
             'compass = autopilot.compass:main',
+            'los = autopilot.los:main',
         ],
     },
 )

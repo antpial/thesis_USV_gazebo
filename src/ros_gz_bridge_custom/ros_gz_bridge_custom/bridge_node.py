@@ -130,14 +130,14 @@ class RosGzBridge(Node):
 
     def right_thrust_callback(self, msg: Float64):
         gz_msg = Double()
-        gz_msg.data = msg.data * 4.79 * 9.81 # F = (max thrust dla 18V na stronie prod.) * g
+        gz_msg.data = msg.data * 13.0 * 9.81 # F = (max thrust dla 18V na stronie prod.) * g
         self.gz_pub_right_thrust.publish(gz_msg)
         # self.get_logger().info(f"Przekazuję {msg.data} z ROS → Gazebo")
 
 
     def left_thrust_callback(self, msg: Float64):
         gz_msg = Double()
-        gz_msg.data = msg.data * 4.79 * 9.81 # F = (max thrust dla 18V na stronie prod.) * g
+        gz_msg.data = msg.data * 13.0 * 9.81 # F = (max thrust dla 18V na stronie prod.) * g
         self.gz_pub_left_thrust.publish(gz_msg)
         # self.get_logger().info(f"Przekazuję {msg.data} z ROS → Gazebo")
     

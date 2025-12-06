@@ -54,7 +54,7 @@ class Checkpoints_node(Node):
         self.given_azimuth = 0.0    # azymut do punktu docelowego
         self.current_azimuth = 0.0  # aktualny azymut
         self.distance = 0.0 # odleglosc do punktu docelowego
-        self.magnetic_declination = 5.5 # offset azymutu magnetycznego w stopniach (dla Sydney, Australia)
+        self.magnetic_declination = 12 # offset azymutu magnetycznego w stopniach (dla Sydney, Australia)
         self.magnetic_deviation = 0.0 # offset azymutu magnetycznego w stopniach
 
         #checkpoints

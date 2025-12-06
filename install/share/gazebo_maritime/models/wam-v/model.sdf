@@ -277,7 +277,7 @@
     <fluid_density>1000</fluid_density>
     <propeller_diameter>0.2</propeller_diameter>
     <!-- Jak jest false to topic interpretowany bezposrednio jako newtony -->
-    <velocity_control>false</velocity_control>
+    <velocity_control>true</velocity_control>
   </plugin>
 
   <plugin
@@ -322,12 +322,13 @@
     </wavefield>
   </plugin>
 
-  <plugin name="wind_plugin" filename="libWindPlugin.so">
+  <!-- <plugin
+    filename="gz-sim-wind-effects-system"
+    name="gz::sim::systems::WindEffects">
     <wind>
-      <speed>5.0</speed>
-      <direction>1.57</direction>
+      <linear_velocity>50 0 0</linear_velocity>
     </wind>
-  </plugin>
+  </plugin> -->
 
 
 
