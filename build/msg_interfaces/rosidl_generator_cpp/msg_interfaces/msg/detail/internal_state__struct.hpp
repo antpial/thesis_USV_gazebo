@@ -64,6 +64,7 @@ struct InternalState_
       this->i_los = 0.0f;
       this->kp_los = 0.0f;
       this->ki_los = 0.0f;
+      this->yaw_vel = 0.0f;
     }
   }
 
@@ -91,6 +92,7 @@ struct InternalState_
       this->i_los = 0.0f;
       this->kp_los = 0.0f;
       this->ki_los = 0.0f;
+      this->yaw_vel = 0.0f;
     }
   }
 
@@ -152,6 +154,9 @@ struct InternalState_
   using _ki_los_type =
     float;
   _ki_los_type ki_los;
+  using _yaw_vel_type =
+    float;
+  _yaw_vel_type yaw_vel;
 
   // setters for named parameter idiom
   Type & set__header(
@@ -268,6 +273,12 @@ struct InternalState_
     this->ki_los = _arg;
     return *this;
   }
+  Type & set__yaw_vel(
+    const float & _arg)
+  {
+    this->yaw_vel = _arg;
+    return *this;
+  }
 
   // constant declarations
 
@@ -366,6 +377,9 @@ struct InternalState_
       return false;
     }
     if (this->ki_los != other.ki_los) {
+      return false;
+    }
+    if (this->yaw_vel != other.yaw_vel) {
       return false;
     }
     return true;

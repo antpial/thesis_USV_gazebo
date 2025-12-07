@@ -24,16 +24,32 @@ namespace msg
 namespace builder
 {
 
+class Init_InternalState_yaw_vel
+{
+public:
+  explicit Init_InternalState_yaw_vel(::msg_interfaces::msg::InternalState & msg)
+  : msg_(msg)
+  {}
+  ::msg_interfaces::msg::InternalState yaw_vel(::msg_interfaces::msg::InternalState::_yaw_vel_type arg)
+  {
+    msg_.yaw_vel = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::msg_interfaces::msg::InternalState msg_;
+};
+
 class Init_InternalState_ki_los
 {
 public:
   explicit Init_InternalState_ki_los(::msg_interfaces::msg::InternalState & msg)
   : msg_(msg)
   {}
-  ::msg_interfaces::msg::InternalState ki_los(::msg_interfaces::msg::InternalState::_ki_los_type arg)
+  Init_InternalState_yaw_vel ki_los(::msg_interfaces::msg::InternalState::_ki_los_type arg)
   {
     msg_.ki_los = std::move(arg);
-    return std::move(msg_);
+    return Init_InternalState_yaw_vel(msg_);
   }
 
 private:

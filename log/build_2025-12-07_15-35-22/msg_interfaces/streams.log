@@ -1,0 +1,147 @@
+[0.869s] Invoking command in '/home/antoni/gazebo_maritime_ws/build/msg_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/antoni/gazebo_maritime_ws/build/msg_interfaces -- -j12 -l12
+[2.340s] [  2%] Built target msg_interfaces__rosidl_generator_type_description
+[2.340s] [  2%] Built target ament_cmake_python_copy_msg_interfaces
+[2.340s] [  5%] Built target msg_interfaces__cpp
+[2.340s] [ 20%] Built target msg_interfaces__rosidl_generator_c
+[2.341s] [ 47%] Built target msg_interfaces__rosidl_typesupport_cpp
+[2.341s] [ 47%] Built target msg_interfaces__rosidl_typesupport_introspection_c
+[2.341s] [ 47%] Built target msg_interfaces__rosidl_typesupport_c
+[2.341s] [ 55%] Built target msg_interfaces__rosidl_typesupport_introspection_cpp
+[2.341s] [ 64%] Built target msg_interfaces__rosidl_typesupport_fastrtps_cpp
+[2.345s] [ 73%] Built target msg_interfaces__rosidl_typesupport_fastrtps_c
+[2.345s] [ 73%] Built target msg_interfaces
+[2.345s] [ 76%] Built target msg_interfaces__py
+[2.345s] [ 82%] Built target msg_interfaces__rosidl_generator_py
+[2.352s] [ 88%] Built target msg_interfaces_s__rosidl_typesupport_introspection_c
+[2.354s] [ 97%] Built target msg_interfaces_s__rosidl_typesupport_fastrtps_c
+[2.354s] [100%] Built target msg_interfaces_s__rosidl_typesupport_c
+[2.358s] running egg_info
+[2.358s] writing msg_interfaces.egg-info/PKG-INFO
+[2.359s] writing dependency_links to msg_interfaces.egg-info/dependency_links.txt
+[2.359s] writing top-level names to msg_interfaces.egg-info/top_level.txt
+[2.359s] reading manifest file 'msg_interfaces.egg-info/SOURCES.txt'
+[2.359s] writing manifest file 'msg_interfaces.egg-info/SOURCES.txt'
+[2.359s] [100%] Built target ament_cmake_python_build_msg_interfaces_egg
+[2.378s] Invoked command in '/home/antoni/gazebo_maritime_ws/build/msg_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/antoni/gazebo_maritime_ws/build/msg_interfaces -- -j12 -l12
+[2.384s] Invoking command in '/home/antoni/gazebo_maritime_ws/build/msg_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/antoni/gazebo_maritime_ws/build/msg_interfaces
+[3.110s] -- Install configuration: ""
+[3.110s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/ament_index/resource_index/rosidl_interfaces/msg_interfaces
+[3.111s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/msg/InternalState.json
+[3.111s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces
+[3.112s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg
+[3.112s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg/internal_state.h
+[3.112s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg/detail
+[3.112s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg/detail/internal_state__description.c
+[3.113s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg/detail/internal_state__functions.c
+[3.113s] -- Installing: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg/detail/internal_state__type_support.c
+[3.113s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg/detail/internal_state__type_support.h
+[3.114s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg/detail/internal_state__struct.h
+[3.128s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg/detail/internal_state__functions.h
+[3.130s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg/rosidl_generator_c__visibility_control.h
+[3.130s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/environment/library_path.sh
+[3.130s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/environment/library_path.dsv
+[3.131s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/lib/libmsg_interfaces__rosidl_generator_c.so
+[3.131s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces
+[3.135s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg
+[3.135s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg/detail
+[3.135s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg/detail/internal_state__rosidl_typesupport_fastrtps_c.h
+[3.136s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[3.136s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/lib/libmsg_interfaces__rosidl_typesupport_fastrtps_c.so
+[3.136s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces
+[3.137s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg
+[3.137s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg/detail
+[3.137s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg/detail/internal_state__rosidl_typesupport_introspection_c.h
+[3.142s] -- Installing: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg/detail/internal_state__type_support.c
+[3.146s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[3.147s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/lib/libmsg_interfaces__rosidl_typesupport_introspection_c.so
+[3.147s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/lib/libmsg_interfaces__rosidl_typesupport_c.so
+[3.148s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces
+[3.151s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg
+[3.152s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg/internal_state.hpp
+[3.154s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg/detail
+[3.155s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg/detail/internal_state__traits.hpp
+[3.155s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg/detail/internal_state__type_support.hpp
+[3.156s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg/detail/internal_state__builder.hpp
+[3.158s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg/detail/internal_state__struct.hpp
+[3.159s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[3.162s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces
+[3.163s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg
+[3.163s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg/detail
+[3.163s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg/detail/internal_state__rosidl_typesupport_fastrtps_cpp.hpp
+[3.164s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg/detail/dds_fastrtps
+[3.164s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[3.165s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/lib/libmsg_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[3.165s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces
+[3.166s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg
+[3.166s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg/detail
+[3.166s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg/detail/internal_state__type_support.cpp
+[3.168s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg/detail/internal_state__rosidl_typesupport_introspection_cpp.hpp
+[3.171s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/lib/libmsg_interfaces__rosidl_typesupport_introspection_cpp.so
+[3.172s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/lib/libmsg_interfaces__rosidl_typesupport_cpp.so
+[3.172s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/environment/pythonpath.sh
+[3.172s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/environment/pythonpath.dsv
+[3.173s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/msg_interfaces-0.0.0-py3.12.egg-info
+[3.173s] -- Installing: /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/msg_interfaces-0.0.0-py3.12.egg-info/dependency_links.txt
+[3.173s] -- Installing: /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/msg_interfaces-0.0.0-py3.12.egg-info/SOURCES.txt
+[3.174s] -- Installing: /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/msg_interfaces-0.0.0-py3.12.egg-info/top_level.txt
+[3.174s] -- Installing: /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/msg_interfaces-0.0.0-py3.12.egg-info/PKG-INFO
+[3.174s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/msg_interfaces
+[3.174s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/msg_interfaces/_msg_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[3.175s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/msg_interfaces/msg_interfaces_s__rosidl_typesupport_c.so
+[3.176s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/msg_interfaces/_msg_interfaces_s.ep.rosidl_typesupport_c.c
+[3.177s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/msg_interfaces/__init__.py
+[3.177s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/msg_interfaces/msg
+[3.179s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/msg_interfaces/msg/_internal_state.py
+[3.182s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/msg_interfaces/msg/__init__.py
+[3.182s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/msg_interfaces/msg/_internal_state_s.c
+[3.185s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/msg_interfaces/msg_interfaces_s__rosidl_typesupport_introspection_c.so
+[3.187s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/msg_interfaces/msg_interfaces_s__rosidl_typesupport_fastrtps_c.so
+[3.191s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/msg_interfaces/_msg_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[3.191s] Listing '/home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/msg_interfaces'...
+[3.191s] Listing '/home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/msg_interfaces/msg'...
+[3.191s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/msg_interfaces/msg_interfaces_s__rosidl_typesupport_fastrtps_c.so
+[3.191s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/msg_interfaces/msg_interfaces_s__rosidl_typesupport_introspection_c.so
+[3.194s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/msg_interfaces/msg_interfaces_s__rosidl_typesupport_c.so
+[3.196s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/lib/libmsg_interfaces__rosidl_generator_py.so
+[3.196s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/msg/InternalState.idl
+[3.196s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/msg/InternalState.msg
+[3.196s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/ament_index/resource_index/package_run_dependencies/msg_interfaces
+[3.197s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/ament_index/resource_index/parent_prefix_path/msg_interfaces
+[3.197s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/environment/ament_prefix_path.sh
+[3.199s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/environment/ament_prefix_path.dsv
+[3.199s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/environment/path.sh
+[3.200s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/environment/path.dsv
+[3.201s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/local_setup.bash
+[3.201s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/local_setup.sh
+[3.201s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/local_setup.zsh
+[3.202s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/local_setup.dsv
+[3.202s] -- Installing: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/package.dsv
+[3.202s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/ament_index/resource_index/packages/msg_interfaces
+[3.202s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/cmake/export_msg_interfaces__rosidl_generator_cExport.cmake
+[3.202s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/cmake/export_msg_interfaces__rosidl_generator_cExport-noconfig.cmake
+[3.203s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/cmake/export_msg_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[3.203s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/cmake/export_msg_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[3.203s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/cmake/msg_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[3.203s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/cmake/msg_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[3.203s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/cmake/msg_interfaces__rosidl_typesupport_cExport.cmake
+[3.203s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/cmake/msg_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[3.204s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/cmake/export_msg_interfaces__rosidl_generator_cppExport.cmake
+[3.204s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/cmake/export_msg_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[3.204s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/cmake/export_msg_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[3.204s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/cmake/msg_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[3.205s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/cmake/msg_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[3.206s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/cmake/msg_interfaces__rosidl_typesupport_cppExport.cmake
+[3.209s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/cmake/msg_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[3.209s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/cmake/export_msg_interfaces__rosidl_generator_pyExport.cmake
+[3.210s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/cmake/export_msg_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[3.210s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/cmake/rosidl_cmake-extras.cmake
+[3.210s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.210s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.211s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[3.211s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[3.212s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[3.212s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[3.212s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/cmake/msg_interfacesConfig.cmake
+[3.217s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/cmake/msg_interfacesConfig-version.cmake
+[3.218s] -- Up-to-date: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/package.xml
+[3.254s] Invoked command in '/home/antoni/gazebo_maritime_ws/build/msg_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/antoni/gazebo_maritime_ws/build/msg_interfaces

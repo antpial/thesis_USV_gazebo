@@ -186,6 +186,11 @@ bool cdr_serialize_msg_interfaces__msg__InternalState(
     cdr << ros_message->ki_los;
   }
 
+  // Field name: yaw_vel
+  {
+    cdr << ros_message->yaw_vel;
+  }
+
   return true;
 }
 
@@ -287,6 +292,11 @@ bool cdr_deserialize_msg_interfaces__msg__InternalState(
   // Field name: ki_los
   {
     cdr >> ros_message->ki_los;
+  }
+
+  // Field name: yaw_vel
+  {
+    cdr >> ros_message->yaw_vel;
   }
 
   return true;
@@ -433,6 +443,13 @@ size_t get_serialized_size_msg_interfaces__msg__InternalState(
   // Field name: ki_los
   {
     size_t item_size = sizeof(ros_message->ki_los);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: yaw_vel
+  {
+    size_t item_size = sizeof(ros_message->yaw_vel);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -621,6 +638,14 @@ size_t max_serialized_size_msg_interfaces__msg__InternalState(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
+  // Field name: yaw_vel
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
 
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
@@ -630,7 +655,7 @@ size_t max_serialized_size_msg_interfaces__msg__InternalState(
     using DataType = msg_interfaces__msg__InternalState;
     is_plain =
       (
-      offsetof(DataType, ki_los) +
+      offsetof(DataType, yaw_vel) +
       last_member_size
       ) == ret_val;
   }
@@ -736,6 +761,11 @@ bool cdr_serialize_key_msg_interfaces__msg__InternalState(
   // Field name: ki_los
   {
     cdr << ros_message->ki_los;
+  }
+
+  // Field name: yaw_vel
+  {
+    cdr << ros_message->yaw_vel;
   }
 
   return true;
@@ -882,6 +912,13 @@ size_t get_serialized_size_key_msg_interfaces__msg__InternalState(
   // Field name: ki_los
   {
     size_t item_size = sizeof(ros_message->ki_los);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: yaw_vel
+  {
+    size_t item_size = sizeof(ros_message->yaw_vel);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -1068,6 +1105,14 @@ size_t max_serialized_size_key_msg_interfaces__msg__InternalState(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
+  // Field name: yaw_vel
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
     // All members are plain, and type is not empty.
@@ -1076,7 +1121,7 @@ size_t max_serialized_size_key_msg_interfaces__msg__InternalState(
     using DataType = msg_interfaces__msg__InternalState;
     is_plain =
       (
-      offsetof(DataType, ki_los) +
+      offsetof(DataType, yaw_vel) +
       last_member_size
       ) == ret_val;
   }

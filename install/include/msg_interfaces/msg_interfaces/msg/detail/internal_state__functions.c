@@ -44,6 +44,7 @@ msg_interfaces__msg__InternalState__init(msg_interfaces__msg__InternalState * ms
   // i_los
   // kp_los
   // ki_los
+  // yaw_vel
   return true;
 }
 
@@ -73,6 +74,7 @@ msg_interfaces__msg__InternalState__fini(msg_interfaces__msg__InternalState * ms
   // i_los
   // kp_los
   // ki_los
+  // yaw_vel
 }
 
 bool
@@ -159,6 +161,10 @@ msg_interfaces__msg__InternalState__are_equal(const msg_interfaces__msg__Interna
   if (lhs->ki_los != rhs->ki_los) {
     return false;
   }
+  // yaw_vel
+  if (lhs->yaw_vel != rhs->yaw_vel) {
+    return false;
+  }
   return true;
 }
 
@@ -212,6 +218,8 @@ msg_interfaces__msg__InternalState__copy(
   output->kp_los = input->kp_los;
   // ki_los
   output->ki_los = input->ki_los;
+  // yaw_vel
+  output->yaw_vel = input->yaw_vel;
   return true;
 }
 

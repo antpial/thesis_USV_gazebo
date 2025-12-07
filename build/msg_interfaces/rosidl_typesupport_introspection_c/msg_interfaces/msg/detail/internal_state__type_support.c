@@ -37,7 +37,7 @@ void msg_interfaces__msg__InternalState__rosidl_typesupport_introspection_c__Int
   msg_interfaces__msg__InternalState__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember msg_interfaces__msg__InternalState__rosidl_typesupport_introspection_c__InternalState_message_member_array[19] = {
+static rosidl_typesupport_introspection_c__MessageMember msg_interfaces__msg__InternalState__rosidl_typesupport_introspection_c__InternalState_message_member_array[20] = {
   {
     "header",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
@@ -379,13 +379,31 @@ static rosidl_typesupport_introspection_c__MessageMember msg_interfaces__msg__In
     NULL,  // fetch(index, &value) function pointer
     NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
+  },
+  {
+    "yaw_vel",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is key
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(msg_interfaces__msg__InternalState, yaw_vel),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
   }
 };
 
 static const rosidl_typesupport_introspection_c__MessageMembers msg_interfaces__msg__InternalState__rosidl_typesupport_introspection_c__InternalState_message_members = {
   "msg_interfaces__msg",  // message namespace
   "InternalState",  // message name
-  19,  // number of fields
+  20,  // number of fields
   sizeof(msg_interfaces__msg__InternalState),
   false,  // has_any_key_member_
   msg_interfaces__msg__InternalState__rosidl_typesupport_introspection_c__InternalState_message_member_array,  // message members

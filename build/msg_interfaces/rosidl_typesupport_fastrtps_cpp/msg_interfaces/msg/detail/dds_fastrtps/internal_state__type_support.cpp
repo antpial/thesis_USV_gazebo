@@ -130,6 +130,9 @@ cdr_serialize(
   // Member: ki_los
   cdr << ros_message.ki_los;
 
+  // Member: yaw_vel
+  cdr << ros_message.yaw_vel;
+
   return true;
 }
 
@@ -196,6 +199,9 @@ cdr_deserialize(
 
   // Member: ki_los
   cdr >> ros_message.ki_los;
+
+  // Member: yaw_vel
+  cdr >> ros_message.yaw_vel;
 
   return true;
 }  // NOLINT(readability/fn_size)
@@ -341,6 +347,13 @@ get_serialized_size(
   // Member: ki_los
   {
     size_t item_size = sizeof(ros_message.ki_los);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: yaw_vel
+  {
+    size_t item_size = sizeof(ros_message.yaw_vel);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -510,6 +523,13 @@ max_serialized_size_InternalState(
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
+  // Member: yaw_vel
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
 
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
@@ -519,7 +539,7 @@ max_serialized_size_InternalState(
     using DataType = msg_interfaces::msg::InternalState;
     is_plain =
       (
-      offsetof(DataType, ki_los) +
+      offsetof(DataType, yaw_vel) +
       last_member_size
       ) == ret_val;
   }
@@ -591,6 +611,9 @@ cdr_serialize_key(
 
   // Member: ki_los
   cdr << ros_message.ki_los;
+
+  // Member: yaw_vel
+  cdr << ros_message.yaw_vel;
 
   return true;
 }
@@ -735,6 +758,13 @@ get_serialized_size_key(
   // Member: ki_los
   {
     size_t item_size = sizeof(ros_message.ki_los);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: yaw_vel
+  {
+    size_t item_size = sizeof(ros_message.yaw_vel);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -922,6 +952,14 @@ max_serialized_size_key_InternalState(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
+  // Member: yaw_vel
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
     // All members are plain, and type is not empty.
@@ -930,7 +968,7 @@ max_serialized_size_key_InternalState(
     using DataType = msg_interfaces::msg::InternalState;
     is_plain =
       (
-      offsetof(DataType, ki_los) +
+      offsetof(DataType, yaw_vel) +
       last_member_size
       ) == ret_val;
   }

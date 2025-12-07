@@ -192,6 +192,16 @@
             "nested_type_name": ""
           },
           "default_value": ""
+        },
+        {
+          "name": "yaw_vel",
+          "type": {
+            "type_id": 10,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
         }
       ]
     },
@@ -251,7 +261,7 @@
   "type_hashes": [
     {
       "type_name": "msg_interfaces/msg/InternalState",
-      "hash_string": "RIHS01_030efb245c7e7cf1350c35e40c4f749cf5b7c98d8a388e9944096f46d58a78f3"
+      "hash_string": "RIHS01_4c07adceeeb49088321b0dc49c3c0841545e3f63acae6640a8a4ecaa4994fc11"
     },
     {
       "type_name": "builtin_interfaces/msg/Time",

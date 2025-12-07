@@ -87,6 +87,7 @@ class InternalState(metaclass=Metaclass_InternalState):
         '_i_los',
         '_kp_los',
         '_ki_los',
+        '_yaw_vel',
         '_check_fields',
     ]
 
@@ -110,6 +111,7 @@ class InternalState(metaclass=Metaclass_InternalState):
         'i_los': 'float',
         'kp_los': 'float',
         'ki_los': 'float',
+        'yaw_vel': 'float',
     }
 
     # This attribute is used to store an rosidl_parser.definition variable
@@ -125,6 +127,7 @@ class InternalState(metaclass=Metaclass_InternalState):
         rosidl_parser.definition.BasicType('double'),  # noqa: E501
         rosidl_parser.definition.BasicType('double'),  # noqa: E501
         rosidl_parser.definition.BasicType('double'),  # noqa: E501
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
@@ -165,6 +168,7 @@ class InternalState(metaclass=Metaclass_InternalState):
         self.i_los = kwargs.get('i_los', float())
         self.kp_los = kwargs.get('kp_los', float())
         self.ki_los = kwargs.get('ki_los', float())
+        self.yaw_vel = kwargs.get('yaw_vel', float())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -233,6 +237,8 @@ class InternalState(metaclass=Metaclass_InternalState):
         if self.kp_los != other.kp_los:
             return False
         if self.ki_los != other.ki_los:
+            return False
+        if self.yaw_vel != other.yaw_vel:
             return False
         return True
 
@@ -524,3 +530,18 @@ class InternalState(metaclass=Metaclass_InternalState):
             assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
                 "The 'ki_los' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
         self._ki_los = value
+
+    @builtins.property
+    def yaw_vel(self):
+        """Message field 'yaw_vel'."""
+        return self._yaw_vel
+
+    @yaw_vel.setter
+    def yaw_vel(self, value):
+        if self._check_fields:
+            assert \
+                isinstance(value, float), \
+                "The 'yaw_vel' field must be of type 'float'"
+            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
+                "The 'yaw_vel' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+        self._yaw_vel = value

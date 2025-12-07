@@ -1,0 +1,26 @@
+[5.099s] Invoking command in '/home/antoni/gazebo_maritime_ws/src/autopilot': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/antoni/gazebo_maritime_ws/build/autopilot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/autopilot build --build-base /home/antoni/gazebo_maritime_ws/build/autopilot/build install --record /home/antoni/gazebo_maritime_ws/build/autopilot/install.log --single-version-externally-managed install_data
+[5.739s] running egg_info
+[5.783s] writing ../../build/autopilot/autopilot.egg-info/PKG-INFO
+[5.783s] writing dependency_links to ../../build/autopilot/autopilot.egg-info/dependency_links.txt
+[5.783s] writing entry points to ../../build/autopilot/autopilot.egg-info/entry_points.txt
+[5.784s] writing requirements to ../../build/autopilot/autopilot.egg-info/requires.txt
+[5.784s] writing top-level names to ../../build/autopilot/autopilot.egg-info/top_level.txt
+[5.880s] reading manifest file '../../build/autopilot/autopilot.egg-info/SOURCES.txt'
+[5.883s] writing manifest file '../../build/autopilot/autopilot.egg-info/SOURCES.txt'
+[5.884s] running build
+[5.884s] running build_py
+[5.885s] running install
+[5.897s] running install_lib
+[5.950s] running install_data
+[5.950s] running install_egg_info
+[5.996s] removing '/home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/autopilot-0.0.0-py3.12.egg-info' (and everything under it)
+[5.999s] Copying ../../build/autopilot/autopilot.egg-info to /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/autopilot-0.0.0-py3.12.egg-info
+[6.002s] running install_scripts
+[6.333s] Installing add_markers script to /home/antoni/gazebo_maritime_ws/install/lib/autopilot
+[6.334s] Installing azimuth script to /home/antoni/gazebo_maritime_ws/install/lib/autopilot
+[6.336s] Installing checkpoints script to /home/antoni/gazebo_maritime_ws/install/lib/autopilot
+[6.339s] Installing compass script to /home/antoni/gazebo_maritime_ws/install/lib/autopilot
+[6.340s] Installing kalman script to /home/antoni/gazebo_maritime_ws/install/lib/autopilot
+[6.340s] Installing los script to /home/antoni/gazebo_maritime_ws/install/lib/autopilot
+[6.340s] writing list of installed files to '/home/antoni/gazebo_maritime_ws/build/autopilot/install.log'
+[6.477s] Invoked command in '/home/antoni/gazebo_maritime_ws/src/autopilot' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/antoni/gazebo_maritime_ws/build/autopilot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/autopilot build --build-base /home/antoni/gazebo_maritime_ws/build/autopilot/build install --record /home/antoni/gazebo_maritime_ws/build/autopilot/install.log --single-version-externally-managed install_data

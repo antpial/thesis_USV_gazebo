@@ -69,6 +69,8 @@ typedef struct msg_interfaces__msg__InternalState
   float kp_los;
   /// nastawa Ki
   float ki_los;
+  /// (dodane po znalezieniu Kp_az) szybkosc obrotu z imu
+  float yaw_vel;
 } msg_interfaces__msg__InternalState;
 
 // Struct for a sequence of msg_interfaces__msg__InternalState.

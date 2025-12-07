@@ -15,6 +15,7 @@ import math
 import copy
 import xml.etree.ElementTree as ET
 from msg_interfaces.msg import InternalState
+from sensor_msgs.msg import Imu
 
 
 @dataclass
@@ -38,8 +39,9 @@ class Los_node(Node):
         self.v = 0.6    # predkosc
         self.given_position = GpsState(lat= -33.721365, lon=150.675268)  # punkt docelowy
         self.starting_position = GpsState(lat=0, lon=0) # pozycja startowa (do liczenia dryfu)
-        self.p = 0.1 # parametr regulatora P
-        self.alpha_gps = 0.1 # wspolczynnik filtra dolnoprzepustowego dla azymutu docelowego
+        self.Kp_az = 0.025 # .025 to optymalna wyliczona wartosc dla los
+        self.Kd_az = 0.5 # wzmocnienie czlonu D regulatora obrotu
+        self.yaw_vel = 0.0 # predkosc katowa yaw z imu
 
         # Dane pomiarowe
         self.current_position = GpsState()
@@ -74,7 +76,7 @@ class Los_node(Node):
         self.distance_threshold = 5.0 # odleglosc w metrach do punktu docelowego przy ktorej uznajemy ze dotarlismy do punktu
         self.reached_all_checkpoints = False # flaga czy dotarlismy do wszystkich punktow
 
-        # publisher stanu wewnetrznego
+        # publisher stanu wewnetrznego',  #
         self.timer = self.create_timer(self.timer_period, self.publish_internal_state)
 
         # Subskrybujem /magnetometer
@@ -95,6 +97,14 @@ class Los_node(Node):
         )
         self.get_logger().info("Gps subscriber started!")
 
+        self.imu_sub = self.create_subscription(
+            Imu,
+            '/imu',  # Sprawdź nazwę tematu!
+            self.imu_callback,
+            10
+        )
+        self.get_logger().info("IMU subscriber started!")
+
         # publishery na silniki
         self.left_pub = self.create_publisher(Float64, '/left_thrust', 10)
         self.right_pub = self.create_publisher(Float64, '/right_thrust', 10)
@@ -107,6 +117,10 @@ class Los_node(Node):
 
         # publisher stanu wewnetrznego
         self.diag_pub = self.create_publisher(InternalState, '/usv/stan', 10)
+
+    def imu_callback(self, msg: Imu):
+        self.yaw_vel = msg.angular_velocity.z
+        pass
 
     # Callbacki do subskrybcji
     def publish_internal_state(self):
@@ -136,6 +150,7 @@ class Los_node(Node):
         msg.i_los = float(self.I_los)
         msg.kp_los = float(self.Kp_los)
         msg.ki_los = float(self.Ki_los)
+        msg.yaw_vel = float(self.yaw_vel)
 
         self.diag_pub.publish(msg)
 
@@ -280,6 +295,7 @@ class Los_node(Node):
         self.get_logger().info(f"goal lat.: {self.given_position.lat:.5f}, goal lon.: {self.given_position.lon:.5f}")
         self.get_logger().info(f"cur. check.: {self.current_checkpoint_index}, Distance to goal: {self.distance:.2f} m")
         self.get_logger().info(f"Drift (de): {self.de:.2f} m, P_los: {self.P_los:.2f}, I_los: {self.I_los:.2f}")
+        self.get_logger().info(f"Kp_az: {self.Kp_az:.4f}, Kd_az: {self.Kd_az:.4f}, Yaw_vel: {self.yaw_vel:.4f}")
 
 
     def reached_checkpoint(self):
@@ -394,8 +410,8 @@ class Los_node(Node):
         # licze blad azymutow normalizujac bo w stopniach jest modulo 360
         self.e = (self.given_azimuth - self.current_azimuth + 180.0) % 360.0 - 180.0
 
-        # steruje wartoscia d (skret) regulatorem P
-        self.d = self.e * self.p
+        # steruje wartoscia d (skret) regulatorem PD
+        self.d = self.e * self.Kp_az + self.yaw_vel * self.Kd_az # dodaje skladnik z predkosci katowej yaw z imu
 
         # ustawiam ciag na silnikach
         self.publish_thrust()

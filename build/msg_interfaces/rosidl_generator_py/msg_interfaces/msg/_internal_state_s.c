@@ -227,6 +227,15 @@ bool msg_interfaces__msg__internal_state__convert_from_py(PyObject * _pymsg, voi
     ros_message->ki_los = (float)PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
+  {  // yaw_vel
+    PyObject * field = PyObject_GetAttrString(_pymsg, "yaw_vel");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->yaw_vel = (float)PyFloat_AS_DOUBLE(field);
+    Py_DECREF(field);
+  }
 
   return true;
 }
@@ -455,6 +464,17 @@ PyObject * msg_interfaces__msg__internal_state__convert_to_py(void * raw_ros_mes
     field = PyFloat_FromDouble(ros_message->ki_los);
     {
       int rc = PyObject_SetAttrString(_pymessage, "ki_los", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // yaw_vel
+    PyObject * field = NULL;
+    field = PyFloat_FromDouble(ros_message->yaw_vel);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "yaw_vel", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

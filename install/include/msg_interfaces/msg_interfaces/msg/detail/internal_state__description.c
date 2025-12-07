@@ -11,10 +11,10 @@ msg_interfaces__msg__InternalState__get_type_hash(
 {
   (void)type_support;
   static rosidl_type_hash_t hash = {1, {
-      0x03, 0x0e, 0xfb, 0x24, 0x5c, 0x7e, 0x7c, 0xf1,
-      0x35, 0x0c, 0x35, 0xe4, 0x0c, 0x4f, 0x74, 0x9c,
-      0xf5, 0xb7, 0xc9, 0x8d, 0x8a, 0x38, 0x8e, 0x99,
-      0x44, 0x09, 0x6f, 0x46, 0xd5, 0x8a, 0x78, 0xf3,
+      0x4c, 0x07, 0xad, 0xce, 0xee, 0xb4, 0x90, 0x88,
+      0x32, 0x1b, 0x0d, 0xc4, 0x9c, 0x3c, 0x08, 0x41,
+      0x54, 0x5e, 0x3f, 0x63, 0xac, 0xae, 0x66, 0x40,
+      0xa8, 0xa4, 0xec, 0xaa, 0x49, 0x94, 0xfc, 0x11,
     }};
   return &hash;
 }
@@ -23,8 +23,8 @@ msg_interfaces__msg__InternalState__get_type_hash(
 #include <string.h>
 
 // Include directives for referenced types
-#include "std_msgs/msg/detail/header__functions.h"
 #include "builtin_interfaces/msg/detail/time__functions.h"
+#include "std_msgs/msg/detail/header__functions.h"
 
 // Hashes for external referenced types
 #ifndef NDEBUG
@@ -66,6 +66,7 @@ static char msg_interfaces__msg__InternalState__FIELD_NAME__p_los[] = "p_los";
 static char msg_interfaces__msg__InternalState__FIELD_NAME__i_los[] = "i_los";
 static char msg_interfaces__msg__InternalState__FIELD_NAME__kp_los[] = "kp_los";
 static char msg_interfaces__msg__InternalState__FIELD_NAME__ki_los[] = "ki_los";
+static char msg_interfaces__msg__InternalState__FIELD_NAME__yaw_vel[] = "yaw_vel";
 
 static rosidl_runtime_c__type_description__Field msg_interfaces__msg__InternalState__FIELDS[] = {
   {
@@ -258,6 +259,16 @@ static rosidl_runtime_c__type_description__Field msg_interfaces__msg__InternalSt
     },
     {NULL, 0, 0},
   },
+  {
+    {msg_interfaces__msg__InternalState__FIELD_NAME__yaw_vel, 7, 7},
+    {
+      rosidl_runtime_c__type_description__FieldType__FIELD_TYPE_FLOAT,
+      0,
+      0,
+      {NULL, 0, 0},
+    },
+    {NULL, 0, 0},
+  },
 };
 
 static rosidl_runtime_c__type_description__IndividualTypeDescription msg_interfaces__msg__InternalState__REFERENCED_TYPE_DESCRIPTIONS[] = {
@@ -280,7 +291,7 @@ msg_interfaces__msg__InternalState__get_type_description(
   static const rosidl_runtime_c__type_description__TypeDescription description = {
     {
       {msg_interfaces__msg__InternalState__TYPE_NAME, 32, 32},
-      {msg_interfaces__msg__InternalState__FIELDS, 19, 19},
+      {msg_interfaces__msg__InternalState__FIELDS, 20, 20},
     },
     {msg_interfaces__msg__InternalState__REFERENCED_TYPE_DESCRIPTIONS, 2, 2},
   };
@@ -326,7 +337,8 @@ static char toplevel_type_raw_source[] =
   "float32 p_los      # warto\\xc5\\x9b\\xc4\\x87 wyj\\xc5\\x9bciowa cz\\xc5\\x82onu P\n"
   "float32 i_los      # wartosc wyjsciowa czlonu I\n"
   "float32 kp_los     # nastawa Kp\n"
-  "float32 ki_los     # nastawa Ki";
+  "float32 ki_los     # nastawa Ki\n"
+  "float32 yaw_vel    # (dodane po znalezieniu Kp_az) szybkosc obrotu z imu";
 
 static char msg_encoding[] = "msg";
 
@@ -340,7 +352,7 @@ msg_interfaces__msg__InternalState__get_individual_type_description_source(
   static const rosidl_runtime_c__type_description__TypeSource source = {
     {msg_interfaces__msg__InternalState__TYPE_NAME, 32, 32},
     {msg_encoding, 3, 3},
-    {toplevel_type_raw_source, 991, 991},
+    {toplevel_type_raw_source, 1064, 1064},
   };
   return &source;
 }

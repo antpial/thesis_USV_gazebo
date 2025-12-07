@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "msg_interfaces/msg/detail/internal_state__functions.h"
 #include "rosidl_typesupport_interface/macros.h"
-#include "msg_interfaces/msg/detail/internal_state__type_support.h"
 #include "msg_interfaces/msg/detail/internal_state__struct.h"
+#include "msg_interfaces/msg/detail/internal_state__type_support.h"
+#include "msg_interfaces/msg/detail/internal_state__functions.h"
 
 #ifdef __cplusplus
 extern "C"

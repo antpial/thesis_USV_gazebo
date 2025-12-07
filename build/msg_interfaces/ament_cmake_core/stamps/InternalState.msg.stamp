@@ -30,3 +30,4 @@ float32 p_los      # wartość wyjściowa członu P
 float32 i_los      # wartosc wyjsciowa czlonu I
 float32 kp_los     # nastawa Kp
 float32 ki_los     # nastawa Ki
+float32 yaw_vel    # (dodane po znalezieniu Kp_az) szybkosc obrotu z imu

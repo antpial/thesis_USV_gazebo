@@ -84,6 +84,10 @@ module msg_interfaces {
       @verbatim (language="comment", text=
         "nastawa Ki")
       float ki_los;
+
+      @verbatim (language="comment", text=
+        "(dodane po znalezieniu Kp_az) szybkosc obrotu z imu")
+      float yaw_vel;
     };
   };
 };
