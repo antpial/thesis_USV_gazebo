@@ -1,0 +1,338 @@
+[0.000000] (-) TimerEvent: {}
+[0.000337] (-) JobUnselected: {'identifier': 'autopilot'}
+[0.000502] (-) JobUnselected: {'identifier': 'gazebo_maritime'}
+[0.000547] (-) JobUnselected: {'identifier': 'propeller_controller'}
+[0.000608] (-) JobUnselected: {'identifier': 'research'}
+[0.000631] (-) JobUnselected: {'identifier': 'ros_gz_bridge_custom'}
+[0.000684] (msg_interfaces) JobQueued: {'identifier': 'msg_interfaces', 'dependencies': OrderedDict()}
+[0.000708] (msg_interfaces) JobStarted: {'identifier': 'msg_interfaces'}
+[0.008204] (msg_interfaces) JobProgress: {'identifier': 'msg_interfaces', 'progress': 'cmake'}
+[0.009721] (msg_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/antoni/gazebo_maritime_ws/src/msg_interfaces', '-DCMAKE_INSTALL_PREFIX=/home/antoni/gazebo_maritime_ws/install'], 'cwd': '/home/antoni/gazebo_maritime_ws/build/msg_interfaces', 'env': OrderedDict({'GZ_SIM_SYSTEM_PLUGIN_PATH': '/home/antoni/gazebo_maritime_ws/install/lib:/home/antoni/gazebo_maritime_ws/install/lib:', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'PYTHON_BASIC_REPL': '1', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/models:/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/models:', 'USER': 'antoni', 'FONTCONFIG_PATH': '/etc/fonts', 'GIO_MODULE_DIR': '/home/antoni/snap/code/common/.cache/gio-modules', 'XDG_SESSION_TYPE': 'wayland', 'GIT_ASKPASS': '/snap/code/215/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'GTK_EXE_PREFIX_VSCODE_SNAP_ORIG': '', 'GDK_BACKEND_VSCODE_SNAP_ORIG': '', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/antoni/gazebo_maritime_ws/install/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/antoni', 'CHROME_DESKTOP': 'code.desktop', 'LOCPATH_VSCODE_SNAP_ORIG': '', 'OLDPWD': '/home/antoni/gazebo_maritime_ws/src', 'TERM_PROGRAM_VERSION': '1.106.3', 'DESKTOP_SESSION': 'ubuntu', 'GTK_PATH': '/snap/code/215/usr/lib/x86_64-linux-gnu/gtk-3.0', 'XDG_DATA_HOME_VSCODE_SNAP_ORIG': '', 'GTK_IM_MODULE_FILE': '/home/antoni/snap/code/common/.cache/immodules/immodules.cache', 'GIO_LAUNCHED_DESKTOP_FILE': '/var/lib/snapd/desktop/applications/code_code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG': '', 'VSCODE_GIT_ASKPASS_MAIN': '/snap/code/215/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/snap/code/215/usr/share/code/code', 'MANAGERPID': '1967', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'SYSTEMD_EXEC_PID': '2254', 'BUNDLED_DEBUGPY_PATH': '/home/antoni/.vscode/extensions/ms-python.debugpy-2025.16.0-linux-x64/bundled/libs/debugpy', 'IM_CONFIG_CHECK_ENV': '1', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3025', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/antoni/gazebo_maritime_ws/install:/home/antoni/gazebo_maritime_ws/src/research/research/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'antoni', 'JOURNAL_STREAM': '9:14210', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'XDG_DATA_DIRS_VSCODE_SNAP_ORIG': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'USERNAME': 'antoni', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/home/antoni/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/home/antoni/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/antoni/.vscode/extensions/ms-python.debugpy-2025.16.0-linux-x64/bundled/scripts/noConfigScripts', 'SESSION_MANAGER': 'local/hpUbuntu24:@/tmp/.ICE-unix/2210,unix/hpUbuntu24:/tmp/.ICE-unix/2210', 'GTK_EXE_PREFIX': '/snap/code/215/usr', 'INVOCATION_ID': 'e0bedae56c67410883f355fdcb8afca1', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LOCPATH': '/snap/code/215/usr/lib/locale', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/antoni/.vscode/extensions/ms-python.debugpy-2025.16.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-c02d666932040cb7.txt', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'PYTHONSTARTUP': '/home/antoni/.config/Code/User/workspaceStorage/e12e7d6e5ef8f21eb3c6dfa56d101651/ms-python.python/pythonrc.py', 'GIO_MODULE_DIR_VSCODE_SNAP_ORIG': '', 'XDG_DATA_HOME': '/home/antoni/snap/code/215/.local/share', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.TD8HH3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-661abbece4.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'GSETTINGS_SCHEMA_DIR': '/home/antoni/snap/code/215/.local/share/glib-2.0/schemas', 'AMENT_PREFIX_PATH': '/home/antoni/gazebo_maritime_ws/install:/opt/ros/jazzy', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GTK_PATH_VSCODE_SNAP_ORIG': '', 'FONTCONFIG_FILE': '/etc/fonts/fonts.conf', 'GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG': '', 'GJS_DEBUG_OUTPUT': 'stderr', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/antoni/gazebo_maritime_ws/build/msg_interfaces', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/home/antoni/snap/code/215/.local/share:/home/antoni/snap/code/215:/snap/code/215/usr/share:/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/home/antoni/gazebo_maritime_ws/install:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.044747] (msg_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.099772] (-) TimerEvent: {}
+[0.200191] (-) TimerEvent: {}
+[0.301252] (-) TimerEvent: {}
+[0.401892] (-) TimerEvent: {}
+[0.483506] (msg_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[0.489580] (msg_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.501940] (-) TimerEvent: {}
+[0.561973] (msg_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.596869] (msg_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.6 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[0.597921] (msg_interfaces) StdoutLine: {'line': b'-- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)\n'}
+[0.601988] (-) TimerEvent: {}
+[0.702250] (-) TimerEvent: {}
+[0.802621] (-) TimerEvent: {}
+[0.903448] (-) TimerEvent: {}
+[1.004598] (-) TimerEvent: {}
+[1.105800] (-) TimerEvent: {}
+[1.206450] (-) TimerEvent: {}
+[1.306690] (-) TimerEvent: {}
+[1.407022] (-) TimerEvent: {}
+[1.507756] (-) TimerEvent: {}
+[1.608306] (-) TimerEvent: {}
+[1.708729] (-) TimerEvent: {}
+[1.808982] (-) TimerEvent: {}
+[1.909293] (-) TimerEvent: {}
+[1.986189] (msg_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[2.009501] (-) TimerEvent: {}
+[2.110322] (-) TimerEvent: {}
+[2.212198] (-) TimerEvent: {}
+[2.313030] (-) TimerEvent: {}
+[2.413967] (-) TimerEvent: {}
+[2.514522] (-) TimerEvent: {}
+[2.615377] (-) TimerEvent: {}
+[2.715984] (-) TimerEvent: {}
+[2.816926] (-) TimerEvent: {}
+[2.917250] (-) TimerEvent: {}
+[2.922899] (msg_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.017403] (-) TimerEvent: {}
+[3.117959] (-) TimerEvent: {}
+[3.218870] (-) TimerEvent: {}
+[3.319646] (-) TimerEvent: {}
+[3.420442] (-) TimerEvent: {}
+[3.521503] (-) TimerEvent: {}
+[3.622012] (-) TimerEvent: {}
+[3.723093] (-) TimerEvent: {}
+[3.824291] (-) TimerEvent: {}
+[3.926341] (-) TimerEvent: {}
+[4.026998] (-) TimerEvent: {}
+[4.127286] (-) TimerEvent: {}
+[4.227652] (-) TimerEvent: {}
+[4.328112] (-) TimerEvent: {}
+[4.380099] (msg_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.386649] (msg_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[4.428229] (-) TimerEvent: {}
+[4.528811] (-) TimerEvent: {}
+[4.629327] (-) TimerEvent: {}
+[4.729984] (-) TimerEvent: {}
+[4.753606] (msg_interfaces) StdoutLine: {'line': b'-- Found PythonExtra: /usr/bin/python3  \n'}
+[4.830437] (-) TimerEvent: {}
+[4.931594] (-) TimerEvent: {}
+[5.031858] (-) TimerEvent: {}
+[5.132148] (-) TimerEvent: {}
+[5.232493] (-) TimerEvent: {}
+[5.333249] (-) TimerEvent: {}
+[5.434007] (-) TimerEvent: {}
+[5.534622] (-) TimerEvent: {}
+[5.635595] (-) TimerEvent: {}
+[5.736599] (-) TimerEvent: {}
+[5.752082] (msg_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[5.836734] (-) TimerEvent: {}
+[5.837158] (msg_interfaces) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[5.902956] (msg_interfaces) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[5.906927] (msg_interfaces) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[5.916860] (msg_interfaces) StdoutLine: {'line': b'-- Configuring done (5.9s)\n'}
+[5.936929] (-) TimerEvent: {}
+[5.974373] (msg_interfaces) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[5.994932] (msg_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/antoni/gazebo_maritime_ws/build/msg_interfaces\n'}
+[6.006808] (msg_interfaces) CommandEnded: {'returncode': 0}
+[6.007439] (msg_interfaces) JobProgress: {'identifier': 'msg_interfaces', 'progress': 'build'}
+[6.008932] (msg_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/antoni/gazebo_maritime_ws/build/msg_interfaces', '--', '-j12', '-l12'], 'cwd': '/home/antoni/gazebo_maritime_ws/build/msg_interfaces', 'env': OrderedDict({'GZ_SIM_SYSTEM_PLUGIN_PATH': '/home/antoni/gazebo_maritime_ws/install/lib:/home/antoni/gazebo_maritime_ws/install/lib:', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'PYTHON_BASIC_REPL': '1', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/models:/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/models:', 'USER': 'antoni', 'FONTCONFIG_PATH': '/etc/fonts', 'GIO_MODULE_DIR': '/home/antoni/snap/code/common/.cache/gio-modules', 'XDG_SESSION_TYPE': 'wayland', 'GIT_ASKPASS': '/snap/code/215/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'GTK_EXE_PREFIX_VSCODE_SNAP_ORIG': '', 'GDK_BACKEND_VSCODE_SNAP_ORIG': '', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/antoni/gazebo_maritime_ws/install/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/antoni', 'CHROME_DESKTOP': 'code.desktop', 'LOCPATH_VSCODE_SNAP_ORIG': '', 'OLDPWD': '/home/antoni/gazebo_maritime_ws/src', 'TERM_PROGRAM_VERSION': '1.106.3', 'DESKTOP_SESSION': 'ubuntu', 'GTK_PATH': '/snap/code/215/usr/lib/x86_64-linux-gnu/gtk-3.0', 'XDG_DATA_HOME_VSCODE_SNAP_ORIG': '', 'GTK_IM_MODULE_FILE': '/home/antoni/snap/code/common/.cache/immodules/immodules.cache', 'GIO_LAUNCHED_DESKTOP_FILE': '/var/lib/snapd/desktop/applications/code_code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG': '', 'VSCODE_GIT_ASKPASS_MAIN': '/snap/code/215/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/snap/code/215/usr/share/code/code', 'MANAGERPID': '1967', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'SYSTEMD_EXEC_PID': '2254', 'BUNDLED_DEBUGPY_PATH': '/home/antoni/.vscode/extensions/ms-python.debugpy-2025.16.0-linux-x64/bundled/libs/debugpy', 'IM_CONFIG_CHECK_ENV': '1', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3025', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/antoni/gazebo_maritime_ws/install:/home/antoni/gazebo_maritime_ws/src/research/research/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'antoni', 'JOURNAL_STREAM': '9:14210', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'XDG_DATA_DIRS_VSCODE_SNAP_ORIG': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'USERNAME': 'antoni', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/home/antoni/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/home/antoni/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/antoni/.vscode/extensions/ms-python.debugpy-2025.16.0-linux-x64/bundled/scripts/noConfigScripts', 'SESSION_MANAGER': 'local/hpUbuntu24:@/tmp/.ICE-unix/2210,unix/hpUbuntu24:/tmp/.ICE-unix/2210', 'GTK_EXE_PREFIX': '/snap/code/215/usr', 'INVOCATION_ID': 'e0bedae56c67410883f355fdcb8afca1', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LOCPATH': '/snap/code/215/usr/lib/locale', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/antoni/.vscode/extensions/ms-python.debugpy-2025.16.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-c02d666932040cb7.txt', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'PYTHONSTARTUP': '/home/antoni/.config/Code/User/workspaceStorage/e12e7d6e5ef8f21eb3c6dfa56d101651/ms-python.python/pythonrc.py', 'GIO_MODULE_DIR_VSCODE_SNAP_ORIG': '', 'XDG_DATA_HOME': '/home/antoni/snap/code/215/.local/share', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.TD8HH3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-661abbece4.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'GSETTINGS_SCHEMA_DIR': '/home/antoni/snap/code/215/.local/share/glib-2.0/schemas', 'AMENT_PREFIX_PATH': '/home/antoni/gazebo_maritime_ws/install:/opt/ros/jazzy', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GTK_PATH_VSCODE_SNAP_ORIG': '', 'FONTCONFIG_FILE': '/etc/fonts/fonts.conf', 'GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG': '', 'GJS_DEBUG_OUTPUT': 'stderr', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/antoni/gazebo_maritime_ws/build/msg_interfaces', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/home/antoni/snap/code/215/.local/share:/home/antoni/snap/code/215:/snap/code/215/usr/share:/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/home/antoni/gazebo_maritime_ws/install:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[6.037036] (-) TimerEvent: {}
+[6.127074] (msg_interfaces) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating type hashes for ROS interfaces\x1b[0m\n'}
+[6.137322] (-) TimerEvent: {}
+[6.148938] (msg_interfaces) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_copy_msg_interfaces\n'}
+[6.237417] (-) TimerEvent: {}
+[6.337718] (-) TimerEvent: {}
+[6.437974] (-) TimerEvent: {}
+[6.487793] (msg_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[6.489255] (msg_interfaces) StdoutLine: {'line': b'creating msg_interfaces.egg-info\n'}
+[6.512575] (msg_interfaces) StdoutLine: {'line': b'writing msg_interfaces.egg-info/PKG-INFO\n'}
+[6.512966] (msg_interfaces) StdoutLine: {'line': b'writing dependency_links to msg_interfaces.egg-info/dependency_links.txt\n'}
+[6.513114] (msg_interfaces) StdoutLine: {'line': b'writing top-level names to msg_interfaces.egg-info/top_level.txt\n'}
+[6.513219] (msg_interfaces) StdoutLine: {'line': b"writing manifest file 'msg_interfaces.egg-info/SOURCES.txt'\n"}
+[6.538379] (-) TimerEvent: {}
+[6.552913] (msg_interfaces) StdoutLine: {'line': b'[  2%] Built target msg_interfaces__rosidl_generator_type_description\n'}
+[6.574553] (msg_interfaces) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[6.598187] (msg_interfaces) StdoutLine: {'line': b'[  8%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[6.630446] (msg_interfaces) StdoutLine: {'line': b"reading manifest file 'msg_interfaces.egg-info/SOURCES.txt'\n"}
+[6.632871] (msg_interfaces) StdoutLine: {'line': b"writing manifest file 'msg_interfaces.egg-info/SOURCES.txt'\n"}
+[6.638462] (-) TimerEvent: {}
+[6.705730] (msg_interfaces) StdoutLine: {'line': b'[  8%] Built target ament_cmake_python_build_msg_interfaces_egg\n'}
+[6.738607] (-) TimerEvent: {}
+[6.838925] (-) TimerEvent: {}
+[6.939261] (-) TimerEvent: {}
+[7.039675] (-) TimerEvent: {}
+[7.113993] (msg_interfaces) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/msg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/msg_interfaces/msg/detail/internal_state__functions.c.o\x1b[0m\n'}
+[7.114830] (msg_interfaces) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/msg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/msg_interfaces/msg/detail/internal_state__type_support.c.o\x1b[0m\n'}
+[7.118238] (msg_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/msg_interfaces__rosidl_generator_c.dir/rosidl_generator_c/msg_interfaces/msg/detail/internal_state__description.c.o\x1b[0m\n'}
+[7.123975] (msg_interfaces) StdoutLine: {'line': b'[ 17%] Built target msg_interfaces__cpp\n'}
+[7.139900] (-) TimerEvent: {}
+[7.236871] (msg_interfaces) StdoutLine: {'line': b'[ 20%] \x1b[32m\x1b[1mLinking C shared library libmsg_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[7.240072] (-) TimerEvent: {}
+[7.316928] (msg_interfaces) StdoutLine: {'line': b'[ 20%] Built target msg_interfaces__rosidl_generator_c\n'}
+[7.340545] (-) TimerEvent: {}
+[7.347725] (msg_interfaces) StdoutLine: {'line': b'[ 23%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[7.348469] (msg_interfaces) StdoutLine: {'line': b'[ 26%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[7.348880] (msg_interfaces) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[7.350304] (msg_interfaces) StdoutLine: {'line': b'[ 38%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[7.351676] (msg_interfaces) StdoutLine: {'line': b'[ 38%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[7.352037] (msg_interfaces) StdoutLine: {'line': b'[ 38%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[7.441150] (-) TimerEvent: {}
+[7.542704] (-) TimerEvent: {}
+[7.644069] (-) TimerEvent: {}
+[7.745153] (-) TimerEvent: {}
+[7.777586] (msg_interfaces) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/msg_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/msg_interfaces/msg/internal_state__type_support.cpp.o\x1b[0m\n'}
+[7.845444] (-) TimerEvent: {}
+[7.919208] (msg_interfaces) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding C object CMakeFiles/msg_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/msg_interfaces/msg/detail/internal_state__type_support.c.o\x1b[0m\n'}
+[7.939168] (msg_interfaces) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/msg_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/msg_interfaces/msg/internal_state__type_support.cpp.o\x1b[0m\n'}
+[7.945626] (-) TimerEvent: {}
+[7.993038] (msg_interfaces) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking C shared library libmsg_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[8.022071] (msg_interfaces) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/msg_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/msg_interfaces/msg/detail/internal_state__type_support.cpp.o\x1b[0m\n'}
+[8.027573] (msg_interfaces) StdoutLine: {'line': b'[ 55%] \x1b[32m\x1b[1mLinking CXX shared library libmsg_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[8.045960] (-) TimerEvent: {}
+[8.049698] (msg_interfaces) StdoutLine: {'line': b'[ 55%] Built target msg_interfaces__rosidl_typesupport_introspection_c\n'}
+[8.084119] (msg_interfaces) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/msg_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/msg_interfaces/msg/detail/dds_fastrtps/internal_state__type_support.cpp.o\x1b[0m\n'}
+[8.092444] (msg_interfaces) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/msg_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/msg_interfaces/msg/detail/internal_state__type_support_c.cpp.o\x1b[0m\n'}
+[8.113456] (msg_interfaces) StdoutLine: {'line': b'[ 61%] Built target msg_interfaces__rosidl_typesupport_c\n'}
+[8.146199] (-) TimerEvent: {}
+[8.247123] (-) TimerEvent: {}
+[8.347546] (-) TimerEvent: {}
+[8.385907] (msg_interfaces) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library libmsg_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[8.442031] (msg_interfaces) StdoutLine: {'line': b'[ 64%] Built target msg_interfaces__rosidl_typesupport_cpp\n'}
+[8.447668] (-) TimerEvent: {}
+[8.548085] (-) TimerEvent: {}
+[8.567506] (msg_interfaces) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX shared library libmsg_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[8.648549] (-) TimerEvent: {}
+[8.688365] (msg_interfaces) StdoutLine: {'line': b'[ 67%] Built target msg_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[8.748664] (-) TimerEvent: {}
+[8.750526] (msg_interfaces) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libmsg_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[8.821050] (msg_interfaces) StdoutLine: {'line': b'[ 73%] \x1b[32m\x1b[1mLinking CXX shared library libmsg_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[8.829344] (msg_interfaces) StdoutLine: {'line': b'[ 73%] Built target msg_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[8.848787] (-) TimerEvent: {}
+[8.902214] (msg_interfaces) StdoutLine: {'line': b'[ 73%] Built target msg_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[8.941637] (msg_interfaces) StdoutLine: {'line': b'[ 73%] Built target msg_interfaces\n'}
+[8.948898] (-) TimerEvent: {}
+[8.999380] (msg_interfaces) StdoutLine: {'line': b'[ 76%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[9.049008] (-) TimerEvent: {}
+[9.149808] (-) TimerEvent: {}
+[9.250305] (-) TimerEvent: {}
+[9.352017] (-) TimerEvent: {}
+[9.453948] (-) TimerEvent: {}
+[9.554602] (-) TimerEvent: {}
+[9.655147] (-) TimerEvent: {}
+[9.755800] (-) TimerEvent: {}
+[9.807579] (msg_interfaces) StdoutLine: {'line': b'[ 76%] Built target msg_interfaces__py\n'}
+[9.849786] (msg_interfaces) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding C object CMakeFiles/msg_interfaces__rosidl_generator_py.dir/rosidl_generator_py/msg_interfaces/msg/_internal_state_s.c.o\x1b[0m\n'}
+[9.855934] (-) TimerEvent: {}
+[9.956433] (-) TimerEvent: {}
+[10.056858] (-) TimerEvent: {}
+[10.157564] (-) TimerEvent: {}
+[10.209694] (msg_interfaces) StdoutLine: {'line': b'[ 82%] \x1b[32m\x1b[1mLinking C shared library libmsg_interfaces__rosidl_generator_py.so\x1b[0m\n'}
+[10.257728] (-) TimerEvent: {}
+[10.326435] (msg_interfaces) StdoutLine: {'line': b'[ 82%] Built target msg_interfaces__rosidl_generator_py\n'}
+[10.358216] (-) TimerEvent: {}
+[10.389683] (msg_interfaces) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/msg_interfaces_s__rosidl_typesupport_c.dir/rosidl_generator_py/msg_interfaces/_msg_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[10.390269] (msg_interfaces) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/msg_interfaces_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/msg_interfaces/_msg_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[10.395780] (msg_interfaces) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/msg_interfaces_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/msg_interfaces/_msg_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[10.458286] (-) TimerEvent: {}
+[10.537757] (msg_interfaces) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/msg_interfaces/msg_interfaces_s__rosidl_typesupport_c.so\x1b[0m\n'}
+[10.550896] (msg_interfaces) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/msg_interfaces/msg_interfaces_s__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[10.558453] (-) TimerEvent: {}
+[10.570738] (msg_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/msg_interfaces/msg_interfaces_s__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[10.576344] (msg_interfaces) StdoutLine: {'line': b'[100%] Built target msg_interfaces_s__rosidl_typesupport_c\n'}
+[10.601175] (msg_interfaces) StdoutLine: {'line': b'[100%] Built target msg_interfaces_s__rosidl_typesupport_introspection_c\n'}
+[10.624573] (msg_interfaces) StdoutLine: {'line': b'[100%] Built target msg_interfaces_s__rosidl_typesupport_fastrtps_c\n'}
+[10.646700] (msg_interfaces) CommandEnded: {'returncode': 0}
+[10.649911] (msg_interfaces) JobProgress: {'identifier': 'msg_interfaces', 'progress': 'install'}
+[10.658612] (-) TimerEvent: {}
+[10.671745] (msg_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/antoni/gazebo_maritime_ws/build/msg_interfaces'], 'cwd': '/home/antoni/gazebo_maritime_ws/build/msg_interfaces', 'env': OrderedDict({'GZ_SIM_SYSTEM_PLUGIN_PATH': '/home/antoni/gazebo_maritime_ws/install/lib:/home/antoni/gazebo_maritime_ws/install/lib:', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'PYTHON_BASIC_REPL': '1', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/models:/home/antoni/gazebo_maritime_ws/src/gazebo_maritime/models:', 'USER': 'antoni', 'FONTCONFIG_PATH': '/etc/fonts', 'GIO_MODULE_DIR': '/home/antoni/snap/code/common/.cache/gio-modules', 'XDG_SESSION_TYPE': 'wayland', 'GIT_ASKPASS': '/snap/code/215/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'GTK_EXE_PREFIX_VSCODE_SNAP_ORIG': '', 'GDK_BACKEND_VSCODE_SNAP_ORIG': '', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/antoni/gazebo_maritime_ws/install/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/antoni', 'CHROME_DESKTOP': 'code.desktop', 'LOCPATH_VSCODE_SNAP_ORIG': '', 'OLDPWD': '/home/antoni/gazebo_maritime_ws/src', 'TERM_PROGRAM_VERSION': '1.106.3', 'DESKTOP_SESSION': 'ubuntu', 'GTK_PATH': '/snap/code/215/usr/lib/x86_64-linux-gnu/gtk-3.0', 'XDG_DATA_HOME_VSCODE_SNAP_ORIG': '', 'GTK_IM_MODULE_FILE': '/home/antoni/snap/code/common/.cache/immodules/immodules.cache', 'GIO_LAUNCHED_DESKTOP_FILE': '/var/lib/snapd/desktop/applications/code_code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG': '', 'VSCODE_GIT_ASKPASS_MAIN': '/snap/code/215/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/snap/code/215/usr/share/code/code', 'MANAGERPID': '1967', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'SYSTEMD_EXEC_PID': '2254', 'BUNDLED_DEBUGPY_PATH': '/home/antoni/.vscode/extensions/ms-python.debugpy-2025.16.0-linux-x64/bundled/libs/debugpy', 'IM_CONFIG_CHECK_ENV': '1', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3025', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/antoni/gazebo_maritime_ws/install:/home/antoni/gazebo_maritime_ws/src/research/research/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'antoni', 'JOURNAL_STREAM': '9:14210', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'XDG_DATA_DIRS_VSCODE_SNAP_ORIG': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'USERNAME': 'antoni', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/home/antoni/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/home/antoni/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/antoni/.vscode/extensions/ms-python.debugpy-2025.16.0-linux-x64/bundled/scripts/noConfigScripts', 'SESSION_MANAGER': 'local/hpUbuntu24:@/tmp/.ICE-unix/2210,unix/hpUbuntu24:/tmp/.ICE-unix/2210', 'GTK_EXE_PREFIX': '/snap/code/215/usr', 'INVOCATION_ID': 'e0bedae56c67410883f355fdcb8afca1', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LOCPATH': '/snap/code/215/usr/lib/locale', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/antoni/.vscode/extensions/ms-python.debugpy-2025.16.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-c02d666932040cb7.txt', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'PYTHONSTARTUP': '/home/antoni/.config/Code/User/workspaceStorage/e12e7d6e5ef8f21eb3c6dfa56d101651/ms-python.python/pythonrc.py', 'GIO_MODULE_DIR_VSCODE_SNAP_ORIG': '', 'XDG_DATA_HOME': '/home/antoni/snap/code/215/.local/share', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.TD8HH3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-661abbece4.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'GSETTINGS_SCHEMA_DIR': '/home/antoni/snap/code/215/.local/share/glib-2.0/schemas', 'AMENT_PREFIX_PATH': '/home/antoni/gazebo_maritime_ws/install:/opt/ros/jazzy', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GTK_PATH_VSCODE_SNAP_ORIG': '', 'FONTCONFIG_FILE': '/etc/fonts/fonts.conf', 'GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG': '', 'GJS_DEBUG_OUTPUT': 'stderr', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/antoni/gazebo_maritime_ws/build/msg_interfaces', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/home/antoni/snap/code/215/.local/share:/home/antoni/snap/code/215:/snap/code/215/usr/share:/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/home/antoni/gazebo_maritime_ws/install:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[10.699487] (msg_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[10.700203] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/share/ament_index/resource_index/rosidl_interfaces/msg_interfaces\n'}
+[10.700766] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/msg/InternalState.json\n'}
+[10.701404] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces\n'}
+[10.701861] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg\n'}
+[10.702179] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg/internal_state.h\n'}
+[10.703559] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg/detail\n'}
+[10.704283] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg/detail/internal_state__description.c\n'}
+[10.704819] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg/detail/internal_state__functions.c\n'}
+[10.705180] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg/detail/internal_state__type_support.c\n'}
+[10.705695] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg/detail/internal_state__type_support.h\n'}
+[10.706087] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg/detail/internal_state__struct.h\n'}
+[10.706623] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg/detail/internal_state__functions.h\n'}
+[10.707087] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[10.707464] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/environment/library_path.sh\n'}
+[10.708143] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/environment/library_path.dsv\n'}
+[10.708599] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/lib/libmsg_interfaces__rosidl_generator_c.so\n'}
+[10.708969] (msg_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/antoni/gazebo_maritime_ws/install/lib/libmsg_interfaces__rosidl_generator_c.so" to ""\n'}
+[10.709361] (msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces\n'}
+[10.709555] (msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg\n'}
+[10.710116] (msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg/detail\n'}
+[10.710840] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg/detail/internal_state__rosidl_typesupport_fastrtps_c.h\n'}
+[10.711036] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[10.711238] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/lib/libmsg_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[10.711575] (msg_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/antoni/gazebo_maritime_ws/install/lib/libmsg_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[10.711735] (msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces\n'}
+[10.712074] (msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg\n'}
+[10.712226] (msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg/detail\n'}
+[10.712407] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg/detail/internal_state__rosidl_typesupport_introspection_c.h\n'}
+[10.712613] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg/detail/internal_state__type_support.c\n'}
+[10.712776] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[10.712950] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/lib/libmsg_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[10.713118] (msg_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/antoni/gazebo_maritime_ws/install/lib/libmsg_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[10.713370] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/lib/libmsg_interfaces__rosidl_typesupport_c.so\n'}
+[10.713556] (msg_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/antoni/gazebo_maritime_ws/install/lib/libmsg_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[10.713740] (msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces\n'}
+[10.714069] (msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg\n'}
+[10.714380] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg/internal_state.hpp\n'}
+[10.714587] (msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg/detail\n'}
+[10.714809] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg/detail/internal_state__traits.hpp\n'}
+[10.715161] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg/detail/internal_state__type_support.hpp\n'}
+[10.715413] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg/detail/internal_state__builder.hpp\n'}
+[10.715909] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg/detail/internal_state__struct.hpp\n'}
+[10.716177] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[10.716509] (msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces\n'}
+[10.716886] (msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg\n'}
+[10.717287] (msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg/detail\n'}
+[10.717575] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg/detail/internal_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[10.717887] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg/detail/dds_fastrtps\n'}
+[10.718094] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[10.718321] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/lib/libmsg_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[10.718529] (msg_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/antoni/gazebo_maritime_ws/install/lib/libmsg_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[10.718791] (msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces\n'}
+[10.719081] (msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg\n'}
+[10.719264] (msg_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg/detail\n'}
+[10.719369] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg/detail/internal_state__type_support.cpp\n'}
+[10.719499] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/include/msg_interfaces/msg_interfaces/msg/detail/internal_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[10.719697] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/lib/libmsg_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[10.719884] (msg_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/antoni/gazebo_maritime_ws/install/lib/libmsg_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[10.719943] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/lib/libmsg_interfaces__rosidl_typesupport_cpp.so\n'}
+[10.719989] (msg_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/antoni/gazebo_maritime_ws/install/lib/libmsg_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[10.720033] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/environment/pythonpath.sh\n'}
+[10.720072] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/environment/pythonpath.dsv\n'}
+[10.720144] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/msg_interfaces-0.0.0-py3.12.egg-info\n'}
+[10.720381] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/msg_interfaces-0.0.0-py3.12.egg-info/dependency_links.txt\n'}
+[10.720691] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/msg_interfaces-0.0.0-py3.12.egg-info/SOURCES.txt\n'}
+[10.721112] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/msg_interfaces-0.0.0-py3.12.egg-info/top_level.txt\n'}
+[10.721186] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/msg_interfaces-0.0.0-py3.12.egg-info/PKG-INFO\n'}
+[10.721266] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/msg_interfaces\n'}
+[10.721381] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/msg_interfaces/_msg_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[10.721458] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/msg_interfaces/msg_interfaces_s__rosidl_typesupport_c.so\n'}
+[10.721541] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/msg_interfaces/_msg_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[10.721760] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/msg_interfaces/__init__.py\n'}
+[10.721856] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/msg_interfaces/msg\n'}
+[10.721956] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/msg_interfaces/msg/_internal_state.py\n'}
+[10.722045] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/msg_interfaces/msg/__init__.py\n'}
+[10.722195] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/msg_interfaces/msg/_internal_state_s.c\n'}
+[10.722367] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/msg_interfaces/msg_interfaces_s__rosidl_typesupport_introspection_c.so\n'}
+[10.722614] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/msg_interfaces/msg_interfaces_s__rosidl_typesupport_fastrtps_c.so\n'}
+[10.723062] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/msg_interfaces/_msg_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[10.758840] (-) TimerEvent: {}
+[10.823626] (msg_interfaces) StdoutLine: {'line': b"Listing '/home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/msg_interfaces'...\n"}
+[10.824787] (msg_interfaces) StdoutLine: {'line': b"Compiling '/home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/msg_interfaces/__init__.py'...\n"}
+[10.824908] (msg_interfaces) StdoutLine: {'line': b"Listing '/home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/msg_interfaces/msg'...\n"}
+[10.825038] (msg_interfaces) StdoutLine: {'line': b"Compiling '/home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/msg_interfaces/msg/__init__.py'...\n"}
+[10.825080] (msg_interfaces) StdoutLine: {'line': b"Compiling '/home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/msg_interfaces/msg/_internal_state.py'...\n"}
+[10.837074] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/msg_interfaces/msg_interfaces_s__rosidl_typesupport_fastrtps_c.so\n'}
+[10.837591] (msg_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/msg_interfaces/msg_interfaces_s__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[10.837870] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/msg_interfaces/msg_interfaces_s__rosidl_typesupport_introspection_c.so\n'}
+[10.838196] (msg_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/msg_interfaces/msg_interfaces_s__rosidl_typesupport_introspection_c.so" to ""\n'}
+[10.838455] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/msg_interfaces/msg_interfaces_s__rosidl_typesupport_c.so\n'}
+[10.838761] (msg_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/msg_interfaces/msg_interfaces_s__rosidl_typesupport_c.so" to ""\n'}
+[10.838889] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/lib/libmsg_interfaces__rosidl_generator_py.so\n'}
+[10.839358] (msg_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/antoni/gazebo_maritime_ws/install/lib/libmsg_interfaces__rosidl_generator_py.so" to ""\n'}
+[10.839477] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/msg/InternalState.idl\n'}
+[10.839617] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/msg/InternalState.msg\n'}
+[10.839908] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/share/ament_index/resource_index/package_run_dependencies/msg_interfaces\n'}
+[10.840304] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/share/ament_index/resource_index/parent_prefix_path/msg_interfaces\n'}
+[10.840681] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/environment/ament_prefix_path.sh\n'}
+[10.841833] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/environment/ament_prefix_path.dsv\n'}
+[10.842282] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/environment/path.sh\n'}
+[10.842653] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/environment/path.dsv\n'}
+[10.842974] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/local_setup.bash\n'}
+[10.843311] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/local_setup.sh\n'}
+[10.843661] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/local_setup.zsh\n'}
+[10.844175] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/local_setup.dsv\n'}
+[10.844389] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/package.dsv\n'}
+[10.844476] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/share/ament_index/resource_index/packages/msg_interfaces\n'}
+[10.844876] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/cmake/export_msg_interfaces__rosidl_generator_cExport.cmake\n'}
+[10.845120] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/cmake/export_msg_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[10.845353] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/cmake/export_msg_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[10.845528] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/cmake/export_msg_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[10.845831] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/cmake/msg_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[10.846052] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/cmake/msg_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[10.846183] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/cmake/msg_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[10.846322] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/cmake/msg_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[10.846494] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/cmake/export_msg_interfaces__rosidl_generator_cppExport.cmake\n'}
+[10.846686] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/cmake/export_msg_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[10.846846] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/cmake/export_msg_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[10.847045] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/cmake/msg_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[10.847369] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/cmake/msg_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[10.847829] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/cmake/msg_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[10.848051] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/cmake/msg_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[10.848401] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/cmake/export_msg_interfaces__rosidl_generator_pyExport.cmake\n'}
+[10.848686] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/cmake/export_msg_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[10.848858] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[10.849003] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[10.849204] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[10.849397] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[10.849516] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[10.849649] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[10.849801] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[10.849928] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/cmake/msg_interfacesConfig.cmake\n'}
+[10.850105] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/cmake/msg_interfacesConfig-version.cmake\n'}
+[10.850449] (msg_interfaces) StdoutLine: {'line': b'-- Installing: /home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/package.xml\n'}
+[10.853685] (msg_interfaces) CommandEnded: {'returncode': 0}
+[10.859042] (-) TimerEvent: {}
+[10.899910] (msg_interfaces) JobEnded: {'identifier': 'msg_interfaces', 'rc': 0}
+[10.904440] (-) EventReactorShutdown: {}

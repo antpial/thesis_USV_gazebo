@@ -1,0 +1,54 @@
+[0.887s] Invoking command in '/home/antoni/gazebo_maritime_ws/build/msg_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/antoni/gazebo_maritime_ws/build/msg_interfaces -- -j12 -l12
+[2.139s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[2.141s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[2.142s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.144s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.145s] -- Found rosidl_adapter: 4.6.6 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[2.145s] -- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+[2.146s] -- Configuring incomplete, errors occurred!
+[2.147s] [31mCMake Error at /opt/ros/jazzy/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:57 (message):
+[2.148s]   execute_process(/usr/bin/python3 -m rosidl_adapter --package-name
+[2.148s]   msg_interfaces --arguments-file
+[2.149s]   /home/antoni/gazebo_maritime_ws/build/msg_interfaces/rosidl_adapter__arguments__msg_interfaces.json
+[2.150s]   --output-dir
+[2.151s]   /home/antoni/gazebo_maritime_ws/build/msg_interfaces/rosidl_adapter/msg_interfaces
+[2.152s]   --output-file
+[2.152s]   /home/antoni/gazebo_maritime_ws/build/msg_interfaces/rosidl_adapter/msg_interfaces.idls)
+[2.152s]   returned error code 1:
+[2.153s] 
+[2.153s]   Error processing 'float32 I_los' of 'msg_interfaces/InternalState':
+[2.153s]   ''I_los' is an invalid field name.  It should have the pattern
+[2.153s]   '^(?!.*__)(?!.*_$)[a-z][a-z0-9_]*$''
+[2.154s] 
+[2.154s]   Traceback (most recent call last):
+[2.154s] 
+[2.155s]     File "<frozen runpy>", line 198, in _run_module_as_main
+[2.155s]     File "<frozen runpy>", line 88, in _run_code
+[2.155s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[2.156s]       sys.exit(main())
+[2.156s]                ^^^^^^
+[2.156s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/main.py", line 53, in main
+[2.156s]       abs_idl_file = convert_to_idl(
+[2.157s]                      ^^^^^^^^^^^^^^^
+[2.157s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/__init__.py", line 19, in convert_to_idl
+[2.157s]       return convert_msg_to_idl(
+[2.157s]              ^^^^^^^^^^^^^^^^^^^
+[2.158s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/msg/__init__.py", line 28, in convert_msg_to_idl
+[2.158s]       msg = parse_message_string(package_name, input_file.stem, content)
+[2.158s]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2.158s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/parser.py", line 520, in parse_message_string
+[2.159s]       fields.append(Field(
+[2.159s]                     ^^^^^^
+[2.159s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/parser.py", line 355, in __init__
+[2.159s]       raise NameError(
+[2.159s] 
+[2.160s]   NameError: 'I_los' is an invalid field name.  It should have the pattern
+[2.160s]   '^(?!.*__)(?!.*_$)[a-z][a-z0-9_]*$'
+[2.160s] 
+[2.160s] Call Stack (most recent call first):
+[2.160s]   /opt/ros/jazzy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:132 (rosidl_adapt_interfaces)
+[2.160s]   CMakeLists.txt:17 (rosidl_generate_interfaces)
+[2.160s] 
+[2.160s] [0m
+[2.160s] gmake: *** [Makefile:815: cmake_check_build_system] Error 1
+[2.184s] Invoked command in '/home/antoni/gazebo_maritime_ws/build/msg_interfaces' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/antoni/gazebo_maritime_ws/build/msg_interfaces -- -j12 -l12

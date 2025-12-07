@@ -1,3 +1,4 @@
 [console_scripts]
 analize_position_error = research.analize_position_error:main
 position_error = research.position_error:main
+rosbag_compare = research.rosbag_compare:main

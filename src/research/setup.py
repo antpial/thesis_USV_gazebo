@@ -1,4 +1,6 @@
 from setuptools import find_packages, setup
+from glob import glob
+import os
 
 package_name = 'research'
 
@@ -10,6 +12,8 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
+        (os.path.join('share', 'msg_interfaces', 'msg'), 
+        glob('msg/*.msg')),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -26,6 +30,7 @@ setup(
         'console_scripts': [
             'position_error = research.position_error:main',
             'analize_position_error = research.analize_position_error:main',
+            'rosbag_compare = research.rosbag_compare:main',
         ],
     },
 )

@@ -1,0 +1,89 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from msg_interfaces/msg/InternalState.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module msg_interfaces {
+  module msg {
+    struct InternalState {
+      std_msgs::msg::Header header;
+
+      int32 id;
+
+      @verbatim (language="comment", text=
+        "--- Sterowanie ---" "\n"
+        "przepustnica")
+      float v;
+
+      @verbatim (language="comment", text=
+        "kierownica (ster)")
+      float d;
+
+      @verbatim (language="comment", text=
+        "--- Błędy sterowania ---" "\n"
+        "blad kursu (heading error)")
+      float e;
+
+      @verbatim (language="comment", text=
+        "cross track error (odleglosc od linii)")
+      float de;
+
+      @verbatim (language="comment", text=
+        "--- Nawigacja GPS (Musi byc float64!) ---" "\n"
+        "cel lodzi lat")
+      double given_position_lat;
+
+      @verbatim (language="comment", text=
+        "cel lodzi lon")
+      double given_position_lon;
+
+      @verbatim (language="comment", text=
+        "start lodzi lat")
+      double starting_position_lat;
+
+      @verbatim (language="comment", text=
+        "start lodzi lon")
+      double starting_position_lon;
+
+      @verbatim (language="comment", text=
+        "--- Wyjścia silników ---" "\n"
+        "ciag na lewym silniku")
+      float left_thrust;
+
+      @verbatim (language="comment", text=
+        "ciag na prawym silniku")
+      float right_thrust;
+
+      @verbatim (language="comment", text=
+        "--- Stan ---" "\n"
+        "azymut do ktorego zmierza lodka")
+      float given_azimuth;
+
+      @verbatim (language="comment", text=
+        "chwilowy azymut lodzi")
+      float current_azimuth;
+
+      @verbatim (language="comment", text=
+        "dystans do punku docelowego")
+      float distance;
+
+      @verbatim (language="comment", text=
+        "--- Diagnostyka PID/LOS ---" "\n"
+        "wartość wyjściowa członu P")
+      float p_los;
+
+      @verbatim (language="comment", text=
+        "wartosc wyjsciowa czlonu I")
+      float i_los;
+
+      @verbatim (language="comment", text=
+        "nastawa Kp")
+      float kp_los;
+
+      @verbatim (language="comment", text=
+        "nastawa Ki")
+      float ki_los;
+    };
+  };
+};

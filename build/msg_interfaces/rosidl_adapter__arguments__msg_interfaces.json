@@ -1,0 +1,6 @@
+{
+  "package_name": "msg_interfaces",
+  "non_idl_tuples": [
+    "/home/antoni/gazebo_maritime_ws/src/msg_interfaces:msg/InternalState.msg"
+  ]
+}

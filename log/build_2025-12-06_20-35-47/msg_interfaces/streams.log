@@ -1,0 +1,55 @@
+[0.013s] Invoking command in '/home/antoni/gazebo_maritime_ws/build/msg_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/antoni/gazebo_maritime_ws/src/msg_interfaces -DCMAKE_INSTALL_PREFIX=/home/antoni/gazebo_maritime_ws/install
+[0.051s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.550s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.557s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.622s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.660s] -- Found rosidl_adapter: 4.6.6 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[0.662s] -- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+[1.250s] [31mCMake Error at /opt/ros/jazzy/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:57 (message):
+[1.250s]   execute_process(/usr/bin/python3 -m rosidl_adapter --package-name
+[1.251s]   msg_interfaces --arguments-file
+[1.251s]   /home/antoni/gazebo_maritime_ws/build/msg_interfaces/rosidl_adapter__arguments__msg_interfaces.json
+[1.252s]   --output-dir
+[1.252s]   /home/antoni/gazebo_maritime_ws/build/msg_interfaces/rosidl_adapter/msg_interfaces
+[1.253s]   --output-file
+[1.253s]   /home/antoni/gazebo_maritime_ws/build/msg_interfaces/rosidl_adapter/msg_interfaces.idls)
+[1.253s]   returned error code 1:
+[1.253s] 
+[1.253s]   Error processing 'double32 v //przepustnica' of
+[1.253s]   'msg_interfaces/internal_state': ''double32' is an invalid message name.
+[1.254s]   It should have the pattern '^[A-Z][A-Za-z0-9]*$''
+[1.255s] 
+[1.255s]   Traceback (most recent call last):
+[1.255s] 
+[1.256s]     File "<frozen runpy>", line 198, in _run_module_as_main
+[1.256s]     File "<frozen runpy>", line 88, in _run_code
+[1.256s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[1.256s]       sys.exit(main())
+[1.256s]                ^^^^^^
+[1.256s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/main.py", line 53, in main
+[1.257s]       abs_idl_file = convert_to_idl(
+[1.257s]                      ^^^^^^^^^^^^^^^
+[1.257s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/__init__.py", line 19, in convert_to_idl
+[1.257s]       return convert_msg_to_idl(
+[1.257s]              ^^^^^^^^^^^^^^^^^^^
+[1.257s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/msg/__init__.py", line 28, in convert_msg_to_idl
+[1.257s]       msg = parse_message_string(package_name, input_file.stem, content)
+[1.257s]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1.257s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/parser.py", line 521, in parse_message_string
+[1.257s]       Type(type_string, context_package_name=pkg_name),
+[1.258s]       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1.258s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/parser.py", line 278, in __init__
+[1.258s]       super(Type, self).__init__(
+[1.258s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/parser.py", line 206, in __init__
+[1.258s]       raise InvalidResourceName(
+[1.258s] 
+[1.258s]   rosidl_adapter.parser.InvalidResourceName: 'double32' is an invalid message
+[1.258s]   name.  It should have the pattern '^[A-Z][A-Za-z0-9]*$'
+[1.259s] 
+[1.259s] Call Stack (most recent call first):
+[1.259s]   /opt/ros/jazzy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:132 (rosidl_adapt_interfaces)
+[1.259s]   CMakeLists.txt:17 (rosidl_generate_interfaces)
+[1.259s] 
+[1.259s] [0m
+[1.260s] -- Configuring incomplete, errors occurred!
+[1.268s] Invoked command in '/home/antoni/gazebo_maritime_ws/build/msg_interfaces' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/antoni/gazebo_maritime_ws/src/msg_interfaces -DCMAKE_INSTALL_PREFIX=/home/antoni/gazebo_maritime_ws/install

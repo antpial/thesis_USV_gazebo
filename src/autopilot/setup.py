@@ -17,6 +17,8 @@ setup(
         (os.path.join('share', package_name, 'config'), 
         glob('config/*.yaml')),
         ('share/' + package_name, ['package.xml']),
+        (os.path.join('share', 'msg_interfaces', 'msg'), 
+        glob('/msg/*.msg')),
     ],
     install_requires=['setuptools'],
     zip_safe=True,

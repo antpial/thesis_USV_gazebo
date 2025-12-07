@@ -1,11 +1,14 @@
 /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/research/position_error.py
 /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/research/__init__.py
+/home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/research/rosbag_compare.py
 /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/research/analize_position_error.py
 /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/research/__pycache__/position_error.cpython-312.pyc
 /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/research/__pycache__/__init__.cpython-312.pyc
+/home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/research/__pycache__/rosbag_compare.cpython-312.pyc
 /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/research/__pycache__/analize_position_error.cpython-312.pyc
 /home/antoni/gazebo_maritime_ws/install/share/ament_index/resource_index/packages/research
 /home/antoni/gazebo_maritime_ws/install/share/research/package.xml
+/home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/msg
 /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/research-0.0.0-py3.12.egg-info/zip-safe
 /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/research-0.0.0-py3.12.egg-info/entry_points.txt
 /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/research-0.0.0-py3.12.egg-info/requires.txt
@@ -15,3 +18,4 @@
 /home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/research-0.0.0-py3.12.egg-info/PKG-INFO
 /home/antoni/gazebo_maritime_ws/install/lib/research/analize_position_error
 /home/antoni/gazebo_maritime_ws/install/lib/research/position_error
+/home/antoni/gazebo_maritime_ws/install/lib/research/rosbag_compare

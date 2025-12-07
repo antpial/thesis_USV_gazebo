@@ -1,0 +1,30 @@
+[0.012s] Invoking command in '/home/antoni/gazebo_maritime_ws/build/msg_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/antoni/gazebo_maritime_ws/src/msg_interfaces -DCMAKE_INSTALL_PREFIX=/home/antoni/gazebo_maritime_ws/install
+[0.256s] -- The C compiler identification is GNU 13.3.0
+[0.477s] -- The CXX compiler identification is GNU 13.3.0
+[0.529s] -- Detecting C compiler ABI info
+[0.778s] -- Detecting C compiler ABI info - done
+[0.791s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.794s] -- Detecting C compile features
+[0.795s] -- Detecting C compile features - done
+[0.820s] -- Detecting CXX compiler ABI info
+[1.079s] -- Detecting CXX compiler ABI info - done
+[1.099s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.100s] -- Detecting CXX compile features
+[1.101s] -- Detecting CXX compile features - done
+[1.110s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.419s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.690s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[1.698s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.772s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.825s] -- Found rosidl_adapter: 4.6.6 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[1.840s] -- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+[1.888s] [31mCMake Error at /opt/ros/jazzy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:95 (message):
+[1.888s]   rosidl_generate_interfaces() the passed file 'msg/InternalState.msg'
+[1.888s]   doesn't exist relative to the CMAKE_CURRENT_SOURCE_DIR
+[1.888s]   '/home/antoni/gazebo_maritime_ws/src/msg_interfaces'
+[1.889s] Call Stack (most recent call first):
+[1.889s]   CMakeLists.txt:17 (rosidl_generate_interfaces)
+[1.889s] 
+[1.889s] [0m
+[1.889s] -- Configuring incomplete, errors occurred!
+[1.897s] Invoked command in '/home/antoni/gazebo_maritime_ws/build/msg_interfaces' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/antoni/gazebo_maritime_ws/src/msg_interfaces -DCMAKE_INSTALL_PREFIX=/home/antoni/gazebo_maritime_ws/install

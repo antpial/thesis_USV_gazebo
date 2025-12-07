@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "msg_interfaces__py",
+		"source" : "/home/antoni/gazebo_maritime_ws/build/msg_interfaces/msg_interfaces__py"
+	}
+}

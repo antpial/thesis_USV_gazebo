@@ -11,6 +11,7 @@ setup.py
 research/__init__.py
 research/analize_position_error.py
 research/position_error.py
+research/rosbag_compare.py
 resource/research
 test/test_copyright.py
 test/test_flake8.py

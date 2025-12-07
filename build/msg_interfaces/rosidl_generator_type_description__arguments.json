@@ -1,0 +1,11 @@
+{
+  "package_name": "msg_interfaces",
+  "output_dir": "/home/antoni/gazebo_maritime_ws/build/msg_interfaces/rosidl_generator_type_description/msg_interfaces",
+  "idl_tuples": [
+    "/home/antoni/gazebo_maritime_ws/build/msg_interfaces/rosidl_adapter/msg_interfaces:msg/InternalState.idl"
+  ],
+  "include_paths": [
+    "std_msgs:/opt/ros/jazzy/share/std_msgs",
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces"
+  ]
+}

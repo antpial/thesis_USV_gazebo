@@ -387,7 +387,7 @@
       </vertical>
     </plugin>
     <model name="marker_cylinder_1">
-      <pose>-507.1577974084908 247.45670047744647 0 0 0 0</pose>
+      <pose>-507.1577974084908 291.8236570846472 0 0 0 0</pose>
       <static>true</static>
       <link name="link">
         <visual name="visual">

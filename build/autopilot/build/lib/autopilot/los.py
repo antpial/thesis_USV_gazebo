@@ -14,6 +14,7 @@ from collections import deque
 import math
 import copy
 import xml.etree.ElementTree as ET
+from msg_interfaces.msg import InternalState
 
 
 @dataclass
@@ -37,7 +38,7 @@ class Los_node(Node):
         self.v = 0.6    # predkosc
         self.given_position = GpsState(lat= -33.721365, lon=150.675268)  # punkt docelowy
         self.starting_position = GpsState(lat=0, lon=0) # pozycja startowa (do liczenia dryfu)
-        self.p = 0.02 # parametr regulatora P
+        self.p = 0.1 # parametr regulatora P
         self.alpha_gps = 0.1 # wspolczynnik filtra dolnoprzepustowego dla azymutu docelowego
 
         # Dane pomiarowe
@@ -57,14 +58,24 @@ class Los_node(Node):
         self.magnetic_declination = -12.82 # deklinacja magnetyczna w stopniach
 
         # LOS
+        self.P_los = 0.0 # skladnik proporcjonalny regulatora P dla LOS
         self.de = 0.0 # odleglosc od linii prostej wyznaczonej przez punkty startowy i docelowy
-        self.Kp_los = 8.0 # wspolczynnik wzmocnienia regulatora P dla LOS
+        self.Kp_los = 0.0 # wspolczynnik wzmocnienia regulatora P dla LOS
+        self.Ki_los = 0.0 # wspolczynnik wzmocnienia regulatora I dla LOS
+        self.I_los = 0.0 # skladnik calkujacy regulatora I dla LOS
+        self.error_history = deque(maxlen=100)  # przechowuje ostatnie 100 błędów do całkowania
+        self.windup_limit = 44.0  # limit anty-windup dla całki
+        self.timer_period = 0.1  # sekundy
+        self.timer = self.create_timer(self.timer_period, self.calculate_I)
 
         #checkpoints
         self.checkpoints = [] # lista wszystkich punktów docelowych (name, lat, lon, alt)
         self.current_checkpoint_index = 0 # indeks aktualnego punktu docelowego
         self.distance_threshold = 5.0 # odleglosc w metrach do punktu docelowego przy ktorej uznajemy ze dotarlismy do punktu
         self.reached_all_checkpoints = False # flaga czy dotarlismy do wszystkich punktow
+
+        # publisher stanu wewnetrznego
+        self.timer = self.create_timer(self.timer_period, self.publish_internal_state)
 
         # Subskrybujem /magnetometer
         self.subscription = self.create_subscription(
@@ -78,7 +89,7 @@ class Los_node(Node):
         # Subskrybuje /gps
         self.subscription = self.create_subscription(
             NavSatFix,
-            '/gps/filtered',
+            '/gps/perfect',
             self.gps_callback,
             10
         )
@@ -94,7 +105,40 @@ class Los_node(Node):
         # timer gdzie sie dzieje cala magia
         self.timer = self.create_timer(0.1, self.control_loop)
 
+        # publisher stanu wewnetrznego
+        self.diag_pub = self.create_publisher(InternalState, '/usv/stan', 10)
+
     # Callbacki do subskrybcji
+    def publish_internal_state(self):
+        msg = InternalState()
+        msg.header.stamp = self.get_clock().now().to_msg()
+        msg.id = 0
+        # --- Sterowanie ---
+        msg.v = float(self.v)
+        msg.d = float(self.d)
+        # --- Błędy sterowania ---
+        msg.e = float(self.e)
+        msg.de = float(self.de)
+        # --- Nawigacja GPS ---
+        msg.given_position_lat = float(self.given_position.lat)
+        msg.given_position_lon = float(self.given_position.lon)
+        msg.starting_position_lat = float(self.starting_position.lat)
+        msg.starting_position_lon = float(self.starting_position.lon)
+        # --- Wyjścia silników ---
+        msg.left_thrust = float(self.left_thrust)
+        msg.right_thrust = float(self.right_thrust)
+        # --- Stan ---
+        msg.given_azimuth = float(self.given_azimuth)
+        msg.current_azimuth = float(self.current_azimuth)
+        msg.distance = float(self.distance)
+        # --- Diagnostyka PID/LOS ---
+        msg.p_los = float(self.P_los)
+        msg.i_los = float(self.I_los)
+        msg.kp_los = float(self.Kp_los)
+        msg.ki_los = float(self.Ki_los)
+
+        self.diag_pub.publish(msg)
+
 
     def mag_callback(self, msg: MagneticField):
 
@@ -235,7 +279,7 @@ class Los_node(Node):
         self.get_logger().info(f"cur. lat.: {self.current_position.lat:.5f}, cur. lon.: {self.current_position.lon:.5f}")
         self.get_logger().info(f"goal lat.: {self.given_position.lat:.5f}, goal lon.: {self.given_position.lon:.5f}")
         self.get_logger().info(f"cur. check.: {self.current_checkpoint_index}, Distance to goal: {self.distance:.2f} m")
-        self.get_logger().info(f"Drift (de): {self.de:.2f} m")
+        self.get_logger().info(f"Drift (de): {self.de:.2f} m, P_los: {self.P_los:.2f}, I_los: {self.I_los:.2f}")
 
 
     def reached_checkpoint(self):
@@ -258,6 +302,8 @@ class Los_node(Node):
         # Ustawiamy nowy punkt docelowy
         self.starting_position.lat = self.given_position.lat # ustawiamy punkt startowy na poprzedni punkt docelowy
         self.starting_position.lon = self.given_position.lon
+        self.error_history.clear()  # czyścimy historię błędów dla całki
+        self.I_los = 0.0  # resetujemy składnik całkujący
         name, lat, lon, alt = self.checkpoints[self.current_checkpoint_index]
         self.given_position.lat = lat
         self.given_position.lon = lon
@@ -311,6 +357,17 @@ class Los_node(Node):
 
         return distance # Wynik w metrach
 
+    def calculate_I(self):
+        self.error_history.append(self.de)
+        I = sum(self.error_history) * self.timer_period # mnożymy przez czas między iteracjami (0.1s)
+        I = self.Ki_los * I
+        I = max(min(I, self.windup_limit), -self.windup_limit)  # ograniczenie anty-windup
+        self.I_los = I
+
+    def calculate_P_los(self):
+        self.P_los = self.Kp_los * self.de
+        return self.P_los
+
 
     def control_loop(self):
 
@@ -325,8 +382,12 @@ class Los_node(Node):
         self.current_azimuth = self.calculate_current_azimuth()
 
         # kalkuluje docelowy azymut
-        self.given_azimuth = self.calculate_new_azimuth() + (self.Kp_los * self.de) # korekta azymutu docelowego o odleglosc od linii prostej
-
+        self.given_azimuth = self.calculate_new_azimuth() + self.calculate_P_los() + self.I_los# korekta azymutu docelowego o odleglosc od linii prostej
+        if self.given_azimuth < 0:
+            self.given_azimuth += 360.0
+        if self.given_azimuth >= 360.0:
+            self.given_azimuth -= 360.0
+            
         # kalkuluje odleglosc do punktu docelowego
         self.distance = self.get_distance_from_lat_lon_in_km()
 
