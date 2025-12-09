@@ -57,7 +57,7 @@ def get_data_from_bag(bag_path, topic_name):
         try:
             msg = deserialize_message(data, InternalState)
             
-            val_e = msg.e 
+            val_e = msg.de 
             val_d = msg.d
 
             # --- LOGIKA TRIGGERA ---
@@ -102,8 +102,8 @@ def plot_comparison(bag_dict, topic_name):
 
     if has_data:
         # --- Konfiguracja WYKRESU GÓRNEGO (msg.e) ---
-        ax1.set_title(f"Odpowiedź układu na różne nastawy członu D regulatora obrotu.")
-        ax1.set_ylabel("Błąd [stopnie]")
+        ax1.set_title(f"Odpowiedź układu na różne nastawy członu P i I regulatora azymutu (LOS).")
+        ax1.set_ylabel("Błąd [m]")
         ax1.legend(loc='upper right')
         ax1.grid(which='major', linestyle='-', linewidth='0.8', color='black', alpha=0.6)
         ax1.grid(which='minor', linestyle=':', linewidth='0.5', color='gray', alpha=0.5)
@@ -141,9 +141,29 @@ def main():
         # "rosbag_los_Kd_0_0025": "Kd = 0.0025",
         # "rosbag_los_Kd_0_0050": "Kd = 0.0050",
         # "rosbag_los_Kd_0_025": "Kd = 0.025",
-        "rosbag_los_Kd_0_0": "Kd = 0.0",
-        "rosbag_los_Kd_0_5": "Kd = 0.5",
-        "rosbag_los_Kd_1_0": "Kd = 1.0",
+        # "rosbag_los_Kd_0_0": "Kd = 0.0",
+        # "rosbag_los_Kd_0_5": "Kp_los = 0.0",
+        # "rosbag_los_Kd_1_0": "Kd = 1.0",
+        # "rosbag_los_Kp_los_10": "Kp_los = 10.0",
+        # "rosbag_los_Kp_los_9_5": "Kp_los = 9.5",
+        # "rosbag_los_Kp_los_9": "Kp_los = 9.0",
+        # "rosbag_los_Kp_los_8": "Kp_los = 8.0",
+        # "rosbag_los_ZNv1": "Kp_los = 4.275, Ki_los = 0.214 (Z-N)",
+        # "rosbag_los_Ki_0_321": "Kp_los = 4.275, Ki_los = 0.321",
+        # "rosbag_los_Ki_0_428": "Kp_los = 4.275, Ki_los = 0.428",
+        # "rosbag_los_Kd_10": "Kp_los = 4.275, Ki_los = 0.428, Kd_los = 10.0",
+        # "rosbag_los_Kd_10_ki_0_856": "Kp_los = 4.275, Ki_los = 0.856, Kd_los = 10.0",
+        # "rosbag_los_Kp_8_Ki_214": "Kp_los = 8.0, Ki_los = 0.214, Kd_los = 10.0",
+        # "rosbag_los_Kp_8_Ki_428": "Kp_los = 8.0, Ki_los = 0.428, Kd_los = 10.0",
+        # "rosbag_los_Kp_8_Ki_856": "Kp_los = 8.0, Ki_los = 0.856, Kd_los = 10.0",
+        # "rosbag_los_Kp_8_Ki_856_Kd_20": "Kp_los = 8.0, Ki_los = 0.856, Kd_los = 20.0",
+        # "rosbag_los_Kp_8_Ki_856_Kd_30": "Kp_los = 8.0, Ki_los = 0.856, Kd_los = 30.0",
+        # "rosbag_los_Kp_8_Ki_1_Kd_20": "Kp_los = 8.0, Ki_los = 1.0, Kd_los = 20.0",
+        "rosbag_los_Kp_9_Ki_856_Kd_20": "Kp_los = 9.0, Ki_los = 0.856, Kd_los = 20.0",
+        # "rosbag_los_Kp_4_275_Ki_0_856_Kd_20": "Kp_los = 4.275, Ki_los = 0.856, Kd_los = 20.0",
+        "rosbag_los_Kp_9_Ki_0_856_Kd_25": "Kp_los = 9, Ki_los = 0.856, Kd_los = 25.0",
+        "rosbag_los_Kp_9_Ki_0_856_Kd_30": "Kp_los = 9, Ki_los = 0.856, Kd_los = 30.0",
+
     }
     
     topic = "/usv/stan" 

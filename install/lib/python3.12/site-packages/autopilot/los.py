@@ -62,13 +62,19 @@ class Los_node(Node):
         # LOS
         self.P_los = 0.0 # skladnik proporcjonalny regulatora P dla LOS
         self.de = 0.0 # odleglosc od linii prostej wyznaczonej przez punkty startowy i docelowy
-        self.Kp_los = 0.0 # wspolczynnik wzmocnienia regulatora P dla LOS
-        self.Ki_los = 0.0 # wspolczynnik wzmocnienia regulatora I dla LOS
+        self.Kp_los = 9.0 # wspolczynnik wzmocnienia regulatora P dla LOS
+        self.Ki_los = 0.856 # wspolczynnik wzmocnienia regulatora I dla LOS
+        self.Kd_los = 30.0 # wspolczynnik wzmocnienia regulatora D dla LOS
+        # self.Kp_los = 0.0 # wspolczynnik wzmocnienia regulatora P dla LOS
+        # self.Ki_los = 0.0 # wspolczynnik wzmocnienia regulatora I dla LOS
+        # self.Kd_los = 0.0 # wspolczynnik wzmocnienia regulatora D dla LOS
         self.I_los = 0.0 # skladnik calkujacy regulatora I dla LOS
-        self.error_history = deque(maxlen=100)  # przechowuje ostatnie 100 błędów do całkowania
+        self.D_los = 0.0 # skladnik rozniczkujacy regulatora D dla LOS
+        self.error_history = deque(maxlen=600)  # przechowuje ostatnie 3 min błędów do całkowania
         self.windup_limit = 44.0  # limit anty-windup dla całki
         self.timer_period = 0.1  # sekundy
-        self.timer = self.create_timer(self.timer_period, self.calculate_I)
+        self.last_de = 0.0  # ostatnia wartość de do obliczania D
+        # self.timer = self.create_timer(self.timer_period, self.calculate_I)
 
         #checkpoints
         self.checkpoints = [] # lista wszystkich punktów docelowych (name, lat, lon, alt)
@@ -76,7 +82,20 @@ class Los_node(Node):
         self.distance_threshold = 5.0 # odleglosc w metrach do punktu docelowego przy ktorej uznajemy ze dotarlismy do punktu
         self.reached_all_checkpoints = False # flaga czy dotarlismy do wszystkich punktow
 
-        # publisher stanu wewnetrznego',  #
+        # czettoliwosci pida kaskadowego
+        self.freq_outer = 5.0   # 2 Hz dla GPS/Nawigacji (Pętla zewnętrzna)
+        self.freq_inner = 20.0  # 20 Hz dla Silników/IMU (Pętla wewnętrzna)
+        
+        self.dt_outer = 1.0 / self.freq_outer
+        self.dt_inner = 1.0 / self.freq_inner
+
+        # --- TIMERY ---
+        # 1. Pętla Wewnętrzna (Szybka) - Sterowanie silnikami i kursem
+        self.timer_inner = self.create_timer(self.dt_inner, self.inner_loop_control)
+        
+        # 2. Pętla Zewnętrzna (Wolna) - Nawigacja, LOS, Checkpointy
+        self.timer_outer = self.create_timer(self.dt_outer, self.outer_loop_navigation)
+        # publisher stanu wewnetrznego
         self.timer = self.create_timer(self.timer_period, self.publish_internal_state)
 
         # Subskrybujem /magnetometer
@@ -113,14 +132,77 @@ class Los_node(Node):
         self.get_checkpoints()
 
         # timer gdzie sie dzieje cala magia
-        self.timer = self.create_timer(0.1, self.control_loop)
+        # self.timer = self.create_timer(0.1, self.control_loop)
 
         # publisher stanu wewnetrznego
         self.diag_pub = self.create_publisher(InternalState, '/usv/stan', 10)
 
+
+    def outer_loop_navigation(self):
+       
+        # jeśli dotarlismy do wszystkich punktow to nic nie robimy
+        if self.reached_all_checkpoints:
+            return
+        
+        # kalkuluje odleglosc od wyznaczonej prostej
+        self.last_de = copy.deepcopy(self.de)
+        self.de = self.get_drift()
+       
+        # Kalkuluje skladnik calkujacy I dla LOS
+        self.calculate_I()
+
+        self.calculate_D_los()
+       
+        # kalkuluje docelowy azymut
+        self.given_azimuth = self.calculate_new_azimuth() + self.calculate_P_los() + self.I_los + self.D_los # korekta azymutu docelowego o odleglosc od linii prostej
+        if self.given_azimuth < 0:
+            self.given_azimuth += 360.0
+        if self.given_azimuth >= 360.0:
+            self.given_azimuth -= 360.0
+       
+        # kalkuluje odleglosc do punktu docelowego
+        self.distance = self.get_distance_from_lat_lon_in_km()
+
+        # sprawdzam czy dotarlismy do punktu docelowego
+        if self.distance < self.distance_threshold:
+            self.reached_checkpoint()
+
+        # wyswietlam logi
+        self.show_logs()
+
+
+    def inner_loop_control(self):
+        
+        if self.reached_all_checkpoints:
+            self.left_thrust = 0.0
+            self.right_thrust = 0.0
+            self.publish_thrust()
+            return
+        
+        # kalkuluje odleglosc do punktu docelowego
+        self.distance = self.get_distance_from_lat_lon_in_km()
+
+        # kalkuluje aktualny azymut
+        self.current_azimuth = self.calculate_current_azimuth()
+
+        # licze blad azymutow normalizujac bo w stopniach jest modulo 360
+        self.e = (self.given_azimuth - self.current_azimuth + 180.0) % 360.0 - 180.0
+
+        # steruje wartoscia d (skret) regulatorem PD
+        self.d = (self.e * self.Kp_az) + (self.yaw_vel * self.Kd_az) # dodaje skladnik z predkosci katowej yaw z imu
+
+        # ustawiam ciag na silnikach
+        self.publish_thrust()
+
+    def calculate_D_los(self):
+        # Oblicza składnik różniczkujący D dla regulatora LOS
+        de_difference = self.de - self.last_de
+        self.D_los = self.Kd_los * (de_difference / self.dt_outer)
+
+
     def imu_callback(self, msg: Imu):
         self.yaw_vel = msg.angular_velocity.z
-        pass
+
 
     # Callbacki do subskrybcji
     def publish_internal_state(self):
@@ -294,7 +376,7 @@ class Los_node(Node):
         self.get_logger().info(f"cur. lat.: {self.current_position.lat:.5f}, cur. lon.: {self.current_position.lon:.5f}")
         self.get_logger().info(f"goal lat.: {self.given_position.lat:.5f}, goal lon.: {self.given_position.lon:.5f}")
         self.get_logger().info(f"cur. check.: {self.current_checkpoint_index}, Distance to goal: {self.distance:.2f} m")
-        self.get_logger().info(f"Drift (de): {self.de:.2f} m, P_los: {self.P_los:.2f}, I_los: {self.I_los:.2f}")
+        self.get_logger().info(f"Drift (de): {self.de:.2f} m, P_los: {self.P_los:.2f}, I_los: {self.I_los:.2f}, D_los: {self.D_los:.2f}")
         self.get_logger().info(f"Kp_az: {self.Kp_az:.4f}, Kd_az: {self.Kd_az:.4f}, Yaw_vel: {self.yaw_vel:.4f}")
 
 
@@ -375,7 +457,7 @@ class Los_node(Node):
 
     def calculate_I(self):
         self.error_history.append(self.de)
-        I = sum(self.error_history) * self.timer_period # mnożymy przez czas między iteracjami (0.1s)
+        I = sum(self.error_history) * self.dt_outer # mnożymy przez czas między iteracjami (0.1s)
         I = self.Ki_los * I
         I = max(min(I, self.windup_limit), -self.windup_limit)  # ograniczenie anty-windup
         self.I_los = I
@@ -383,46 +465,6 @@ class Los_node(Node):
     def calculate_P_los(self):
         self.P_los = self.Kp_los * self.de
         return self.P_los
-
-
-    def control_loop(self):
-
-        # jeśli dotarlismy do wszystkich punktow to nic nie robimy
-        if self.reached_all_checkpoints:
-            return
-        
-        # kalkuluje odleglosc od wyznaczonej prostej
-        self.de = self.get_drift()
-        
-        # kalkuluje aktualny azymut
-        self.current_azimuth = self.calculate_current_azimuth()
-
-        # kalkuluje docelowy azymut
-        self.given_azimuth = self.calculate_new_azimuth() + self.calculate_P_los() + self.I_los# korekta azymutu docelowego o odleglosc od linii prostej
-        if self.given_azimuth < 0:
-            self.given_azimuth += 360.0
-        if self.given_azimuth >= 360.0:
-            self.given_azimuth -= 360.0
-            
-        # kalkuluje odleglosc do punktu docelowego
-        self.distance = self.get_distance_from_lat_lon_in_km()
-
-        # licze blad azymutow normalizujac bo w stopniach jest modulo 360
-        self.e = (self.given_azimuth - self.current_azimuth + 180.0) % 360.0 - 180.0
-
-        # steruje wartoscia d (skret) regulatorem PD
-        self.d = self.e * self.Kp_az + self.yaw_vel * self.Kd_az # dodaje skladnik z predkosci katowej yaw z imu
-
-        # ustawiam ciag na silnikach
-        self.publish_thrust()
-
-        # sprawdzam czy dotarlismy do punktu docelowego
-        if self.distance < self.distance_threshold:
-            self.reached_checkpoint()
-
-        # wyswietlam logi
-        self.show_logs()
-
 
 
 def main(args=None):
