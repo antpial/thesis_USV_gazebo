@@ -102,7 +102,7 @@ def plot_comparison(bag_dict, topic_name):
 
     if has_data:
         # --- Konfiguracja WYKRESU GÓRNEGO (msg.e) ---
-        ax1.set_title(f"Odpowiedź układu na różne nastawy członu P i I regulatora azymutu (LOS).")
+        ax1.set_title(f"Odpowiedź układu na regulator PID i ILOS")
         ax1.set_ylabel("Błąd [m]")
         ax1.legend(loc='upper right')
         ax1.grid(which='major', linestyle='-', linewidth='0.8', color='black', alpha=0.6)
@@ -144,11 +144,11 @@ def main():
         # "rosbag_los_Kd_0_0": "Kd = 0.0",
         # "rosbag_los_Kd_0_5": "Kp_los = 0.0",
         # "rosbag_los_Kd_1_0": "Kd = 1.0",
-        # "rosbag_los_Kp_los_10": "Kp_los = 10.0",
-        # "rosbag_los_Kp_los_9_5": "Kp_los = 9.5",
-        # "rosbag_los_Kp_los_9": "Kp_los = 9.0",
+        # "rosbag_los_Kp_los_10": "Kp = 10.0",
+        # "rosbag_los_Kp_los_9_5": "Kp = 9.5",
+        # "rosbag_los_Kp_los_9": "Kp = 9.0",
         # "rosbag_los_Kp_los_8": "Kp_los = 8.0",
-        # "rosbag_los_ZNv1": "Kp_los = 4.275, Ki_los = 0.214 (Z-N)",
+        # "rosbag_los_ZNv1": "Kp = 4.275, Ki = 0.214 (Z-N)",
         # "rosbag_los_Ki_0_321": "Kp_los = 4.275, Ki_los = 0.321",
         # "rosbag_los_Ki_0_428": "Kp_los = 4.275, Ki_los = 0.428",
         # "rosbag_los_Kd_10": "Kp_los = 4.275, Ki_los = 0.428, Kd_los = 10.0",
@@ -159,10 +159,28 @@ def main():
         # "rosbag_los_Kp_8_Ki_856_Kd_20": "Kp_los = 8.0, Ki_los = 0.856, Kd_los = 20.0",
         # "rosbag_los_Kp_8_Ki_856_Kd_30": "Kp_los = 8.0, Ki_los = 0.856, Kd_los = 30.0",
         # "rosbag_los_Kp_8_Ki_1_Kd_20": "Kp_los = 8.0, Ki_los = 1.0, Kd_los = 20.0",
-        "rosbag_los_Kp_9_Ki_856_Kd_20": "Kp_los = 9.0, Ki_los = 0.856, Kd_los = 20.0",
+        # "rosbag_los_Kp_9_Ki_856_Kd_20": "Kp = 9.0, Ki = 0.856, Kd = 20.0",
         # "rosbag_los_Kp_4_275_Ki_0_856_Kd_20": "Kp_los = 4.275, Ki_los = 0.856, Kd_los = 20.0",
-        "rosbag_los_Kp_9_Ki_0_856_Kd_25": "Kp_los = 9, Ki_los = 0.856, Kd_los = 25.0",
-        "rosbag_los_Kp_9_Ki_0_856_Kd_30": "Kp_los = 9, Ki_los = 0.856, Kd_los = 30.0",
+        "rosbag_los_Kp_9_Ki_0_856_Kd_25": "PID: Kp = 9.0, Ki = 0.856, Kd = 25.0",
+        # "rosbag_los_Kp_9_Ki_0_856_Kd_30": "Kp = 9.0, Ki = 0.856, Kd = 30.0",
+        # "rosbag_delta_0_4": "Δ = 4.0 m",
+        # "rosbag_delta_10": "Δ = 10.0 m",
+        # "rosbag_delta_5": "Δ = 5.0 m",
+        # "rosbag_delta_6": "Δ = 6.0 m",
+        # "rosbag_delta_7": "Δ = 7.0 m",
+        # "rosbag_delta_8": "Δ = 8.0 m",
+        # "rosbag_delta_9_8": "Δ = 9.8 m (2xL), σ = 0.0",
+        # "rosbag_delta_12_25": "Δ = 12.25 m (2.5xL), σ = 0.0",
+        # "rosbag_delta_12_25_sigma_0_2": "Δ = 12.25 m, σ = 0.2",
+        # "rosbag_delta_12_25_sigma_0_5": "Δ = 12.25 m, σ = 0.5",
+        # "rosbag_delta_12_25_sigma_0_7": "Δ = 12.25 m, σ = 0.7",
+        "rosbag_delta_12_25_sigma_0_85": "ILOS: Δ = 12.25 m, σ = 0.85",
+        # "rosbag_delta_12_25_sigma_1_0": "Δ = 12.25 m, σ = 1.0",
+        # "rosbag_delta_14_7": "Δ = 14.7 m (3xL), σ = 0.0",
+        # "rosbag_delta_8_sigma_0_2": "Δ = 8.0 m, σ = 0.2",
+        # "rosbag_delta_8_sigma_0_3": "Δ = 8.0 m, σ = 0.3",
+        # "rosbag_delta_8_sigma_0_4": "Δ = 8.0 m, σ = 0.4",
+        # "rosbag_delta_8_sigma_0_5": "Δ = 8.0 m, σ = 0.5",
 
     }
     

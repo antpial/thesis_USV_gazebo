@@ -35,6 +35,8 @@ class Los_node(Node):
     def __init__(self):
         super().__init__('Los_node')
 
+        self.LOS_ON = True
+
         # Parametry ruchu
         self.v = 0.6    # predkosc
         self.given_position = GpsState(lat= -33.721365, lon=150.675268)  # punkt docelowy
@@ -75,6 +77,10 @@ class Los_node(Node):
         self.timer_period = 0.1  # sekundy
         self.last_de = 0.0  # ostatnia wartość de do obliczania D
         # self.timer = self.create_timer(self.timer_period, self.calculate_I)
+
+        #Prawdziwy LOS
+        self.Delta = 12.25
+        self.sigma = 0.85
 
         #checkpoints
         self.checkpoints = [] # lista wszystkich punktów docelowych (name, lat, lon, alt)
@@ -148,18 +154,36 @@ class Los_node(Node):
         self.last_de = copy.deepcopy(self.de)
         self.de = self.get_drift()
        
-        # Kalkuluje skladnik calkujacy I dla LOS
-        self.calculate_I()
 
-        self.calculate_D_los()
-       
-        # kalkuluje docelowy azymut
-        self.given_azimuth = self.calculate_new_azimuth() + self.calculate_P_los() + self.I_los + self.D_los # korekta azymutu docelowego o odleglosc od linii prostej
-        if self.given_azimuth < 0:
-            self.given_azimuth += 360.0
-        if self.given_azimuth >= 360.0:
-            self.given_azimuth -= 360.0
-       
+        if(not self.LOS_ON):
+            # Kalkuluje skladnik calkujacy I dla LOS
+            self.calculate_I()
+            self.calculate_D_los()
+            # kalkuluje docelowy azymut
+            self.given_azimuth = self.calculate_new_azimuth() + self.calculate_P_los() + self.I_los + self.D_los # korekta azymutu docelowego o odleglosc od linii prostej
+            if self.given_azimuth < 0:
+                self.given_azimuth += 360.0
+            if self.given_azimuth >= 360.0:
+                self.given_azimuth -= 360.0
+
+        if(self.LOS_ON):
+            self.calculate_I_rLOS()
+            # Najpierw obliczamy kąt samej ścieżki (niezależnie od pozycji robota)
+            path_angle_rad = math.radians(self.calculate_path_angle())
+            # Obliczamy korektę ILOS (w radianach!)
+            # Uwaga na znaki: w Twoim get_drift musisz sprawdzić, czy błąd jest dodatni 
+            # gdy jesteś z lewej czy prawej strony. 
+            # Zakładając standard: +de oznacza bycie z prawej strony trasy -> musimy skręcić w lewo (-).
+            correction_angle = math.atan((self.de + self.sigma * self.I_los) / self.Delta)
+            
+            # Wynikowy kąt w radianach
+            target_yaw_rad = path_angle_rad + correction_angle # Minus, aby kontrować błąd
+            
+            # Konwersja na stopnie i normalizacja 0-360
+            self.given_azimuth = math.degrees(target_yaw_rad)
+            self.given_azimuth = (self.given_azimuth + 360) % 360
+
+
         # kalkuluje odleglosc do punktu docelowego
         self.distance = self.get_distance_from_lat_lon_in_km()
 
@@ -329,6 +353,21 @@ class Los_node(Node):
         bearing = (math.degrees(theta) + 360) % 360
         return bearing  
     
+    def calculate_path_angle(self):
+        # To jest kąt stałej linii trasy (od Startu do Celu)
+        # Używamy self.starting_position zamiast self.current_position
+        
+        phi1 = math.radians(self.starting_position.lat)
+        phi2 = math.radians(self.given_position.lat)
+        d_lambda = math.radians(self.given_position.lon - self.starting_position.lon)
+        
+        y = math.sin(d_lambda) * math.cos(phi2)
+        x = math.cos(phi1) * math.sin(phi2) - math.sin(phi1) * math.cos(phi2) * math.cos(d_lambda)
+        
+        theta = math.atan2(y, x)
+        bearing = (math.degrees(theta) + 360) % 360
+        return bearing
+    
 
     def calculate_current_azimuth(self):
         # obliczam kat sredniego wektora pola magnetycznego
@@ -465,6 +504,25 @@ class Los_node(Node):
     def calculate_P_los(self):
         self.P_los = self.Kp_los * self.de
         return self.P_los
+    
+    def calculate_I_rLOS(self):
+        # Implementacja wzoru (4b) ze zdjęcia
+        
+        # Mianownik: (y + sigma * y_int)^2 + Delta^2
+        # Pamiętaj: self.de to Twoje 'y' (błąd odległości)
+        denominator = (self.de + self.sigma * self.I_los)**2 + self.Delta**2
+        
+        # Licznik: Delta * y
+        numerator = self.Delta * self.de
+        
+        # Pochodna y_int (dot_y_int)
+        y_int_dot = numerator / denominator
+        
+        # Całkowanie numeryczne (metoda Eulera): nowa_wartość = stara + pochodna * czas
+        self.I_los = self.I_los + (y_int_dot * self.dt_outer)
+
+        # Opcjonalnie: Nadal warto trzymać limit (anty-windup) dla bezpieczeństwa
+        self.I_los = max(min(self.I_los, self.windup_limit), -self.windup_limit)
 
 
 def main(args=None):

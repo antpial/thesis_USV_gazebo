@@ -32,11 +32,11 @@ print(f"Średni błąd longitude: {lon_mean_error:.2e}, odchylenie standardowe: 
 
 # --- Wykres trajektorii ---
 plt.figure(figsize=(8, 6))
-plt.plot(df['lon_fix'], df['lat_fix'], 'bo-', label='GPS Fix')
+# plt.plot(df['lon_fix'], df['lat_fix'], 'bo-', label='GPS Fix')
 plt.plot(df['lon_perf'], df['lat_perf'], 'ro-', label='GPS Perfect')
-plt.xlabel("Longitude")
-plt.ylabel("Latitude")
-plt.title("Porównanie trajektorii GPS")
+plt.xlabel("Długość geograficzna")
+plt.ylabel("Szerokośc geograficzna")
+plt.title("Trajektoria USV bez kompensacji wiatru")
 plt.legend()
 plt.grid(True)
 plt.axis('equal')   # <<<<<< równoskalowe osie!
