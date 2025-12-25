@@ -1,0 +1,5 @@
+  File "/home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages/research/analize_position_error.py", line 126
+    [Image of the trajectory plot]
+     ^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+

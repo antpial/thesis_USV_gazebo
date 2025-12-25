@@ -17,5 +17,19 @@
       </Point>
     </Placemark>
 
+    <Placemark>
+      <name>Third</name>
+      <Point>
+        <coordinates>150.675245,-33.722538</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Fourth</name>
+      <Point>
+        <coordinates>150.674264,-33.721192</coordinates>
+      </Point>
+    </Placemark>
+
   </Document>
 </kml>

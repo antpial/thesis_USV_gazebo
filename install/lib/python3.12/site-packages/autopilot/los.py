@@ -66,7 +66,7 @@ class Los_node(Node):
         self.de = 0.0 # odleglosc od linii prostej wyznaczonej przez punkty startowy i docelowy
         self.Kp_los = 9.0 # wspolczynnik wzmocnienia regulatora P dla LOS
         self.Ki_los = 0.856 # wspolczynnik wzmocnienia regulatora I dla LOS
-        self.Kd_los = 30.0 # wspolczynnik wzmocnienia regulatora D dla LOS
+        self.Kd_los = 25.0 # wspolczynnik wzmocnienia regulatora D dla LOS
         # self.Kp_los = 0.0 # wspolczynnik wzmocnienia regulatora P dla LOS
         # self.Ki_los = 0.0 # wspolczynnik wzmocnienia regulatora I dla LOS
         # self.Kd_los = 0.0 # wspolczynnik wzmocnienia regulatora D dla LOS
@@ -85,7 +85,7 @@ class Los_node(Node):
         #checkpoints
         self.checkpoints = [] # lista wszystkich punktów docelowych (name, lat, lon, alt)
         self.current_checkpoint_index = 0 # indeks aktualnego punktu docelowego
-        self.distance_threshold = 5.0 # odleglosc w metrach do punktu docelowego przy ktorej uznajemy ze dotarlismy do punktu
+        self.distance_threshold = 4.0 # odleglosc w metrach do punktu docelowego przy ktorej uznajemy ze dotarlismy do punktu
         self.reached_all_checkpoints = False # flaga czy dotarlismy do wszystkich punktow
 
         # czettoliwosci pida kaskadowego
@@ -116,7 +116,8 @@ class Los_node(Node):
         # Subskrybuje /gps
         self.subscription = self.create_subscription(
             NavSatFix,
-            '/gps/perfect',
+            # '/gps/perfect',
+            '/gps/fix',
             self.gps_callback,
             10
         )
@@ -213,7 +214,7 @@ class Los_node(Node):
         self.e = (self.given_azimuth - self.current_azimuth + 180.0) % 360.0 - 180.0
 
         # steruje wartoscia d (skret) regulatorem PD
-        self.d = (self.e * self.Kp_az) + (self.yaw_vel * self.Kd_az) # dodaje skladnik z predkosci katowej yaw z imu
+        self.d = (self.e * self.Kp_az) #+ (self.yaw_vel * self.Kd_az) # dodaje skladnik z predkosci katowej yaw z imu
 
         # ustawiam ciag na silnikach
         self.publish_thrust()
@@ -222,6 +223,7 @@ class Los_node(Node):
         # Oblicza składnik różniczkujący D dla regulatora LOS
         de_difference = self.de - self.last_de
         self.D_los = self.Kd_los * (de_difference / self.dt_outer)
+        self.D_los = 0.0  # Tymczasowo wyłączone
 
 
     def imu_callback(self, msg: Imu):
@@ -503,6 +505,7 @@ class Los_node(Node):
 
     def calculate_P_los(self):
         self.P_los = self.Kp_los * self.de
+        self.P = max(min(self.P_los, self.windup_limit), -self.windup_limit)  # ograniczenie anty-windup
         return self.P_los
     
     def calculate_I_rLOS(self):

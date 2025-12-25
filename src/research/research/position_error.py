@@ -13,7 +13,7 @@ class GpsComparator(Node):
         super().__init__('gps_comparator')
 
         self.sub_fix = self.create_subscription(
-            NavSatFix, '/gps/filtered', self.cb_fix, 10)
+            NavSatFix, '/gps/fix', self.cb_fix, 10)
 
         self.sub_fix_perfect = self.create_subscription(
             NavSatFix, '/gps/perfect', self.cb_fix_perfect, 10)

@@ -1,0 +1,1183 @@
+[0.335s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--merge-install']
+[0.336s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=True, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7642c36a9760>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7642c40eda90>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7642c40eda90>>, mixin_verb=('build',))
+[0.408s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.408s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.408s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.408s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.408s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.408s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.408s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/antoni/gazebo_maritime_ws'
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.500s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.500s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.500s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.501s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.501s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.501s] Level 1:colcon.colcon_core.package_identification:_identify(Sim_output) by extensions ['ignore', 'ignore_ament_install']
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(Sim_output) by extension 'ignore'
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(Sim_output) by extension 'ignore_ament_install'
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(Sim_output) by extensions ['colcon_pkg']
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(Sim_output) by extension 'colcon_pkg'
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(Sim_output) by extensions ['colcon_meta']
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(Sim_output) by extension 'colcon_meta'
+[0.504s] Level 1:colcon.colcon_core.package_identification:_identify(Sim_output) by extensions ['ros']
+[0.504s] Level 1:colcon.colcon_core.package_identification:_identify(Sim_output) by extension 'ros'
+[0.504s] Level 1:colcon.colcon_core.package_identification:_identify(Sim_output) by extensions ['cmake', 'python']
+[0.504s] Level 1:colcon.colcon_core.package_identification:_identify(Sim_output) by extension 'cmake'
+[0.505s] Level 1:colcon.colcon_core.package_identification:_identify(Sim_output) by extension 'python'
+[0.505s] Level 1:colcon.colcon_core.package_identification:_identify(Sim_output) by extensions ['python_setup_py']
+[0.505s] Level 1:colcon.colcon_core.package_identification:_identify(Sim_output) by extension 'python_setup_py'
+[0.505s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.506s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.506s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.511s] Level 1:colcon.colcon_core.package_identification:_identify(los_p_025) by extensions ['ignore', 'ignore_ament_install']
+[0.511s] Level 1:colcon.colcon_core.package_identification:_identify(los_p_025) by extension 'ignore'
+[0.512s] Level 1:colcon.colcon_core.package_identification:_identify(los_p_025) by extension 'ignore_ament_install'
+[0.512s] Level 1:colcon.colcon_core.package_identification:_identify(los_p_025) by extensions ['colcon_pkg']
+[0.512s] Level 1:colcon.colcon_core.package_identification:_identify(los_p_025) by extension 'colcon_pkg'
+[0.512s] Level 1:colcon.colcon_core.package_identification:_identify(los_p_025) by extensions ['colcon_meta']
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(los_p_025) by extension 'colcon_meta'
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(los_p_025) by extensions ['ros']
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(los_p_025) by extension 'ros'
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(los_p_025) by extensions ['cmake', 'python']
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(los_p_025) by extension 'cmake'
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(los_p_025) by extension 'python'
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(los_p_025) by extensions ['python_setup_py']
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(los_p_025) by extension 'python_setup_py'
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_0_4) by extensions ['ignore', 'ignore_ament_install']
+[0.515s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_0_4) by extension 'ignore'
+[0.515s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_0_4) by extension 'ignore_ament_install'
+[0.515s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_0_4) by extensions ['colcon_pkg']
+[0.516s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_0_4) by extension 'colcon_pkg'
+[0.516s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_0_4) by extensions ['colcon_meta']
+[0.516s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_0_4) by extension 'colcon_meta'
+[0.516s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_0_4) by extensions ['ros']
+[0.516s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_0_4) by extension 'ros'
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_0_4) by extensions ['cmake', 'python']
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_0_4) by extension 'cmake'
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_0_4) by extension 'python'
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_0_4) by extensions ['python_setup_py']
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_0_4) by extension 'python_setup_py'
+[0.518s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_10) by extensions ['ignore', 'ignore_ament_install']
+[0.518s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_10) by extension 'ignore'
+[0.518s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_10) by extension 'ignore_ament_install'
+[0.519s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_10) by extensions ['colcon_pkg']
+[0.519s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_10) by extension 'colcon_pkg'
+[0.519s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_10) by extensions ['colcon_meta']
+[0.519s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_10) by extension 'colcon_meta'
+[0.519s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_10) by extensions ['ros']
+[0.519s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_10) by extension 'ros'
+[0.520s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_10) by extensions ['cmake', 'python']
+[0.520s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_10) by extension 'cmake'
+[0.520s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_10) by extension 'python'
+[0.520s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_10) by extensions ['python_setup_py']
+[0.520s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_10) by extension 'python_setup_py'
+[0.521s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25) by extensions ['ignore', 'ignore_ament_install']
+[0.521s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25) by extension 'ignore'
+[0.521s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25) by extension 'ignore_ament_install'
+[0.521s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25) by extensions ['colcon_pkg']
+[0.521s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25) by extension 'colcon_pkg'
+[0.522s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25) by extensions ['colcon_meta']
+[0.522s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25) by extension 'colcon_meta'
+[0.522s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25) by extensions ['ros']
+[0.522s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25) by extension 'ros'
+[0.522s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25) by extensions ['cmake', 'python']
+[0.522s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25) by extension 'cmake'
+[0.523s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25) by extension 'python'
+[0.523s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25) by extensions ['python_setup_py']
+[0.523s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25) by extension 'python_setup_py'
+[0.523s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_0_2) by extensions ['ignore', 'ignore_ament_install']
+[0.524s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_0_2) by extension 'ignore'
+[0.524s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_0_2) by extension 'ignore_ament_install'
+[0.524s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_0_2) by extensions ['colcon_pkg']
+[0.524s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_0_2) by extension 'colcon_pkg'
+[0.525s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_0_2) by extensions ['colcon_meta']
+[0.525s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_0_2) by extension 'colcon_meta'
+[0.525s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_0_2) by extensions ['ros']
+[0.525s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_0_2) by extension 'ros'
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_0_2) by extensions ['cmake', 'python']
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_0_2) by extension 'cmake'
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_0_2) by extension 'python'
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_0_2) by extensions ['python_setup_py']
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_0_2) by extension 'python_setup_py'
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_0_5) by extensions ['ignore', 'ignore_ament_install']
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_0_5) by extension 'ignore'
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_0_5) by extension 'ignore_ament_install'
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_0_5) by extensions ['colcon_pkg']
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_0_5) by extension 'colcon_pkg'
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_0_5) by extensions ['colcon_meta']
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_0_5) by extension 'colcon_meta'
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_0_5) by extensions ['ros']
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_0_5) by extension 'ros'
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_0_5) by extensions ['cmake', 'python']
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_0_5) by extension 'cmake'
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_0_5) by extension 'python'
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_0_5) by extensions ['python_setup_py']
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_0_5) by extension 'python_setup_py'
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_0_7) by extensions ['ignore', 'ignore_ament_install']
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_0_7) by extension 'ignore'
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_0_7) by extension 'ignore_ament_install'
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_0_7) by extensions ['colcon_pkg']
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_0_7) by extension 'colcon_pkg'
+[0.531s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_0_7) by extensions ['colcon_meta']
+[0.531s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_0_7) by extension 'colcon_meta'
+[0.531s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_0_7) by extensions ['ros']
+[0.531s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_0_7) by extension 'ros'
+[0.531s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_0_7) by extensions ['cmake', 'python']
+[0.532s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_0_7) by extension 'cmake'
+[0.532s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_0_7) by extension 'python'
+[0.532s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_0_7) by extensions ['python_setup_py']
+[0.532s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_0_7) by extension 'python_setup_py'
+[0.532s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_0_85) by extensions ['ignore', 'ignore_ament_install']
+[0.533s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_0_85) by extension 'ignore'
+[0.533s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_0_85) by extension 'ignore_ament_install'
+[0.533s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_0_85) by extensions ['colcon_pkg']
+[0.534s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_0_85) by extension 'colcon_pkg'
+[0.534s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_0_85) by extensions ['colcon_meta']
+[0.534s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_0_85) by extension 'colcon_meta'
+[0.534s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_0_85) by extensions ['ros']
+[0.534s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_0_85) by extension 'ros'
+[0.535s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_0_85) by extensions ['cmake', 'python']
+[0.535s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_0_85) by extension 'cmake'
+[0.535s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_0_85) by extension 'python'
+[0.535s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_0_85) by extensions ['python_setup_py']
+[0.535s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_0_85) by extension 'python_setup_py'
+[0.536s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_1_0) by extensions ['ignore', 'ignore_ament_install']
+[0.536s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_1_0) by extension 'ignore'
+[0.536s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_1_0) by extension 'ignore_ament_install'
+[0.537s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_1_0) by extensions ['colcon_pkg']
+[0.537s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_1_0) by extension 'colcon_pkg'
+[0.537s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_1_0) by extensions ['colcon_meta']
+[0.537s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_1_0) by extension 'colcon_meta'
+[0.538s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_1_0) by extensions ['ros']
+[0.538s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_1_0) by extension 'ros'
+[0.538s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_1_0) by extensions ['cmake', 'python']
+[0.538s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_1_0) by extension 'cmake'
+[0.538s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_1_0) by extension 'python'
+[0.539s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_1_0) by extensions ['python_setup_py']
+[0.539s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_12_25_sigma_1_0) by extension 'python_setup_py'
+[0.539s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_14_7) by extensions ['ignore', 'ignore_ament_install']
+[0.540s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_14_7) by extension 'ignore'
+[0.540s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_14_7) by extension 'ignore_ament_install'
+[0.541s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_14_7) by extensions ['colcon_pkg']
+[0.541s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_14_7) by extension 'colcon_pkg'
+[0.541s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_14_7) by extensions ['colcon_meta']
+[0.541s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_14_7) by extension 'colcon_meta'
+[0.541s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_14_7) by extensions ['ros']
+[0.542s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_14_7) by extension 'ros'
+[0.542s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_14_7) by extensions ['cmake', 'python']
+[0.542s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_14_7) by extension 'cmake'
+[0.542s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_14_7) by extension 'python'
+[0.542s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_14_7) by extensions ['python_setup_py']
+[0.543s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_14_7) by extension 'python_setup_py'
+[0.543s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_5) by extensions ['ignore', 'ignore_ament_install']
+[0.543s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_5) by extension 'ignore'
+[0.544s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_5) by extension 'ignore_ament_install'
+[0.544s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_5) by extensions ['colcon_pkg']
+[0.544s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_5) by extension 'colcon_pkg'
+[0.544s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_5) by extensions ['colcon_meta']
+[0.544s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_5) by extension 'colcon_meta'
+[0.544s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_5) by extensions ['ros']
+[0.544s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_5) by extension 'ros'
+[0.545s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_5) by extensions ['cmake', 'python']
+[0.545s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_5) by extension 'cmake'
+[0.545s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_5) by extension 'python'
+[0.545s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_5) by extensions ['python_setup_py']
+[0.545s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_5) by extension 'python_setup_py'
+[0.546s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_6) by extensions ['ignore', 'ignore_ament_install']
+[0.546s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_6) by extension 'ignore'
+[0.546s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_6) by extension 'ignore_ament_install'
+[0.547s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_6) by extensions ['colcon_pkg']
+[0.547s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_6) by extension 'colcon_pkg'
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_6) by extensions ['colcon_meta']
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_6) by extension 'colcon_meta'
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_6) by extensions ['ros']
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_6) by extension 'ros'
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_6) by extensions ['cmake', 'python']
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_6) by extension 'cmake'
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_6) by extension 'python'
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_6) by extensions ['python_setup_py']
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_6) by extension 'python_setup_py'
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_6_sigma_0_5) by extensions ['ignore', 'ignore_ament_install']
+[0.550s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_6_sigma_0_5) by extension 'ignore'
+[0.550s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_6_sigma_0_5) by extension 'ignore_ament_install'
+[0.550s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_6_sigma_0_5) by extensions ['colcon_pkg']
+[0.550s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_6_sigma_0_5) by extension 'colcon_pkg'
+[0.550s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_6_sigma_0_5) by extensions ['colcon_meta']
+[0.550s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_6_sigma_0_5) by extension 'colcon_meta'
+[0.550s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_6_sigma_0_5) by extensions ['ros']
+[0.551s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_6_sigma_0_5) by extension 'ros'
+[0.551s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_6_sigma_0_5) by extensions ['cmake', 'python']
+[0.551s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_6_sigma_0_5) by extension 'cmake'
+[0.551s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_6_sigma_0_5) by extension 'python'
+[0.551s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_6_sigma_0_5) by extensions ['python_setup_py']
+[0.551s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_6_sigma_0_5) by extension 'python_setup_py'
+[0.552s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_7) by extensions ['ignore', 'ignore_ament_install']
+[0.552s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_7) by extension 'ignore'
+[0.552s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_7) by extension 'ignore_ament_install'
+[0.553s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_7) by extensions ['colcon_pkg']
+[0.553s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_7) by extension 'colcon_pkg'
+[0.554s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_7) by extensions ['colcon_meta']
+[0.554s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_7) by extension 'colcon_meta'
+[0.554s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_7) by extensions ['ros']
+[0.554s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_7) by extension 'ros'
+[0.555s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_7) by extensions ['cmake', 'python']
+[0.555s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_7) by extension 'cmake'
+[0.555s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_7) by extension 'python'
+[0.555s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_7) by extensions ['python_setup_py']
+[0.555s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_7) by extension 'python_setup_py'
+[0.556s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8) by extensions ['ignore', 'ignore_ament_install']
+[0.556s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8) by extension 'ignore'
+[0.557s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8) by extension 'ignore_ament_install'
+[0.557s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8) by extensions ['colcon_pkg']
+[0.557s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8) by extension 'colcon_pkg'
+[0.557s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8) by extensions ['colcon_meta']
+[0.557s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8) by extension 'colcon_meta'
+[0.557s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8) by extensions ['ros']
+[0.558s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8) by extension 'ros'
+[0.558s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8) by extensions ['cmake', 'python']
+[0.558s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8) by extension 'cmake'
+[0.558s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8) by extension 'python'
+[0.558s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8) by extensions ['python_setup_py']
+[0.558s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8) by extension 'python_setup_py'
+[0.559s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8_sigma_0_2) by extensions ['ignore', 'ignore_ament_install']
+[0.559s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8_sigma_0_2) by extension 'ignore'
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8_sigma_0_2) by extension 'ignore_ament_install'
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8_sigma_0_2) by extensions ['colcon_pkg']
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8_sigma_0_2) by extension 'colcon_pkg'
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8_sigma_0_2) by extensions ['colcon_meta']
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8_sigma_0_2) by extension 'colcon_meta'
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8_sigma_0_2) by extensions ['ros']
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8_sigma_0_2) by extension 'ros'
+[0.561s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8_sigma_0_2) by extensions ['cmake', 'python']
+[0.561s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8_sigma_0_2) by extension 'cmake'
+[0.561s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8_sigma_0_2) by extension 'python'
+[0.561s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8_sigma_0_2) by extensions ['python_setup_py']
+[0.561s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8_sigma_0_2) by extension 'python_setup_py'
+[0.562s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8_sigma_0_3) by extensions ['ignore', 'ignore_ament_install']
+[0.562s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8_sigma_0_3) by extension 'ignore'
+[0.562s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8_sigma_0_3) by extension 'ignore_ament_install'
+[0.562s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8_sigma_0_3) by extensions ['colcon_pkg']
+[0.563s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8_sigma_0_3) by extension 'colcon_pkg'
+[0.563s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8_sigma_0_3) by extensions ['colcon_meta']
+[0.563s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8_sigma_0_3) by extension 'colcon_meta'
+[0.563s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8_sigma_0_3) by extensions ['ros']
+[0.563s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8_sigma_0_3) by extension 'ros'
+[0.563s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8_sigma_0_3) by extensions ['cmake', 'python']
+[0.563s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8_sigma_0_3) by extension 'cmake'
+[0.564s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8_sigma_0_3) by extension 'python'
+[0.564s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8_sigma_0_3) by extensions ['python_setup_py']
+[0.564s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8_sigma_0_3) by extension 'python_setup_py'
+[0.564s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8_sigma_0_4) by extensions ['ignore', 'ignore_ament_install']
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8_sigma_0_4) by extension 'ignore'
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8_sigma_0_4) by extension 'ignore_ament_install'
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8_sigma_0_4) by extensions ['colcon_pkg']
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8_sigma_0_4) by extension 'colcon_pkg'
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8_sigma_0_4) by extensions ['colcon_meta']
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8_sigma_0_4) by extension 'colcon_meta'
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8_sigma_0_4) by extensions ['ros']
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8_sigma_0_4) by extension 'ros'
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8_sigma_0_4) by extensions ['cmake', 'python']
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8_sigma_0_4) by extension 'cmake'
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8_sigma_0_4) by extension 'python'
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8_sigma_0_4) by extensions ['python_setup_py']
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8_sigma_0_4) by extension 'python_setup_py'
+[0.567s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8_sigma_0_5) by extensions ['ignore', 'ignore_ament_install']
+[0.567s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8_sigma_0_5) by extension 'ignore'
+[0.567s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8_sigma_0_5) by extension 'ignore_ament_install'
+[0.567s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8_sigma_0_5) by extensions ['colcon_pkg']
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8_sigma_0_5) by extension 'colcon_pkg'
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8_sigma_0_5) by extensions ['colcon_meta']
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8_sigma_0_5) by extension 'colcon_meta'
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8_sigma_0_5) by extensions ['ros']
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8_sigma_0_5) by extension 'ros'
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8_sigma_0_5) by extensions ['cmake', 'python']
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8_sigma_0_5) by extension 'cmake'
+[0.569s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8_sigma_0_5) by extension 'python'
+[0.569s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8_sigma_0_5) by extensions ['python_setup_py']
+[0.569s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_8_sigma_0_5) by extension 'python_setup_py'
+[0.569s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_9_8) by extensions ['ignore', 'ignore_ament_install']
+[0.569s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_9_8) by extension 'ignore'
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_9_8) by extension 'ignore_ament_install'
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_9_8) by extensions ['colcon_pkg']
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_9_8) by extension 'colcon_pkg'
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_9_8) by extensions ['colcon_meta']
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_9_8) by extension 'colcon_meta'
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_9_8) by extensions ['ros']
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_9_8) by extension 'ros'
+[0.571s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_9_8) by extensions ['cmake', 'python']
+[0.571s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_9_8) by extension 'cmake'
+[0.571s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_9_8) by extension 'python'
+[0.571s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_9_8) by extensions ['python_setup_py']
+[0.571s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_delta_9_8) by extension 'python_setup_py'
+[0.572s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_filtered1) by extensions ['ignore', 'ignore_ament_install']
+[0.572s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_filtered1) by extension 'ignore'
+[0.572s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_filtered1) by extension 'ignore_ament_install'
+[0.572s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_filtered1) by extensions ['colcon_pkg']
+[0.572s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_filtered1) by extension 'colcon_pkg'
+[0.572s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_filtered1) by extensions ['colcon_meta']
+[0.573s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_filtered1) by extension 'colcon_meta'
+[0.573s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_filtered1) by extensions ['ros']
+[0.573s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_filtered1) by extension 'ros'
+[0.573s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_filtered1) by extensions ['cmake', 'python']
+[0.573s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_filtered1) by extension 'cmake'
+[0.573s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_filtered1) by extension 'python'
+[0.573s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_filtered1) by extensions ['python_setup_py']
+[0.574s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_filtered1) by extension 'python_setup_py'
+[0.574s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_filtered2) by extensions ['ignore', 'ignore_ament_install']
+[0.574s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_filtered2) by extension 'ignore'
+[0.574s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_filtered2) by extension 'ignore_ament_install'
+[0.575s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_filtered2) by extensions ['colcon_pkg']
+[0.575s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_filtered2) by extension 'colcon_pkg'
+[0.575s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_filtered2) by extensions ['colcon_meta']
+[0.575s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_filtered2) by extension 'colcon_meta'
+[0.575s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_filtered2) by extensions ['ros']
+[0.575s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_filtered2) by extension 'ros'
+[0.575s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_filtered2) by extensions ['cmake', 'python']
+[0.576s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_filtered2) by extension 'cmake'
+[0.576s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_filtered2) by extension 'python'
+[0.576s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_filtered2) by extensions ['python_setup_py']
+[0.576s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_filtered2) by extension 'python_setup_py'
+[0.576s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_filtered3) by extensions ['ignore', 'ignore_ament_install']
+[0.577s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_filtered3) by extension 'ignore'
+[0.577s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_filtered3) by extension 'ignore_ament_install'
+[0.577s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_filtered3) by extensions ['colcon_pkg']
+[0.577s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_filtered3) by extension 'colcon_pkg'
+[0.577s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_filtered3) by extensions ['colcon_meta']
+[0.577s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_filtered3) by extension 'colcon_meta'
+[0.578s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_filtered3) by extensions ['ros']
+[0.578s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_filtered3) by extension 'ros'
+[0.578s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_filtered3) by extensions ['cmake', 'python']
+[0.578s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_filtered3) by extension 'cmake'
+[0.578s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_filtered3) by extension 'python'
+[0.578s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_filtered3) by extensions ['python_setup_py']
+[0.578s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_filtered3) by extension 'python_setup_py'
+[0.579s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_fix1) by extensions ['ignore', 'ignore_ament_install']
+[0.579s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_fix1) by extension 'ignore'
+[0.579s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_fix1) by extension 'ignore_ament_install'
+[0.580s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_fix1) by extensions ['colcon_pkg']
+[0.580s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_fix1) by extension 'colcon_pkg'
+[0.580s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_fix1) by extensions ['colcon_meta']
+[0.580s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_fix1) by extension 'colcon_meta'
+[0.580s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_fix1) by extensions ['ros']
+[0.580s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_fix1) by extension 'ros'
+[0.581s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_fix1) by extensions ['cmake', 'python']
+[0.581s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_fix1) by extension 'cmake'
+[0.581s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_fix1) by extension 'python'
+[0.581s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_fix1) by extensions ['python_setup_py']
+[0.581s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_fix1) by extension 'python_setup_py'
+[0.581s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_fix2) by extensions ['ignore', 'ignore_ament_install']
+[0.582s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_fix2) by extension 'ignore'
+[0.582s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_fix2) by extension 'ignore_ament_install'
+[0.582s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_fix2) by extensions ['colcon_pkg']
+[0.582s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_fix2) by extension 'colcon_pkg'
+[0.582s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_fix2) by extensions ['colcon_meta']
+[0.582s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_fix2) by extension 'colcon_meta'
+[0.583s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_fix2) by extensions ['ros']
+[0.583s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_fix2) by extension 'ros'
+[0.583s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_fix2) by extensions ['cmake', 'python']
+[0.583s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_fix2) by extension 'cmake'
+[0.583s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_fix2) by extension 'python'
+[0.583s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_fix2) by extensions ['python_setup_py']
+[0.584s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_fix2) by extension 'python_setup_py'
+[0.584s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_fix3) by extensions ['ignore', 'ignore_ament_install']
+[0.584s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_fix3) by extension 'ignore'
+[0.584s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_fix3) by extension 'ignore_ament_install'
+[0.585s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_fix3) by extensions ['colcon_pkg']
+[0.585s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_fix3) by extension 'colcon_pkg'
+[0.585s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_fix3) by extensions ['colcon_meta']
+[0.585s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_fix3) by extension 'colcon_meta'
+[0.585s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_fix3) by extensions ['ros']
+[0.585s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_fix3) by extension 'ros'
+[0.586s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_fix3) by extensions ['cmake', 'python']
+[0.586s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_fix3) by extension 'cmake'
+[0.586s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_fix3) by extension 'python'
+[0.586s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_fix3) by extensions ['python_setup_py']
+[0.586s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_gps_fix3) by extension 'python_setup_py'
+[0.587s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kd_0_0) by extensions ['ignore', 'ignore_ament_install']
+[0.587s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kd_0_0) by extension 'ignore'
+[0.588s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kd_0_0) by extension 'ignore_ament_install'
+[0.588s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kd_0_0) by extensions ['colcon_pkg']
+[0.588s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kd_0_0) by extension 'colcon_pkg'
+[0.588s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kd_0_0) by extensions ['colcon_meta']
+[0.588s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kd_0_0) by extension 'colcon_meta'
+[0.588s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kd_0_0) by extensions ['ros']
+[0.588s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kd_0_0) by extension 'ros'
+[0.589s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kd_0_0) by extensions ['cmake', 'python']
+[0.589s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kd_0_0) by extension 'cmake'
+[0.589s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kd_0_0) by extension 'python'
+[0.589s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kd_0_0) by extensions ['python_setup_py']
+[0.589s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kd_0_0) by extension 'python_setup_py'
+[0.590s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kd_0_5) by extensions ['ignore', 'ignore_ament_install']
+[0.591s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kd_0_5) by extension 'ignore'
+[0.591s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kd_0_5) by extension 'ignore_ament_install'
+[0.591s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kd_0_5) by extensions ['colcon_pkg']
+[0.591s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kd_0_5) by extension 'colcon_pkg'
+[0.591s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kd_0_5) by extensions ['colcon_meta']
+[0.591s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kd_0_5) by extension 'colcon_meta'
+[0.592s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kd_0_5) by extensions ['ros']
+[0.592s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kd_0_5) by extension 'ros'
+[0.592s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kd_0_5) by extensions ['cmake', 'python']
+[0.592s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kd_0_5) by extension 'cmake'
+[0.592s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kd_0_5) by extension 'python'
+[0.593s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kd_0_5) by extensions ['python_setup_py']
+[0.594s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kd_0_5) by extension 'python_setup_py'
+[0.594s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kd_10) by extensions ['ignore', 'ignore_ament_install']
+[0.595s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kd_10) by extension 'ignore'
+[0.595s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kd_10) by extension 'ignore_ament_install'
+[0.596s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kd_10) by extensions ['colcon_pkg']
+[0.596s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kd_10) by extension 'colcon_pkg'
+[0.596s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kd_10) by extensions ['colcon_meta']
+[0.596s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kd_10) by extension 'colcon_meta'
+[0.596s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kd_10) by extensions ['ros']
+[0.596s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kd_10) by extension 'ros'
+[0.597s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kd_10) by extensions ['cmake', 'python']
+[0.597s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kd_10) by extension 'cmake'
+[0.597s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kd_10) by extension 'python'
+[0.597s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kd_10) by extensions ['python_setup_py']
+[0.597s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kd_10) by extension 'python_setup_py'
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kd_1_0) by extensions ['ignore', 'ignore_ament_install']
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kd_1_0) by extension 'ignore'
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kd_1_0) by extension 'ignore_ament_install'
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kd_1_0) by extensions ['colcon_pkg']
+[0.599s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kd_1_0) by extension 'colcon_pkg'
+[0.599s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kd_1_0) by extensions ['colcon_meta']
+[0.599s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kd_1_0) by extension 'colcon_meta'
+[0.599s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kd_1_0) by extensions ['ros']
+[0.599s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kd_1_0) by extension 'ros'
+[0.599s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kd_1_0) by extensions ['cmake', 'python']
+[0.599s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kd_1_0) by extension 'cmake'
+[0.600s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kd_1_0) by extension 'python'
+[0.600s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kd_1_0) by extensions ['python_setup_py']
+[0.600s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kd_1_0) by extension 'python_setup_py'
+[0.600s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_4_275_Ki_0_856_Kd_20) by extensions ['ignore', 'ignore_ament_install']
+[0.601s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_4_275_Ki_0_856_Kd_20) by extension 'ignore'
+[0.601s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_4_275_Ki_0_856_Kd_20) by extension 'ignore_ament_install'
+[0.601s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_4_275_Ki_0_856_Kd_20) by extensions ['colcon_pkg']
+[0.601s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_4_275_Ki_0_856_Kd_20) by extension 'colcon_pkg'
+[0.601s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_4_275_Ki_0_856_Kd_20) by extensions ['colcon_meta']
+[0.601s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_4_275_Ki_0_856_Kd_20) by extension 'colcon_meta'
+[0.602s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_4_275_Ki_0_856_Kd_20) by extensions ['ros']
+[0.602s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_4_275_Ki_0_856_Kd_20) by extension 'ros'
+[0.602s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_4_275_Ki_0_856_Kd_20) by extensions ['cmake', 'python']
+[0.602s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_4_275_Ki_0_856_Kd_20) by extension 'cmake'
+[0.602s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_4_275_Ki_0_856_Kd_20) by extension 'python'
+[0.602s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_4_275_Ki_0_856_Kd_20) by extensions ['python_setup_py']
+[0.603s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_4_275_Ki_0_856_Kd_20) by extension 'python_setup_py'
+[0.603s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_9_Ki_0_856_Kd_25) by extensions ['ignore', 'ignore_ament_install']
+[0.603s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_9_Ki_0_856_Kd_25) by extension 'ignore'
+[0.603s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_9_Ki_0_856_Kd_25) by extension 'ignore_ament_install'
+[0.604s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_9_Ki_0_856_Kd_25) by extensions ['colcon_pkg']
+[0.604s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_9_Ki_0_856_Kd_25) by extension 'colcon_pkg'
+[0.604s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_9_Ki_0_856_Kd_25) by extensions ['colcon_meta']
+[0.604s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_9_Ki_0_856_Kd_25) by extension 'colcon_meta'
+[0.604s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_9_Ki_0_856_Kd_25) by extensions ['ros']
+[0.604s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_9_Ki_0_856_Kd_25) by extension 'ros'
+[0.605s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_9_Ki_0_856_Kd_25) by extensions ['cmake', 'python']
+[0.605s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_9_Ki_0_856_Kd_25) by extension 'cmake'
+[0.605s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_9_Ki_0_856_Kd_25) by extension 'python'
+[0.605s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_9_Ki_0_856_Kd_25) by extensions ['python_setup_py']
+[0.605s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_9_Ki_0_856_Kd_25) by extension 'python_setup_py'
+[0.605s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_9_Ki_0_856_Kd_30) by extensions ['ignore', 'ignore_ament_install']
+[0.605s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_9_Ki_0_856_Kd_30) by extension 'ignore'
+[0.605s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_9_Ki_0_856_Kd_30) by extension 'ignore_ament_install'
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_9_Ki_0_856_Kd_30) by extensions ['colcon_pkg']
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_9_Ki_0_856_Kd_30) by extension 'colcon_pkg'
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_9_Ki_0_856_Kd_30) by extensions ['colcon_meta']
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_9_Ki_0_856_Kd_30) by extension 'colcon_meta'
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_9_Ki_0_856_Kd_30) by extensions ['ros']
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_9_Ki_0_856_Kd_30) by extension 'ros'
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_9_Ki_0_856_Kd_30) by extensions ['cmake', 'python']
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_9_Ki_0_856_Kd_30) by extension 'cmake'
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_9_Ki_0_856_Kd_30) by extension 'python'
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_9_Ki_0_856_Kd_30) by extensions ['python_setup_py']
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_9_Ki_0_856_Kd_30) by extension 'python_setup_py'
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_9_Ki_856_Kd_20) by extensions ['ignore', 'ignore_ament_install']
+[0.607s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_9_Ki_856_Kd_20) by extension 'ignore'
+[0.607s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_9_Ki_856_Kd_20) by extension 'ignore_ament_install'
+[0.607s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_9_Ki_856_Kd_20) by extensions ['colcon_pkg']
+[0.607s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_9_Ki_856_Kd_20) by extension 'colcon_pkg'
+[0.607s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_9_Ki_856_Kd_20) by extensions ['colcon_meta']
+[0.607s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_9_Ki_856_Kd_20) by extension 'colcon_meta'
+[0.607s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_9_Ki_856_Kd_20) by extensions ['ros']
+[0.607s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_9_Ki_856_Kd_20) by extension 'ros'
+[0.607s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_9_Ki_856_Kd_20) by extensions ['cmake', 'python']
+[0.607s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_9_Ki_856_Kd_20) by extension 'cmake'
+[0.607s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_9_Ki_856_Kd_20) by extension 'python'
+[0.608s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_9_Ki_856_Kd_20) by extensions ['python_setup_py']
+[0.608s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_9_Ki_856_Kd_20) by extension 'python_setup_py'
+[0.608s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_los_10) by extensions ['ignore', 'ignore_ament_install']
+[0.608s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_los_10) by extension 'ignore'
+[0.608s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_los_10) by extension 'ignore_ament_install'
+[0.608s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_los_10) by extensions ['colcon_pkg']
+[0.608s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_los_10) by extension 'colcon_pkg'
+[0.608s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_los_10) by extensions ['colcon_meta']
+[0.608s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_los_10) by extension 'colcon_meta'
+[0.608s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_los_10) by extensions ['ros']
+[0.609s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_los_10) by extension 'ros'
+[0.609s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_los_10) by extensions ['cmake', 'python']
+[0.609s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_los_10) by extension 'cmake'
+[0.609s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_los_10) by extension 'python'
+[0.609s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_los_10) by extensions ['python_setup_py']
+[0.609s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_los_10) by extension 'python_setup_py'
+[0.609s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_los_8) by extensions ['ignore', 'ignore_ament_install']
+[0.609s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_los_8) by extension 'ignore'
+[0.609s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_los_8) by extension 'ignore_ament_install'
+[0.610s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_los_8) by extensions ['colcon_pkg']
+[0.610s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_los_8) by extension 'colcon_pkg'
+[0.610s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_los_8) by extensions ['colcon_meta']
+[0.610s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_los_8) by extension 'colcon_meta'
+[0.610s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_los_8) by extensions ['ros']
+[0.610s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_los_8) by extension 'ros'
+[0.610s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_los_8) by extensions ['cmake', 'python']
+[0.610s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_los_8) by extension 'cmake'
+[0.610s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_los_8) by extension 'python'
+[0.610s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_los_8) by extensions ['python_setup_py']
+[0.610s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_los_8) by extension 'python_setup_py'
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_los_9) by extensions ['ignore', 'ignore_ament_install']
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_los_9) by extension 'ignore'
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_los_9) by extension 'ignore_ament_install'
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_los_9) by extensions ['colcon_pkg']
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_los_9) by extension 'colcon_pkg'
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_los_9) by extensions ['colcon_meta']
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_los_9) by extension 'colcon_meta'
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_los_9) by extensions ['ros']
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_los_9) by extension 'ros'
+[0.612s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_los_9) by extensions ['cmake', 'python']
+[0.612s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_los_9) by extension 'cmake'
+[0.612s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_los_9) by extension 'python'
+[0.612s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_los_9) by extensions ['python_setup_py']
+[0.612s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_los_9) by extension 'python_setup_py'
+[0.612s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_los_9_5) by extensions ['ignore', 'ignore_ament_install']
+[0.612s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_los_9_5) by extension 'ignore'
+[0.612s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_los_9_5) by extension 'ignore_ament_install'
+[0.612s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_los_9_5) by extensions ['colcon_pkg']
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_los_9_5) by extension 'colcon_pkg'
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_los_9_5) by extensions ['colcon_meta']
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_los_9_5) by extension 'colcon_meta'
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_los_9_5) by extensions ['ros']
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_los_9_5) by extension 'ros'
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_los_9_5) by extensions ['cmake', 'python']
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_los_9_5) by extension 'cmake'
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_los_9_5) by extension 'python'
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_los_9_5) by extensions ['python_setup_py']
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_Kp_los_9_5) by extension 'python_setup_py'
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_ZNv1) by extensions ['ignore', 'ignore_ament_install']
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_ZNv1) by extension 'ignore'
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_ZNv1) by extension 'ignore_ament_install'
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_ZNv1) by extensions ['colcon_pkg']
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_ZNv1) by extension 'colcon_pkg'
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_ZNv1) by extensions ['colcon_meta']
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_ZNv1) by extension 'colcon_meta'
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_ZNv1) by extensions ['ros']
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_ZNv1) by extension 'ros'
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_ZNv1) by extensions ['cmake', 'python']
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_ZNv1) by extension 'cmake'
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_ZNv1) by extension 'python'
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_ZNv1) by extensions ['python_setup_py']
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_ZNv1) by extension 'python_setup_py'
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_02) by extensions ['ignore', 'ignore_ament_install']
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_02) by extension 'ignore'
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_02) by extension 'ignore_ament_install'
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_02) by extensions ['colcon_pkg']
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_02) by extension 'colcon_pkg'
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_02) by extensions ['colcon_meta']
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_02) by extension 'colcon_meta'
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_02) by extensions ['ros']
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_02) by extension 'ros'
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_02) by extensions ['cmake', 'python']
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_02) by extension 'cmake'
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_02) by extension 'python'
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_02) by extensions ['python_setup_py']
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_02) by extension 'python_setup_py'
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_025) by extensions ['ignore', 'ignore_ament_install']
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_025) by extension 'ignore'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_025) by extension 'ignore_ament_install'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_025) by extensions ['colcon_pkg']
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_025) by extension 'colcon_pkg'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_025) by extensions ['colcon_meta']
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_025) by extension 'colcon_meta'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_025) by extensions ['ros']
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_025) by extension 'ros'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_025) by extensions ['cmake', 'python']
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_025) by extension 'cmake'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_025) by extension 'python'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_025) by extensions ['python_setup_py']
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_025) by extension 'python_setup_py'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_03) by extensions ['ignore', 'ignore_ament_install']
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_03) by extension 'ignore'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_03) by extension 'ignore_ament_install'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_03) by extensions ['colcon_pkg']
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_03) by extension 'colcon_pkg'
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_03) by extensions ['colcon_meta']
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_03) by extension 'colcon_meta'
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_03) by extensions ['ros']
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_03) by extension 'ros'
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_03) by extensions ['cmake', 'python']
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_03) by extension 'cmake'
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_03) by extension 'python'
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_03) by extensions ['python_setup_py']
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_03) by extension 'python_setup_py'
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_04) by extensions ['ignore', 'ignore_ament_install']
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_04) by extension 'ignore'
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_04) by extension 'ignore_ament_install'
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_04) by extensions ['colcon_pkg']
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_04) by extension 'colcon_pkg'
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_04) by extensions ['colcon_meta']
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_04) by extension 'colcon_meta'
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_04) by extensions ['ros']
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_04) by extension 'ros'
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_04) by extensions ['cmake', 'python']
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_04) by extension 'cmake'
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_04) by extension 'python'
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_04) by extensions ['python_setup_py']
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_04) by extension 'python_setup_py'
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_05) by extensions ['ignore', 'ignore_ament_install']
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_05) by extension 'ignore'
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_05) by extension 'ignore_ament_install'
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_05) by extensions ['colcon_pkg']
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_05) by extension 'colcon_pkg'
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_05) by extensions ['colcon_meta']
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_05) by extension 'colcon_meta'
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_05) by extensions ['ros']
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_05) by extension 'ros'
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_05) by extensions ['cmake', 'python']
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_05) by extension 'cmake'
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_05) by extension 'python'
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_05) by extensions ['python_setup_py']
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_05) by extension 'python_setup_py'
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_06) by extensions ['ignore', 'ignore_ament_install']
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_06) by extension 'ignore'
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_06) by extension 'ignore_ament_install'
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_06) by extensions ['colcon_pkg']
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_06) by extension 'colcon_pkg'
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_06) by extensions ['colcon_meta']
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_06) by extension 'colcon_meta'
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_06) by extensions ['ros']
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_06) by extension 'ros'
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_06) by extensions ['cmake', 'python']
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_06) by extension 'cmake'
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_06) by extension 'python'
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_06) by extensions ['python_setup_py']
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_06) by extension 'python_setup_py'
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_07) by extensions ['ignore', 'ignore_ament_install']
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_07) by extension 'ignore'
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_07) by extension 'ignore_ament_install'
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_07) by extensions ['colcon_pkg']
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_07) by extension 'colcon_pkg'
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_07) by extensions ['colcon_meta']
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_07) by extension 'colcon_meta'
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_07) by extensions ['ros']
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_07) by extension 'ros'
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_07) by extensions ['cmake', 'python']
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_07) by extension 'cmake'
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_07) by extension 'python'
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_07) by extensions ['python_setup_py']
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_07) by extension 'python_setup_py'
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_1) by extensions ['ignore', 'ignore_ament_install']
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_1) by extension 'ignore'
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_1) by extension 'ignore_ament_install'
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_1) by extensions ['colcon_pkg']
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_1) by extension 'colcon_pkg'
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_1) by extensions ['colcon_meta']
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_1) by extension 'colcon_meta'
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_1) by extensions ['ros']
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_1) by extension 'ros'
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_1) by extensions ['cmake', 'python']
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_1) by extension 'cmake'
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_1) by extension 'python'
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_1) by extensions ['python_setup_py']
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_1) by extension 'python_setup_py'
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_10) by extensions ['ignore', 'ignore_ament_install']
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_10) by extension 'ignore'
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_10) by extension 'ignore_ament_install'
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_10) by extensions ['colcon_pkg']
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_10) by extension 'colcon_pkg'
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_10) by extensions ['colcon_meta']
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_10) by extension 'colcon_meta'
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_10) by extensions ['ros']
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_10) by extension 'ros'
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_10) by extensions ['cmake', 'python']
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_10) by extension 'cmake'
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_10) by extension 'python'
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_10) by extensions ['python_setup_py']
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_10) by extension 'python_setup_py'
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_100) by extensions ['ignore', 'ignore_ament_install']
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_100) by extension 'ignore'
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_100) by extension 'ignore_ament_install'
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_100) by extensions ['colcon_pkg']
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_100) by extension 'colcon_pkg'
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_100) by extensions ['colcon_meta']
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_100) by extension 'colcon_meta'
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_100) by extensions ['ros']
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_100) by extension 'ros'
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_100) by extensions ['cmake', 'python']
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_100) by extension 'cmake'
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_100) by extension 'python'
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_100) by extensions ['python_setup_py']
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_100) by extension 'python_setup_py'
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_20) by extensions ['ignore', 'ignore_ament_install']
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_20) by extension 'ignore'
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_20) by extension 'ignore_ament_install'
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_20) by extensions ['colcon_pkg']
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_20) by extension 'colcon_pkg'
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_20) by extensions ['colcon_meta']
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_20) by extension 'colcon_meta'
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_20) by extensions ['ros']
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_20) by extension 'ros'
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_20) by extensions ['cmake', 'python']
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_20) by extension 'cmake'
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_20) by extension 'python'
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_20) by extensions ['python_setup_py']
+[0.625s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_20) by extension 'python_setup_py'
+[0.625s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_5) by extensions ['ignore', 'ignore_ament_install']
+[0.625s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_5) by extension 'ignore'
+[0.625s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_5) by extension 'ignore_ament_install'
+[0.625s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_5) by extensions ['colcon_pkg']
+[0.625s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_5) by extension 'colcon_pkg'
+[0.625s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_5) by extensions ['colcon_meta']
+[0.625s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_5) by extension 'colcon_meta'
+[0.625s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_5) by extensions ['ros']
+[0.625s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_5) by extension 'ros'
+[0.625s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_5) by extensions ['cmake', 'python']
+[0.625s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_5) by extension 'cmake'
+[0.625s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_5) by extension 'python'
+[0.625s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_5) by extensions ['python_setup_py']
+[0.625s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag_los_p_5) by extension 'python_setup_py'
+[0.625s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(src/autopilot) by extensions ['ignore', 'ignore_ament_install']
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(src/autopilot) by extension 'ignore'
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(src/autopilot) by extension 'ignore_ament_install'
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(src/autopilot) by extensions ['colcon_pkg']
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(src/autopilot) by extension 'colcon_pkg'
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(src/autopilot) by extensions ['colcon_meta']
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(src/autopilot) by extension 'colcon_meta'
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(src/autopilot) by extensions ['ros']
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(src/autopilot) by extension 'ros'
+[0.632s] DEBUG:colcon.colcon_core.package_identification:Package 'src/autopilot' with type 'ros.ament_python' and name 'autopilot'
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extensions ['ignore', 'ignore_ament_install']
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extension 'ignore'
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) ignored
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_maritime) by extensions ['ignore', 'ignore_ament_install']
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_maritime) by extension 'ignore'
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_maritime) by extension 'ignore_ament_install'
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_maritime) by extensions ['colcon_pkg']
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_maritime) by extension 'colcon_pkg'
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_maritime) by extensions ['colcon_meta']
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_maritime) by extension 'colcon_meta'
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_maritime) by extensions ['ros']
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_maritime) by extension 'ros'
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_maritime) by extensions ['cmake', 'python']
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_maritime) by extension 'cmake'
+[0.637s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_maritime) by extension 'python'
+[0.638s] DEBUG:colcon.colcon_core.package_identification:Package 'src/gazebo_maritime' with type 'cmake' and name 'gazebo_maritime'
+[0.638s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extensions ['ignore', 'ignore_ament_install']
+[0.638s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extension 'ignore'
+[0.638s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) ignored
+[0.638s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extensions ['ignore', 'ignore_ament_install']
+[0.638s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extension 'ignore'
+[0.638s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) ignored
+[0.639s] Level 1:colcon.colcon_core.package_identification:_identify(src/msg_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.639s] Level 1:colcon.colcon_core.package_identification:_identify(src/msg_interfaces) by extension 'ignore'
+[0.639s] Level 1:colcon.colcon_core.package_identification:_identify(src/msg_interfaces) by extension 'ignore_ament_install'
+[0.639s] Level 1:colcon.colcon_core.package_identification:_identify(src/msg_interfaces) by extensions ['colcon_pkg']
+[0.639s] Level 1:colcon.colcon_core.package_identification:_identify(src/msg_interfaces) by extension 'colcon_pkg'
+[0.639s] Level 1:colcon.colcon_core.package_identification:_identify(src/msg_interfaces) by extensions ['colcon_meta']
+[0.639s] Level 1:colcon.colcon_core.package_identification:_identify(src/msg_interfaces) by extension 'colcon_meta'
+[0.639s] Level 1:colcon.colcon_core.package_identification:_identify(src/msg_interfaces) by extensions ['ros']
+[0.639s] Level 1:colcon.colcon_core.package_identification:_identify(src/msg_interfaces) by extension 'ros'
+[0.640s] DEBUG:colcon.colcon_core.package_identification:Package 'src/msg_interfaces' with type 'ros.ament_cmake' and name 'msg_interfaces'
+[0.640s] Level 1:colcon.colcon_core.package_identification:_identify(src/propeller_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.640s] Level 1:colcon.colcon_core.package_identification:_identify(src/propeller_controller) by extension 'ignore'
+[0.640s] Level 1:colcon.colcon_core.package_identification:_identify(src/propeller_controller) by extension 'ignore_ament_install'
+[0.640s] Level 1:colcon.colcon_core.package_identification:_identify(src/propeller_controller) by extensions ['colcon_pkg']
+[0.640s] Level 1:colcon.colcon_core.package_identification:_identify(src/propeller_controller) by extension 'colcon_pkg'
+[0.640s] Level 1:colcon.colcon_core.package_identification:_identify(src/propeller_controller) by extensions ['colcon_meta']
+[0.640s] Level 1:colcon.colcon_core.package_identification:_identify(src/propeller_controller) by extension 'colcon_meta'
+[0.640s] Level 1:colcon.colcon_core.package_identification:_identify(src/propeller_controller) by extensions ['ros']
+[0.640s] Level 1:colcon.colcon_core.package_identification:_identify(src/propeller_controller) by extension 'ros'
+[0.641s] DEBUG:colcon.colcon_core.package_identification:Package 'src/propeller_controller' with type 'ros.ament_python' and name 'propeller_controller'
+[0.641s] Level 1:colcon.colcon_core.package_identification:_identify(src/research) by extensions ['ignore', 'ignore_ament_install']
+[0.641s] Level 1:colcon.colcon_core.package_identification:_identify(src/research) by extension 'ignore'
+[0.641s] Level 1:colcon.colcon_core.package_identification:_identify(src/research) by extension 'ignore_ament_install'
+[0.641s] Level 1:colcon.colcon_core.package_identification:_identify(src/research) by extensions ['colcon_pkg']
+[0.641s] Level 1:colcon.colcon_core.package_identification:_identify(src/research) by extension 'colcon_pkg'
+[0.641s] Level 1:colcon.colcon_core.package_identification:_identify(src/research) by extensions ['colcon_meta']
+[0.642s] Level 1:colcon.colcon_core.package_identification:_identify(src/research) by extension 'colcon_meta'
+[0.642s] Level 1:colcon.colcon_core.package_identification:_identify(src/research) by extensions ['ros']
+[0.642s] Level 1:colcon.colcon_core.package_identification:_identify(src/research) by extension 'ros'
+[0.642s] DEBUG:colcon.colcon_core.package_identification:Package 'src/research' with type 'ros.ament_python' and name 'research'
+[0.642s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz_bridge_custom) by extensions ['ignore', 'ignore_ament_install']
+[0.642s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz_bridge_custom) by extension 'ignore'
+[0.642s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz_bridge_custom) by extension 'ignore_ament_install'
+[0.642s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz_bridge_custom) by extensions ['colcon_pkg']
+[0.642s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz_bridge_custom) by extension 'colcon_pkg'
+[0.642s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz_bridge_custom) by extensions ['colcon_meta']
+[0.642s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz_bridge_custom) by extension 'colcon_meta'
+[0.642s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz_bridge_custom) by extensions ['ros']
+[0.642s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_gz_bridge_custom) by extension 'ros'
+[0.643s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros_gz_bridge_custom' with type 'ros.ament_python' and name 'ros_gz_bridge_custom'
+[0.643s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.643s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.643s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.643s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.643s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.695s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.696s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.702s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 7 installed packages in /home/antoni/gazebo_maritime_ws/install
+[0.703s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 0 installed packages in /home/antoni/gazebo_maritime_ws/src/research/research/install
+[0.708s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 293 installed packages in /opt/ros/jazzy
+[0.714s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.855s] Level 5:colcon.colcon_core.verb:set package 'autopilot' build argument 'cmake_args' from command line to 'None'
+[0.855s] Level 5:colcon.colcon_core.verb:set package 'autopilot' build argument 'cmake_target' from command line to 'None'
+[0.856s] Level 5:colcon.colcon_core.verb:set package 'autopilot' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.856s] Level 5:colcon.colcon_core.verb:set package 'autopilot' build argument 'cmake_clean_cache' from command line to 'False'
+[0.856s] Level 5:colcon.colcon_core.verb:set package 'autopilot' build argument 'cmake_clean_first' from command line to 'False'
+[0.856s] Level 5:colcon.colcon_core.verb:set package 'autopilot' build argument 'cmake_force_configure' from command line to 'False'
+[0.856s] Level 5:colcon.colcon_core.verb:set package 'autopilot' build argument 'ament_cmake_args' from command line to 'None'
+[0.856s] Level 5:colcon.colcon_core.verb:set package 'autopilot' build argument 'catkin_cmake_args' from command line to 'None'
+[0.856s] Level 5:colcon.colcon_core.verb:set package 'autopilot' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.856s] DEBUG:colcon.colcon_core.verb:Building package 'autopilot' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/antoni/gazebo_maritime_ws/build/autopilot', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/antoni/gazebo_maritime_ws/install', 'merge_install': True, 'path': '/home/antoni/gazebo_maritime_ws/src/autopilot', 'symlink_install': False, 'test_result_base': None}
+[0.857s] Level 5:colcon.colcon_core.verb:set package 'gazebo_maritime' build argument 'cmake_args' from command line to 'None'
+[0.857s] Level 5:colcon.colcon_core.verb:set package 'gazebo_maritime' build argument 'cmake_target' from command line to 'None'
+[0.857s] Level 5:colcon.colcon_core.verb:set package 'gazebo_maritime' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.857s] Level 5:colcon.colcon_core.verb:set package 'gazebo_maritime' build argument 'cmake_clean_cache' from command line to 'False'
+[0.857s] Level 5:colcon.colcon_core.verb:set package 'gazebo_maritime' build argument 'cmake_clean_first' from command line to 'False'
+[0.857s] Level 5:colcon.colcon_core.verb:set package 'gazebo_maritime' build argument 'cmake_force_configure' from command line to 'False'
+[0.857s] Level 5:colcon.colcon_core.verb:set package 'gazebo_maritime' build argument 'ament_cmake_args' from command line to 'None'
+[0.857s] Level 5:colcon.colcon_core.verb:set package 'gazebo_maritime' build argument 'catkin_cmake_args' from command line to 'None'
+[0.857s] Level 5:colcon.colcon_core.verb:set package 'gazebo_maritime' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.857s] DEBUG:colcon.colcon_core.verb:Building package 'gazebo_maritime' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/antoni/gazebo_maritime_ws/build/gazebo_maritime', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/antoni/gazebo_maritime_ws/install', 'merge_install': True, 'path': '/home/antoni/gazebo_maritime_ws/src/gazebo_maritime', 'symlink_install': False, 'test_result_base': None}
+[0.858s] Level 5:colcon.colcon_core.verb:set package 'msg_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.858s] Level 5:colcon.colcon_core.verb:set package 'msg_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.858s] Level 5:colcon.colcon_core.verb:set package 'msg_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.858s] Level 5:colcon.colcon_core.verb:set package 'msg_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.858s] Level 5:colcon.colcon_core.verb:set package 'msg_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.858s] Level 5:colcon.colcon_core.verb:set package 'msg_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.858s] Level 5:colcon.colcon_core.verb:set package 'msg_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.858s] Level 5:colcon.colcon_core.verb:set package 'msg_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.858s] Level 5:colcon.colcon_core.verb:set package 'msg_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.858s] DEBUG:colcon.colcon_core.verb:Building package 'msg_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/antoni/gazebo_maritime_ws/build/msg_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/antoni/gazebo_maritime_ws/install', 'merge_install': True, 'path': '/home/antoni/gazebo_maritime_ws/src/msg_interfaces', 'symlink_install': False, 'test_result_base': None}
+[0.859s] Level 5:colcon.colcon_core.verb:set package 'propeller_controller' build argument 'cmake_args' from command line to 'None'
+[0.859s] Level 5:colcon.colcon_core.verb:set package 'propeller_controller' build argument 'cmake_target' from command line to 'None'
+[0.859s] Level 5:colcon.colcon_core.verb:set package 'propeller_controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.859s] Level 5:colcon.colcon_core.verb:set package 'propeller_controller' build argument 'cmake_clean_cache' from command line to 'False'
+[0.859s] Level 5:colcon.colcon_core.verb:set package 'propeller_controller' build argument 'cmake_clean_first' from command line to 'False'
+[0.859s] Level 5:colcon.colcon_core.verb:set package 'propeller_controller' build argument 'cmake_force_configure' from command line to 'False'
+[0.859s] Level 5:colcon.colcon_core.verb:set package 'propeller_controller' build argument 'ament_cmake_args' from command line to 'None'
+[0.859s] Level 5:colcon.colcon_core.verb:set package 'propeller_controller' build argument 'catkin_cmake_args' from command line to 'None'
+[0.859s] Level 5:colcon.colcon_core.verb:set package 'propeller_controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.859s] DEBUG:colcon.colcon_core.verb:Building package 'propeller_controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/antoni/gazebo_maritime_ws/build/propeller_controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/antoni/gazebo_maritime_ws/install', 'merge_install': True, 'path': '/home/antoni/gazebo_maritime_ws/src/propeller_controller', 'symlink_install': False, 'test_result_base': None}
+[0.860s] Level 5:colcon.colcon_core.verb:set package 'research' build argument 'cmake_args' from command line to 'None'
+[0.860s] Level 5:colcon.colcon_core.verb:set package 'research' build argument 'cmake_target' from command line to 'None'
+[0.860s] Level 5:colcon.colcon_core.verb:set package 'research' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.860s] Level 5:colcon.colcon_core.verb:set package 'research' build argument 'cmake_clean_cache' from command line to 'False'
+[0.860s] Level 5:colcon.colcon_core.verb:set package 'research' build argument 'cmake_clean_first' from command line to 'False'
+[0.860s] Level 5:colcon.colcon_core.verb:set package 'research' build argument 'cmake_force_configure' from command line to 'False'
+[0.860s] Level 5:colcon.colcon_core.verb:set package 'research' build argument 'ament_cmake_args' from command line to 'None'
+[0.860s] Level 5:colcon.colcon_core.verb:set package 'research' build argument 'catkin_cmake_args' from command line to 'None'
+[0.860s] Level 5:colcon.colcon_core.verb:set package 'research' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.860s] DEBUG:colcon.colcon_core.verb:Building package 'research' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/antoni/gazebo_maritime_ws/build/research', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/antoni/gazebo_maritime_ws/install', 'merge_install': True, 'path': '/home/antoni/gazebo_maritime_ws/src/research', 'symlink_install': False, 'test_result_base': None}
+[0.861s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_bridge_custom' build argument 'cmake_args' from command line to 'None'
+[0.861s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_bridge_custom' build argument 'cmake_target' from command line to 'None'
+[0.861s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_bridge_custom' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.861s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_bridge_custom' build argument 'cmake_clean_cache' from command line to 'False'
+[0.861s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_bridge_custom' build argument 'cmake_clean_first' from command line to 'False'
+[0.861s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_bridge_custom' build argument 'cmake_force_configure' from command line to 'False'
+[0.861s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_bridge_custom' build argument 'ament_cmake_args' from command line to 'None'
+[0.861s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_bridge_custom' build argument 'catkin_cmake_args' from command line to 'None'
+[0.861s] Level 5:colcon.colcon_core.verb:set package 'ros_gz_bridge_custom' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.861s] DEBUG:colcon.colcon_core.verb:Building package 'ros_gz_bridge_custom' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/antoni/gazebo_maritime_ws/build/ros_gz_bridge_custom', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/antoni/gazebo_maritime_ws/install', 'merge_install': True, 'path': '/home/antoni/gazebo_maritime_ws/src/ros_gz_bridge_custom', 'symlink_install': False, 'test_result_base': None}
+[0.861s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.864s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.865s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/antoni/gazebo_maritime_ws/src/autopilot' with build type 'ament_python'
+[0.866s] Level 1:colcon.colcon_core.shell:create_environment_hook('autopilot', 'ament_prefix_path')
+[0.874s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.875s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/antoni/gazebo_maritime_ws/install/share/autopilot/hook/ament_prefix_path.ps1'
+[0.877s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/antoni/gazebo_maritime_ws/install/share/autopilot/hook/ament_prefix_path.dsv'
+[0.878s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/antoni/gazebo_maritime_ws/install/share/autopilot/hook/ament_prefix_path.sh'
+[0.880s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.881s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.892s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/antoni/gazebo_maritime_ws/src/gazebo_maritime'
+[0.894s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.894s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.907s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/antoni/gazebo_maritime_ws/src/msg_interfaces' with build type 'ament_cmake'
+[0.907s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/antoni/gazebo_maritime_ws/src/msg_interfaces'
+[0.908s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.908s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.921s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/antoni/gazebo_maritime_ws/src/propeller_controller' with build type 'ament_python'
+[0.922s] Level 1:colcon.colcon_core.shell:create_environment_hook('propeller_controller', 'ament_prefix_path')
+[0.923s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/antoni/gazebo_maritime_ws/install/share/propeller_controller/hook/ament_prefix_path.ps1'
+[0.925s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/antoni/gazebo_maritime_ws/install/share/propeller_controller/hook/ament_prefix_path.dsv'
+[0.926s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/antoni/gazebo_maritime_ws/install/share/propeller_controller/hook/ament_prefix_path.sh'
+[0.928s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.928s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.940s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/antoni/gazebo_maritime_ws/src/research' with build type 'ament_python'
+[0.941s] Level 1:colcon.colcon_core.shell:create_environment_hook('research', 'ament_prefix_path')
+[0.942s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/antoni/gazebo_maritime_ws/install/share/research/hook/ament_prefix_path.ps1'
+[0.944s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/antoni/gazebo_maritime_ws/install/share/research/hook/ament_prefix_path.dsv'
+[0.946s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/antoni/gazebo_maritime_ws/install/share/research/hook/ament_prefix_path.sh'
+[0.948s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.949s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.958s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/antoni/gazebo_maritime_ws/src/ros_gz_bridge_custom' with build type 'ament_python'
+[0.959s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros_gz_bridge_custom', 'ament_prefix_path')
+[0.960s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/antoni/gazebo_maritime_ws/install/share/ros_gz_bridge_custom/hook/ament_prefix_path.ps1'
+[0.963s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/antoni/gazebo_maritime_ws/install/share/ros_gz_bridge_custom/hook/ament_prefix_path.dsv'
+[0.966s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/antoni/gazebo_maritime_ws/install/share/ros_gz_bridge_custom/hook/ament_prefix_path.sh'
+[0.968s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.969s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.537s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/antoni/gazebo_maritime_ws/src/autopilot'
+[1.538s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.538s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.562s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/antoni/gazebo_maritime_ws/build/gazebo_maritime': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/antoni/gazebo_maritime_ws/build/gazebo_maritime -- -j12 -l12
+[1.576s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/antoni/gazebo_maritime_ws/build/msg_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/antoni/gazebo_maritime_ws/build/msg_interfaces -- -j12 -l12
+[2.150s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/antoni/gazebo_maritime_ws/src/propeller_controller'
+[2.151s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.151s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.786s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/antoni/gazebo_maritime_ws/src/research'
+[2.787s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.787s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.830s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/antoni/gazebo_maritime_ws/build/gazebo_maritime' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/antoni/gazebo_maritime_ws/build/gazebo_maritime -- -j12 -l12
+[2.853s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/antoni/gazebo_maritime_ws/build/gazebo_maritime': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/antoni/gazebo_maritime_ws/build/gazebo_maritime
+[3.547s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/antoni/gazebo_maritime_ws/src/ros_gz_bridge_custom'
+[3.548s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.549s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.563s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/antoni/gazebo_maritime_ws/build/msg_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/antoni/gazebo_maritime_ws/build/msg_interfaces -- -j12 -l12
+[3.569s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/antoni/gazebo_maritime_ws/build/msg_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/antoni/gazebo_maritime_ws/build/msg_interfaces
+[3.617s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gazebo_maritime)
+[3.636s] Level 1:colcon.colcon_core.environment:checking '/home/antoni/gazebo_maritime_ws/install' for CMake module files
+[3.649s] Level 1:colcon.colcon_core.environment:checking '/home/antoni/gazebo_maritime_ws/install' for CMake config files
+[3.650s] Level 1:colcon.colcon_core.shell:create_environment_hook('gazebo_maritime', 'cmake_prefix_path')
+[3.651s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/antoni/gazebo_maritime_ws/install/share/gazebo_maritime/hook/cmake_prefix_path.ps1'
+[3.659s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/antoni/gazebo_maritime_ws/install/share/gazebo_maritime/hook/cmake_prefix_path.dsv'
+[3.666s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/antoni/gazebo_maritime_ws/install/share/gazebo_maritime/hook/cmake_prefix_path.sh'
+[3.676s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/antoni/gazebo_maritime_ws/build/gazebo_maritime' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/antoni/gazebo_maritime_ws/build/gazebo_maritime
+[3.681s] Level 1:colcon.colcon_core.environment:checking '/home/antoni/gazebo_maritime_ws/install/lib'
+[3.682s] Level 1:colcon.colcon_core.shell:create_environment_hook('gazebo_maritime', 'ld_library_path_lib')
+[3.683s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/antoni/gazebo_maritime_ws/install/share/gazebo_maritime/hook/ld_library_path_lib.ps1'
+[3.685s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/antoni/gazebo_maritime_ws/install/share/gazebo_maritime/hook/ld_library_path_lib.dsv'
+[3.687s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/antoni/gazebo_maritime_ws/install/share/gazebo_maritime/hook/ld_library_path_lib.sh'
+[3.690s] Level 1:colcon.colcon_core.environment:checking '/home/antoni/gazebo_maritime_ws/install/bin'
+[3.690s] Level 1:colcon.colcon_core.environment:checking '/home/antoni/gazebo_maritime_ws/install/lib/pkgconfig/gazebo_maritime.pc'
+[3.691s] Level 1:colcon.colcon_core.environment:checking '/home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages'
+[3.691s] Level 1:colcon.colcon_core.shell:create_environment_hook('gazebo_maritime', 'pythonpath')
+[3.693s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/antoni/gazebo_maritime_ws/install/share/gazebo_maritime/hook/pythonpath.ps1'
+[3.701s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/antoni/gazebo_maritime_ws/install/share/gazebo_maritime/hook/pythonpath.dsv'
+[3.703s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/antoni/gazebo_maritime_ws/install/share/gazebo_maritime/hook/pythonpath.sh'
+[3.705s] Level 1:colcon.colcon_core.environment:checking '/home/antoni/gazebo_maritime_ws/install/bin'
+[3.706s] INFO:colcon.colcon_core.shell:Creating package script '/home/antoni/gazebo_maritime_ws/install/share/gazebo_maritime/package.ps1'
+[3.708s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/antoni/gazebo_maritime_ws/install/share/gazebo_maritime/package.dsv'
+[3.712s] INFO:colcon.colcon_core.shell:Creating package script '/home/antoni/gazebo_maritime_ws/install/share/gazebo_maritime/package.sh'
+[3.715s] INFO:colcon.colcon_core.shell:Creating package script '/home/antoni/gazebo_maritime_ws/install/share/gazebo_maritime/package.bash'
+[3.718s] INFO:colcon.colcon_core.shell:Creating package script '/home/antoni/gazebo_maritime_ws/install/share/gazebo_maritime/package.zsh'
+[3.723s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/antoni/gazebo_maritime_ws/install/share/colcon-core/packages/gazebo_maritime)
+[3.776s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(msg_interfaces)
+[3.777s] Level 1:colcon.colcon_core.environment:checking '/home/antoni/gazebo_maritime_ws/install' for CMake module files
+[3.778s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/antoni/gazebo_maritime_ws/build/msg_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/antoni/gazebo_maritime_ws/build/msg_interfaces
+[3.780s] Level 1:colcon.colcon_core.environment:checking '/home/antoni/gazebo_maritime_ws/install' for CMake config files
+[3.781s] Level 1:colcon.colcon_core.shell:create_environment_hook('msg_interfaces', 'cmake_prefix_path')
+[3.782s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/hook/cmake_prefix_path.ps1'
+[3.783s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/hook/cmake_prefix_path.dsv'
+[3.784s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/hook/cmake_prefix_path.sh'
+[3.786s] Level 1:colcon.colcon_core.environment:checking '/home/antoni/gazebo_maritime_ws/install/lib'
+[3.786s] Level 1:colcon.colcon_core.shell:create_environment_hook('msg_interfaces', 'ld_library_path_lib')
+[3.786s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/hook/ld_library_path_lib.ps1'
+[3.789s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/hook/ld_library_path_lib.dsv'
+[3.790s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/hook/ld_library_path_lib.sh'
+[3.791s] Level 1:colcon.colcon_core.environment:checking '/home/antoni/gazebo_maritime_ws/install/bin'
+[3.791s] Level 1:colcon.colcon_core.environment:checking '/home/antoni/gazebo_maritime_ws/install/lib/pkgconfig/msg_interfaces.pc'
+[3.792s] Level 1:colcon.colcon_core.environment:checking '/home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages'
+[3.792s] Level 1:colcon.colcon_core.shell:create_environment_hook('msg_interfaces', 'pythonpath')
+[3.792s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/hook/pythonpath.ps1'
+[3.793s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/hook/pythonpath.dsv'
+[3.795s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/hook/pythonpath.sh'
+[3.796s] Level 1:colcon.colcon_core.environment:checking '/home/antoni/gazebo_maritime_ws/install/bin'
+[3.798s] INFO:colcon.colcon_core.shell:Creating package script '/home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/package.ps1'
+[3.801s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/package.dsv'
+[3.803s] INFO:colcon.colcon_core.shell:Creating package script '/home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/package.sh'
+[3.806s] INFO:colcon.colcon_core.shell:Creating package script '/home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/package.bash'
+[3.808s] INFO:colcon.colcon_core.shell:Creating package script '/home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/package.zsh'
+[3.808s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/antoni/gazebo_maritime_ws/install/share/colcon-core/packages/msg_interfaces)
+[3.810s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(msg_interfaces)
+[3.810s] Level 1:colcon.colcon_core.environment:checking '/home/antoni/gazebo_maritime_ws/install' for CMake module files
+[3.811s] Level 1:colcon.colcon_core.environment:checking '/home/antoni/gazebo_maritime_ws/install' for CMake config files
+[3.812s] Level 1:colcon.colcon_core.shell:create_environment_hook('msg_interfaces', 'cmake_prefix_path')
+[3.812s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/hook/cmake_prefix_path.ps1'
+[3.814s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/hook/cmake_prefix_path.dsv'
+[3.815s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/hook/cmake_prefix_path.sh'
+[3.818s] Level 1:colcon.colcon_core.environment:checking '/home/antoni/gazebo_maritime_ws/install/lib'
+[3.818s] Level 1:colcon.colcon_core.shell:create_environment_hook('msg_interfaces', 'ld_library_path_lib')
+[3.819s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/hook/ld_library_path_lib.ps1'
+[3.820s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/hook/ld_library_path_lib.dsv'
+[3.821s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/hook/ld_library_path_lib.sh'
+[3.823s] Level 1:colcon.colcon_core.environment:checking '/home/antoni/gazebo_maritime_ws/install/bin'
+[3.823s] Level 1:colcon.colcon_core.environment:checking '/home/antoni/gazebo_maritime_ws/install/lib/pkgconfig/msg_interfaces.pc'
+[3.823s] Level 1:colcon.colcon_core.environment:checking '/home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages'
+[3.824s] Level 1:colcon.colcon_core.shell:create_environment_hook('msg_interfaces', 'pythonpath')
+[3.824s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/hook/pythonpath.ps1'
+[3.825s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/hook/pythonpath.dsv'
+[3.825s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/hook/pythonpath.sh'
+[3.826s] Level 1:colcon.colcon_core.environment:checking '/home/antoni/gazebo_maritime_ws/install/bin'
+[3.826s] INFO:colcon.colcon_core.shell:Creating package script '/home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/package.ps1'
+[3.827s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/package.dsv'
+[3.828s] INFO:colcon.colcon_core.shell:Creating package script '/home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/package.sh'
+[3.830s] INFO:colcon.colcon_core.shell:Creating package script '/home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/package.bash'
+[3.832s] INFO:colcon.colcon_core.shell:Creating package script '/home/antoni/gazebo_maritime_ws/install/share/msg_interfaces/package.zsh'
+[3.833s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/antoni/gazebo_maritime_ws/install/share/colcon-core/packages/msg_interfaces)
+[4.650s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/antoni/gazebo_maritime_ws/src/autopilot': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/antoni/gazebo_maritime_ws/build/autopilot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/autopilot build --build-base /home/antoni/gazebo_maritime_ws/build/autopilot/build install --record /home/antoni/gazebo_maritime_ws/build/autopilot/install.log --single-version-externally-managed install_data
+[4.710s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/antoni/gazebo_maritime_ws/src/ros_gz_bridge_custom': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/antoni/gazebo_maritime_ws/build/ros_gz_bridge_custom/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ros_gz_bridge_custom build --build-base /home/antoni/gazebo_maritime_ws/build/ros_gz_bridge_custom/build install --record /home/antoni/gazebo_maritime_ws/build/ros_gz_bridge_custom/install.log --single-version-externally-managed install_data
+[4.800s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/antoni/gazebo_maritime_ws/src/propeller_controller': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/antoni/gazebo_maritime_ws/build/propeller_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/propeller_controller build --build-base /home/antoni/gazebo_maritime_ws/build/propeller_controller/build install --record /home/antoni/gazebo_maritime_ws/build/propeller_controller/install.log --single-version-externally-managed install_data
+[4.943s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/antoni/gazebo_maritime_ws/src/research': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/antoni/gazebo_maritime_ws/build/research/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/research build --build-base /home/antoni/gazebo_maritime_ws/build/research/build install --record /home/antoni/gazebo_maritime_ws/build/research/install.log --single-version-externally-managed install_data
+[5.582s] Level 1:colcon.colcon_core.environment:checking '/home/antoni/gazebo_maritime_ws/install' for CMake module files
+[5.583s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/antoni/gazebo_maritime_ws/src/autopilot' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/antoni/gazebo_maritime_ws/build/autopilot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/autopilot build --build-base /home/antoni/gazebo_maritime_ws/build/autopilot/build install --record /home/antoni/gazebo_maritime_ws/build/autopilot/install.log --single-version-externally-managed install_data
+[5.584s] Level 1:colcon.colcon_core.environment:checking '/home/antoni/gazebo_maritime_ws/install' for CMake config files
+[5.585s] Level 1:colcon.colcon_core.shell:create_environment_hook('autopilot', 'cmake_prefix_path')
+[5.585s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/antoni/gazebo_maritime_ws/install/share/autopilot/hook/cmake_prefix_path.ps1'
+[5.586s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/antoni/gazebo_maritime_ws/install/share/autopilot/hook/cmake_prefix_path.dsv'
+[5.587s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/antoni/gazebo_maritime_ws/install/share/autopilot/hook/cmake_prefix_path.sh'
+[5.588s] Level 1:colcon.colcon_core.environment:checking '/home/antoni/gazebo_maritime_ws/install/lib'
+[5.588s] Level 1:colcon.colcon_core.shell:create_environment_hook('autopilot', 'ld_library_path_lib')
+[5.588s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/antoni/gazebo_maritime_ws/install/share/autopilot/hook/ld_library_path_lib.ps1'
+[5.589s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/antoni/gazebo_maritime_ws/install/share/autopilot/hook/ld_library_path_lib.dsv'
+[5.589s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/antoni/gazebo_maritime_ws/install/share/autopilot/hook/ld_library_path_lib.sh'
+[5.589s] Level 1:colcon.colcon_core.environment:checking '/home/antoni/gazebo_maritime_ws/install/bin'
+[5.589s] Level 1:colcon.colcon_core.environment:checking '/home/antoni/gazebo_maritime_ws/install/lib/pkgconfig/autopilot.pc'
+[5.590s] Level 1:colcon.colcon_core.environment:checking '/home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages'
+[5.590s] Level 1:colcon.colcon_core.shell:create_environment_hook('autopilot', 'pythonpath')
+[5.590s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/antoni/gazebo_maritime_ws/install/share/autopilot/hook/pythonpath.ps1'
+[5.590s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/antoni/gazebo_maritime_ws/install/share/autopilot/hook/pythonpath.dsv'
+[5.591s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/antoni/gazebo_maritime_ws/install/share/autopilot/hook/pythonpath.sh'
+[5.591s] Level 1:colcon.colcon_core.environment:checking '/home/antoni/gazebo_maritime_ws/install/bin'
+[5.591s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(autopilot)
+[5.591s] INFO:colcon.colcon_core.shell:Creating package script '/home/antoni/gazebo_maritime_ws/install/share/autopilot/package.ps1'
+[5.592s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/antoni/gazebo_maritime_ws/install/share/autopilot/package.dsv'
+[5.592s] INFO:colcon.colcon_core.shell:Creating package script '/home/antoni/gazebo_maritime_ws/install/share/autopilot/package.sh'
+[5.593s] INFO:colcon.colcon_core.shell:Creating package script '/home/antoni/gazebo_maritime_ws/install/share/autopilot/package.bash'
+[5.593s] INFO:colcon.colcon_core.shell:Creating package script '/home/antoni/gazebo_maritime_ws/install/share/autopilot/package.zsh'
+[5.593s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/antoni/gazebo_maritime_ws/install/share/colcon-core/packages/autopilot)
+[5.639s] Level 1:colcon.colcon_core.environment:checking '/home/antoni/gazebo_maritime_ws/install' for CMake module files
+[5.640s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/antoni/gazebo_maritime_ws/src/propeller_controller' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/antoni/gazebo_maritime_ws/build/propeller_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/propeller_controller build --build-base /home/antoni/gazebo_maritime_ws/build/propeller_controller/build install --record /home/antoni/gazebo_maritime_ws/build/propeller_controller/install.log --single-version-externally-managed install_data
+[5.641s] Level 1:colcon.colcon_core.environment:checking '/home/antoni/gazebo_maritime_ws/install' for CMake config files
+[5.642s] Level 1:colcon.colcon_core.shell:create_environment_hook('propeller_controller', 'cmake_prefix_path')
+[5.642s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/antoni/gazebo_maritime_ws/install/share/propeller_controller/hook/cmake_prefix_path.ps1'
+[5.643s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/antoni/gazebo_maritime_ws/install/share/propeller_controller/hook/cmake_prefix_path.dsv'
+[5.644s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/antoni/gazebo_maritime_ws/install/share/propeller_controller/hook/cmake_prefix_path.sh'
+[5.644s] Level 1:colcon.colcon_core.environment:checking '/home/antoni/gazebo_maritime_ws/install/lib'
+[5.644s] Level 1:colcon.colcon_core.shell:create_environment_hook('propeller_controller', 'ld_library_path_lib')
+[5.645s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/antoni/gazebo_maritime_ws/install/share/propeller_controller/hook/ld_library_path_lib.ps1'
+[5.645s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/antoni/gazebo_maritime_ws/install/share/propeller_controller/hook/ld_library_path_lib.dsv'
+[5.645s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/antoni/gazebo_maritime_ws/install/share/propeller_controller/hook/ld_library_path_lib.sh'
+[5.646s] Level 1:colcon.colcon_core.environment:checking '/home/antoni/gazebo_maritime_ws/install/bin'
+[5.646s] Level 1:colcon.colcon_core.environment:checking '/home/antoni/gazebo_maritime_ws/install/lib/pkgconfig/propeller_controller.pc'
+[5.646s] Level 1:colcon.colcon_core.environment:checking '/home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages'
+[5.646s] Level 1:colcon.colcon_core.shell:create_environment_hook('propeller_controller', 'pythonpath')
+[5.646s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/antoni/gazebo_maritime_ws/install/share/propeller_controller/hook/pythonpath.ps1'
+[5.647s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/antoni/gazebo_maritime_ws/install/share/propeller_controller/hook/pythonpath.dsv'
+[5.647s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/antoni/gazebo_maritime_ws/install/share/propeller_controller/hook/pythonpath.sh'
+[5.648s] Level 1:colcon.colcon_core.environment:checking '/home/antoni/gazebo_maritime_ws/install/bin'
+[5.648s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(propeller_controller)
+[5.648s] INFO:colcon.colcon_core.shell:Creating package script '/home/antoni/gazebo_maritime_ws/install/share/propeller_controller/package.ps1'
+[5.649s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/antoni/gazebo_maritime_ws/install/share/propeller_controller/package.dsv'
+[5.650s] INFO:colcon.colcon_core.shell:Creating package script '/home/antoni/gazebo_maritime_ws/install/share/propeller_controller/package.sh'
+[5.652s] INFO:colcon.colcon_core.shell:Creating package script '/home/antoni/gazebo_maritime_ws/install/share/propeller_controller/package.bash'
+[5.653s] INFO:colcon.colcon_core.shell:Creating package script '/home/antoni/gazebo_maritime_ws/install/share/propeller_controller/package.zsh'
+[5.654s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/antoni/gazebo_maritime_ws/install/share/colcon-core/packages/propeller_controller)
+[5.807s] Level 1:colcon.colcon_core.environment:checking '/home/antoni/gazebo_maritime_ws/install' for CMake module files
+[5.809s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/antoni/gazebo_maritime_ws/src/ros_gz_bridge_custom' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/antoni/gazebo_maritime_ws/build/ros_gz_bridge_custom/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ros_gz_bridge_custom build --build-base /home/antoni/gazebo_maritime_ws/build/ros_gz_bridge_custom/build install --record /home/antoni/gazebo_maritime_ws/build/ros_gz_bridge_custom/install.log --single-version-externally-managed install_data
+[5.810s] Level 1:colcon.colcon_core.environment:checking '/home/antoni/gazebo_maritime_ws/install' for CMake config files
+[5.811s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros_gz_bridge_custom', 'cmake_prefix_path')
+[5.812s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/antoni/gazebo_maritime_ws/install/share/ros_gz_bridge_custom/hook/cmake_prefix_path.ps1'
+[5.815s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/antoni/gazebo_maritime_ws/install/share/ros_gz_bridge_custom/hook/cmake_prefix_path.dsv'
+[5.817s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/antoni/gazebo_maritime_ws/install/share/ros_gz_bridge_custom/hook/cmake_prefix_path.sh'
+[5.821s] Level 1:colcon.colcon_core.environment:checking '/home/antoni/gazebo_maritime_ws/install/lib'
+[5.821s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros_gz_bridge_custom', 'ld_library_path_lib')
+[5.822s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/antoni/gazebo_maritime_ws/install/share/ros_gz_bridge_custom/hook/ld_library_path_lib.ps1'
+[5.824s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/antoni/gazebo_maritime_ws/install/share/ros_gz_bridge_custom/hook/ld_library_path_lib.dsv'
+[5.826s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/antoni/gazebo_maritime_ws/install/share/ros_gz_bridge_custom/hook/ld_library_path_lib.sh'
+[5.828s] Level 1:colcon.colcon_core.environment:checking '/home/antoni/gazebo_maritime_ws/install/bin'
+[5.829s] Level 1:colcon.colcon_core.environment:checking '/home/antoni/gazebo_maritime_ws/install/lib/pkgconfig/ros_gz_bridge_custom.pc'
+[5.830s] Level 1:colcon.colcon_core.environment:checking '/home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages'
+[5.830s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros_gz_bridge_custom', 'pythonpath')
+[5.831s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/antoni/gazebo_maritime_ws/install/share/ros_gz_bridge_custom/hook/pythonpath.ps1'
+[5.834s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/antoni/gazebo_maritime_ws/install/share/ros_gz_bridge_custom/hook/pythonpath.dsv'
+[5.836s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/antoni/gazebo_maritime_ws/install/share/ros_gz_bridge_custom/hook/pythonpath.sh'
+[5.839s] Level 1:colcon.colcon_core.environment:checking '/home/antoni/gazebo_maritime_ws/install/bin'
+[5.839s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros_gz_bridge_custom)
+[5.840s] INFO:colcon.colcon_core.shell:Creating package script '/home/antoni/gazebo_maritime_ws/install/share/ros_gz_bridge_custom/package.ps1'
+[5.844s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/antoni/gazebo_maritime_ws/install/share/ros_gz_bridge_custom/package.dsv'
+[5.848s] INFO:colcon.colcon_core.shell:Creating package script '/home/antoni/gazebo_maritime_ws/install/share/ros_gz_bridge_custom/package.sh'
+[5.851s] INFO:colcon.colcon_core.shell:Creating package script '/home/antoni/gazebo_maritime_ws/install/share/ros_gz_bridge_custom/package.bash'
+[5.853s] INFO:colcon.colcon_core.shell:Creating package script '/home/antoni/gazebo_maritime_ws/install/share/ros_gz_bridge_custom/package.zsh'
+[5.855s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/antoni/gazebo_maritime_ws/install/share/colcon-core/packages/ros_gz_bridge_custom)
+[5.939s] Level 1:colcon.colcon_core.environment:checking '/home/antoni/gazebo_maritime_ws/install' for CMake module files
+[5.940s] Level 1:colcon.colcon_core.environment:checking '/home/antoni/gazebo_maritime_ws/install' for CMake config files
+[5.942s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/antoni/gazebo_maritime_ws/src/research' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/antoni/gazebo_maritime_ws/build/research/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/research build --build-base /home/antoni/gazebo_maritime_ws/build/research/build install --record /home/antoni/gazebo_maritime_ws/build/research/install.log --single-version-externally-managed install_data
+[5.943s] Level 1:colcon.colcon_core.shell:create_environment_hook('research', 'cmake_prefix_path')
+[5.944s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/antoni/gazebo_maritime_ws/install/share/research/hook/cmake_prefix_path.ps1'
+[5.947s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/antoni/gazebo_maritime_ws/install/share/research/hook/cmake_prefix_path.dsv'
+[5.948s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/antoni/gazebo_maritime_ws/install/share/research/hook/cmake_prefix_path.sh'
+[5.950s] Level 1:colcon.colcon_core.environment:checking '/home/antoni/gazebo_maritime_ws/install/lib'
+[5.950s] Level 1:colcon.colcon_core.shell:create_environment_hook('research', 'ld_library_path_lib')
+[5.951s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/antoni/gazebo_maritime_ws/install/share/research/hook/ld_library_path_lib.ps1'
+[5.952s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/antoni/gazebo_maritime_ws/install/share/research/hook/ld_library_path_lib.dsv'
+[5.952s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/antoni/gazebo_maritime_ws/install/share/research/hook/ld_library_path_lib.sh'
+[5.953s] Level 1:colcon.colcon_core.environment:checking '/home/antoni/gazebo_maritime_ws/install/bin'
+[5.953s] Level 1:colcon.colcon_core.environment:checking '/home/antoni/gazebo_maritime_ws/install/lib/pkgconfig/research.pc'
+[5.954s] Level 1:colcon.colcon_core.environment:checking '/home/antoni/gazebo_maritime_ws/install/lib/python3.12/site-packages'
+[5.954s] Level 1:colcon.colcon_core.shell:create_environment_hook('research', 'pythonpath')
+[5.955s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/antoni/gazebo_maritime_ws/install/share/research/hook/pythonpath.ps1'
+[5.955s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/antoni/gazebo_maritime_ws/install/share/research/hook/pythonpath.dsv'
+[5.956s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/antoni/gazebo_maritime_ws/install/share/research/hook/pythonpath.sh'
+[5.957s] Level 1:colcon.colcon_core.environment:checking '/home/antoni/gazebo_maritime_ws/install/bin'
+[5.957s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(research)
+[5.958s] INFO:colcon.colcon_core.shell:Creating package script '/home/antoni/gazebo_maritime_ws/install/share/research/package.ps1'
+[5.959s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/antoni/gazebo_maritime_ws/install/share/research/package.dsv'
+[5.960s] INFO:colcon.colcon_core.shell:Creating package script '/home/antoni/gazebo_maritime_ws/install/share/research/package.sh'
+[5.961s] INFO:colcon.colcon_core.shell:Creating package script '/home/antoni/gazebo_maritime_ws/install/share/research/package.bash'
+[5.962s] INFO:colcon.colcon_core.shell:Creating package script '/home/antoni/gazebo_maritime_ws/install/share/research/package.zsh'
+[5.962s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/antoni/gazebo_maritime_ws/install/share/colcon-core/packages/research)
+[5.964s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[5.965s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[5.965s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[5.966s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[5.977s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[5.977s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[5.977s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[6.013s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[6.014s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/antoni/gazebo_maritime_ws/install/local_setup.ps1'
+[6.016s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/antoni/gazebo_maritime_ws/install/_local_setup_util_ps1.py'
+[6.019s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/antoni/gazebo_maritime_ws/install/setup.ps1'
+[6.023s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/antoni/gazebo_maritime_ws/install/local_setup.sh'
+[6.025s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/antoni/gazebo_maritime_ws/install/_local_setup_util_sh.py'
+[6.026s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/antoni/gazebo_maritime_ws/install/setup.sh'
+[6.027s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/antoni/gazebo_maritime_ws/install/local_setup.bash'
+[6.028s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/antoni/gazebo_maritime_ws/install/setup.bash'
+[6.029s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/antoni/gazebo_maritime_ws/install/local_setup.zsh'
+[6.031s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/antoni/gazebo_maritime_ws/install/setup.zsh'

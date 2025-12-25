@@ -9,7 +9,6 @@ navsat_transform:
     use_odometry_yaw: true
     wait_for_datum: false
     
-    magnetic_declination_radians: 0.2237512101057
     yaw_offset: 0
     zero_altitude: true
 
