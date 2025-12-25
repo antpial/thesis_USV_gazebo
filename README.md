@@ -7,8 +7,8 @@ This repository contains the source code developed for my Engineering Thesis reg
 
 ### 📄 Thesis Documents
 The full text of the engineering thesis is available here:
-* **[Polish Version (Original)](thesis_PL.pdf)** - Official reviewed version.
-* **[English Version (Translation)](thesis_EN.pdf)** - Translated via Gemini Thinking (Dec 25, 2025) for international sharing.
+* **[Polish Version (Original)](Thesis_PL.pdf)** - Official reviewed version.
+* **[English Version (Translation)](Thesis_EN.pdf)** - Translated via Gemini Thinking (Dec 25, 2025) for international sharing.
 
 ### 🚀 Key Features
 * **Simulation Environment:** Gazebo Sim (Maritime Gazebo).
