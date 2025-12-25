@@ -21,3 +21,12 @@ The full text of the engineering thesis is available here:
 * **Middleware:** ROS 2
 * **Simulator:** Gazebo Sim
 * **Libraries:** NumPy, Robot Localization
+
+## 🔗 Related Repositories
+
+This repository focuses on the **simulation environment** and **theoretical analysis**. To see the **onboard control system** and hardware drivers running on the physical **FOKA** boat (where these algorithms were field-tested), please visit the hardware repository:
+
+👉 **[FOKA USV - Onboard Control System (ROS 2 / RPi 4)](https://github.com/antpial/FokaRos2RPi4)**
+
+---
+*Developed by: Antoni Piałucha*
