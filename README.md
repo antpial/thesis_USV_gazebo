@@ -24,9 +24,13 @@ The full text of the engineering thesis is available here:
 
 ## 🔗 Related Repositories
 
-This repository focuses on the **simulation environment** and **theoretical analysis**. To see the **onboard control system** and hardware drivers running on the physical **FOKA** boat (where these algorithms were field-tested), please visit the hardware repository:
+This repository focuses on the **simulation environment** and **theoretical analysis**. The complete **FOKA Project** ecosystem consists of three main parts:
 
-👉 **[FOKA USV - Onboard Control System (ROS 2 / RPi 4)](https://github.com/antpial/FokaRos2RPi4)**
+1.  👉 **[Onboard Control System (ROS 2 / RPi 4)](https://github.com/antpial/FokaRos2RPi4)**
+    * Source code running physically on the boat (hardware drivers, sensor aggregation, autopilot).
+
+2.  👉 **[Ground Control Station (GUI / Qt)](https://github.com/antpial/Sensor_Data_Visualisation)**
+    * Desktop application for real-time telemetry visualization, map tracking, and data analysis.
 
 ---
-*Developed by: Antoni Piałucha*
+*Developed and Led by: Antoni Piałucha*
